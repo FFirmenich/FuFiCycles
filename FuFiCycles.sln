@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE05EC0-301F-11D3-BF4B-00C05F79EFBC}") = "Fusee.Tutorial06.Core", "Core\Fusee.Tutorial06.Core.csproj", "{4E534FDD-A963-448D-B2A6-F3E8B9F0BF69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fusee.FuFiCycles.Core", "Core\Fusee.FuFiCycles.Core.csproj", "{4E534FDD-A963-448D-B2A6-F3E8B9F0BF69}"
 EndProject
-Project("{FAE05EC0-301F-11D3-BF4B-00C05F79EFBC}") = "Fusee.Tutorial06.Desktop", "Desktop\Fusee.Tutorial06.Desktop.csproj", "{A8C051C0-3A74-4976-9060-70E2A865D521}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fusee.FuFiCycles.Desktop", "Desktop\Fusee.FuFiCycles.Desktop.csproj", "{A8C051C0-3A74-4976-9060-70E2A865D521}"
 EndProject
-Project("{FAE05EC0-301F-11D3-BF4B-00C05F79EFBC}") = "Fusee.Tutorial06.Web", "Web\Fusee.Tutorial06.Web.csproj", "{DB21584F-4EA6-486A-9BDB-77D372CF1D64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fusee.FuFiCycles.Web", "Web\Fusee.FuFiCycles.Web.csproj", "{DB21584F-4EA6-486A-9BDB-77D372CF1D64}"
 EndProject
-Project("{FAE05EC0-301F-11D3-BF4B-00C05F79EFBC}") = "Fusee.Tutorial06.Android", "Android\Fusee.Tutorial06.Android.csproj", "{73A74ADF-6308-42A0-8BA6-2B5D53238546}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fusee.FuFiCycles.Android", "Android\Fusee.FuFiCycles.Android.csproj", "{73A74ADF-6308-42A0-8BA6-2B5D53238546}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

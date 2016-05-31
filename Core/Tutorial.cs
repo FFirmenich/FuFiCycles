@@ -167,7 +167,7 @@ namespace Fusee.Tutorial.Core {
 	}
 
 
-	[FuseeApplication(Name = "Tutorial Example", Description = "The official FUSEE Tutorial.")]
+	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production")]
 	public class Tutorial : RenderCanvas {
 		// angle variables
 		private static float _angleHorz = M.PiOver6 * 2.0f, _angleVert = -M.PiOver6 * 0.5f,
