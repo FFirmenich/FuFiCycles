@@ -9,3 +9,4 @@ D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Fusee.Tutorial.Core.dll
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Fusee.Tutorial.Core.pdb
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.Core.dll
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.Core.pdb
+D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.FuFiCycles.Core.csprojResolveAssemblyReference.cache

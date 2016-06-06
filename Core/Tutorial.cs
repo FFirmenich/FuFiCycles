@@ -10,6 +10,7 @@ using Fusee.Xene;
 using static System.Math;
 using static Fusee.Engine.Core.Input;
 using static Fusee.Engine.Core.Time;
+using System.Diagnostics;
 
 namespace Fusee.Tutorial.Core {
 
@@ -196,6 +197,9 @@ namespace Fusee.Tutorial.Core {
 
 		private Renderer _renderer;
 
+		private bool aPressed = false;
+		private bool dPressed = false;
+
 
 		// Init is called on startup. 
 		public override void Init() {
@@ -273,12 +277,27 @@ namespace Fusee.Tutorial.Core {
 				}
 			}
 
-			float wuggyYawSpeed = Keyboard.WSAxis * Keyboard.ADAxis * 0.03f;
-			float wuggySpeed = Keyboard.WSAxis * -10;
+			float speed = 10;
+			float wuggySpeed = -speed;
 
 			// Wuggy XForm
 			float wuggyYaw = _wuggyTransform.Rotation.y;
-			wuggyYaw += wuggyYawSpeed;
+			if (Keyboard.GetKey(KeyCodes.A)) {
+				if (aPressed == false) {
+					wuggyYaw = wuggyYaw - M.PiOver2;
+				}
+				aPressed = true;
+			} else {
+				aPressed = false;
+			}
+			if (Keyboard.GetKey(KeyCodes.D)) {
+				if (dPressed == false) {
+					wuggyYaw = wuggyYaw + M.PiOver2;
+				}
+				dPressed = true;
+			} else {
+				dPressed = false;
+			}
 			wuggyYaw = NormRot(wuggyYaw);
 			float3 wuggyPos = _wuggyTransform.Translation;
 			wuggyPos += new float3((float)Sin(wuggyYaw), 0, (float)Cos(wuggyYaw)) * wuggySpeed;
@@ -288,8 +307,8 @@ namespace Fusee.Tutorial.Core {
 			// Wuggy Wheels
 			_wgyWheelBigR.Rotation += new float3(wuggySpeed * 0.008f, 0, 0);
 			_wgyWheelBigL.Rotation += new float3(wuggySpeed * 0.008f, 0, 0);
-			_wgyWheelSmallR.Rotation = new float3(_wgyWheelSmallR.Rotation.x + wuggySpeed * 0.016f, -Keyboard.ADAxis * 0.3f, 0);
-			_wgyWheelSmallL.Rotation = new float3(_wgyWheelSmallR.Rotation.x + wuggySpeed * 0.016f, -Keyboard.ADAxis * 0.3f, 0);
+			_wgyWheelSmallR.Rotation = new float3(_wgyWheelSmallR.Rotation.x + wuggySpeed * 0.016f, 0, 0);
+			_wgyWheelSmallL.Rotation = new float3(_wgyWheelSmallR.Rotation.x + wuggySpeed * 0.016f, 0, 0);
 
 			// SCRATCH:
 			// _guiSubText.Text = target.Name + " " + target.GetComponent<TargetComponent>().ExtraInfo;
