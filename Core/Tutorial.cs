@@ -180,7 +180,6 @@ namespace Fusee.Tutorial.Core {
 		private const float Damping = 0.8f;
 
 		private SceneContainer _scene;
-		private float4x4 _sceneCenter;
 		private float4x4 _sceneScale;
 		private float4x4 _projection;
 		private bool _twoTouchRepeated;
@@ -193,6 +192,7 @@ namespace Fusee.Tutorial.Core {
 		private TransformComponent _wgyWheelSmallR;
 		private TransformComponent _wgyWheelSmallL;
 		private TransformComponent _wgyNeckHi;
+		private TransformComponent _wgyWall;
 		private List<SceneNodeContainer> _trees;
 
 		private Renderer _renderer;
@@ -204,7 +204,7 @@ namespace Fusee.Tutorial.Core {
 		// Init is called on startup. 
 		public override void Init() {
 			// Load the scene
-			_scene = AssetStorage.Get<SceneContainer>("WuggyLand.fus");
+			_scene = AssetStorage.Get<SceneContainer>("CycleLand.fus");
 			_sceneScale = float4x4.CreateScale(0.04f);
 
 
@@ -212,16 +212,10 @@ namespace Fusee.Tutorial.Core {
 			_renderer = new Renderer(RC);
 
 			// Find some transform nodes we want to manipulate in the scene
-			_wuggyTransform = _scene.Children.FindNodes(c => c.Name == "Wuggy").First()?.GetTransform();
-			_wgyWheelBigR = _scene.Children.FindNodes(c => c.Name == "WheelBigR").First()?.GetTransform();
-			_wgyWheelBigL = _scene.Children.FindNodes(c => c.Name == "WheelBigL").First()?.GetTransform();
-			_wgyWheelSmallR = _scene.Children.FindNodes(c => c.Name == "WheelSmallR").First()?.GetTransform();
-			_wgyWheelSmallL = _scene.Children.FindNodes(c => c.Name == "WheelSmallL").First()?.GetTransform();
-			_wgyNeckHi = _scene.Children.FindNodes(c => c.Name == "NeckHi").First()?.GetTransform();
-
-			// Find the trees and store them in a list
-			_trees = new List<SceneNodeContainer>();
-			_trees.AddRange(_scene.Children.FindNodes(c => c.Name.Contains("Tree")));
+			_wuggyTransform = _scene.Children.FindNodes(c => c.Name == "bike").First()?.GetTransform();
+			_wgyWheelBigR = _scene.Children.FindNodes(c => c.Name == "wheelback").First()?.GetTransform();
+			_wgyWheelBigL = _scene.Children.FindNodes(c => c.Name == "wheelfront").First()?.GetTransform();
+			_wgyWall = _scene.Children.FindNodes(c => c.Name == "Wall").First()?.GetTransform();
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -278,7 +272,6 @@ namespace Fusee.Tutorial.Core {
 			}
 
 			float speed = 10;
-			float wuggySpeed = -speed;
 
 			// Wuggy XForm
 			float wuggyYaw = _wuggyTransform.Rotation.y;
@@ -300,34 +293,33 @@ namespace Fusee.Tutorial.Core {
 			}
 			wuggyYaw = NormRot(wuggyYaw);
 			float3 wuggyPos = _wuggyTransform.Translation;
-			wuggyPos += new float3((float)Sin(wuggyYaw), 0, (float)Cos(wuggyYaw)) * wuggySpeed;
+			wuggyPos += new float3((float)Sin(wuggyYaw), 0, (float)Cos(wuggyYaw)) * speed;
 			_wuggyTransform.Rotation = new float3(0, wuggyYaw, 0);
 			_wuggyTransform.Translation = wuggyPos;
 
 			// Wuggy Wheels
-			_wgyWheelBigR.Rotation += new float3(wuggySpeed * 0.008f, 0, 0);
-			_wgyWheelBigL.Rotation += new float3(wuggySpeed * 0.008f, 0, 0);
-			_wgyWheelSmallR.Rotation = new float3(_wgyWheelSmallR.Rotation.x + wuggySpeed * 0.016f, 0, 0);
-			_wgyWheelSmallL.Rotation = new float3(_wgyWheelSmallR.Rotation.x + wuggySpeed * 0.016f, 0, 0);
+			_wgyWheelBigR.Rotation += new float3(speed * 0.008f, 0, 0);
+			_wgyWheelBigL.Rotation += new float3(speed * 0.008f, 0, 0);
 
-			// SCRATCH:
-			// _guiSubText.Text = target.Name + " " + target.GetComponent<TargetComponent>().ExtraInfo;
-			SceneNodeContainer target = GetClosest();
-			float camYaw = 0;
-			if (target != null) {
-				float3 delta = target.GetTransform().Translation - _wuggyTransform.Translation;
-				camYaw = (float)Atan2(-delta.x, -delta.z) - _wuggyTransform.Rotation.y;
+			// draw wall 
+			_wgyWall.Rotation = new float3(0, wuggyYaw, 0);
+			float val = 0.1f;
+			if (wuggyYaw < M.PiOver2 + val && wuggyYaw > M.PiOver2 - val) {
+				_wgyWall.Translation.x = wuggyPos.x - 200;
+				_wgyWall.Translation.z = wuggyPos.z;
+			} else if(wuggyYaw > -val && wuggyYaw < val) {
+				_wgyWall.Translation.x = wuggyPos.x;
+				_wgyWall.Translation.z = wuggyPos.z - 200;
+			} else if(wuggyYaw < -M.PiOver2 + val && wuggyYaw > -M.PiOver2 - val) {
+				_wgyWall.Translation.x = wuggyPos.x + 200;
+				_wgyWall.Translation.z = wuggyPos.z;
+			} else if(wuggyYaw > M.Pi - val && wuggyYaw < M.Pi + val) {
+				_wgyWall.Translation.x = wuggyPos.x;
+				_wgyWall.Translation.z = wuggyPos.z + 200;
 			}
+			_wgyWall.Scale.z = _wgyWall.Scale.z - 0.05f;
+			_wgyWall.Translation.z = _wgyWall.Translation.z + 5;
 
-			camYaw = NormRot(camYaw);
-			float deltaAngle = camYaw - _wgyNeckHi.Rotation.y;
-			if (deltaAngle > M.Pi)
-				deltaAngle = deltaAngle - M.TwoPi;
-			if (deltaAngle < -M.Pi)
-				deltaAngle = deltaAngle + M.TwoPi; ;
-			var newYaw = _wgyNeckHi.Rotation.y + (float)M.Clamp(deltaAngle, -0.06, 0.06);
-			newYaw = NormRot(newYaw);
-			_wgyNeckHi.Rotation = new float3(0, newYaw, 0);
 
 
 			_zoom += _zoomVel;
@@ -362,20 +354,6 @@ namespace Fusee.Tutorial.Core {
 			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered farame) on the front buffer.
 			Present();
 
-		}
-
-		private SceneNodeContainer GetClosest() {
-			float minDist = float.MaxValue;
-			SceneNodeContainer ret = null;
-			foreach (var target in _trees) {
-				var xf = target.GetTransform();
-				float dist = (_wuggyTransform.Translation - xf.Translation).Length;
-				if (dist < minDist && dist < 1000) {
-					ret = target;
-					minDist = dist;
-				}
-			}
-			return ret;
 		}
 
 		public static float NormRot(float rot) {
