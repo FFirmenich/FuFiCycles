@@ -10,14 +10,13 @@ using static System.Math;
 using static Fusee.Engine.Core.Input;
 using static Fusee.Engine.Core.Time;
 using System.Diagnostics;
-using Fusee.Tutorial.Core;
+using System;
 
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production")]
 	public class FuFiCycles : RenderCanvas {
 		// angle variables
-		private static float _angleHorz = M.PiOver6 * 2.0f, _angleVert = -M.PiOver6 * 0.5f,
-							 _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
+		private static float _angleHorz = M.PiOver6 * 2.0f, _angleVert = -M.PiOver6 * 0.5f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
 		private static float2 _offset;
 		private static float2 _offsetInit;
 
@@ -25,6 +24,7 @@ namespace Fusee.FuFiCycles.Core {
 		private const float Damping = 0.8f;
 
 		private SceneContainer _scene;
+		private SceneContainer _wall;
 		private float4x4 _sceneScale;
 		private float4x4 _projection;
 		private bool _twoTouchRepeated;
@@ -34,20 +34,29 @@ namespace Fusee.FuFiCycles.Core {
 		private TransformComponent _cycleTransform;
 		private TransformComponent _cycleWheelR;
 		private TransformComponent _cycleWheelL;
+
 		private TransformComponent _cycleWall;
+		private List<SceneNodeContainer> _walls = new List<SceneNodeContainer>();
 
 		private Dictionary<float3, int> _cyclePositions = new Dictionary<float3, int>();
-		
+
+		private int _mapSize = 0;
+		private float[,] _mapMirror;
+
 		private Renderer _renderer;
 
 		private bool aPressed = false;
 		private bool dPressed = false;
+		private bool _firstFrame = true;
+
+		float _speed = 5;
 
 
 		// Init is called on startup. 
 		public override void Init() {
 			// Load the scene
 			_scene = AssetStorage.Get<SceneContainer>("CycleLand.fus");
+			_wall = AssetStorage.Get<SceneContainer>("Wall.fus");
 			_sceneScale = float4x4.CreateScale(0.04f);
 
 			// Instantiate our self-written renderer
@@ -55,9 +64,13 @@ namespace Fusee.FuFiCycles.Core {
 
 			// Find some transform nodes we want to manipulate in the scene
 			_cycleTransform = _scene.Children.FindNodes(c => c.Name == "bike").First()?.GetTransform();
-			_cycleWheelR = _scene.Children.FindNodes(c => c.Name == "wheelback").First()?.GetTransform();
-			_cycleWheelL = _scene.Children.FindNodes(c => c.Name == "wheelfront").First()?.GetTransform();
-			_cycleWall = _scene.Children.FindNodes(c => c.Name == "Wall").First()?.GetTransform();
+			_cycleWheelR = _scene.Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
+			_cycleWheelL = _scene.Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
+
+			// set Map Size
+			MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
+			_mapSize = 5000;
+			_mapMirror = new float[_mapSize, _mapSize];
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -113,13 +126,14 @@ namespace Fusee.FuFiCycles.Core {
 				}
 			}
 
-			float speed = 10;
+			bool directionChanged = false;
 
 			// Wuggy XForm
 			float cycleYaw = _cycleTransform.Rotation.y;
 			if (Keyboard.GetKey(KeyCodes.A)) {
 				if (aPressed == false) {
 					cycleYaw = cycleYaw - M.PiOver2;
+					directionChanged = true;
 				}
 				aPressed = true;
 			} else {
@@ -128,6 +142,7 @@ namespace Fusee.FuFiCycles.Core {
 			if (Keyboard.GetKey(KeyCodes.D)) {
 				if (dPressed == false) {
 					cycleYaw = cycleYaw + M.PiOver2;
+					directionChanged = true;
 				}
 				dPressed = true;
 			} else {
@@ -135,46 +150,58 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			cycleYaw = NormRot(cycleYaw);
 			float3 cyclePos = _cycleTransform.Translation;
-			cyclePos += new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * speed;
+			cyclePos += new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * _speed;
 			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
 			_cycleTransform.Translation = cyclePos;
 
-			// Wuggy Wheels
-			_cycleWheelR.Rotation += new float3(speed * 0.008f, 0, 0);
-			_cycleWheelL.Rotation += new float3(speed * 0.008f, 0, 0);
+			// Wheels
+			_cycleWheelR.Rotation += new float3(_speed * 0.008f, 0, 0);
+			_cycleWheelL.Rotation += new float3(_speed * 0.008f, 0, 0);
 
-			//fill hashmap of positions
-			int reserved;
-			if(!_cyclePositions.TryGetValue(cyclePos, out reserved)) {
-				_cyclePositions[cyclePos] = 1;
-			} else {
-				Debug.WriteLine("crash");
+			//Write Position into Array and throw crash if cycle collides with a wall or map border
+			int x = (int)System.Math.Floor(cyclePos.x + 0.5);
+			int z = (int)System.Math.Floor(cyclePos.z + 0.5);
+			try {
+				if (_mapMirror[x, z] == 0) {
+					_mapMirror[x, z] = 1;
+				} else {
+					// If value at _mapMirror[x, z] isn't 0, there is already a wall
+					collision();
+				}
+			} catch (IndexOutOfRangeException e) {
+				// If Index is out of Range a Cycle has collided with the border of the map
+				collision();
 			}
 			
+			// get Wall if new direction
+			if(directionChanged || _firstFrame) {
+				_cycleWall = getWall(x, z);
+			}
 
-			// draw wall 
-			/*
-			_cycleWall.Rotation = new float3(0, cycleYaw, 0);
+			// draw wall
+			// if wall is under ground, move it up
+			// TODO: check if countdown is finished and game started
+			if (_cycleWall.Translation.y == -150) {
+				_cycleWall.Translation.y = 0;
+			}
+
+			// draw wall
 			float val = 0.1f;
 			if (cycleYaw < M.PiOver2 + val && cycleYaw > M.PiOver2 - val) {
-				_cycleWall.Translation.x = cyclePos.x - 200;
-				_cycleWall.Translation.z = cyclePos.z;
-			} else if(cycleYaw > -val && cycleYaw < val) {
-				_cycleWall.Translation.x = cyclePos.x;
-				_cycleWall.Translation.z = cyclePos.z - 200;
-			} else if(cycleYaw < -M.PiOver2 + val && cycleYaw > -M.PiOver2 - val) {
-				_cycleWall.Translation.x = cyclePos.x + 200;
-				_cycleWall.Translation.z = cyclePos.z;
-			} else if(cycleYaw > M.Pi - val && cycleYaw < M.Pi + val) {
-				_cycleWall.Translation.x = cyclePos.x;
-				_cycleWall.Translation.z = cyclePos.z + 200;
+				_cycleWall.Translation.x += _speed / 2;
+				_cycleWall.Scale.x = _cycleWall.Scale.x - _speed;
+			} else if (cycleYaw > -val && cycleYaw < val) {
+				_cycleWall.Translation.z += _speed / 2;
+				_cycleWall.Scale.z = _cycleWall.Scale.z - _speed;
+			} else if (cycleYaw < -M.PiOver2 + val && cycleYaw > -M.PiOver2 - val) {
+				_cycleWall.Translation.x -= _speed / 2;
+				_cycleWall.Scale.x = _cycleWall.Scale.x - _speed;
+			} else if (cycleYaw > M.Pi - val && cycleYaw < M.Pi + val) {
+				_cycleWall.Translation.z -= _speed / 2;
+				_cycleWall.Scale.z = _cycleWall.Scale.z - _speed;
+				Debug.WriteLine("hinten");
 			}
-			_cycleWall.Scale.z = _cycleWall.Scale.z - 0.05f;
-			_cycleWall.Translation.z = _cycleWall.Translation.z + 5;
-			*/
-
 			
-
 			_zoom += _zoomVel;
 			// Limit zoom
 			if (_zoom < 80)
@@ -203,10 +230,14 @@ namespace Fusee.FuFiCycles.Core {
 
 
 			_renderer.Traverse(_scene.Children);
+			_renderer.Traverse(_wall.Children);
 
 			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered farame) on the front buffer.
 			Present();
 
+			if (_firstFrame) {
+				_firstFrame = false;
+			}
 		}
 
 		public static float NormRot(float rot) {
@@ -231,6 +262,28 @@ namespace Fusee.FuFiCycles.Core {
 			// Front clipping happens at 1 (Objects nearer than 1 world unit get clipped)
 			// Back clipping happens at 2000 (Anything further away from the camera than 2000 world units gets clipped, polygons will be cut)
 			_projection = float4x4.CreatePerspectiveFieldOfView(M.PiOver4, aspectRatio, 1, 20000);
+		}
+
+		private void collision() {
+			Debug.WriteLine("collision");
+			_speed = 0;
+		}
+
+		private TransformComponent getWall(int x, int z) {
+			SceneNodeContainer w = new SceneNodeContainer();
+			w.Name = "wall";
+			w.Components = new List<SceneComponentContainer>();
+			TransformComponent tc = new TransformComponent();
+			tc.Translation = new float3(x, 0, z);
+			tc.Scale = new float3(1, 1, 1);
+			w.Components.Add(tc);
+			w.Components.Add(_wall.Children.FindNodes(c => c.Name == "wall").First().GetMesh());
+
+			_wall.Children.Add(w);
+
+			_walls.Add(w);
+
+			return _walls.Last().GetTransform();
 		}
 
 	}

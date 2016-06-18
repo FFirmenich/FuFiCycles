@@ -8,7 +8,7 @@ JSIL.DeclareNamespace("ProtoBuf");
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.TimeSpanScale", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: false, 
     IsFlags: false, 
   }, 
@@ -28,49 +28,49 @@ JSIL.MakeEnum(
 (function BclHelpers$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.DateTime)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.DateTime)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T08 = function () {
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Decimal)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Decimal)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Guid)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Guid)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T0F = function () {
     return ($T0F = JSIL.Memoize($asm0E.ProtoBuf.BclHelpers_NetObjectOptions)) ();
@@ -79,19 +79,19 @@ JSIL.MakeEnum(
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.NetObjectCache)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T11 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T12 = function () {
     return ($T12 = JSIL.Memoize($asm0E.ProtoBuf.ProtoException)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm0D.System.TimeSpan)) ();
+    return ($T15 = JSIL.Memoize($asm14.System.TimeSpan)) ();
   };
   var $T16 = function () {
     return ($T16 = JSIL.Memoize($asm0E.ProtoBuf.TimeSpanScale)) ();
@@ -103,53 +103,53 @@ JSIL.MakeEnum(
     return ($T18 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize(System.Array.Of($asm0D.System.Int32))) ();
+    return ($T1A = JSIL.Memoize(System.Array.Of($asm14.System.Int32))) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T1B = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.DateTime"), [
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32")
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.DateTime"), [
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Decimal"), [
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Boolean"), 
-        $asm0D.TypeRef("System.Byte")
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Decimal"), [
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Boolean"), 
+        $asm14.TypeRef("System.Byte")
       ]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Guid"), [
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int16"), 
-        $asm0D.TypeRef("System.Int16"), $asm0D.TypeRef("System.Byte"), 
-        $asm0D.TypeRef("System.Byte"), $asm0D.TypeRef("System.Byte"), 
-        $asm0D.TypeRef("System.Byte"), $asm0D.TypeRef("System.Byte"), 
-        $asm0D.TypeRef("System.Byte"), $asm0D.TypeRef("System.Byte"), 
-        $asm0D.TypeRef("System.Byte")
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Guid"), [
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int16"), 
+        $asm14.TypeRef("System.Int16"), $asm14.TypeRef("System.Byte"), 
+        $asm14.TypeRef("System.Byte"), $asm14.TypeRef("System.Byte"), 
+        $asm14.TypeRef("System.Byte"), $asm14.TypeRef("System.Byte"), 
+        $asm14.TypeRef("System.Byte"), $asm14.TypeRef("System.Byte"), 
+        $asm14.TypeRef("System.Byte")
       ]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.TimeSpan"), [$asm0D.TypeRef("System.DateTime"), $asm0D.TypeRef("System.DateTime")]))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.TimeSpan"), [$asm14.TypeRef("System.DateTime"), $asm14.TypeRef("System.DateTime")]))) ();
   };
 
 
@@ -702,36 +702,36 @@ JSIL.MakeEnum(
     $ = $ib;
 
     $.Method({Static:true , Public:true }, "GetUninitializedObject", 
-      new JSIL.MethodSignature($.Object, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Object, [$asm14.TypeRef("System.Type")]), 
       BclHelpers_GetUninitializedObject
     );
 
     $.Method({Static:true , Public:true }, "ReadDateTime", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.DateTime"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.DateTime"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
       BclHelpers_ReadDateTime
     );
 
     $.Method({Static:true , Public:true }, "ReadDecimal", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Decimal"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Decimal"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
       BclHelpers_ReadDecimal
     );
 
     $.Method({Static:true , Public:true }, "ReadGuid", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Guid"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Guid"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
       BclHelpers_ReadGuid
     );
 
     $.Method({Static:true , Public:true }, "ReadNetObject", 
       new JSIL.MethodSignature($.Object, [
           $.Object, $asm0E.TypeRef("ProtoBuf.ProtoReader"), 
-          $.Int32, $asm0D.TypeRef("System.Type"), 
+          $.Int32, $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.BclHelpers+NetObjectOptions")
         ]), 
       BclHelpers_ReadNetObject
     );
 
     $.Method({Static:true , Public:true }, "ReadTimeSpan", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.TimeSpan"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.TimeSpan"), [$asm0E.TypeRef("ProtoBuf.ProtoReader")]), 
       BclHelpers_ReadTimeSpan
     );
 
@@ -741,17 +741,17 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "WriteDateTime", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.DateTime"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.DateTime"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
       BclHelpers_WriteDateTime
     );
 
     $.Method({Static:true , Public:true }, "WriteDecimal", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Decimal"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Decimal"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
       BclHelpers_WriteDecimal
     );
 
     $.Method({Static:true , Public:true }, "WriteGuid", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Guid"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Guid"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
       BclHelpers_WriteGuid
     );
 
@@ -764,7 +764,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "WriteTimeSpan", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.TimeSpan"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.TimeSpan"), $asm0E.TypeRef("ProtoBuf.ProtoWriter")]), 
       BclHelpers_WriteTimeSpan
     );
 
@@ -772,7 +772,7 @@ JSIL.MakeEnum(
 
     $.Constant({Static:true , Public:false}, "FieldTimeSpanScale", $.Int32, 2);
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "EpochOrigin", $asm0D.TypeRef("System.DateTime"));
+    $.Field({Static:true , Public:false, ReadOnly:true }, "EpochOrigin", $asm14.TypeRef("System.DateTime"));
 
     $.Constant({Static:true , Public:false}, "FieldDecimalLow", $.Int32, 1);
 
@@ -798,7 +798,7 @@ JSIL.MakeEnum(
 
 
     function BclHelpers__cctor () {
-      $thisType.EpochOrigin = new $asm0D.System.DateTime();
+      $thisType.EpochOrigin = new $asm14.System.DateTime();
       $thisType.EpochOrigin = $S00().Construct(1970, 1, 1, 0, 0, 0, 0);
     }; 
 
@@ -818,7 +818,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.BclHelpers+NetObjectOptions", 
-    BaseType: $asm0D.TypeRef("System.Byte"), 
+    BaseType: $asm14.TypeRef("System.Byte"), 
     IsPublic: false, 
     IsFlags: true, 
   }, 
@@ -836,46 +836,46 @@ JSIL.MakeEnum(
 (function BufferExtension$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.IO.MemoryStream)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.IO.MemoryStream)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T01 = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.IO.EndOfStreamException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.IO.EndOfStreamException)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.MemoryStream"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.MemoryStream"), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.MemoryStream"), [$jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")])]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.MemoryStream"), [$jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")])]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.EndOfStreamException"), null))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.EndOfStreamException"), null))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
 
 
@@ -952,7 +952,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.BufferExtension", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -966,25 +966,25 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "ProtoBuf.IExtension.BeginAppend", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.IO.Stream")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.IO.Stream")), 
       BufferExtension_ProtoBuf_IExtension_BeginAppend
     )
       .Overrides($asm0E.TypeRef("ProtoBuf.IExtension"), "BeginAppend");
 
     $.Method({Static:false, Public:false, Virtual:true }, "ProtoBuf.IExtension.BeginQuery", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.IO.Stream")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.IO.Stream")), 
       BufferExtension_ProtoBuf_IExtension_BeginQuery
     )
       .Overrides($asm0E.TypeRef("ProtoBuf.IExtension"), "BeginQuery");
 
     $.Method({Static:false, Public:false, Virtual:true }, "ProtoBuf.IExtension.EndAppend", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), $.Boolean]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), $.Boolean]), 
       BufferExtension_ProtoBuf_IExtension_EndAppend
     )
       .Overrides($asm0E.TypeRef("ProtoBuf.IExtension"), "EndAppend");
 
     $.Method({Static:false, Public:false, Virtual:true }, "ProtoBuf.IExtension.EndQuery", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.IO.Stream")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.IO.Stream")), 
       BufferExtension_ProtoBuf_IExtension_EndQuery
     )
       .Overrides($asm0E.TypeRef("ProtoBuf.IExtension"), "EndQuery");
@@ -1012,22 +1012,22 @@ JSIL.MakeEnum(
 (function BufferPool$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T02 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T04 = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
@@ -1110,7 +1110,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.BufferPool", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -1151,7 +1151,7 @@ JSIL.MakeEnum(
     $.Constant({Static:true , Public:false}, "BufferLength", $.Int32, 1024);
 
     $.Field({Static:true , Public:false, ReadOnly:true }, "pool", $jsilcore.TypeRef("System.Array", [$.Object]), function ($pi) {
-        return JSIL.Array.New($asm0D.System.Object, 20);
+        return JSIL.Array.New($asm14.System.Object, 20);
       });
 
 
@@ -1175,7 +1175,7 @@ JSIL.MakeEnum(
 (function ProtoBeforeSerializationAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
 
 
@@ -1184,7 +1184,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoBeforeSerializationAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1203,7 +1203,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Method]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Method]; });
 
 })();
 
@@ -1212,7 +1212,7 @@ JSIL.MakeEnum(
 (function ProtoAfterSerializationAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
 
 
@@ -1221,7 +1221,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoAfterSerializationAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1240,7 +1240,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Method]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Method]; });
 
 })();
 
@@ -1249,7 +1249,7 @@ JSIL.MakeEnum(
 (function ProtoBeforeDeserializationAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
 
 
@@ -1258,7 +1258,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoBeforeDeserializationAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1277,7 +1277,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Method]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Method]; });
 
 })();
 
@@ -1286,7 +1286,7 @@ JSIL.MakeEnum(
 (function ProtoAfterDeserializationAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
 
 
@@ -1295,7 +1295,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoAfterDeserializationAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1314,7 +1314,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Method]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Method]; });
 
 })();
 
@@ -1323,7 +1323,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.DataFormat", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1341,13 +1341,13 @@ JSIL.MakeEnum(
 (function Extensible$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.IExtensible)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
@@ -1362,10 +1362,10 @@ JSIL.MakeEnum(
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm0E.ProtoBuf.IExtension)) ();
@@ -1374,50 +1374,50 @@ JSIL.MakeEnum(
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.BufferExtension)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Collections.IEnumerator)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Collections.IEnumerable)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Collections.IEnumerable)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm0D.TypeRef("System.Int32"), 
+        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm14.TypeRef("System.Int32"), 
         $asm0E.TypeRef("ProtoBuf.DataFormat"), "!!0"
       ], ["TValue"]))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.MethodSignature("!!0", [
-        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm0D.TypeRef("System.Int32"), 
+        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm14.TypeRef("System.Int32"), 
         $asm0E.TypeRef("ProtoBuf.DataFormat")
       ], ["TValue"]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [
-        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm0D.TypeRef("System.Int32"), 
+    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [
+        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm14.TypeRef("System.Int32"), 
         $asm0E.TypeRef("ProtoBuf.DataFormat"), $jsilcore.TypeRef("JSIL.Reference", ["!!0"])
       ], ["TValue"]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [
-        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm0D.TypeRef("System.Int32"), 
-        $asm0E.TypeRef("ProtoBuf.DataFormat"), $asm0D.TypeRef("System.Boolean"), 
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [
+        $asm0E.TypeRef("ProtoBuf.IExtensible"), $asm14.TypeRef("System.Int32"), 
+        $asm0E.TypeRef("ProtoBuf.DataFormat"), $asm14.TypeRef("System.Boolean"), 
         $jsilcore.TypeRef("JSIL.Reference", ["!!0"])
       ], ["TValue"]))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.MoveNext)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.Collections.IEnumerable.GetEnumerator)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.Collections.IEnumerable.GetEnumerator)) ();
   };
   var $IM03 = function () {
-    return ($IM03 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.get_Current)) ();
+    return ($IM03 = JSIL.Memoize($asm14.System.Collections.IEnumerator.get_Current)) ();
   };
 
 
@@ -1526,8 +1526,8 @@ JSIL.MakeEnum(
   }; 
 
   function Extensible_TryGetValue$b1$0A (TValue, instance, tag, format, allowDefinedTag, /* ref */ value) {
-    var $im00 = $asm0D.System.Collections.Generic.IEnumerable$b1.Of(TValue).GetEnumerator;
-    var $im01 = $asm0D.System.Collections.Generic.IEnumerator$b1.Of(TValue).get_Current;
+    var $im00 = $asm14.System.Collections.Generic.IEnumerable$b1.Of(TValue).GetEnumerator;
+    var $im01 = $asm14.System.Collections.Generic.IEnumerator$b1.Of(TValue).get_Current;
     value.set((
         TValue.IsValueType
            ? JSIL.CreateInstanceOfType(TValue)
@@ -1585,7 +1585,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Extensible", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1647,12 +1647,12 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "GetValues", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm0E.TypeRef("ProtoBuf.IExtensible"), $.Int32], ["TValue"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm0E.TypeRef("ProtoBuf.IExtensible"), $.Int32], ["TValue"]), 
       Extensible_GetValues$b1$06
     );
 
     $.Method({Static:true , Public:true }, "GetValues", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
           $asm0E.TypeRef("ProtoBuf.IExtensible"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.DataFormat")
         ], ["TValue"]), 
@@ -1660,8 +1660,8 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "GetValues", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.IEnumerable"), [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.IEnumerable"), [
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.IExtensible"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.DataFormat")
         ]), 
@@ -1701,7 +1701,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:true }, "TryGetValue", 
       new JSIL.MethodSignature($.Boolean, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.IExtensible"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.DataFormat"), $.Boolean, 
           $jsilcore.TypeRef("JSIL.Reference", [$.Object])
@@ -1732,46 +1732,46 @@ JSIL.MakeEnum(
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.IExtensible)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.IExtension)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T0D = function () {
     return ($T0D = JSIL.Memoize($asm0E.ProtoBuf.ExtensibleUtil_$lGetExtendedValues$gd__1)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.IExtensible.GetExtensionObject)) ();
@@ -1780,7 +1780,7 @@ JSIL.MakeEnum(
     return ($IM01 = JSIL.Memoize($asm0E.ProtoBuf.IExtension.BeginAppend)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
   var $IM03 = function () {
     return ($IM03 = JSIL.Memoize($asm0E.ProtoBuf.IExtension.EndAppend)) ();
@@ -1860,7 +1860,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "GetExtendedValues", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
           $asm0E.TypeRef("ProtoBuf.IExtensible"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.DataFormat"), $.Boolean, 
           $.Boolean
@@ -1869,8 +1869,8 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "GetExtendedValues", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.IEnumerable"), [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.IEnumerable"), [
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.IExtensible"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.DataFormat"), $.Boolean, 
           $.Boolean
@@ -1889,22 +1889,22 @@ JSIL.MakeEnum(
 (function $lGetExtendedValues$gd__0$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Threading.Thread)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Threading.Thread)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Collections.IEnumerable)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Collections.IEnumerable)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.ExtensibleUtil)) ();
@@ -1913,25 +1913,25 @@ JSIL.MakeEnum(
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Collections.IEnumerator)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm0D.System.Collections.IEnumerable.GetEnumerator)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.Collections.IEnumerable.GetEnumerator)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.MoveNext)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM03 = function () {
-    return ($IM03 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.get_Current)) ();
+    return ($IM03 = JSIL.Memoize($asm14.System.Collections.IEnumerator.get_Current)) ();
   };
 
 
@@ -2034,7 +2034,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.ExtensibleUtil+<GetExtendedValues>d__0`1", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -2047,7 +2047,7 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Action($.Int32), 
       $lGetExtendedValues$gd__0$b1__ctor
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false}, "$l$gm__Finally1", 
       JSIL.MethodSignature.Void, 
@@ -2058,49 +2058,49 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Return($.Boolean), 
       $lGetExtendedValues$gd__0$b1_MoveNext
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "MoveNext");
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lTValue$g.GetEnumerator", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("TValue")]), null), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("TValue")]), null), 
       $lGetExtendedValues$gd__0$b1_System_Collections_Generic_IEnumerable$lTValue$g_GetEnumerator
     )
-      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TValue")]), "GetEnumerator")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TValue")]), "GetEnumerator")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lTValue$g.get_Current", 
       new JSIL.MethodSignature($.GenericParameter("TValue"), null), 
       $lGetExtendedValues$gd__0$b1_System_Collections_Generic_IEnumerator$lTValue$g_get_Current
     )
-      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("TValue")]), "get_Current")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("TValue")]), "get_Current")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
       $lGetExtendedValues$gd__0$b1_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lGetExtendedValues$gd__0$b1_System_Collections_IEnumerator_get_Current
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "get_Current")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "get_Current")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       $lGetExtendedValues$gd__0$b1_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       $lGetExtendedValues$gd__0$b1_System_IDisposable_Dispose
     )
-      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
@@ -2128,7 +2128,7 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:true }, "$l$g3__allowDefinedTag", $.Boolean);
 
-    $.Field({Static:false, Public:false}, "$l$gs__1", $asm0D.TypeRef("System.Collections.IEnumerator"));
+    $.Field({Static:false, Public:false}, "$l$gs__1", $asm14.TypeRef("System.Collections.IEnumerator"));
 
     $.Field({Static:false, Public:false}, "$lvalue$g5__2", $.GenericParameter("TValue"));
 
@@ -2137,17 +2137,17 @@ JSIL.MakeEnum(
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TValue")]), 
-      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("TValue")]), 
-      /* 3 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
-      /* 4 */ $asm0D.TypeRef("System.IDisposable")
+      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TValue")]), 
+      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
+      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("TValue")]), 
+      /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
+      /* 4 */ $asm14.TypeRef("System.IDisposable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -2156,10 +2156,10 @@ JSIL.MakeEnum(
 (function $lGetExtendedValues$gd__1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Threading.Thread)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Threading.Thread)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -2168,19 +2168,19 @@ JSIL.MakeEnum(
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.IExtension)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.IExtensible)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm0E.ProtoBuf.SerializationContext)) ();
@@ -2189,16 +2189,16 @@ JSIL.MakeEnum(
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.IExtension.EndQuery)) ();
@@ -2361,7 +2361,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.ExtensibleUtil+<GetExtendedValues>d__1", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -2373,7 +2373,7 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Action($.Int32), 
       $lGetExtendedValues$gd__1__ctor
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false}, "$l$gm__Finally1", 
       JSIL.MethodSignature.Void, 
@@ -2384,49 +2384,49 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Return($.Boolean), 
       $lGetExtendedValues$gd__1_MoveNext
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "MoveNext");
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lSystem.Object$g.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$.Object])), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$.Object])), 
       $lGetExtendedValues$gd__1_System_Collections_Generic_IEnumerable$lSystem_Object$g_GetEnumerator
     )
-      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0D.TypeRef("System.Object")]), "GetEnumerator")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm14.TypeRef("System.Object")]), "GetEnumerator")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lSystem.Object$g.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lGetExtendedValues$gd__1_System_Collections_Generic_IEnumerator$lSystem_Object$g_get_Current
     )
-      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm0D.TypeRef("System.Object")]), "get_Current")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm14.TypeRef("System.Object")]), "get_Current")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
       $lGetExtendedValues$gd__1_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lGetExtendedValues$gd__1_System_Collections_IEnumerator_get_Current
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "get_Current")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "get_Current")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       $lGetExtendedValues$gd__1_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       $lGetExtendedValues$gd__1_System_IDisposable_Dispose
     )
-      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose")
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose")
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
@@ -2438,9 +2438,9 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:true }, "$l$g3__model", $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"));
 
-    $.Field({Static:false, Public:false}, "type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false}, "type", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:true }, "$l$g3__type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:true }, "$l$g3__type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false}, "instance", $asm0E.TypeRef("ProtoBuf.IExtensible"));
 
@@ -2464,7 +2464,7 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:false}, "$lextn$g5__1", $asm0E.TypeRef("ProtoBuf.IExtension"));
 
-    $.Field({Static:false, Public:false}, "$lstream$g5__2", $asm0D.TypeRef("System.IO.Stream"));
+    $.Field({Static:false, Public:false}, "$lstream$g5__2", $asm14.TypeRef("System.IO.Stream"));
 
     $.Field({Static:false, Public:false}, "$lvalue$g5__3", $.Object);
 
@@ -2477,17 +2477,17 @@ JSIL.MakeEnum(
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$.Object]), 
-      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$.Object]), 
-      /* 3 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
-      /* 4 */ $asm0D.TypeRef("System.IDisposable")
+      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.Object]), 
+      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
+      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$.Object]), 
+      /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
+      /* 4 */ $asm14.TypeRef("System.IDisposable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -2496,109 +2496,106 @@ JSIL.MakeEnum(
 (function Helpers$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Text.StringBuilder)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Text.StringBuilder)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T02 = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Buffer)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Buffer)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T07 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize(System.Array.Of($asm0D.System.Type))) ();
+    return ($T09 = JSIL.Memoize(System.Array.Of($asm14.System.Type))) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Reflection.ConstructorInfo)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Reflection.ConstructorInfo)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Reflection.BindingFlags)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Reflection.BindingFlags)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.PropertyInfo))) ();
+    return ($T0F = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.PropertyInfo))) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.FieldInfo))) ();
+    return ($T10 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.FieldInfo))) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MemberInfo))) ();
+    return ($T11 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MemberInfo))) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.Array)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.Array)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm0D.System.TypeCode)) ();
+    return ($T15 = JSIL.Memoize($asm14.System.TypeCode)) ();
   };
   var $T16 = function () {
     return ($T16 = JSIL.Memoize($asm0E.ProtoBuf.ProtoTypeCode)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0D.System.TimeSpan)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.TimeSpan)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm0D.System.Guid)) ();
+    return ($T18 = JSIL.Memoize($asm14.System.Guid)) ();
   };
   var $T19 = function () {
     return ($T19 = JSIL.Memoize($asm0F.System.Uri)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm0D.System.Nullable)) ();
+    return ($T1A = JSIL.Memoize($asm14.System.Nullable)) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T1B = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T1C = function () {
-    return ($T1C = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T1C = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T1D = function () {
-    return ($T1D = JSIL.Memoize($asm0D.System.Enum)) ();
+    return ($T1D = JSIL.Memoize($asm14.System.Enum)) ();
   };
   var $T1E = function () {
-    return ($T1E = JSIL.Memoize(System.Array.Of($asm0D.System.Int32))) ();
+    return ($T1E = JSIL.Memoize(System.Array.Of($asm14.System.Int32))) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Reflection.BindingFlags")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.Reflection.BindingFlags")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0D.TypeRef("System.String"), $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Type")])]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm14.TypeRef("System.String"), $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Type")])]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.PropertyInfo"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Reflection.BindingFlags")]))) ();
-  };
-  var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.PropertyInfo"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.Reflection.BindingFlags")]))) ();
   };
 
 
@@ -2812,7 +2809,7 @@ JSIL.MakeEnum(
   }; 
 
   function Helpers_IsAssignableFrom (target, type) {
-    return $S03().CallVirtual("IsAssignableFrom", null, target, type);
+    return target.IsAssignableFrom(type);
   }; 
 
   function Helpers_IsEnum (type) {
@@ -2869,7 +2866,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Helpers", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -2883,7 +2880,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "AppendLine", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Text.StringBuilder")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Text.StringBuilder")]), 
       Helpers_AppendLine
     );
 
@@ -2900,7 +2897,7 @@ JSIL.MakeEnum(
       new JSIL.MethodSignature(null, [$.Boolean, $.String]), 
       Helpers_DebugAssert$00
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
+      .Attribute($asm14.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
 
     $.Method({Static:true , Public:true }, "DebugAssert", 
       new JSIL.MethodSignature(null, [
@@ -2909,111 +2906,111 @@ JSIL.MakeEnum(
         ]), 
       Helpers_DebugAssert$01
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; })
+      .Attribute($asm14.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; })
       .Parameter(2, "args", function (_) {
-          _.Attribute($asm0D.TypeRef("System.ParamArrayAttribute"))
+          _.Attribute($asm14.TypeRef("System.ParamArrayAttribute"))
         });
 
     $.Method({Static:true , Public:true }, "DebugAssert", 
       JSIL.MethodSignature.Action($.Boolean), 
       Helpers_DebugAssert$02
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
+      .Attribute($asm14.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
 
     $.Method({Static:true , Public:true }, "DebugWriteLine", 
       new JSIL.MethodSignature(null, [$.String, $.Object]), 
       Helpers_DebugWriteLine$03
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
+      .Attribute($asm14.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
 
     $.Method({Static:true , Public:true }, "DebugWriteLine", 
       JSIL.MethodSignature.Action($.String), 
       Helpers_DebugWriteLine$04
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
+      .Attribute($asm14.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["DEBUG"]; });
 
     $.Method({Static:true , Public:false}, "GetConstructor", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.ConstructorInfo"), [
-          $asm0D.TypeRef("System.Type"), $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.ConstructorInfo"), [
+          $asm14.TypeRef("System.Type"), $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Type")]), 
           $.Boolean
         ]), 
       Helpers_GetConstructor
     );
 
     $.Method({Static:true , Public:false}, "GetConstructors", 
-      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.ConstructorInfo")]), [$asm0D.TypeRef("System.Type"), $.Boolean]), 
+      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.ConstructorInfo")]), [$asm14.TypeRef("System.Type"), $.Boolean]), 
       Helpers_GetConstructors
     );
 
     $.Method({Static:true , Public:false}, "GetGetMethod", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [
-          $asm0D.TypeRef("System.Reflection.PropertyInfo"), $.Boolean, 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [
+          $asm14.TypeRef("System.Reflection.PropertyInfo"), $.Boolean, 
           $.Boolean
         ]), 
       Helpers_GetGetMethod
     );
 
     $.Method({Static:true , Public:false}, "GetInstanceFieldsAndProperties", 
-      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MemberInfo")]), [$asm0D.TypeRef("System.Type"), $.Boolean]), 
+      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")]), [$asm14.TypeRef("System.Type"), $.Boolean]), 
       Helpers_GetInstanceFieldsAndProperties
     );
 
     $.Method({Static:true , Public:false}, "GetInstanceMethod", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0D.TypeRef("System.Type"), $.String]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm14.TypeRef("System.Type"), $.String]), 
       Helpers_GetInstanceMethod$05
     );
 
     $.Method({Static:true , Public:false}, "GetInstanceMethod", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [
-          $asm0D.TypeRef("System.Type"), $.String, 
-          $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Type")])
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [
+          $asm14.TypeRef("System.Type"), $.String, 
+          $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Type")])
         ]), 
       Helpers_GetInstanceMethod$06
     );
 
     $.Method({Static:true , Public:false}, "GetMemberType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$asm0D.TypeRef("System.Reflection.MemberInfo")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$asm14.TypeRef("System.Reflection.MemberInfo")]), 
       Helpers_GetMemberType
     );
 
     $.Method({Static:true , Public:false}, "GetProperty", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.PropertyInfo"), [
-          $asm0D.TypeRef("System.Type"), $.String, 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.PropertyInfo"), [
+          $asm14.TypeRef("System.Type"), $.String, 
           $.Boolean
         ]), 
       Helpers_GetProperty
     );
 
     $.Method({Static:true , Public:false}, "GetSetMethod", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [
-          $asm0D.TypeRef("System.Reflection.PropertyInfo"), $.Boolean, 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [
+          $asm14.TypeRef("System.Reflection.PropertyInfo"), $.Boolean, 
           $.Boolean
         ]), 
       Helpers_GetSetMethod
     );
 
     $.Method({Static:true , Public:false}, "GetStaticMethod", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0D.TypeRef("System.Type"), $.String]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm14.TypeRef("System.Type"), $.String]), 
       Helpers_GetStaticMethod
     );
 
     $.Method({Static:true , Public:true }, "GetTypeCode", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.ProtoTypeCode"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.ProtoTypeCode"), [$asm14.TypeRef("System.Type")]), 
       Helpers_GetTypeCode
     );
 
     $.Method({Static:true , Public:false}, "GetUnderlyingType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$asm14.TypeRef("System.Type")]), 
       Helpers_GetUnderlyingType
     );
 
     $.Method({Static:true , Public:false}, "IsAssignableFrom", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type")]), 
       Helpers_IsAssignableFrom
     );
 
     $.Method({Static:true , Public:false}, "IsEnum", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       Helpers_IsEnum
     );
 
@@ -3033,17 +3030,17 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "IsSubclassOf", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type")]), 
       Helpers_IsSubclassOf
     );
 
     $.Method({Static:true , Public:false}, "IsValueType", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       Helpers_IsValueType
     );
 
     $.Method({Static:true , Public:false}, "ParseEnum", 
-      new JSIL.MethodSignature($.Object, [$asm0D.TypeRef("System.Type"), $.String]), 
+      new JSIL.MethodSignature($.Object, [$asm14.TypeRef("System.Type"), $.String]), 
       Helpers_ParseEnum
     );
 
@@ -3056,10 +3053,10 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Action($.String), 
       Helpers_TraceWriteLine
     )
-      .Attribute($asm0D.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["TRACE"]; });
+      .Attribute($asm14.TypeRef("System.Diagnostics.ConditionalAttribute"), function () { return ["TRACE"]; });
 
-    $.Field({Static:true , Public:true , ReadOnly:true }, "EmptyTypes", $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Type")]), function ($pi) {
-        return JSIL.Array.New($asm0D.System.Type, 0);
+    $.Field({Static:true , Public:true , ReadOnly:true }, "EmptyTypes", $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Type")]), function ($pi) {
+        return JSIL.Array.New($asm14.System.Type, 0);
       });
 
 
@@ -3083,7 +3080,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.ProtoTypeCode", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: false, 
     IsFlags: false, 
   }, 
@@ -3124,10 +3121,10 @@ JSIL.MakeInterface(
 
 JSIL.MakeInterface(
   "ProtoBuf.IExtension", true, [], function ($) {
-    $.Method({}, "BeginAppend", JSIL.MethodSignature.Return($asm0D.TypeRef("System.IO.Stream")));
-    $.Method({}, "EndAppend", new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), $.Boolean]));
-    $.Method({}, "BeginQuery", JSIL.MethodSignature.Return($asm0D.TypeRef("System.IO.Stream")));
-    $.Method({}, "EndQuery", JSIL.MethodSignature.Action($asm0D.TypeRef("System.IO.Stream")));
+    $.Method({}, "BeginAppend", JSIL.MethodSignature.Return($asm14.TypeRef("System.IO.Stream")));
+    $.Method({}, "EndAppend", new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), $.Boolean]));
+    $.Method({}, "BeginQuery", JSIL.MethodSignature.Return($asm14.TypeRef("System.IO.Stream")));
+    $.Method({}, "EndQuery", JSIL.MethodSignature.Action($asm14.TypeRef("System.IO.Stream")));
     $.Method({}, "GetLength", JSIL.MethodSignature.Return($.Int32));
   }, []);
 
@@ -3136,7 +3133,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.ImplicitFields", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -3152,25 +3149,25 @@ JSIL.MakeEnum(
 (function NetObjectCache$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.String, $asm0D.System.Int32))) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.String, $asm14.System.Int32))) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Meta.MutableList)) ();
@@ -3179,13 +3176,13 @@ JSIL.MakeEnum(
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.ProtoException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Int32")]), null))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.Int32")]), null))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -3330,7 +3327,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.NetObjectCache", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -3381,7 +3378,7 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:false}, "trapStartIndex", $.Int32);
 
-    $.Field({Static:false, Public:false}, "stringKeys", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$.String, $.Int32]));
+    $.Field({Static:false, Public:false}, "stringKeys", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$.String, $.Int32]));
 
     $.Property({Static:false, Public:false}, "List", $asm0E.TypeRef("ProtoBuf.Meta.MutableList"));
 
@@ -3396,7 +3393,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.PrefixStyle", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -3413,28 +3410,28 @@ JSIL.MakeEnum(
 (function ProtoContractAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.ImplicitFields)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -3548,7 +3545,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoContractAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3737,7 +3734,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.$Flags("Class", "Enum", "Interface", "Struct")]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.$Flags("Class", "Enum", "Interface", "Struct")]; });
 
 })();
 
@@ -3746,7 +3743,7 @@ JSIL.MakeEnum(
 (function ProtoConverterAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
 
 
@@ -3755,7 +3752,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoConverterAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3774,7 +3771,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Method]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Method]; });
 
 })();
 
@@ -3783,13 +3780,13 @@ JSIL.MakeEnum(
 (function ProtoEnumAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
 
 
@@ -3819,7 +3816,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoEnumAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3873,7 +3870,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Field]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Field]; });
 
 })();
 
@@ -3882,13 +3879,13 @@ JSIL.MakeEnum(
 (function ProtoException$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Exception")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.Exception")]))) ();
   };
 
 
@@ -3905,7 +3902,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Exception"), 
+      BaseType: $asm14.TypeRef("System.Exception"), 
       Name: "ProtoBuf.ProtoException", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3924,7 +3921,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$.String, $asm0D.TypeRef("System.Exception")]), 
+      new JSIL.MethodSignature(null, [$.String, $asm14.TypeRef("System.Exception")]), 
       ProtoException__ctor$02
     );
 
@@ -3942,7 +3939,7 @@ JSIL.MakeEnum(
 (function ProtoIgnoreAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
 
 
@@ -3951,7 +3948,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoIgnoreAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3970,7 +3967,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.$Flags("Field", "Property")]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.$Flags("Field", "Property")]; });
 
 })();
 
@@ -3979,7 +3976,7 @@ JSIL.MakeEnum(
 (function ProtoPartialIgnoreAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.ProtoIgnoreAttribute)) ();
@@ -3988,10 +3985,10 @@ JSIL.MakeEnum(
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -4036,7 +4033,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Class]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Class]; });
 
 })();
 
@@ -4045,40 +4042,40 @@ JSIL.MakeEnum(
 (function ProtoIncludeAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T08 = function () {
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -4124,7 +4121,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoIncludeAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -4133,7 +4130,7 @@ JSIL.MakeEnum(
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$.Int32, $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature(null, [$.Int32, $asm14.TypeRef("System.Type")]), 
       ProtoIncludeAttribute__ctor$00
     );
 
@@ -4148,7 +4145,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "get_KnownType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ProtoIncludeAttribute_get_KnownType
     );
 
@@ -4177,7 +4174,7 @@ JSIL.MakeEnum(
 
     $.Property({Static:false, Public:true }, "KnownTypeName", $.String);
 
-    $.Property({Static:false, Public:true }, "KnownType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "KnownType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true }, "DataFormat", $asm0E.TypeRef("ProtoBuf.DataFormat"))
       .Attribute($asm0F.TypeRef("System.ComponentModel.DefaultValueAttribute"), function () { return [$asm0E.ProtoBuf.DataFormat.Default]; });
@@ -4188,7 +4185,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.$Flags("Class", "Interface")]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.$Flags("Class", "Interface")]; });
 
 })();
 
@@ -4197,22 +4194,22 @@ JSIL.MakeEnum(
 (function ProtoMemberAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.MemberSerializationOptions)) ();
@@ -4221,10 +4218,10 @@ JSIL.MakeEnum(
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute")]))) ();
   };
 
 
@@ -4388,7 +4385,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "ProtoBuf.ProtoMemberAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -4516,7 +4513,7 @@ JSIL.MakeEnum(
       ProtoMemberAttribute_set_OverwriteList
     );
 
-    $.Field({Static:false, Public:false}, "Member", $asm0D.TypeRef("System.Reflection.MemberInfo"));
+    $.Field({Static:false, Public:false}, "Member", $asm14.TypeRef("System.Reflection.MemberInfo"));
 
     $.Field({Static:false, Public:false}, "TagIsPinned", $.Boolean);
 
@@ -4549,14 +4546,14 @@ JSIL.MakeEnum(
     $.Property({Static:false, Public:true }, "Options", $asm0E.TypeRef("ProtoBuf.MemberSerializationOptions"));
 
     $.ImplementInterfaces(
-      /* 1 */ $asm0D.TypeRef("System.IComparable"), 
-      /* 2 */ $asm0D.TypeRef("System.IComparable`1", [$.Type])
+      /* 1 */ $asm14.TypeRef("System.IComparable"), 
+      /* 2 */ $asm14.TypeRef("System.IComparable`1", [$.Type])
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.$Flags("Field", "Property")]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.$Flags("Field", "Property")]; });
 
 })();
 
@@ -4565,7 +4562,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.MemberSerializationOptions", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: true, 
   }, 
@@ -4585,10 +4582,10 @@ JSIL.MakeEnum(
 (function ProtoPartialMemberAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.ProtoMemberAttribute)) ();
@@ -4597,10 +4594,10 @@ JSIL.MakeEnum(
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -4645,7 +4642,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Class]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Class]; });
 
 })();
 
@@ -4654,13 +4651,13 @@ JSIL.MakeEnum(
 (function ProtoReader$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Text.UTF8Encoding)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Text.UTF8Encoding)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
@@ -4669,19 +4666,19 @@ JSIL.MakeEnum(
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.SerializationContext)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T07 = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
@@ -4699,7 +4696,7 @@ JSIL.MakeEnum(
     return ($T0E = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T10 = function () {
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
@@ -4708,155 +4705,155 @@ JSIL.MakeEnum(
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.ProtoException)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.Text.Encoding)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.Text.Encoding)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T15 = function () {
     return ($T15 = JSIL.Memoize($asm0E.ProtoBuf.BufferPool)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.String, $asm0D.System.String))) ();
+    return ($T16 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.String, $asm14.System.String))) ();
   };
   var $T17 = function () {
     return ($T17 = JSIL.Memoize($asm0E.ProtoBuf.NetObjectCache)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T18 = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.IO.EndOfStreamException)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.IO.EndOfStreamException)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T1A = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T1B = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T1C = function () {
-    return ($T1C = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T1C = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T1D = function () {
-    return ($T1D = JSIL.Memoize($asm0D.System.IO.MemoryStream)) ();
+    return ($T1D = JSIL.Memoize($asm14.System.IO.MemoryStream)) ();
   };
   var $T1E = function () {
-    return ($T1E = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T1E = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T1F = function () {
-    return ($T1F = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T1F = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T20 = function () {
-    return ($T20 = JSIL.Memoize($asm0D.System.BitConverter)) ();
+    return ($T20 = JSIL.Memoize($asm14.System.BitConverter)) ();
   };
   var $T21 = function () {
-    return ($T21 = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T21 = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T22 = function () {
     return ($T22 = JSIL.Memoize($asm0E.ProtoBuf.PrefixStyle)) ();
   };
   var $T23 = function () {
-    return ($T23 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T23 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T24 = function () {
-    return ($T24 = JSIL.Memoize($asm0D.System.SByte)) ();
+    return ($T24 = JSIL.Memoize($asm14.System.SByte)) ();
   };
   var $T25 = function () {
-    return ($T25 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T25 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T26 = function () {
-    return ($T26 = JSIL.Memoize($asm0D.System.OverflowException)) ();
+    return ($T26 = JSIL.Memoize($asm14.System.OverflowException)) ();
   };
   var $T27 = function () {
     return ($T27 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T28 = function () {
-    return ($T28 = JSIL.Memoize($asm0D.System.UInt16)) ();
+    return ($T28 = JSIL.Memoize($asm14.System.UInt16)) ();
   };
   var $T29 = function () {
-    return ($T29 = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T29 = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $T2A = function () {
-    return ($T2A = JSIL.Memoize($asm0D.System.IO.SeekOrigin)) ();
+    return ($T2A = JSIL.Memoize($asm14.System.IO.SeekOrigin)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Text.UTF8Encoding"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Text.UTF8Encoding"), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoReader"), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
-        $asm0E.TypeRef("ProtoBuf.SerializationContext"), $asm0D.TypeRef("System.Int32")
+        $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
+        $asm0E.TypeRef("ProtoBuf.SerializationContext"), $asm14.TypeRef("System.Int32")
       ]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.EndOfStreamException"), null))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.EndOfStreamException"), null))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]), null))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]), null))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.MemoryStream"), null))) ();
+    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.MemoryStream"), null))) ();
   };
   var $S0A = function () {
     return ($S0A = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
         $asm0E.TypeRef("ProtoBuf.SerializationContext")
       ]))) ();
   };
   var $S0B = function () {
-    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
-        $asm0D.TypeRef("System.Type")
+    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.Type")
       ]))) ();
   };
   var $S0C = function () {
-    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), [$asm0D.TypeRef("System.Int64")]))) ();
+    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), [$asm14.TypeRef("System.Int64")]))) ();
   };
   var $S0D = function () {
-    return ($S0D = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0D.TypeRef("System.UInt32")]))) ();
+    return ($S0D = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm14.TypeRef("System.UInt32")]))) ();
   };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int64"), [$asm0D.TypeRef("System.UInt64")]))) ();
+    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int64"), [$asm14.TypeRef("System.UInt64")]))) ();
   };
   var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $S10 = function () {
-    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S11 = function () {
-    return ($S11 = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), [$asm0D.TypeRef("System.Int32")]))) ();
+    return ($S11 = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), [$asm14.TypeRef("System.Int32")]))) ();
   };
   var $S12 = function () {
-    return ($S12 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S12 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S13 = function () {
-    return ($S13 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Double")]))) ();
+    return ($S13 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Double")]))) ();
   };
   var $S14 = function () {
-    return ($S14 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.OverflowException"), null))) ();
+    return ($S14 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.OverflowException"), null))) ();
   };
   var $S15 = function () {
-    return ($S15 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Object"), 
+    return ($S15 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Object"), 
         $asm0E.TypeRef("ProtoBuf.ProtoReader")
       ]))) ();
   };
@@ -4867,7 +4864,7 @@ JSIL.MakeEnum(
     return ($IM01 = JSIL.Memoize($asm0E.ProtoBuf.IExtension.BeginAppend)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
   var $IM03 = function () {
     return ($IM03 = JSIL.Memoize($asm0E.ProtoBuf.IExtension.EndAppend)) ();
@@ -6453,7 +6450,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.ProtoReader", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -6463,7 +6460,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
       ProtoReader__ctor$00
@@ -6471,14 +6468,14 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
           $asm0E.TypeRef("ProtoBuf.SerializationContext"), $.Int32
         ]), 
       ProtoReader__ctor$01
     );
 
     $.Method({Static:true , Public:false}, "AddErrorData", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Exception"), [$asm0D.TypeRef("System.Exception"), $.Type]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Exception"), [$asm14.TypeRef("System.Exception"), $.Type]), 
       ProtoReader_AddErrorData
     );
 
@@ -6509,57 +6506,57 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:false}, "Create", 
       new JSIL.MethodSignature($.Type, [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
           $asm0E.TypeRef("ProtoBuf.SerializationContext"), $.Int32
         ]), 
       ProtoReader_Create
     );
 
     $.Method({Static:false, Public:false}, "CreateException", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Exception"), [$.String]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Exception"), [$.String]), 
       ProtoReader_CreateException
     );
 
     $.Method({Static:false, Public:false}, "CreateWireTypeException", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Exception")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Exception")), 
       ProtoReader_CreateWireTypeException
     );
 
     $.Method({Static:false, Public:false}, "DeserializeType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$.String]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$.String]), 
       ProtoReader_DeserializeType
     );
 
     $.Method({Static:true , Public:true }, "DirectReadBigEndianInt32", 
-      new JSIL.MethodSignature($.Int32, [$asm0D.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($.Int32, [$asm14.TypeRef("System.IO.Stream")]), 
       ProtoReader_DirectReadBigEndianInt32
     );
 
     $.Method({Static:true , Public:true }, "DirectReadBytes", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $jsilcore.TypeRef("System.Array", [$.Byte]), 
+          $asm14.TypeRef("System.IO.Stream"), $jsilcore.TypeRef("System.Array", [$.Byte]), 
           $.Int32, $.Int32
         ]), 
       ProtoReader_DirectReadBytes$02
     );
 
     $.Method({Static:true , Public:true }, "DirectReadBytes", 
-      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Byte]), [$asm0D.TypeRef("System.IO.Stream"), $.Int32]), 
+      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Byte]), [$asm14.TypeRef("System.IO.Stream"), $.Int32]), 
       ProtoReader_DirectReadBytes$03
     );
 
     $.Method({Static:true , Public:true }, "DirectReadLittleEndianInt32", 
-      new JSIL.MethodSignature($.Int32, [$asm0D.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($.Int32, [$asm14.TypeRef("System.IO.Stream")]), 
       ProtoReader_DirectReadLittleEndianInt32
     );
 
     $.Method({Static:true , Public:true }, "DirectReadString", 
-      new JSIL.MethodSignature($.String, [$asm0D.TypeRef("System.IO.Stream"), $.Int32]), 
+      new JSIL.MethodSignature($.String, [$asm14.TypeRef("System.IO.Stream"), $.Int32]), 
       ProtoReader_DirectReadString
     );
 
     $.Method({Static:true , Public:true }, "DirectReadVarintInt32", 
-      new JSIL.MethodSignature($.Int32, [$asm0D.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($.Int32, [$asm14.TypeRef("System.IO.Stream")]), 
       ProtoReader_DirectReadVarintInt32
     );
 
@@ -6579,7 +6576,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "EoF", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Exception"), [$.Type]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Exception"), [$.Type]), 
       ProtoReader_EoF
     );
 
@@ -6624,7 +6621,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "GetTypeKey", 
-      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")])]), 
+      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")])]), 
       ProtoReader_GetTypeKey
     );
 
@@ -6640,7 +6637,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:false}, "Init", 
       new JSIL.MethodSignature(null, [
-          $.Type, $asm0D.TypeRef("System.IO.Stream"), 
+          $.Type, $asm14.TypeRef("System.IO.Stream"), 
           $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0E.TypeRef("ProtoBuf.SerializationContext"), 
           $.Int32
         ]), 
@@ -6676,7 +6673,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "ReadByteOrThrow", 
-      new JSIL.MethodSignature($.Int32, [$asm0D.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($.Int32, [$asm14.TypeRef("System.IO.Stream")]), 
       ProtoReader_ReadByteOrThrow
     );
 
@@ -6707,7 +6704,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:true }, "ReadLengthPrefix", 
       new JSIL.MethodSignature($.Int32, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Boolean, 
+          $asm14.TypeRef("System.IO.Stream"), $.Boolean, 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $jsilcore.TypeRef("JSIL.Reference", [$.Int32])
         ]), 
       ProtoReader_ReadLengthPrefix$04
@@ -6715,7 +6712,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:true }, "ReadLengthPrefix", 
       new JSIL.MethodSignature($.Int32, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Boolean, 
+          $asm14.TypeRef("System.IO.Stream"), $.Boolean, 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $jsilcore.TypeRef("JSIL.Reference", [$.Int32]), 
           $jsilcore.TypeRef("JSIL.Reference", [$.Int32])
         ]), 
@@ -6746,14 +6743,14 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "ReadType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ProtoReader_ReadType
     );
 
     $.Method({Static:true , Public:false}, "ReadTypedObject", 
       new JSIL.MethodSignature($.Object, [
           $.Object, $.Int32, 
-          $.Type, $asm0D.TypeRef("System.Type")
+          $.Type, $asm14.TypeRef("System.Type")
         ]), 
       ProtoReader_ReadTypedObject
     );
@@ -6790,7 +6787,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:false}, "Seek", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Int32, 
+          $asm14.TypeRef("System.IO.Stream"), $.Int32, 
           $jsilcore.TypeRef("System.Array", [$.Byte])
         ]), 
       ProtoReader_Seek
@@ -6817,7 +6814,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "ThrowEnumException", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Type"), $.Int32]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Type"), $.Int32]), 
       ProtoReader_ThrowEnumException
     );
 
@@ -6837,7 +6834,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "TryReadUInt32Variant", 
-      new JSIL.MethodSignature($.Int32, [$asm0D.TypeRef("System.IO.Stream"), $jsilcore.TypeRef("JSIL.Reference", [$.UInt32])]), 
+      new JSIL.MethodSignature($.Int32, [$asm14.TypeRef("System.IO.Stream"), $jsilcore.TypeRef("JSIL.Reference", [$.UInt32])]), 
       ProtoReader_TryReadUInt32Variant$07
     );
 
@@ -6861,7 +6858,7 @@ JSIL.MakeEnum(
       ProtoReader_Zag$09
     );
 
-    $.Field({Static:false, Public:false}, "source", $asm0D.TypeRef("System.IO.Stream"));
+    $.Field({Static:false, Public:false}, "source", $asm14.TypeRef("System.IO.Stream"));
 
     $.Field({Static:false, Public:false}, "ioBuffer", $jsilcore.TypeRef("System.Array", [$.Byte]));
 
@@ -6899,12 +6896,12 @@ JSIL.MakeEnum(
 
     $.Constant({Static:true , Public:false}, "Int32Msb", $.Int32, -2147483648);
 
-    $.Field({Static:false, Public:false}, "stringInterner", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$.String, $.String]));
+    $.Field({Static:false, Public:false}, "stringInterner", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$.String, $.String]));
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "encoding", $asm0D.TypeRef("System.Text.UTF8Encoding"));
+    $.Field({Static:true , Public:false, ReadOnly:true }, "encoding", $asm14.TypeRef("System.Text.UTF8Encoding"));
 
     $.Field({Static:true , Public:false, ReadOnly:true }, "EmptyBlob", $jsilcore.TypeRef("System.Array", [$.Byte]), function ($pi) {
-        return JSIL.Array.New($asm0D.System.Byte, 0);
+        return JSIL.Array.New($asm14.System.Byte, 0);
       });
 
     $.Field({Static:true , Public:false}, "lastReader", $.Type);
@@ -6935,7 +6932,7 @@ JSIL.MakeEnum(
     $.Property({Static:false, Public:false}, "NetCache", $asm0E.TypeRef("ProtoBuf.NetObjectCache"));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IDisposable")
+      /* 0 */ $asm14.TypeRef("System.IDisposable")
     );
 
 
@@ -6949,10 +6946,10 @@ JSIL.MakeEnum(
 (function ProtoWriter$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Text.UTF8Encoding)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Text.UTF8Encoding)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
@@ -6964,13 +6961,13 @@ JSIL.MakeEnum(
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.NetObjectCache)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T08 = function () {
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.BufferPool)) ();
@@ -6985,13 +6982,13 @@ JSIL.MakeEnum(
     return ($T0B = JSIL.Memoize($asm0E.ProtoBuf.IExtension)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T0F = function () {
     return ($T0F = JSIL.Memoize($asm0E.ProtoBuf.Meta.MutableList)) ();
@@ -7003,10 +7000,10 @@ JSIL.MakeEnum(
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.ProtoException)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T13 = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T14 = function () {
     return ($T14 = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
@@ -7015,112 +7012,112 @@ JSIL.MakeEnum(
     return ($T15 = JSIL.Memoize($asm0E.ProtoBuf.PrefixStyle)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T16 = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T18 = function () {
     return ($T18 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T1A = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T1B = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T1C = function () {
-    return ($T1C = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T1C = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T1D = function () {
-    return ($T1D = JSIL.Memoize($asm0D.System.OverflowException)) ();
+    return ($T1D = JSIL.Memoize($asm14.System.OverflowException)) ();
   };
   var $T1E = function () {
-    return ($T1E = JSIL.Memoize($asm0D.System.BitConverter)) ();
+    return ($T1E = JSIL.Memoize($asm14.System.BitConverter)) ();
   };
   var $T1F = function () {
-    return ($T1F = JSIL.Memoize(System.Array.Of($asm0D.System.String))) ();
+    return ($T1F = JSIL.Memoize(System.Array.Of($asm14.System.String))) ();
   };
   var $T20 = function () {
-    return ($T20 = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T20 = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T21 = function () {
-    return ($T21 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T21 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T22 = function () {
     return ($T22 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T23 = function () {
-    return ($T23 = JSIL.Memoize($asm0D.System.SByte)) ();
+    return ($T23 = JSIL.Memoize($asm14.System.SByte)) ();
   };
   var $T24 = function () {
-    return ($T24 = JSIL.Memoize($asm0D.System.Text.Encoding)) ();
+    return ($T24 = JSIL.Memoize($asm14.System.Text.Encoding)) ();
   };
   var $T25 = function () {
-    return ($T25 = JSIL.Memoize($asm0D.System.UInt16)) ();
+    return ($T25 = JSIL.Memoize($asm14.System.UInt16)) ();
   };
   var $T26 = function () {
-    return ($T26 = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T26 = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Text.UTF8Encoding"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Text.UTF8Encoding"), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Double")]))) ();
+    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Double")]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.OverflowException"), null))) ();
+    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.OverflowException"), null))) ();
   };
   var $S0A = function () {
-    return ($S0A = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), [$asm0D.TypeRef("System.Double")]))) ();
+    return ($S0A = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), [$asm14.TypeRef("System.Double")]))) ();
   };
   var $S0B = function () {
-    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.UInt32"), [$asm0D.TypeRef("System.Int32")]))) ();
+    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.UInt32"), [$asm14.TypeRef("System.Int32")]))) ();
   };
   var $S0C = function () {
-    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.UInt64"), [$asm0D.TypeRef("System.Int64")]))) ();
+    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.UInt64"), [$asm14.TypeRef("System.Int64")]))) ();
   };
   var $S0D = function () {
     return ($S0D = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Object"), 
         $asm0E.TypeRef("ProtoBuf.ProtoWriter")
       ]))) ();
   };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S0F = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S10 = function () {
-    return ($S10 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32"), $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), 
-        $asm0D.TypeRef("System.Int32")
+    return ($S10 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32"), $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), 
+        $asm14.TypeRef("System.Int32")
       ]))) ();
   };
   var $IM00 = function () {
@@ -8046,7 +8043,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.ProtoWriter", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -8056,7 +8053,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
       ProtoWriter__ctor
@@ -8083,12 +8080,12 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "CopyRawFromStream", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), $.Type]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), $.Type]), 
       ProtoWriter_CopyRawFromStream
     );
 
     $.Method({Static:true , Public:false}, "CreateException", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Exception"), [$.Type]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Exception"), [$.Type]), 
       ProtoWriter_CreateException
     );
 
@@ -8146,7 +8143,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "GetTypeKey", 
-      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")])]), 
+      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")])]), 
       ProtoWriter_GetTypeKey
     );
 
@@ -8161,7 +8158,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "SerializeType", 
-      new JSIL.MethodSignature($.String, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.String, [$asm14.TypeRef("System.Type")]), 
       ProtoWriter_SerializeType
     );
 
@@ -8192,7 +8189,7 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Void, 
       ProtoWriter_System_IDisposable_Dispose
     )
-      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose");
+      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose");
 
     $.Method({Static:true , Public:true }, "ThrowEnumException", 
       new JSIL.MethodSignature(null, [$.Type, $.Object]), 
@@ -8307,7 +8304,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "WriteType", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Type"), $.Type]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Type"), $.Type]), 
       ProtoWriter_WriteType
     );
 
@@ -8346,7 +8343,7 @@ JSIL.MakeEnum(
       ProtoWriter_Zig$09
     );
 
-    $.Field({Static:false, Public:false}, "dest", $asm0D.TypeRef("System.IO.Stream"));
+    $.Field({Static:false, Public:false}, "dest", $asm14.TypeRef("System.IO.Stream"));
 
     $.Field({Static:false, Public:false}, "model", $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"));
 
@@ -8372,7 +8369,7 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:false}, "position", $.Int32);
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "encoding", $asm0D.TypeRef("System.Text.UTF8Encoding"));
+    $.Field({Static:true , Public:false, ReadOnly:true }, "encoding", $asm14.TypeRef("System.Text.UTF8Encoding"));
 
     $.Field({Static:false, Public:false}, "packedFieldNumber", $.Int32);
 
@@ -8395,7 +8392,7 @@ JSIL.MakeEnum(
     $.Property({Static:false, Public:true }, "Model", $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IDisposable")
+      /* 0 */ $asm14.TypeRef("System.IDisposable")
     );
 
 
@@ -8409,16 +8406,16 @@ JSIL.MakeEnum(
 (function SerializationContext$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -8453,7 +8450,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.SerializationContext", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -8523,19 +8520,19 @@ JSIL.MakeEnum(
 (function Serializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.IO.MemoryStream)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.IO.MemoryStream)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
@@ -8547,58 +8544,58 @@ JSIL.MakeEnum(
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.PrefixStyle)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm0E.ProtoBuf.BufferPool)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T0B = function () {
     return ($T0B = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T0C = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.MemoryStream"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.MemoryStream"), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
-        $asm0D.TypeRef("System.Type")
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.Type")
       ]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
-        $asm0D.TypeRef("System.Int32")
+    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
+        $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+        $asm14.TypeRef("System.Int32")
       ], ["T"]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature("!!0", [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
-        $asm0D.TypeRef("System.Int32")
+        $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+        $asm14.TypeRef("System.Int32")
       ], ["T"]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object")]))) ();
   };
   var $S05 = function () {
     return ($S05 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.IO.Stream"), "!!0", 
-        $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $asm0D.TypeRef("System.Int32")
+        $asm14.TypeRef("System.IO.Stream"), "!!0", 
+        $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $asm14.TypeRef("System.Int32")
       ], ["T"]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.MemoryStream"), [
-        $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32")
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.MemoryStream"), [
+        $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32")
       ]))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
 
 
@@ -8734,26 +8731,26 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "Deserialize", 
-      new JSIL.MethodSignature("!!0", [$asm0D.TypeRef("System.IO.Stream")], ["T"]), 
+      new JSIL.MethodSignature("!!0", [$asm14.TypeRef("System.IO.Stream")], ["T"]), 
       Serializer_Deserialize$b1
     );
 
     $.Method({Static:true , Public:true }, "DeserializeItems", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32
         ], ["T"]), 
       Serializer_DeserializeItems$b1
     );
 
     $.Method({Static:true , Public:true }, "DeserializeWithLengthPrefix", 
-      new JSIL.MethodSignature("!!0", [$asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle")], ["T"]), 
+      new JSIL.MethodSignature("!!0", [$asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle")], ["T"]), 
       Serializer_DeserializeWithLengthPrefix$b1$00
     );
 
     $.Method({Static:true , Public:true }, "DeserializeWithLengthPrefix", 
       new JSIL.MethodSignature("!!0", [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32
         ], ["T"]), 
       Serializer_DeserializeWithLengthPrefix$b1$01
@@ -8770,13 +8767,13 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "Merge", 
-      new JSIL.MethodSignature("!!0", [$asm0D.TypeRef("System.IO.Stream"), "!!0"], ["T"]), 
+      new JSIL.MethodSignature("!!0", [$asm14.TypeRef("System.IO.Stream"), "!!0"], ["T"]), 
       Serializer_Merge$b1
     );
 
     $.Method({Static:true , Public:true }, "MergeWithLengthPrefix", 
       new JSIL.MethodSignature("!!0", [
-          $asm0D.TypeRef("System.IO.Stream"), "!!0", 
+          $asm14.TypeRef("System.IO.Stream"), "!!0", 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle")
         ], ["T"]), 
       Serializer_MergeWithLengthPrefix$b1
@@ -8788,13 +8785,13 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "Serialize", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), "!!0"], ["T"]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), "!!0"], ["T"]), 
       Serializer_Serialize$b1
     );
 
     $.Method({Static:true , Public:true }, "SerializeWithLengthPrefix", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), "!!0", 
+          $asm14.TypeRef("System.IO.Stream"), "!!0", 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle")
         ], ["T"]), 
       Serializer_SerializeWithLengthPrefix$b1$02
@@ -8802,7 +8799,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:true }, "SerializeWithLengthPrefix", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), "!!0", 
+          $asm14.TypeRef("System.IO.Stream"), "!!0", 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $.Int32
         ], ["T"]), 
       Serializer_SerializeWithLengthPrefix$b1$03
@@ -8810,7 +8807,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:true }, "TryReadLengthPrefix", 
       new JSIL.MethodSignature($.Boolean, [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $jsilcore.TypeRef("JSIL.Reference", [$.Int32])
         ]), 
       Serializer_TryReadLengthPrefix$04
@@ -8840,7 +8837,7 @@ JSIL.MakeEnum(
 (function NonGeneric$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
@@ -8849,40 +8846,40 @@ JSIL.MakeEnum(
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.PrefixStyle)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T08 = function () {
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.Serializer_TypeResolver)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
-        $asm0D.TypeRef("System.Type")
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.Type")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
-        $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
+    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
       ]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object")]))) ();
   };
 
 
@@ -8945,7 +8942,7 @@ JSIL.MakeEnum(
     $ = $ib;
 
     $.Method({Static:true , Public:true }, "CanSerialize", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       NonGeneric_CanSerialize
     );
 
@@ -8955,23 +8952,23 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:true }, "Deserialize", 
-      new JSIL.MethodSignature($.Object, [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($.Object, [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.IO.Stream")]), 
       NonGeneric_Deserialize
     );
 
     $.Method({Static:true , Public:true }, "Merge", 
-      new JSIL.MethodSignature($.Object, [$asm0D.TypeRef("System.IO.Stream"), $.Object]), 
+      new JSIL.MethodSignature($.Object, [$asm14.TypeRef("System.IO.Stream"), $.Object]), 
       NonGeneric_Merge
     );
 
     $.Method({Static:true , Public:true }, "Serialize", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), $.Object]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), $.Object]), 
       NonGeneric_Serialize
     );
 
     $.Method({Static:true , Public:true }, "SerializeWithLengthPrefix", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $.Int32
         ]), 
       NonGeneric_SerializeWithLengthPrefix
@@ -8979,7 +8976,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:true , Public:true }, "TryDeserializeWithLengthPrefix", 
       new JSIL.MethodSignature($.Boolean, [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $asm0E.TypeRef("ProtoBuf.Serializer+TypeResolver"), $jsilcore.TypeRef("JSIL.Reference", [$.Object])
         ]), 
       NonGeneric_TryDeserializeWithLengthPrefix
@@ -8999,7 +8996,7 @@ JSIL.MakeEnum(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
 
 
@@ -9025,7 +9022,7 @@ JSIL.MakeEnum(
     );
 
     $.Property({Static:true , Public:true }, "InferTagFromName", $.Boolean)
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Please use RuntimeTypeModel.Default.InferTagFromNameDefault instead (or on a per-model basis)", false]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Please use RuntimeTypeModel.Default.InferTagFromNameDefault instead (or on a per-model basis)", false]; });
 
 
     return function (newThisType) { $thisType = newThisType; }; 
@@ -9036,14 +9033,14 @@ JSIL.MakeEnum(
 /* delegate ProtoBuf.Serializer+TypeResolver */ 
 
 JSIL.MakeDelegate("ProtoBuf.Serializer+TypeResolver", false, [], 
-  new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$asm0D.TypeRef("System.Int32")]));
+  new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$asm14.TypeRef("System.Int32")]));
 
 /* struct ProtoBuf.SubItemToken */ 
 
 (function SubItemToken$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
 
 
@@ -9052,7 +9049,7 @@ JSIL.MakeDelegate("ProtoBuf.Serializer+TypeResolver", false, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "ProtoBuf.SubItemToken", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -9079,7 +9076,7 @@ JSIL.MakeDelegate("ProtoBuf.Serializer+TypeResolver", false, [],
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.WireType", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -9110,7 +9107,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.ProtoDecoratorBase", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -9125,7 +9122,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "Tail", $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "ReturnsValue", $.Boolean);
 
@@ -9152,16 +9149,16 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
@@ -9170,16 +9167,16 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ListDecorator)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T0C = function () {
     return ($T0C = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -9191,37 +9188,37 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T0E = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.Array)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.Array)) ();
   };
   var $T10 = function () {
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm0D.System.Collections.IList)) ();
+    return ($T11 = JSIL.Memoize($asm14.System.Collections.IList)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.Collections.ICollection)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.Collections.ICollection)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.NullReferenceException)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.NullReferenceException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NullReferenceException"), null))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NullReferenceException"), null))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Read)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm0D.System.Collections.ICollection.get_Count)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.Collections.ICollection.get_Count)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.Collections.IList.get_Item)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.Collections.IList.get_Item)) ();
   };
   var $IM03 = function () {
     return ($IM03 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Write)) ();
@@ -9362,7 +9359,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       new JSIL.MethodSignature(null, [
           $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), 
           $.Int32, $.Boolean, 
-          $asm0E.TypeRef("ProtoBuf.WireType"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.WireType"), $asm14.TypeRef("System.Type"), 
           $.Boolean, $.Boolean
         ]), 
       ArrayDecorator__ctor
@@ -9374,7 +9371,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ArrayDecorator_get_ExpectedType
     );
 
@@ -9415,11 +9412,11 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "packedWireType", $asm0E.TypeRef("ProtoBuf.WireType"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "arrayType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "arrayType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "itemType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "itemType", $asm14.TypeRef("System.Type"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -9443,16 +9440,16 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function BlobSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T00 = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -9491,7 +9488,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.BlobSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -9505,7 +9502,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       BlobSerializer_get_ExpectedType
     );
 
@@ -9531,8 +9528,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       BlobSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return System.Array.Of($asm0D.System.Byte).__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return System.Array.Of($asm14.System.Byte).__Type__;
       });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "overwriteList", $.Boolean);
@@ -9547,7 +9544,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       BlobSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -9568,13 +9565,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function BooleanSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -9608,7 +9605,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.BooleanSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -9622,7 +9619,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       BooleanSerializer_get_ExpectedType
     );
 
@@ -9648,8 +9645,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       BooleanSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Boolean.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Boolean.__Type__;
       });
 
 
@@ -9662,7 +9659,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       BooleanSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -9683,13 +9680,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function ByteSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -9723,7 +9720,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.ByteSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -9737,7 +9734,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ByteSerializer_get_ExpectedType
     );
 
@@ -9763,8 +9760,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       ByteSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Byte.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Byte.__Type__;
       });
 
 
@@ -9777,7 +9774,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       ByteSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -9798,13 +9795,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function UInt16Serializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.UInt16)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.UInt16)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -9838,7 +9835,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.UInt16Serializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -9852,7 +9849,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       UInt16Serializer_get_ExpectedType
     );
 
@@ -9878,8 +9875,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       UInt16Serializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.UInt16.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.UInt16.__Type__;
       });
 
 
@@ -9892,7 +9889,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       UInt16Serializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -9913,7 +9910,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function CharSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Char)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Char)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
@@ -9922,7 +9919,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.UInt16Serializer)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -9963,7 +9960,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       CharSerializer_get_ExpectedType
     );
 
@@ -9977,8 +9974,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       CharSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Char.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Char.__Type__;
       });
 
 
@@ -9991,7 +9988,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       CharSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.ImplementInterfaces(
     );
@@ -10007,13 +10004,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function DateTimeSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.DateTime)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.DateTime)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -10050,7 +10047,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.DateTimeSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -10064,7 +10061,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       DateTimeSerializer_get_ExpectedType
     );
 
@@ -10090,8 +10087,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       DateTimeSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.DateTime.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.DateTime.__Type__;
       });
 
 
@@ -10104,7 +10101,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       DateTimeSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -10125,13 +10122,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function DecimalSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Decimal)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Decimal)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -10168,7 +10165,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.DecimalSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -10182,7 +10179,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       DecimalSerializer_get_ExpectedType
     );
 
@@ -10208,8 +10205,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       DecimalSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Decimal.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Decimal.__Type__;
       });
 
 
@@ -10222,7 +10219,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       DecimalSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -10246,7 +10243,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -10255,13 +10252,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -10270,10 +10267,10 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.get_ExpectedType)) ();
@@ -10345,7 +10342,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       DefaultValueDecorator_get_ExpectedType
     );
 
@@ -10371,7 +10368,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "defaultValue", $.Object);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -10391,13 +10388,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function DoubleSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -10431,7 +10428,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.DoubleSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -10445,7 +10442,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       DoubleSerializer_get_ExpectedType
     );
 
@@ -10471,8 +10468,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       DoubleSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Double.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Double.__Type__;
       });
 
 
@@ -10485,7 +10482,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       DoubleSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -10506,52 +10503,52 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function EnumSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Serializers.EnumSerializer_EnumPair))) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.ProtoException)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.SByte)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.SByte)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.UInt16)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.UInt16)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T10 = function () {
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
@@ -10560,22 +10557,22 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.Enum)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.Enum)) ();
   };
   var $T13 = function () {
     return ($T13 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Object")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Object")]))) ();
   };
 
 
@@ -10753,7 +10750,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.EnumSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -10762,7 +10759,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Type"), $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.EnumSerializer+EnumPair")])]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Type"), $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.EnumSerializer+EnumPair")])]), 
       EnumSerializer__ctor
     );
 
@@ -10772,7 +10769,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       EnumSerializer_get_ExpectedType
     );
 
@@ -10808,11 +10805,11 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       EnumSerializer_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "enumType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "enumType", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "map", $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.EnumSerializer+EnumPair")]));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -10833,19 +10830,19 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function EnumPair$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Enum)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Enum)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Object")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Object")]))) ();
   };
 
 
@@ -10856,7 +10853,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "ProtoBuf.Serializers.EnumSerializer+EnumPair", 
       IsPublic: false, 
       IsReferenceType: false, 
@@ -10868,14 +10865,14 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
           $.Int32, $.Object, 
-          $asm0D.TypeRef("System.Type")
+          $asm14.TypeRef("System.Type")
         ]), 
       EnumPair__ctor
     );
 
     $.Field({Static:false, Public:true , ReadOnly:true }, "RawValue", $.Object);
 
-    $.Field({Static:false, Public:true , ReadOnly:true }, "TypedValue", $asm0D.TypeRef("System.Enum"));
+    $.Field({Static:false, Public:true , ReadOnly:true }, "TypedValue", $asm14.TypeRef("System.Enum"));
 
     $.Field({Static:false, Public:true , ReadOnly:true }, "WireValue", $.Int32);
 
@@ -10890,10 +10887,10 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function FieldDecorator$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -10902,7 +10899,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -10911,10 +10908,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Boolean)) ();
-  };
-  var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Read)) ();
@@ -10948,7 +10942,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   function FieldDecorator_Read (value, source) {
     var obj = $IM00().Call(this.Tail, null, (
         $IM01().Call(this.Tail, null)
-           ? $S00().CallVirtual("GetValue", null, this.field, value)
+           ? (this.field).GetValue(value)
            : null)
       , source);
     if (obj !== null) {
@@ -10958,7 +10952,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   function FieldDecorator_Write (value, dest) {
-    value = $S00().CallVirtual("GetValue", null, this.field, value);
+    value = (this.field).GetValue(value);
     var flag = value !== null;
     if (flag) {
       $IM02().Call(this.Tail, null, value, dest);
@@ -10976,14 +10970,14 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Reflection.FieldInfo"), 
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Reflection.FieldInfo"), 
           $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")
         ]), 
       FieldDecorator__ctor
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       FieldDecorator_get_ExpectedType
     );
 
@@ -11007,11 +11001,11 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       FieldDecorator_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "field", $asm0D.TypeRef("System.Reflection.FieldInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "field", $asm14.TypeRef("System.Reflection.FieldInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm14.TypeRef("System.Type"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -11031,13 +11025,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function GuidSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Guid)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Guid)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -11074,7 +11068,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.GuidSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -11088,7 +11082,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       GuidSerializer_get_ExpectedType
     );
 
@@ -11114,8 +11108,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       GuidSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Guid.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Guid.__Type__;
       });
 
 
@@ -11128,7 +11122,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       GuidSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -11149,25 +11143,25 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function ListDecorator$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Collections.IEnumerator)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Collections.IEnumerable)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Collections.IEnumerable)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
@@ -11176,22 +11170,22 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T0F = function () {
     return ($T0F = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ImmutableCollectionDecorator)) ();
@@ -11200,85 +11194,82 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T11 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.Collections.Generic.IEnumerable$b1)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T14 = function () {
     return ($T14 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm0D.System.Activator)) ();
+    return ($T15 = JSIL.Memoize($asm14.System.Activator)) ();
   };
   var $T16 = function () {
     return ($T16 = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0D.System.Collections.IList)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.Collections.IList)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T18 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T1A = function () {
     return ($T1A = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize($asm0D.System.NullReferenceException)) ();
+    return ($T1B = JSIL.Memoize($asm14.System.NullReferenceException)) ();
   };
   var $T1C = function () {
-    return ($T1C = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T1C = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type")]))) ();
-  };
-  var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NullReferenceException"), null))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NullReferenceException"), null))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.get_ExpectedType)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm0D.System.Collections.IList.Add)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.Collections.IList.Add)) ();
   };
   var $IM02 = function () {
     return ($IM02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Read)) ();
   };
   var $IM03 = function () {
-    return ($IM03 = JSIL.Memoize($asm0D.System.Collections.IEnumerable.GetEnumerator)) ();
+    return ($IM03 = JSIL.Memoize($asm14.System.Collections.IEnumerable.GetEnumerator)) ();
   };
   var $IM04 = function () {
-    return ($IM04 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.MoveNext)) ();
+    return ($IM04 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM05 = function () {
-    return ($IM05 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.get_Current)) ();
+    return ($IM05 = JSIL.Memoize($asm14.System.Collections.IEnumerator.get_Current)) ();
   };
   var $IM06 = function () {
     return ($IM06 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Write)) ();
   };
   var $IM07 = function () {
-    return ($IM07 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM07 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
 
 
@@ -11451,7 +11442,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
              : $T10().GetGetMethod(property, false, false))
       );
       var flag2 = (moveNext.get() === null) && 
-      $S04().CallVirtual("IsAssignableFrom", null, model.MapType($thisType.ienumeratorType), type2);
+      (model.MapType($thisType.ienumeratorType)).IsAssignableFrom(type2);
       if (flag2) {
         moveNext.set($T10().GetInstanceMethod(model.MapType($thisType.ienumeratorType), "MoveNext", null));
       }
@@ -11473,7 +11464,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       type = type3;
     }
     var flag5 = (type !== null) && 
-    $S04().CallVirtual("IsAssignableFrom", null, type, expectedType);
+    type.IsAssignableFrom(expectedType);
     if (flag5) {
       instanceMethod = $T10().GetInstanceMethod(type, "GetEnumerator");
       returnType = instanceMethod.get_ReturnType();
@@ -11498,7 +11489,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     var obj = value;
     var flag = value === null;
     if (flag) {
-      value = $S05().CallStatic($T15(), "CreateInstance", null, this.concreteType);
+      value = $S04().CallStatic($T15(), "CreateInstance", null, this.concreteType);
     }
     var flag2 = this.get_IsList() && 
     !this.get_SuppressIList();
@@ -11565,7 +11556,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
         var flag3 = flag2 && 
         (current === null);
         if (flag3) {
-          throw $S06().Construct();
+          throw $S05().Construct();
         }
         $IM06().Call(this.Tail, null, current, dest);
       }
@@ -11592,8 +11583,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Method({Static:false, Public:false}, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), 
           $.Int32, $.Boolean, 
           $asm0E.TypeRef("ProtoBuf.WireType"), $.Boolean, 
           $.Boolean, $.Boolean
@@ -11608,8 +11599,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Method({Static:true , Public:false}, "Create", 
       new JSIL.MethodSignature($.Type, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), 
           $.Int32, $.Boolean, 
           $asm0E.TypeRef("ProtoBuf.WireType"), $.Boolean, 
           $.Boolean, $.Boolean
@@ -11623,7 +11614,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ListDecorator_get_ExpectedType
     );
 
@@ -11668,9 +11659,9 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:false}, "GetEnumeratorInfo", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Reflection.MethodInfo")]), 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Reflection.MethodInfo")])
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Reflection.MethodInfo")]), 
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Reflection.MethodInfo")])
         ]), 
       ListDecorator_GetEnumeratorInfo
     );
@@ -11699,22 +11690,22 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Constant({Static:true , Public:false}, "OPTIONS_SupportNull", $.Byte, 32);
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "declaredType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "declaredType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "concreteType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "concreteType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "add", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "add", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "fieldNumber", $.Int32);
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "packedWireType", $asm0E.TypeRef("ProtoBuf.WireType"));
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "ienumeratorType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Collections.IEnumerator.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "ienumeratorType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Collections.IEnumerator.__Type__;
       });
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "ienumerableType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Collections.IEnumerable.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "ienumerableType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Collections.IEnumerable.__Type__;
       });
 
 
@@ -11740,7 +11731,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Property({Static:false, Public:false, Virtual:true }, "RequireAdd", $.Boolean);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -11765,100 +11756,100 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ListDecorator)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize(System.Array.Of($asm0D.System.Type))) ();
+    return ($T08 = JSIL.Memoize(System.Array.Of($asm14.System.Type))) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Collections.Generic.KeyValuePair$b2)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Collections.Generic.KeyValuePair$b2)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Char)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Char)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MethodInfo))) ();
+    return ($T0D = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MethodInfo))) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T0F = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm0D.System.Void)) ();
+    return ($T10 = JSIL.Memoize($asm14.System.Void)) ();
   };
   var $T11 = function () {
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.Collections.Generic.IEnumerable$b1)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T14 = function () {
     return ($T14 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T15 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm0D.System.Collections.ICollection)) ();
+    return ($T16 = JSIL.Memoize($asm14.System.Collections.ICollection)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0D.System.Collections.IList)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.Collections.IList)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm0D.System.Collections.IEnumerator)) ();
+    return ($T18 = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.Collections.IEnumerable)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.Collections.IEnumerable)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T1A = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T1B = function () {
     return ($T1B = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm0D.System.Collections.ICollection.get_Count)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.Collections.ICollection.get_Count)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm0D.System.Collections.IEnumerable.GetEnumerator)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.Collections.IEnumerable.GetEnumerator)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.MoveNext)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM03 = function () {
-    return ($IM03 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.get_Current)) ();
+    return ($IM03 = JSIL.Memoize($asm14.System.Collections.IEnumerator.get_Current)) ();
   };
   var $IM04 = function () {
-    return ($IM04 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM04 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
   var $IM05 = function () {
     return ($IM05 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Read)) ();
@@ -12114,13 +12105,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Method({Static:false, Public:false}, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), 
           $.Int32, $.Boolean, 
           $asm0E.TypeRef("ProtoBuf.WireType"), $.Boolean, 
           $.Boolean, $.Boolean, 
-          $asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo"), 
-          $asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo")
+          $asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo"), 
+          $asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo")
         ]), 
       ImmutableCollectionDecorator__ctor
     );
@@ -12132,9 +12123,9 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
     $.Method({Static:true , Public:false}, "IdentifyImmutable", 
       new JSIL.MethodSignature($.Boolean, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Reflection.MethodInfo")]), $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Reflection.MethodInfo")]), 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Reflection.MethodInfo")]), $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Reflection.MethodInfo")])
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Reflection.MethodInfo")]), $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Reflection.MethodInfo")]), 
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Reflection.MethodInfo")]), $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Reflection.MethodInfo")])
         ]), 
       ImmutableCollectionDecorator_IdentifyImmutable
     );
@@ -12145,17 +12136,17 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:true , Public:false}, "ResolveIReadOnlyCollection", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type")]), 
       ImmutableCollectionDecorator_ResolveIReadOnlyCollection
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "builderFactory", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "builderFactory", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "add", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "add", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "addRange", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "addRange", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "finish", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "finish", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "RequireAdd", $.Boolean);
 
@@ -12173,13 +12164,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function Int16Serializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -12213,7 +12204,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.Int16Serializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -12227,7 +12218,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       Int16Serializer_get_ExpectedType
     );
 
@@ -12253,8 +12244,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       Int16Serializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Int16.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Int16.__Type__;
       });
 
 
@@ -12267,7 +12258,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       Int16Serializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -12288,13 +12279,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function Int32Serializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -12328,7 +12319,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.Int32Serializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -12342,7 +12333,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       Int32Serializer_get_ExpectedType
     );
 
@@ -12368,8 +12359,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       Int32Serializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Int32.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Int32.__Type__;
       });
 
 
@@ -12382,7 +12373,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       Int32Serializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -12403,13 +12394,13 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 (function Int64Serializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -12443,7 +12434,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.Int64Serializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -12457,7 +12448,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       Int64Serializer_get_ExpectedType
     );
 
@@ -12483,8 +12474,8 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       Int64Serializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Int64.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Int64.__Type__;
       });
 
 
@@ -12497,7 +12488,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
       Int64Serializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -12517,7 +12508,7 @@ JSIL.DeclareNamespace("ProtoBuf.Serializers");
 
 JSIL.MakeInterface(
   "ProtoBuf.Serializers.IProtoSerializer", false, [], function ($) {
-    $.Method({}, "get_ExpectedType", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")));
+    $.Method({}, "get_ExpectedType", JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")));
     $.Method({}, "Write", new JSIL.MethodSignature(null, [$.Object, $asm0E.TypeRef("ProtoBuf.ProtoWriter")]));
     $.Method({}, "Read", new JSIL.MethodSignature($.Object, [$.Object, $asm0E.TypeRef("ProtoBuf.ProtoReader")]));
     $.Method({}, "get_RequiresOldValue", JSIL.MethodSignature.Return($.Boolean));
@@ -12553,7 +12544,7 @@ JSIL.MakeInterface(
 (function MemberSpecifiedDecorator$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -12562,25 +12553,25 @@ JSIL.MakeInterface(
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T08 = function () {
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.get_ExpectedType)) ();
@@ -12647,14 +12638,14 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo"), 
+          $asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo"), 
           $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")
         ]), 
       MemberSpecifiedDecorator__ctor
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       MemberSpecifiedDecorator_get_ExpectedType
     );
 
@@ -12678,11 +12669,11 @@ JSIL.MakeInterface(
       MemberSpecifiedDecorator_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "getSpecified", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "getSpecified", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "setSpecified", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "setSpecified", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -12705,19 +12696,19 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.BclHelpers_NetObjectOptions)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -12776,7 +12767,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.NetObjectSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -12786,14 +12777,14 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
           $.Int32, $asm0E.TypeRef("ProtoBuf.BclHelpers+NetObjectOptions")
         ]), 
       NetObjectSerializer__ctor
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       NetObjectSerializer_get_ExpectedType
     );
 
@@ -12819,11 +12810,11 @@ JSIL.MakeInterface(
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "key", $.Int32);
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "options", $asm0E.TypeRef("ProtoBuf.BclHelpers+NetObjectOptions"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "ReturnsValue", $.Boolean);
 
@@ -12853,28 +12844,28 @@ JSIL.MakeInterface(
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Nullable$b1)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Nullable$b1)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0B = function () {
     return ($T0B = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
@@ -12883,7 +12874,7 @@ JSIL.MakeInterface(
     return ($T0C = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.get_ReturnsValue)) ();
@@ -12965,7 +12956,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       NullDecorator_get_ExpectedType
     );
 
@@ -12989,11 +12980,11 @@ JSIL.MakeInterface(
       NullDecorator_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"));
 
     $.Constant({Static:true , Public:true }, "Tag", $.Int32, 1);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "ReturnsValue", $.Boolean);
 
@@ -13013,25 +13004,25 @@ JSIL.MakeInterface(
 (function ParseableSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -13040,31 +13031,31 @@ JSIL.MakeInterface(
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T09 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MethodInfo))) ();
+    return ($T0B = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MethodInfo))) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Reflection.BindingFlags)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Reflection.BindingFlags)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T10 = function () {
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -13151,7 +13142,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.ParseableSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -13160,17 +13151,17 @@ JSIL.MakeInterface(
     $ = $ib;
 
     $.Method({Static:false, Public:false}, ".ctor", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.MethodInfo")), 
       ParseableSerializer__ctor
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ParseableSerializer_get_ExpectedType
     );
 
     $.Method({Static:true , Public:false}, "GetCustomToString", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm14.TypeRef("System.Type")]), 
       ParseableSerializer_GetCustomToString
     );
 
@@ -13192,7 +13183,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:true , Public:true }, "TryCreate", 
-      new JSIL.MethodSignature($.Type, [$asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel")]), 
+      new JSIL.MethodSignature($.Type, [$asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Meta.TypeModel")]), 
       ParseableSerializer_TryCreate
     );
 
@@ -13201,9 +13192,9 @@ JSIL.MakeInterface(
       ParseableSerializer_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "parse", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "parse", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -13227,10 +13218,10 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -13239,49 +13230,49 @@ JSIL.MakeInterface(
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Void)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Void)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T0F = function () {
     return ($T0F = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T10 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T11 = function () {
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.get_RequiresOldValue)) ();
@@ -13418,19 +13409,19 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Reflection.PropertyInfo"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Reflection.PropertyInfo"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")
         ]), 
       PropertyDecorator__ctor
     );
 
     $.Method({Static:true , Public:false}, "CanWrite", 
-      new JSIL.MethodSignature($.Boolean, [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.MemberInfo")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.MemberInfo")]), 
       PropertyDecorator_CanWrite
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       PropertyDecorator_get_ExpectedType
     );
 
@@ -13445,7 +13436,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:true , Public:false}, "GetShadowSetter", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.PropertyInfo")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.PropertyInfo")]), 
       PropertyDecorator_GetShadowSetter
     );
 
@@ -13456,7 +13447,7 @@ JSIL.MakeInterface(
 
     $.Method({Static:true , Public:false}, "SanityCheck", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.PropertyInfo"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.PropertyInfo"), 
           $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), $jsilcore.TypeRef("JSIL.Reference", [$.Boolean]), 
           $.Boolean, $.Boolean
         ]), 
@@ -13468,15 +13459,15 @@ JSIL.MakeInterface(
       PropertyDecorator_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "property", $asm0D.TypeRef("System.Reflection.PropertyInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "property", $asm14.TypeRef("System.Reflection.PropertyInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "readOptionsWriteValue", $.Boolean);
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "shadowSetter", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "shadowSetter", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -13496,13 +13487,13 @@ JSIL.MakeInterface(
 (function SByteSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.SByte)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.SByte)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -13536,7 +13527,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.SByteSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -13550,7 +13541,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       SByteSerializer_get_ExpectedType
     );
 
@@ -13576,8 +13567,8 @@ JSIL.MakeInterface(
       SByteSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.SByte.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.SByte.__Type__;
       });
 
 
@@ -13590,7 +13581,7 @@ JSIL.MakeInterface(
       SByteSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -13611,13 +13602,13 @@ JSIL.MakeInterface(
 (function SingleSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -13651,7 +13642,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.SingleSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -13665,7 +13656,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       SingleSerializer_get_ExpectedType
     );
 
@@ -13691,8 +13682,8 @@ JSIL.MakeInterface(
       SingleSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Single.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Single.__Type__;
       });
 
 
@@ -13705,7 +13696,7 @@ JSIL.MakeInterface(
       SingleSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -13726,13 +13717,13 @@ JSIL.MakeInterface(
 (function StringSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -13766,7 +13757,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.StringSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -13780,7 +13771,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       StringSerializer_get_ExpectedType
     );
 
@@ -13806,8 +13797,8 @@ JSIL.MakeInterface(
       StringSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.String.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.String.__Type__;
       });
 
 
@@ -13820,7 +13811,7 @@ JSIL.MakeInterface(
       StringSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -13841,22 +13832,22 @@ JSIL.MakeInterface(
 (function SubItemSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ISerializerProxy)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -13874,7 +13865,7 @@ JSIL.MakeInterface(
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoTypeSerializer)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoTypeSerializer.Callback)) ();
@@ -13947,7 +13938,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.SubItemSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -13957,14 +13948,14 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.Type"), $.Int32, 
+          $asm14.TypeRef("System.Type"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.Serializers.ISerializerProxy"), $.Boolean
         ]), 
       SubItemSerializer__ctor
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       SubItemSerializer_ProtoBuf_Serializers_IProtoSerializer_get_ExpectedType
     )
       .Overrides($asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), "get_ExpectedType");
@@ -14022,13 +14013,13 @@ JSIL.MakeInterface(
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "key", $.Int32);
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "proxy", $asm0E.TypeRef("ProtoBuf.Serializers.ISerializerProxy"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "recursionCheck", $.Boolean);
 
-    $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -14053,49 +14044,49 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoTypeSerializer)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MethodInfo))) ();
+    return ($T07 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MethodInfo))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Reflection.BindingFlags)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Reflection.BindingFlags)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T0A = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T0D = function () {
     return ($T0D = JSIL.Memoize($asm0E.ProtoBuf.ProtoConverterAttribute)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T10 = function () {
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel_CallbackType)) ();
@@ -14107,10 +14098,10 @@ JSIL.MakeInterface(
     return ($T12 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T14 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T15 = function () {
     return ($T15 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -14119,10 +14110,10 @@ JSIL.MakeInterface(
     return ($T16 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Read)) ();
@@ -14267,7 +14258,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.SurrogateSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -14277,14 +14268,14 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoTypeSerializer")
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoTypeSerializer")
         ]), 
       SurrogateSerializer__ctor
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       SurrogateSerializer_get_ExpectedType
     );
 
@@ -14299,15 +14290,15 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true }, "GetConversion", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $.Boolean]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $.Boolean]), 
       SurrogateSerializer_GetConversion
     );
 
     $.Method({Static:true , Public:false}, "HasCast", 
       new JSIL.MethodSignature($.Boolean, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type"), 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Reflection.MethodInfo")])
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type"), 
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Reflection.MethodInfo")])
         ]), 
       SurrogateSerializer_HasCast
     );
@@ -14349,13 +14340,13 @@ JSIL.MakeInterface(
       SurrogateSerializer_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "declaredType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "declaredType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "toTail", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "toTail", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "fromTail", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "fromTail", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
     $.Field({Static:false, Public:false}, "rootTail", $asm0E.TypeRef("ProtoBuf.Serializers.IProtoTypeSerializer"));
 
@@ -14363,7 +14354,7 @@ JSIL.MakeInterface(
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.ImplementInterfaces(
       /* 0 */ $asm0E.TypeRef("ProtoBuf.Serializers.IProtoTypeSerializer"), 
@@ -14381,13 +14372,13 @@ JSIL.MakeInterface(
 (function SystemTypeSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -14421,7 +14412,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.SystemTypeSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -14435,7 +14426,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       SystemTypeSerializer_get_ExpectedType
     );
 
@@ -14463,8 +14454,8 @@ JSIL.MakeInterface(
     )
       .Overrides($asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), "Write");
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Type.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Type.__Type__;
       });
 
 
@@ -14477,7 +14468,7 @@ JSIL.MakeInterface(
       SystemTypeSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -14498,13 +14489,13 @@ JSIL.MakeInterface(
 (function TagDecorator$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -14513,7 +14504,7 @@ JSIL.MakeInterface(
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel_CallbackType)) ();
@@ -14655,7 +14646,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       TagDecorator_get_ExpectedType
     );
 
@@ -14695,7 +14686,7 @@ JSIL.MakeInterface(
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "wireType", $asm0E.TypeRef("ProtoBuf.WireType"));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -14718,13 +14709,13 @@ JSIL.MakeInterface(
 (function TimeSpanSerializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.TimeSpan)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.TimeSpan)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -14761,7 +14752,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.TimeSpanSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -14775,7 +14766,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       TimeSpanSerializer_get_ExpectedType
     );
 
@@ -14801,8 +14792,8 @@ JSIL.MakeInterface(
       TimeSpanSerializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.TimeSpan.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.TimeSpan.__Type__;
       });
 
 
@@ -14815,7 +14806,7 @@ JSIL.MakeInterface(
       TimeSpanSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -14839,37 +14830,37 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Reflection.ConstructorInfo)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Reflection.ConstructorInfo)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MemberInfo))) ();
+    return ($T02 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MemberInfo))) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T07 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T0C = function () {
     return ($T0C = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType)) ();
@@ -14881,10 +14872,10 @@ JSIL.MakeInterface(
     return ($T0E = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T10 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T11 = function () {
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.TagDecorator)) ();
@@ -14896,22 +14887,22 @@ JSIL.MakeInterface(
     return ($T13 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ListDecorator)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T15 = function () {
     return ($T15 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T16 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T18 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.Activator)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.Activator)) ();
   };
   var $T1A = function () {
     return ($T1A = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel_CallbackType)) ();
@@ -14923,10 +14914,10 @@ JSIL.MakeInterface(
     return ($T1C = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T1D = function () {
-    return ($T1D = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T1D = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T1E = function () {
-    return ($T1E = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T1E = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T1F = function () {
     return ($T1F = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Serializers.IProtoSerializer))) ();
@@ -14935,22 +14926,19 @@ JSIL.MakeInterface(
     return ($T20 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
-  };
-  var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.Read)) ();
@@ -15084,7 +15072,7 @@ JSIL.MakeInterface(
              : null)
         ;
       } else {
-        result = $S04().CallVirtual("GetValue", null, fieldInfo, obj);
+        result = fieldInfo.GetValue(obj);
       }
     }
     return result;
@@ -15102,7 +15090,7 @@ JSIL.MakeInterface(
   }; 
 
   function TupleSerializer_ProtoBuf_Serializers_IProtoTypeSerializer_CreateInstance (source) {
-    throw $S05().Construct();
+    throw $S04().Construct();
   }; 
 
   function TupleSerializer_Read (value, source) {
@@ -15153,7 +15141,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.TupleSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -15163,14 +15151,14 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0D.TypeRef("System.Reflection.ConstructorInfo"), 
-          $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MemberInfo")])
+          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm14.TypeRef("System.Reflection.ConstructorInfo"), 
+          $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")])
         ]), 
       TupleSerializer__ctor
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       TupleSerializer_get_ExpectedType
     );
 
@@ -15185,7 +15173,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "GetMemberType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$.Int32]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$.Int32]), 
       TupleSerializer_GetMemberType
     );
 
@@ -15230,13 +15218,13 @@ JSIL.MakeInterface(
       TupleSerializer_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "members", $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MemberInfo")]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "members", $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")]));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "ctor", $asm0D.TypeRef("System.Reflection.ConstructorInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "ctor", $asm14.TypeRef("System.Reflection.ConstructorInfo"));
 
     $.Field({Static:false, Public:false}, "tails", $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")]));
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -15264,52 +15252,52 @@ JSIL.MakeInterface(
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize(System.Array.Of($asm0D.System.Int32))) ();
+    return ($T03 = JSIL.Memoize(System.Array.Of($asm14.System.Int32))) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Serializers.IProtoSerializer))) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MethodInfo))) ();
+    return ($T05 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MethodInfo))) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Meta.CallbackSet)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T0A = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0E = function () {
     return ($T0E = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T10 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T11 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T12 = function () {
     return ($T12 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel_CallbackType)) ();
@@ -15324,37 +15312,34 @@ JSIL.MakeInterface(
     return ($T15 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm0D.System.Activator)) ();
+    return ($T16 = JSIL.Memoize($asm14.System.Activator)) ();
   };
   var $T17 = function () {
     return ($T17 = JSIL.Memoize($asm0E.ProtoBuf.BclHelpers)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T18 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T1A = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T1B = function () {
     return ($T1B = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
-  };
-  var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.get_ExpectedType)) ();
@@ -15405,7 +15390,7 @@ JSIL.MakeInterface(
     if (flag4) {
       constructType = forType;
     } else {
-      var flag5 = !$S01().CallVirtual("IsAssignableFrom", null, forType, constructType);
+      var flag5 = !forType.IsAssignableFrom(constructType);
       if (flag5) {
         throw $S00().Construct((forType.get_FullName() + " cannot be assigned from " + constructType.get_FullName()));
       }
@@ -15424,14 +15409,14 @@ JSIL.MakeInterface(
     this.baseCtorCallbacks = baseCtorCallbacks;
     var flag7 = $T09().GetUnderlyingType(forType) !== null;
     if (flag7) {
-      throw $S02().Construct("Cannot create a TypeSerializer for nullable types", "forType");
+      throw $S01().Construct("Cannot create a TypeSerializer for nullable types", "forType");
     }
-    var flag8 = $S01().CallVirtual("IsAssignableFrom", null, model.MapType($thisType.iextensible), forType);
+    var flag8 = (model.MapType($thisType.iextensible)).IsAssignableFrom(forType);
     if (flag8) {
       var flag9 = (forType.get_IsValueType() || 
         !isRootType) | flag;
       if (flag9) {
-        throw $S03().Construct("IExtensible is not supported in structs or classes with inheritance");
+        throw $S02().Construct("IExtensible is not supported in structs or classes with inheritance");
       }
       this.isExtensible = true;
     }
@@ -15440,7 +15425,7 @@ JSIL.MakeInterface(
     var flag10 = ((constructType !== forType) & useConstructor) && 
     !this.hasConstructor;
     if (flag10) {
-      throw $S02().Construct(JSIL.ConcatString("The supplied default implementation cannot be created: ", constructType.get_FullName()), "constructType");
+      throw $S01().Construct(JSIL.ConcatString("The supplied default implementation cannot be created: ", constructType.get_FullName()), "constructType");
     }
   }; 
 
@@ -15463,7 +15448,7 @@ JSIL.MakeInterface(
         if (!this.hasConstructor) {
           $T01().ThrowCannotCreateInstance(this.constructType);
         }
-        obj = $S04().CallStatic($T16(), "CreateInstance", null, this.constructType);
+        obj = $S03().CallStatic($T16(), "CreateInstance", null, this.constructType);
       } else {
         obj = $T17().GetUninitializedObject(this.constructType);
       }
@@ -15711,7 +15696,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.TypeSerializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -15721,11 +15706,11 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
           $jsilcore.TypeRef("System.Array", [$.Int32]), $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")]), 
-          $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MethodInfo")]), $.Boolean, 
+          $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MethodInfo")]), $.Boolean, 
           $.Boolean, $asm0E.TypeRef("ProtoBuf.Meta.CallbackSet"), 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Reflection.MethodInfo")
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Reflection.MethodInfo")
         ]), 
       TypeSerializer__ctor
     );
@@ -15749,7 +15734,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       TypeSerializer_get_ExpectedType
     );
 
@@ -15765,7 +15750,7 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:false}, "InvokeCallback", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.Reflection.MethodInfo"), $.Object, 
+          $asm14.TypeRef("System.Reflection.MethodInfo"), $.Object, 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
       TypeSerializer_InvokeCallback
@@ -15805,9 +15790,9 @@ JSIL.MakeInterface(
       TypeSerializer_Write
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "forType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "constructType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "constructType", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "serializers", $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")]));
 
@@ -15823,11 +15808,11 @@ JSIL.MakeInterface(
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "callbacks", $asm0E.TypeRef("ProtoBuf.Meta.CallbackSet"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "baseCtorCallbacks", $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MethodInfo")]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "baseCtorCallbacks", $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MethodInfo")]));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "factory", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "factory", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "iextensible", $asm0D.TypeRef("System.Type"), function ($pi) {
+    $.Field({Static:true , Public:false, ReadOnly:true }, "iextensible", $asm14.TypeRef("System.Type"), function ($pi) {
         return $asm0E.ProtoBuf.IExtensible.__Type__;
       });
 
@@ -15841,7 +15826,7 @@ JSIL.MakeInterface(
       TypeSerializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false}, "CanHaveInheritance", $.Boolean);
 
@@ -15865,13 +15850,13 @@ JSIL.MakeInterface(
 (function UInt32Serializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -15905,7 +15890,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.UInt32Serializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -15919,7 +15904,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       UInt32Serializer_get_ExpectedType
     );
 
@@ -15945,8 +15930,8 @@ JSIL.MakeInterface(
       UInt32Serializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.UInt32.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.UInt32.__Type__;
       });
 
 
@@ -15959,7 +15944,7 @@ JSIL.MakeInterface(
       UInt32Serializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -15980,13 +15965,13 @@ JSIL.MakeInterface(
 (function UInt64Serializer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
@@ -16020,7 +16005,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Serializers.UInt64Serializer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -16034,7 +16019,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       UInt64Serializer_get_ExpectedType
     );
 
@@ -16060,8 +16045,8 @@ JSIL.MakeInterface(
       UInt64Serializer_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.UInt64.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.UInt64.__Type__;
       });
 
 
@@ -16074,7 +16059,7 @@ JSIL.MakeInterface(
       UInt64Serializer__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "ProtoBuf.Serializers.IProtoSerializer.RequiresOldValue", $.Boolean);
 
@@ -16107,16 +16092,16 @@ JSIL.MakeInterface(
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ProtoDecoratorBase)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T08 = function () {
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
@@ -16176,7 +16161,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ExpectedType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       UriDecorator_get_ExpectedType
     );
 
@@ -16200,7 +16185,7 @@ JSIL.MakeInterface(
       UriDecorator_Write
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm0D.TypeRef("System.Type"), function ($pi) {
+    $.Field({Static:true , Public:false, ReadOnly:true }, "expectedType", $asm14.TypeRef("System.Type"), function ($pi) {
         return $asm0F.System.Uri.__Type__;
       });
 
@@ -16214,7 +16199,7 @@ JSIL.MakeInterface(
       UriDecorator__cctor
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "ExpectedType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "RequiresOldValue", $.Boolean);
 
@@ -16238,37 +16223,37 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T03 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Meta.AttributeMap))) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Meta.AttributeMap_ReflectionAttributeMap)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Reflection.Assembly)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Reflection.Assembly)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Object)) ();
   };
 
 
@@ -16316,7 +16301,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.AttributeMap", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -16331,7 +16316,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
 
     $.Method({Static:true , Public:true }, "Create", 
       new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Type]), [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
           $.Boolean
         ]), 
       AttributeMap_Create$00
@@ -16339,14 +16324,14 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
 
     $.Method({Static:true , Public:true }, "Create", 
       new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Type]), [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.MemberInfo"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.MemberInfo"), 
           $.Boolean
         ]), 
       AttributeMap_Create$01
     );
 
     $.Method({Static:true , Public:true }, "Create", 
-      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Type]), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.Assembly")]), 
+      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Type]), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.Assembly")]), 
       AttributeMap_Create$02
     );
 
@@ -16355,7 +16340,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
       AttributeMap_TryGet$03
     );
 
-    $.Property({Static:false, Public:true , Virtual:true }, "AttributeType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "AttributeType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "Target", $.Object);
 
@@ -16370,49 +16355,46 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
 (function ReflectionAttributeMap$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.AttributeMap)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MemberInfo))) ();
+    return ($T05 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MemberInfo))) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.StringComparison)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.StringComparison)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
-  };
-  var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -16448,7 +16430,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
           if (!flag3) {
             throw $S00().Construct((JSIL.GetType(memberInfo)).get_Name());
           }
-          value.set($S01().CallVirtual("GetValue", null, fieldInfo, this.attribute));
+          value.set(fieldInfo.GetValue(this.attribute));
           result = true;
         }
         return result;
@@ -16469,12 +16451,12 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Attribute")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Attribute")), 
       ReflectionAttributeMap__ctor
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_AttributeType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ReflectionAttributeMap_get_AttributeType
     );
 
@@ -16491,11 +16473,11 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
       ReflectionAttributeMap_TryGet$00
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "attribute", $asm0D.TypeRef("System.Attribute"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "attribute", $asm14.TypeRef("System.Attribute"));
 
     $.Property({Static:false, Public:true , Virtual:true }, "Target", $.Object);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "AttributeType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true , Virtual:true }, "AttributeType", $asm14.TypeRef("System.Type"));
 
 
     return function (newThisType) { $thisType = newThisType; }; 
@@ -16511,31 +16493,31 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_Node)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_NodeEnumerator)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Array)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Array)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize(System.Array.Of($asm0D.System.Int32))) ();
+    return ($T06 = JSIL.Memoize(System.Array.Of($asm14.System.Int32))) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T07 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_Group)) ();
@@ -16544,13 +16526,13 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     return ($T0B = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_MatchPredicate)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -16647,7 +16629,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.BasicList", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -16671,7 +16653,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     );
 
     $.Method({Static:false, Public:true }, "CopyTo", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Array"), $.Int32]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Array"), $.Int32]), 
       BasicList_CopyTo
     );
 
@@ -16711,10 +16693,10 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
       BasicList_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator");
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator");
 
     $.Method({Static:false, Public:true }, "Trim", 
       JSIL.MethodSignature.Void, 
@@ -16740,13 +16722,13 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     $.Property({Static:false, Public:true }, "Count", $.Int32);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.IEnumerable")
+      /* 0 */ $asm14.TypeRef("System.Collections.IEnumerable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
+    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
 
 })();
 
@@ -16758,10 +16740,10 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_Node)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
 
 
@@ -16791,7 +16773,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "ProtoBuf.Meta.BasicList+NodeEnumerator", 
       IsPublic: false, 
       IsReferenceType: false, 
@@ -16819,7 +16801,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
       JSIL.MethodSignature.Void, 
       NodeEnumerator_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset");
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset");
 
     $.Field({Static:false, Public:false}, "position", $.Int32);
 
@@ -16828,7 +16810,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     $.Property({Static:false, Public:true , Virtual:true }, "Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.IEnumerator")
+      /* 0 */ $asm14.TypeRef("System.Collections.IEnumerator")
     );
 
 
@@ -16842,50 +16824,50 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
 (function Node$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T00 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Array)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Array)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_MatchPredicate)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.Array"), $asm0D.TypeRef("System.Array"), 
-        $asm0D.TypeRef("System.Int32")
+        $asm14.TypeRef("System.Array"), $asm14.TypeRef("System.Array"), 
+        $asm14.TypeRef("System.Int32")
       ]))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.Array"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Array"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32")
+        $asm14.TypeRef("System.Array"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Array"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32")
       ]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
 
 
@@ -17019,7 +17001,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.BasicList+Node", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -17043,7 +17025,7 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
     );
 
     $.Method({Static:false, Public:false}, "CopyTo", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Array"), $.Int32]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Array"), $.Int32]), 
       Node_CopyTo
     );
 
@@ -17098,21 +17080,21 @@ JSIL.DeclareNamespace("ProtoBuf.Meta");
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
+    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
 
 })();
 
 /* delegate ProtoBuf.Meta.BasicList+MatchPredicate */ 
 
 JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [], 
-  new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Object"), $asm0D.TypeRef("System.Object")]));
+  new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Object"), $asm14.TypeRef("System.Object")]));
 
 /* class ProtoBuf.Meta.BasicList+Group */ 
 
 (function Group$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList)) ();
@@ -17125,7 +17107,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.BasicList+Group", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -17159,10 +17141,10 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_Node)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
 
 
@@ -17228,7 +17210,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
+    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
 
 })();
 
@@ -17240,64 +17222,64 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T04 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm0E.ProtoBuf.SerializationContext)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T0E = function () {
     return ($T0E = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel_CallbackType)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T10 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm0D.System.Void)) ();
+    return ($T11 = JSIL.Memoize($asm14.System.Void)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -17414,7 +17396,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.CallbackSet", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -17428,37 +17410,37 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:true , Public:false}, "CheckCallbackParameters", 
-      new JSIL.MethodSignature($.Boolean, [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.MethodInfo")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.MethodInfo")]), 
       CallbackSet_CheckCallbackParameters
     );
 
     $.Method({Static:true , Public:false}, "CreateInvalidCallbackSignature", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Exception"), [$asm0D.TypeRef("System.Reflection.MethodInfo")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Exception"), [$asm14.TypeRef("System.Reflection.MethodInfo")]), 
       CallbackSet_CreateInvalidCallbackSignature
     );
 
     $.Method({Static:false, Public:true }, "get_AfterDeserialize", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_get_AfterDeserialize
     );
 
     $.Method({Static:false, Public:true }, "get_AfterSerialize", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_get_AfterSerialize
     );
 
     $.Method({Static:false, Public:true }, "get_BeforeDeserialize", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_get_BeforeDeserialize
     );
 
     $.Method({Static:false, Public:true }, "get_BeforeSerialize", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_get_BeforeSerialize
     );
 
     $.Method({Static:false, Public:false}, "get_Item", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel+CallbackType")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel+CallbackType")]), 
       CallbackSet_get_Item
     );
 
@@ -17468,56 +17450,56 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:false}, "SanityCheckCallback", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.MethodInfo")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.MethodInfo")]), 
       CallbackSet_SanityCheckCallback
     );
 
     $.Method({Static:false, Public:true }, "set_AfterDeserialize", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_set_AfterDeserialize
     );
 
     $.Method({Static:false, Public:true }, "set_AfterSerialize", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_set_AfterSerialize
     );
 
     $.Method({Static:false, Public:true }, "set_BeforeDeserialize", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_set_BeforeDeserialize
     );
 
     $.Method({Static:false, Public:true }, "set_BeforeSerialize", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.MethodInfo")), 
       CallbackSet_set_BeforeSerialize
     );
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "metaType", $asm0E.TypeRef("ProtoBuf.Meta.MetaType"));
 
-    $.Field({Static:false, Public:false}, "beforeSerialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "beforeSerialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false}, "afterSerialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "afterSerialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false}, "beforeDeserialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "beforeDeserialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false}, "afterDeserialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "afterDeserialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:false}, "Item", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Property({Static:false, Public:false}, "Item", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:true }, "BeforeSerialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Property({Static:false, Public:true }, "BeforeSerialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:true }, "BeforeDeserialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Property({Static:false, Public:true }, "BeforeDeserialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:true }, "AfterSerialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Property({Static:false, Public:true }, "AfterSerialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Property({Static:false, Public:true }, "AfterDeserialize", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Property({Static:false, Public:true }, "AfterDeserialize", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
     $.Property({Static:false, Public:true }, "NonTrivial", $.Boolean);
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
+    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
 
 })();
 
@@ -17526,25 +17508,25 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 (function MetaType$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Collections.IEnumerable)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.IEnumerable)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -17553,61 +17535,61 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.FlagsAttribute)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.FlagsAttribute)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize(System.Array.Of($asm0D.System.String))) ();
+    return ($T0E = JSIL.Memoize(System.Array.Of($asm14.System.String))) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T10 = function () {
     return ($T10 = JSIL.Memoize($asm0E.ProtoBuf.Meta.ValueMember)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MemberInfo))) ();
+    return ($T11 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MemberInfo))) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.Reflection.BindingFlags)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.Reflection.BindingFlags)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T15 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T16 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T17 = function () {
     return ($T17 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T18 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T1A = function () {
     return ($T1A = JSIL.Memoize($asm0E.ProtoBuf.Meta.SubType)) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T1B = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T1C = function () {
     return ($T1C = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType_AttributeFamily)) ();
@@ -17619,7 +17601,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T1E = JSIL.Memoize($asm0E.ProtoBuf.Meta.AttributeMap)) ();
   };
   var $T1F = function () {
-    return ($T1F = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MethodInfo))) ();
+    return ($T1F = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MethodInfo))) ();
   };
   var $T20 = function () {
     return ($T20 = JSIL.Memoize($asm0E.ProtoBuf.ImplicitFields)) ();
@@ -17634,43 +17616,43 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T23 = JSIL.Memoize($asm0E.ProtoBuf.ProtoMemberAttribute)) ();
   };
   var $T24 = function () {
-    return ($T24 = JSIL.Memoize($asm0D.System.Array)) ();
+    return ($T24 = JSIL.Memoize($asm14.System.Array)) ();
   };
   var $T25 = function () {
     return ($T25 = JSIL.Memoize($asm0E.ProtoBuf.ProtoTypeCode)) ();
   };
   var $T26 = function () {
-    return ($T26 = JSIL.Memoize($asm0D.System.Char)) ();
+    return ($T26 = JSIL.Memoize($asm14.System.Char)) ();
   };
   var $T27 = function () {
-    return ($T27 = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T27 = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T28 = function () {
-    return ($T28 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T28 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T29 = function () {
-    return ($T29 = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T29 = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $T2A = function () {
-    return ($T2A = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T2A = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T2B = function () {
-    return ($T2B = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T2B = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T2C = function () {
-    return ($T2C = JSIL.Memoize($asm0D.System.Decimal)) ();
+    return ($T2C = JSIL.Memoize($asm14.System.Decimal)) ();
   };
   var $T2D = function () {
-    return ($T2D = JSIL.Memoize($asm0D.System.Guid)) ();
+    return ($T2D = JSIL.Memoize($asm14.System.Guid)) ();
   };
   var $T2E = function () {
-    return ($T2E = JSIL.Memoize($asm0D.System.TimeSpan)) ();
+    return ($T2E = JSIL.Memoize($asm14.System.TimeSpan)) ();
   };
   var $T2F = function () {
-    return ($T2F = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T2F = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T30 = function () {
-    return ($T30 = JSIL.Memoize($asm0D.System.Delegate)) ();
+    return ($T30 = JSIL.Memoize($asm14.System.Delegate)) ();
   };
   var $T31 = function () {
     return ($T31 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoTypeSerializer)) ();
@@ -17691,13 +17673,13 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T36 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.SurrogateSerializer)) ();
   };
   var $T37 = function () {
-    return ($T37 = JSIL.Memoize($asm0D.System.Reflection.ConstructorInfo)) ();
+    return ($T37 = JSIL.Memoize($asm14.System.Reflection.ConstructorInfo)) ();
   };
   var $T38 = function () {
     return ($T38 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.TupleSerializer)) ();
   };
   var $T39 = function () {
-    return ($T39 = JSIL.Memoize(System.Array.Of($asm0D.System.Int32))) ();
+    return ($T39 = JSIL.Memoize(System.Array.Of($asm14.System.Int32))) ();
   };
   var $T3A = function () {
     return ($T3A = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Serializers.IProtoSerializer))) ();
@@ -17724,10 +17706,10 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T41 = JSIL.Memoize($asm0E.ProtoBuf.Meta.ValueMember_Comparer)) ();
   };
   var $T42 = function () {
-    return ($T42 = JSIL.Memoize($asm0D.System.Text.StringBuilder)) ();
+    return ($T42 = JSIL.Memoize($asm14.System.Text.StringBuilder)) ();
   };
   var $T43 = function () {
-    return ($T43 = JSIL.Memoize(System.Array.Of($asm0D.System.Type))) ();
+    return ($T43 = JSIL.Memoize(System.Array.Of($asm14.System.Type))) ();
   };
   var $T44 = function () {
     return ($T44 = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Meta.SubType))) ();
@@ -17736,131 +17718,131 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     return ($T45 = JSIL.Memoize($asm0E.ProtoBuf.Meta.SubType_Comparer)) ();
   };
   var $T46 = function () {
-    return ($T46 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T46 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T47 = function () {
-    return ($T47 = JSIL.Memoize($asm0D.System.Convert)) ();
+    return ($T47 = JSIL.Memoize($asm14.System.Convert)) ();
   };
   var $T48 = function () {
-    return ($T48 = JSIL.Memoize($asm0D.System.Collections.Generic.IDictionary$b2)) ();
+    return ($T48 = JSIL.Memoize($asm14.System.Collections.Generic.IDictionary$b2)) ();
   };
   var $T49 = function () {
-    return ($T49 = JSIL.Memoize($asm0D.System.Collections.Generic.KeyValuePair$b2)) ();
+    return ($T49 = JSIL.Memoize($asm14.System.Collections.Generic.KeyValuePair$b2)) ();
   };
   var $T4A = function () {
-    return ($T4A = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2)) ();
+    return ($T4A = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2)) ();
   };
   var $T4B = function () {
-    return ($T4B = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1)) ();
+    return ($T4B = JSIL.Memoize($asm14.System.Collections.Generic.List$b1)) ();
   };
   var $T4C = function () {
-    return ($T4C = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ConstructorInfo))) ();
+    return ($T4C = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ConstructorInfo))) ();
   };
   var $T4D = function () {
-    return ($T4D = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T4D = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T4E = function () {
-    return ($T4E = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T4E = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T4F = function () {
-    return ($T4F = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.FieldInfo))) ();
+    return ($T4F = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.FieldInfo))) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), [
-        $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0D.TypeRef("System.Type"), 
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Reflection.MemberInfo"), 
-        $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type"), 
-        $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
-        $asm0D.TypeRef("System.Object")
+        $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm14.TypeRef("System.Type"), 
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Reflection.MemberInfo"), 
+        $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type"), 
+        $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
+        $asm14.TypeRef("System.Object")
       ]))) ();
   };
   var $S04 = function () {
     return ($S04 = JSIL.Memoize(JSIL.MethodSignature.Action($asm0E.TypeRef("ProtoBuf.Meta.ValueMember")))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S07 = function () {
     return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Meta.AttributeMap")]), [
-        $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-        $asm0D.TypeRef("System.Boolean")
+        $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+        $asm14.TypeRef("System.Boolean")
       ]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Exception")]))) ();
+    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.Exception")]))) ();
   };
   var $S09 = function () {
     return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Meta.AttributeMap")]), [
-        $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.MemberInfo"), 
-        $asm0D.TypeRef("System.Boolean")
+        $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.MemberInfo"), 
+        $asm14.TypeRef("System.Boolean")
       ]))) ();
   };
   var $S0A = function () {
     return ($S0A = JSIL.Memoize(new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [
-        $asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo"), 
-        $asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo")
+        $asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo"), 
+        $asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo")
       ]))) ();
   };
   var $S0B = function () {
-    return ($S0B = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S0B = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S0C = function () {
     return ($S0C = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), [
-        $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type"), 
-        $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat")
+        $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type"), 
+        $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat")
       ]))) ();
   };
   var $S0D = function () {
-    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S0E = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S0F = JSIL.Memoize(new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm14.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]))) ();
   };
   var $S10 = function () {
-    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S11 = function () {
-    return ($S11 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Char")]))) ();
+    return ($S11 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Char")]))) ();
   };
   var $S12 = function () {
-    return ($S12 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S12 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S13 = function () {
-    return ($S13 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Char"), $asm0D.TypeRef("System.Int32")]))) ();
+    return ($S13 = JSIL.Memoize(new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm14.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]))) ();
   };
   var $S14 = function () {
-    return ($S14 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0D.TypeRef("System.Object")]))) ();
+    return ($S14 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Char"), $asm14.TypeRef("System.Int32")]))) ();
   };
   var $S15 = function () {
-    return ($S15 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
+    return ($S15 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm14.TypeRef("System.Object")]))) ();
   };
   var $S16 = function () {
-    return ($S16 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Boolean")]))) ();
+    return ($S16 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Boolean")]))) ();
   };
   var $S17 = function () {
-    return ($S17 = JSIL.Memoize(new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm0D.TypeRef("System.Reflection.MethodInfo")]))) ();
+    return ($S17 = JSIL.Memoize(new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm14.TypeRef("System.Reflection.MethodInfo")]))) ();
   };
   var $S18 = function () {
-    return ($S18 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Int32")]))) ();
+    return ($S18 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Int32")]))) ();
   };
   var $S19 = function () {
-    return ($S19 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Object")]))) ();
+    return ($S19 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Object")]))) ();
   };
 
 
@@ -18639,7 +18621,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
               for (var enumerator = (this.subTypes).GetEnumerator(); enumerator.MoveNext(); ) {
                 var subType = $T1A().$Cast(enumerator.get_Current());
                 var flag8 = !(subType.get_DerivedType()).get_IgnoreListHandling() && 
-                $S0E().CallVirtual("IsAssignableFrom", null, (this.model).MapType($thisType.ienumerable), (subType.get_DerivedType()).get_Type());
+                ((this.model).MapType($thisType.ienumerable)).IsAssignableFrom((subType.get_DerivedType()).get_Type());
                 if (flag8) {
                   throw $S0B().Construct("Repeated data (a list, collection, etc) has inbuilt behaviour and cannot be used as a subclass");
                 }
@@ -18706,7 +18688,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
           var flag3 = callbacks.get()[index] !== null;
           if (flag3) {
             var reflectedType = method.get_ReflectedType();
-            throw $S0F().Construct(("Duplicate " + callbackTypeName + " callbacks on " + reflectedType.get_FullName()));
+            throw $S0E().Construct(("Duplicate " + callbackTypeName + " callbacks on " + reflectedType.get_FullName()));
           }
         }
         callbacks.get()[index] = method;
@@ -19040,10 +19022,9 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   function MetaType_GetFields () {
-    var $s00 = new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm0D.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]);
     var array = JSIL.Array.New($T10(), (this.fields).get_Count());
     (this.fields).CopyTo(array, 0);
-    $s00.CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.ValueMember], array, $T41().Default);
+    $S0F().CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.ValueMember], array, $T41().Default);
     return array;
   }; 
 
@@ -19152,7 +19133,6 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   function MetaType_GetSubtypes () {
-    var $s00 = new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm0D.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]);
     var flag = (this.subTypes === null) || 
     (((this.subTypes).get_Count() | 0) === 0);
     if (flag) {
@@ -19160,7 +19140,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     } else {
       var array = JSIL.Array.New($T1A(), (this.subTypes).get_Count());
       (this.subTypes).CopyTo(array, 0);
-      $s00.CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.SubType], array, $T45().Default);
+      $S13().CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.SubType], array, $T45().Default);
       result = array;
     }
     return result;
@@ -19230,11 +19210,11 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   function MetaType_IsValidSubType (subType) {
-    return $S0E().CallVirtual("IsAssignableFrom", null, this.type, subType);
+    return (this.type).IsAssignableFrom(subType);
   }; 
 
   function MetaType_NewLine (builder, indent) {
-    return $S13().CallVirtual("Append", null, $T08().AppendLine(builder), " ", Math.imul(indent, 3));
+    return $S14().CallVirtual("Append", null, $T08().AppendLine(builder), " ", Math.imul(indent, 3));
   }; 
 
   function MetaType_NormalizeProtoMember (model, member, family, forced, isEnum, partialMembers, dataMemberOffset, inferByTagName) {
@@ -19285,7 +19265,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
           flag2.set(true);
         } else {
           attribute = $thisType.GetAttribute(attribs, "ProtoBuf.ProtoEnumAttribute");
-          num.set($S14().CallStatic($T47(), "ToInt32", null, $S15().CallVirtual("GetValue", null, $T15().$Cast(member), null)));
+          num.set($S15().CallStatic($T47(), "ToInt32", null, ($T15().$Cast(member)).GetValue(null)));
           var flag6 = attribute !== null;
           if (flag6) {
             $thisType.GetFieldName(/* ref */ text, attribute, "Name");
@@ -19756,13 +19736,11 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   function MetaType_WriteSchema (builder, indent, /* ref */ requiresBclImport) {
-    var $s00 = new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm0D.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]);
-    var $s01 = new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm0D.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]);
     var array2 = new JSIL.BoxedVariable(null);
     if (this.surrogate === null) {
       var array = JSIL.Array.New($T10(), (this.fields).get_Count());
       (this.fields).CopyTo(array, 0);
-      $s00.CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.ValueMember], array, $T41().Default);
+      $S0F().CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.ValueMember], array, $T41().Default);
       var isList = this.get_IsList();
       if (isList) {
         var schemaTypeName = (this.model).GetSchemaTypeName(
@@ -19824,7 +19802,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
                 var flag8 = fieldInfo.get_IsStatic() && 
                 fieldInfo.get_IsLiteral();
                 if (flag8) {
-                  var value = $S15().CallVirtual("GetValue", null, fieldInfo, null);
+                  var value = fieldInfo.GetValue(null);
                   $S12().CallVirtual("Append", null, $S19().CallVirtual("Append", null, $S12().CallVirtual("Append", null, $S12().CallVirtual("Append", null, $thisType.NewLine(builder, (((indent | 0) + 1) | 0)), fieldInfo.get_Name()), " = "), value), ";");
                 }
               }
@@ -19896,7 +19874,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
               $S12().CallVirtual("Append", null, $thisType.NewLine(builder, (((indent | 0) + 1) | 0)), "// the following represent sub-types; at most 1 should have a value");
               var array6 = JSIL.Array.New($T1A(), (this.subTypes).get_Count());
               (this.subTypes).CopyTo(array6, 0);
-              $s01.CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.SubType], array6, $T45().Default);
+              $S13().CallStatic($T24(), "Sort$b1", [$asm0E.ProtoBuf.Meta.SubType], array6, $T45().Default);
               var array7 = array6;
 
               for (var m = 0; m < (array7.length | 0); m = ((m + 1) | 0)) {
@@ -19913,7 +19891,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.MetaType", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -19923,8 +19901,8 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Method({Static:false, Public:false}, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Reflection.MethodInfo")
+          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Reflection.MethodInfo")
         ]), 
       MetaType__ctor
     );
@@ -19944,7 +19922,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
       MetaType_Add$02
     )
       .Parameter(0, "memberNames", function (_) {
-          _.Attribute($asm0D.TypeRef("System.ParamArrayAttribute"))
+          _.Attribute($asm14.TypeRef("System.ParamArrayAttribute"))
         });
 
     $.Method({Static:false, Public:true }, "Add", 
@@ -19958,7 +19936,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     $.Method({Static:false, Public:true }, "Add", 
       new JSIL.MethodSignature($.Type, [
           $.Int32, $.String, 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type")
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type")
         ]), 
       MetaType_Add$04
     );
@@ -19976,7 +19954,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     $.Method({Static:false, Public:true }, "AddField", 
       new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), [
           $.Int32, $.String, 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type")
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type")
         ]), 
       MetaType_AddField$07
     );
@@ -19984,20 +19962,20 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     $.Method({Static:false, Public:false}, "AddField", 
       new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), [
           $.Int32, $.String, 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type"), 
           $.Object
         ]), 
       MetaType_AddField$08
     );
 
     $.Method({Static:false, Public:true }, "AddSubType", 
-      new JSIL.MethodSignature($.Type, [$.Int32, $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Type, [$.Int32, $asm14.TypeRef("System.Type")]), 
       MetaType_AddSubType$09
     );
 
     $.Method({Static:false, Public:true }, "AddSubType", 
       new JSIL.MethodSignature($.Type, [
-          $.Int32, $asm0D.TypeRef("System.Type"), 
+          $.Int32, $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.DataFormat")
         ]), 
       MetaType_AddSubType$0A
@@ -20019,9 +19997,9 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
           $.Boolean, $asm0E.TypeRef("ProtoBuf.Meta.BasicList"), 
           $.Int32, $.Boolean, 
           $asm0E.TypeRef("ProtoBuf.ImplicitFields"), $asm0E.TypeRef("ProtoBuf.Meta.BasicList"), 
-          $asm0D.TypeRef("System.Reflection.MemberInfo"), $jsilcore.TypeRef("JSIL.Reference", [$.Boolean]), 
+          $asm14.TypeRef("System.Reflection.MemberInfo"), $jsilcore.TypeRef("JSIL.Reference", [$.Boolean]), 
           $.Boolean, $.Boolean, 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")])
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")])
         ]), 
       MetaType_ApplyDefaultBehaviour_AddMembers
     );
@@ -20033,16 +20011,16 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Method({Static:true , Public:false}, "CheckForCallback", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.Reflection.MethodInfo"), $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Meta.AttributeMap")]), 
-          $.String, $jsilcore.TypeRef("JSIL.Reference", [$jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MethodInfo")])]), 
+          $asm14.TypeRef("System.Reflection.MethodInfo"), $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Meta.AttributeMap")]), 
+          $.String, $jsilcore.TypeRef("JSIL.Reference", [$jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MethodInfo")])]), 
           $.Int32
         ]), 
       MetaType_CheckForCallback
     );
 
     $.Method({Static:true , Public:false}, "Coalesce", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [
-          $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MethodInfo")]), $.Int32, 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [
+          $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MethodInfo")]), $.Int32, 
           $.Int32
         ]), 
       MetaType_Coalesce
@@ -20064,7 +20042,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:true }, "get_ConstructType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       MetaType_get_ConstructType
     );
 
@@ -20074,7 +20052,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:false}, "get_Fields", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerable")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerable")), 
       MetaType_get_Fields
     );
 
@@ -20119,7 +20097,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:true }, "get_Item", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), [$asm0D.TypeRef("System.Reflection.MemberInfo")]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), [$asm14.TypeRef("System.Reflection.MemberInfo")]), 
       MetaType_get_Item$0E
     );
 
@@ -20144,7 +20122,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:true }, "get_Type", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       MetaType_get_Type
     );
 
@@ -20154,7 +20132,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:true , Public:false}, "GetAsReferenceDefault", 
-      new JSIL.MethodSignature($.Boolean, [$asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm14.TypeRef("System.Type")]), 
       MetaType_GetAsReferenceDefault
     );
 
@@ -20164,13 +20142,13 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:true , Public:false}, "GetBaseType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$.Type]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$.Type]), 
       MetaType_GetBaseType
     );
 
     $.Method({Static:true , Public:false}, "GetContractFamily", 
       new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType+AttributeFamily"), [
-          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm14.TypeRef("System.Type"), 
           $jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Meta.AttributeMap")])
         ]), 
       MetaType_GetContractFamily
@@ -20280,7 +20258,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:true , Public:false}, "InbuiltType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Exception"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Exception"), [$asm14.TypeRef("System.Type")]), 
       MetaType_InbuiltType
     );
 
@@ -20295,18 +20273,18 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:false}, "IsValidSubType", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       MetaType_IsValidSubType
     );
 
     $.Method({Static:true , Public:false}, "NewLine", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Text.StringBuilder"), $.Int32]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Text.StringBuilder"), $.Int32]), 
       MetaType_NewLine
     );
 
     $.Method({Static:true , Public:false}, "NormalizeProtoMember", 
       new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Reflection.MemberInfo"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Reflection.MemberInfo"), 
           $asm0E.TypeRef("ProtoBuf.Meta.MetaType+AttributeFamily"), $.Boolean, 
           $.Boolean, $asm0E.TypeRef("ProtoBuf.Meta.BasicList"), 
           $.Int32, $.Boolean
@@ -20322,19 +20300,19 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Method({Static:true , Public:false}, "ResolveListTypes", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.Type"), 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")]), $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")])
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.Type"), 
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")]), $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")])
         ]), 
       MetaType_ResolveListTypes
     );
 
     $.Method({Static:false, Public:false}, "ResolveMethod", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [$.String, $.Boolean]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [$.String, $.Boolean]), 
       MetaType_ResolveMethod
     );
 
     $.Method({Static:true , Public:false}, "ResolveTupleConstructor", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.ConstructorInfo"), [$asm0D.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MemberInfo")])])]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.ConstructorInfo"), [$asm14.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")])])]), 
       MetaType_ResolveTupleConstructor
     );
 
@@ -20344,7 +20322,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:true }, "set_ConstructType", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Type")), 
       MetaType_set_ConstructType
     );
 
@@ -20385,8 +20363,8 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Method({Static:false, Public:true }, "SetCallbacks", 
       new JSIL.MethodSignature($.Type, [
-          $asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo"), 
-          $asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo")
+          $asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo"), 
+          $asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo")
         ]), 
       MetaType_SetCallbacks$11
     );
@@ -20400,7 +20378,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:true }, "SetFactory", 
-      new JSIL.MethodSignature($.Type, [$asm0D.TypeRef("System.Reflection.MethodInfo")]), 
+      new JSIL.MethodSignature($.Type, [$asm14.TypeRef("System.Reflection.MethodInfo")]), 
       MetaType_SetFactory$13
     );
 
@@ -20418,7 +20396,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.Method({Static:false, Public:true }, "SetSurrogate", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Type")), 
       MetaType_SetSurrogate
     );
 
@@ -20434,7 +20412,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Method({Static:false, Public:false}, "WriteSchema", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.Text.StringBuilder"), $.Int32, 
+          $asm14.TypeRef("System.Text.StringBuilder"), $.Int32, 
           $jsilcore.TypeRef("JSIL.Reference", [$.Boolean])
         ]), 
       MetaType_WriteSchema
@@ -20444,25 +20422,25 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Field({Static:false, Public:false}, "subTypes", $asm0E.TypeRef("ProtoBuf.Meta.BasicList"));
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "ienumerable", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Collections.IEnumerable.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "ienumerable", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Collections.IEnumerable.__Type__;
       });
 
     $.Field({Static:false, Public:false}, "callbacks", $asm0E.TypeRef("ProtoBuf.Meta.CallbackSet"));
 
     $.Field({Static:false, Public:false}, "$name", $.String);
 
-    $.Field({Static:false, Public:false}, "factory", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "factory", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "model", $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false}, "serializer", $asm0E.TypeRef("ProtoBuf.Serializers.IProtoTypeSerializer"));
 
-    $.Field({Static:false, Public:false}, "constructType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false}, "constructType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false}, "surrogate", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false}, "surrogate", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "fields", $asm0E.TypeRef("ProtoBuf.Meta.BasicList"));
 
@@ -20482,7 +20460,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Constant({Static:true , Public:false}, "OPTIONS_IgnoreListHandling", $.Byte, 128);
 
-    $.Field({Static:false, Public:false}, "flags", $asm0D.TypeRef("System.Byte"));
+    $.Field({Static:false, Public:false}, "flags", $asm14.TypeRef("System.Byte"));
 
 
     function MetaType__cctor () {
@@ -20514,7 +20492,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Property({Static:false, Public:true }, "Name", $.String);
 
-    $.Property({Static:false, Public:true }, "Type", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "Type", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:false}, "Serializer", $asm0E.TypeRef("ProtoBuf.Serializers.IProtoTypeSerializer"));
 
@@ -20522,7 +20500,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Property({Static:false, Public:true }, "UseConstructor", $.Boolean);
 
-    $.Property({Static:false, Public:true }, "ConstructType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "ConstructType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true }, "Item", $asm0E.TypeRef("ProtoBuf.Meta.ValueMember"));
 
@@ -20534,7 +20512,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     $.Property({Static:false, Public:false}, "Pending", $.Boolean);
 
-    $.Property({Static:false, Public:false}, "Fields", $asm0D.TypeRef("System.Collections.IEnumerable"));
+    $.Property({Static:false, Public:false}, "Fields", $asm14.TypeRef("System.Collections.IEnumerable"));
 
     $.Property({Static:false, Public:false}, "IsAutoTuple", $.Boolean);
 
@@ -20545,7 +20523,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
+    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
 
 })();
 
@@ -20554,30 +20532,30 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 (function Comparer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.StringComparison)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.StringComparison)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.Meta.MetaType"), $asm0E.TypeRef("ProtoBuf.Meta.MetaType")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.Meta.MetaType"), $asm0E.TypeRef("ProtoBuf.Meta.MetaType")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String"), 
-        $asm0D.TypeRef("System.StringComparison")
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.String"), 
+        $asm14.TypeRef("System.StringComparison")
       ]))) ();
   };
 
@@ -20614,7 +20592,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.MetaType+Comparer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -20650,8 +20628,8 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
     );
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.IComparer"), 
-      /* 1 */ $asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0E.TypeRef("ProtoBuf.Meta.MetaType")])
+      /* 0 */ $asm14.TypeRef("System.Collections.IComparer"), 
+      /* 1 */ $asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0E.TypeRef("ProtoBuf.Meta.MetaType")])
     );
 
 
@@ -20665,7 +20643,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.BasicList+MatchPredicate", false, [],
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.Meta.MetaType+AttributeFamily", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: false, 
     IsFlags: true, 
   }, 
@@ -20683,25 +20661,25 @@ JSIL.MakeEnum(
 (function TypeModel$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Collections.IList)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.IList)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeFormatEventHandler)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Delegate)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Delegate)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
@@ -20710,64 +20688,64 @@ JSIL.MakeEnum(
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.ProtoTypeCode)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Collections.Generic.KeyValuePair$b2)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Collections.Generic.KeyValuePair$b2)) ();
   };
   var $T0B = function () {
     return ($T0B = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.Array)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Array)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.Collections.Generic.IDictionary$b2)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.Collections.Generic.IDictionary$b2)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize(System.Array.Of($asm0D.System.Type))) ();
+    return ($T10 = JSIL.Memoize(System.Array.Of($asm14.System.Type))) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2)) ();
+    return ($T11 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1)) ();
+    return ($T12 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm0D.System.Activator)) ();
+    return ($T13 = JSIL.Memoize($asm14.System.Activator)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm0D.System.IO.MemoryStream)) ();
+    return ($T15 = JSIL.Memoize($asm14.System.IO.MemoryStream)) ();
   };
   var $T16 = function () {
     return ($T16 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T18 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T1A = function () {
     return ($T1A = JSIL.Memoize($asm0E.ProtoBuf.ProtoReader)) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T1B = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T1C = function () {
-    return ($T1C = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T1C = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T1D = function () {
     return ($T1D = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
@@ -20791,58 +20769,58 @@ JSIL.MakeEnum(
     return ($T23 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeFormatEventArgs)) ();
   };
   var $T24 = function () {
-    return ($T24 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T24 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T25 = function () {
-    return ($T25 = JSIL.Memoize($asm0D.System.Collections.IEnumerable)) ();
+    return ($T25 = JSIL.Memoize($asm14.System.Collections.IEnumerable)) ();
   };
   var $T26 = function () {
     return ($T26 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList)) ();
   };
   var $T27 = function () {
-    return ($T27 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MethodInfo))) ();
+    return ($T27 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MethodInfo))) ();
   };
   var $T28 = function () {
-    return ($T28 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T28 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T29 = function () {
-    return ($T29 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T29 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T2A = function () {
-    return ($T2A = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T2A = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T2B = function () {
-    return ($T2B = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T2B = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T2C = function () {
-    return ($T2C = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T2C = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T2D = function () {
-    return ($T2D = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.PropertyInfo))) ();
+    return ($T2D = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.PropertyInfo))) ();
   };
   var $T2E = function () {
-    return ($T2E = JSIL.Memoize($asm0D.System.Reflection.BindingFlags)) ();
+    return ($T2E = JSIL.Memoize($asm14.System.Reflection.BindingFlags)) ();
   };
   var $T2F = function () {
-    return ($T2F = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T2F = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T30 = function () {
-    return ($T30 = JSIL.Memoize($asm0D.System.Reflection.Assembly)) ();
+    return ($T30 = JSIL.Memoize($asm14.System.Reflection.Assembly)) ();
   };
   var $T31 = function () {
-    return ($T31 = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T31 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T32 = function () {
-    return ($T32 = JSIL.Memoize($asm0D.System.Char)) ();
+    return ($T32 = JSIL.Memoize($asm14.System.Char)) ();
   };
   var $T33 = function () {
-    return ($T33 = JSIL.Memoize($asm0D.System.Collections.Generic.IEnumerable$b1)) ();
+    return ($T33 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1)) ();
   };
   var $T34 = function () {
-    return ($T34 = JSIL.Memoize($asm0D.System.Collections.Generic.ICollection$b1)) ();
+    return ($T34 = JSIL.Memoize($asm14.System.Collections.Generic.ICollection$b1)) ();
   };
   var $T35 = function () {
-    return ($T35 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T35 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T36 = function () {
     return ($T36 = JSIL.Memoize($asm0E.ProtoBuf.ProtoException)) ();
@@ -20851,22 +20829,22 @@ JSIL.MakeEnum(
     return ($T37 = JSIL.Memoize($asm0E.ProtoBuf.SubItemToken)) ();
   };
   var $T38 = function () {
-    return ($T38 = JSIL.Memoize($asm0D.System.SByte)) ();
+    return ($T38 = JSIL.Memoize($asm14.System.SByte)) ();
   };
   var $T39 = function () {
-    return ($T39 = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T39 = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T3A = function () {
-    return ($T3A = JSIL.Memoize($asm0D.System.UInt16)) ();
+    return ($T3A = JSIL.Memoize($asm14.System.UInt16)) ();
   };
   var $T3B = function () {
-    return ($T3B = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T3B = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T3C = function () {
-    return ($T3C = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T3C = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T3D = function () {
-    return ($T3D = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T3D = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T3E = function () {
     return ($T3E = JSIL.Memoize($asm0E.ProtoBuf.BclHelpers)) ();
@@ -20875,121 +20853,118 @@ JSIL.MakeEnum(
     return ($T3F = JSIL.Memoize($asm0F.System.Uri)) ();
   };
   var $T40 = function () {
-    return ($T40 = JSIL.Memoize(System.Array.Of($asm0D.System.Object))) ();
+    return ($T40 = JSIL.Memoize(System.Array.Of($asm14.System.Object))) ();
   };
   var $T41 = function () {
-    return ($T41 = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T41 = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $T42 = function () {
-    return ($T42 = JSIL.Memoize($asm0D.System.Decimal)) ();
+    return ($T42 = JSIL.Memoize($asm14.System.Decimal)) ();
   };
   var $T43 = function () {
-    return ($T43 = JSIL.Memoize($asm0D.System.DateTime)) ();
+    return ($T43 = JSIL.Memoize($asm14.System.DateTime)) ();
   };
   var $T44 = function () {
-    return ($T44 = JSIL.Memoize($asm0D.System.TimeSpan)) ();
+    return ($T44 = JSIL.Memoize($asm14.System.TimeSpan)) ();
   };
   var $T45 = function () {
-    return ($T45 = JSIL.Memoize($asm0D.System.Guid)) ();
+    return ($T45 = JSIL.Memoize($asm14.System.Guid)) ();
   };
   var $T46 = function () {
-    return ($T46 = JSIL.Memoize($asm0D.System.Collections.IEnumerator)) ();
+    return ($T46 = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
   };
   var $T47 = function () {
-    return ($T47 = JSIL.Memoize($asm0D.System.NullReferenceException)) ();
+    return ($T47 = JSIL.Memoize($asm14.System.NullReferenceException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.MemoryStream"), null))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.MemoryStream"), null))) ();
   };
   var $S04 = function () {
     return ($S04 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Object"), 
         $asm0E.TypeRef("ProtoBuf.ProtoWriter")
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Object"), 
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Object"), 
         $asm0E.TypeRef("ProtoBuf.ProtoReader")
       ]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
-        $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
+    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
+        $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
       ]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
-        $asm0D.TypeRef("System.Int32"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
+    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
+        $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+        $asm14.TypeRef("System.Int32"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
       ], ["T"]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventArgs"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventArgs"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S0A = function () {
-    return ($S0A = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S0A = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $S0B = function () {
-    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S0B = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
   };
   var $S0C = function () {
-    return ($S0C = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
-  };
-  var $S0D = function () {
-    return ($S0D = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
+    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature(null, [
+        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
         $asm0E.TypeRef("ProtoBuf.SerializationContext")
       ]))) ();
   };
+  var $S0D = function () {
+    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventArgs"), [$asm14.TypeRef("System.Type")]))) ();
+  };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventArgs"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S0E = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S10 = function () {
-    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0F.TypeRef("System.Uri"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S11 = function () {
-    return ($S11 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0F.TypeRef("System.Uri"), [$asm0D.TypeRef("System.String")]))) ();
-  };
-  var $S12 = function () {
-    return ($S12 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm0D.TypeRef("System.Array"), $asm0D.TypeRef("System.Array"), 
-        $asm0D.TypeRef("System.Int32")
+    return ($S11 = JSIL.Memoize(new JSIL.MethodSignature(null, [
+        $asm14.TypeRef("System.Array"), $asm14.TypeRef("System.Array"), 
+        $asm14.TypeRef("System.Int32")
       ]))) ();
   };
-  var $S13 = function () {
-    return ($S13 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NullReferenceException"), null))) ();
+  var $S12 = function () {
+    return ($S12 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NullReferenceException"), null))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm0D.System.Collections.IList.Add)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.Collections.IList.Add)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.Collections.IEnumerable.GetEnumerator)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.Collections.IEnumerable.GetEnumerator)) ();
   };
   var $IM03 = function () {
-    return ($IM03 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.MoveNext)) ();
+    return ($IM03 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM04 = function () {
-    return ($IM04 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.get_Current)) ();
+    return ($IM04 = JSIL.Memoize($asm14.System.Collections.IEnumerator.get_Current)) ();
   };
 
 
@@ -21550,7 +21525,7 @@ JSIL.MakeEnum(
     var parameterType = null;
     var flag = (listType === model.MapType($T0C().__Type__)) || 
     listType.get_IsArray() || 
-    !$S0B().CallVirtual("IsAssignableFrom", null, model.MapType($T25().__Type__), listType);
+    !(model.MapType($T25().__Type__)).IsAssignableFrom(listType);
     if (flag) {
       var result = null;
     } else {
@@ -21635,7 +21610,7 @@ JSIL.MakeEnum(
   }; 
 
   function TypeModel_GetSchema (type) {
-    throw $S0C().Construct();
+    throw $S0B().Construct();
   }; 
 
   function TypeModel_GetType$11 (fullName, context) {
@@ -21816,7 +21791,7 @@ JSIL.MakeEnum(
   }; 
 
   function TypeModel_ResolveListAdd (model, listType, itemType, /* ref */ isList) {
-    isList.set($S0B().CallVirtual("IsAssignableFrom", null, model.MapType($thisType.ilist), listType));
+    isList.set((model.MapType($thisType.ilist)).IsAssignableFrom(listType));
     var array = JSIL.Array.New($T04(), [itemType]);
     var instanceMethod = $T07().GetInstanceMethod(listType, "Add", array);
     var flag = instanceMethod === null;
@@ -21825,7 +21800,7 @@ JSIL.MakeEnum(
       (listType === (model.MapType($T33().__Type__)).MakeGenericType(array));
       var type = (model.MapType($T34().__Type__)).MakeGenericType(array);
       var flag3 = flag2 || 
-      $S0B().CallVirtual("IsAssignableFrom", null, type, listType);
+      type.IsAssignableFrom(listType);
       if (flag3) {
         instanceMethod = $T07().GetInstanceMethod(type, "Add", array);
       }
@@ -21901,7 +21876,7 @@ JSIL.MakeEnum(
   }; 
 
   function TypeModel_Serialize$14 (dest, value) {
-    $S0D().CallVirtual("Serialize", null, this, dest, value, null);
+    $S0C().CallVirtual("Serialize", null, this, dest, value, null);
   }; 
 
   function TypeModel_Serialize$15 (dest, value, context) {
@@ -21958,7 +21933,7 @@ JSIL.MakeEnum(
       var dynamicTypeFormatting = model.DynamicTypeFormatting;
       var flag2 = dynamicTypeFormatting !== null;
       if (flag2) {
-        var typeFormatEventArgs = $S0E().Construct(type);
+        var typeFormatEventArgs = $S0D().Construct(type);
         dynamicTypeFormatting(model, typeFormatEventArgs);
         var flag3 = !$T07().IsNullOrEmpty(typeFormatEventArgs.get_FormattedName());
         if (flag3) {
@@ -22012,7 +21987,7 @@ JSIL.MakeEnum(
           break;
 
         default: 
-          throw $S0F().Construct("style");
+          throw $S0E().Construct("style");
 
       }
       protoWriter.Close();
@@ -22041,7 +22016,7 @@ JSIL.MakeEnum(
   }; 
 
   function TypeModel_ThrowCannotCreateInstance (type) {
-    throw $S10().Construct(JSIL.ConcatString("No parameterless constructor found for ", (
+    throw $S0F().Construct(JSIL.ConcatString("No parameterless constructor found for ", (
         (type === null)
            ? "(null)"
            : type.get_Name())
@@ -22233,7 +22208,7 @@ JSIL.MakeEnum(
                         break;
 
                       case 103: 
-                        value.set($S11().Construct(reader.ReadString()));
+                        value.set($S10().Construct(reader.ReadString()));
                         break;
 
                     }
@@ -22325,7 +22300,7 @@ JSIL.MakeEnum(
         if (!flag8) {
           var array2 = $T0E().$Cast(value.get());
           var array3 = (JSIL.Array.New(itemType, (((array2.length | 0) + (basicList.get_Count() | 0)) | 0)));
-          $S12().CallStatic($T0E(), "Copy", null, array2, array3, array2.length);
+          $S11().CallStatic($T0E(), "Copy", null, array2, array3, array2.length);
           basicList.CopyTo(array3, array2.length);
           value.set(array3);
         }
@@ -22493,7 +22468,7 @@ JSIL.MakeEnum(
           while ($IM03().Call(enumerator, null)) {
             var current = $IM04().Call(enumerator, null);
             if (current === null) {
-              throw $S13().Construct();
+              throw $S12().Construct();
             }
             var flag7 = !this.TrySerializeAuxiliaryType(
               writer, 
@@ -22522,7 +22497,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.TypeModel", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -22539,35 +22514,35 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Action($asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventHandler")), 
       TypeModel_add_DynamicTypeFormatting
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "CanSerialize", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       TypeModel_CanSerialize$00
     );
 
     $.Method({Static:false, Public:false}, "CanSerialize", 
       new JSIL.MethodSignature($.Boolean, [
-          $asm0D.TypeRef("System.Type"), $.Boolean, 
+          $asm14.TypeRef("System.Type"), $.Boolean, 
           $.Boolean, $.Boolean
         ]), 
       TypeModel_CanSerialize$01
     );
 
     $.Method({Static:false, Public:true }, "CanSerializeBasicType", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       TypeModel_CanSerializeBasicType
     );
 
     $.Method({Static:false, Public:true }, "CanSerializeContractType", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       TypeModel_CanSerializeContractType
     );
 
     $.Method({Static:true , Public:false}, "CheckDictionaryAccessors", 
       new JSIL.MethodSignature($.Boolean, [
-          $.Type, $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type")
+          $.Type, $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type")
         ]), 
       TypeModel_CheckDictionaryAccessors
     );
@@ -22578,12 +22553,12 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "CreateListInstance", 
-      new JSIL.MethodSignature($.Object, [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Object, [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type")]), 
       TypeModel_CreateListInstance
     );
 
     $.Method({Static:true , Public:false}, "CreateNestedListsNotSupported", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Exception")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Exception")), 
       TypeModel_CreateNestedListsNotSupported
     );
 
@@ -22594,32 +22569,32 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, "Deserialize", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type")
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type")
         ]), 
       TypeModel_Deserialize$03
     );
 
     $.Method({Static:false, Public:true }, "Deserialize", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
       TypeModel_Deserialize$04
     );
 
     $.Method({Static:false, Public:true }, "Deserialize", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $.Int32
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $.Int32
         ]), 
       TypeModel_Deserialize$05
     );
 
     $.Method({Static:false, Public:true }, "Deserialize", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $.Int32, 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
       TypeModel_Deserialize$06
@@ -22628,22 +22603,22 @@ JSIL.MakeEnum(
     $.Method({Static:false, Public:true }, "Deserialize", 
       new JSIL.MethodSignature($.Object, [
           $asm0E.TypeRef("ProtoBuf.ProtoReader"), $.Object, 
-          $asm0D.TypeRef("System.Type")
+          $asm14.TypeRef("System.Type")
         ]), 
       TypeModel_Deserialize$07
     );
 
     $.Method({Static:false, Public:false}, "DeserializeCore", 
       new JSIL.MethodSignature($.Object, [
-          $asm0E.TypeRef("ProtoBuf.ProtoReader"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.ProtoReader"), $asm14.TypeRef("System.Type"), 
           $.Object, $.Boolean
         ]), 
       TypeModel_DeserializeCore
     );
 
     $.Method({Static:false, Public:true }, "DeserializeItems", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.IEnumerable"), [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Type"), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.IEnumerable"), [
+          $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.Serializer+TypeResolver")
         ]), 
@@ -22651,8 +22626,8 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "DeserializeItems", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.IEnumerable"), [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Type"), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.IEnumerable"), [
+          $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.Serializer+TypeResolver"), $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
@@ -22660,30 +22635,30 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "DeserializeItems", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32
         ], ["T"]), 
       TypeModel_DeserializeItems$b1$0A
     );
 
     $.Method({Static:false, Public:true }, "DeserializeItems", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
-          $asm0D.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [
+          $asm14.TypeRef("System.IO.Stream"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32, $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ], ["T"]), 
       TypeModel_DeserializeItems$b1$0B
     );
 
     $.Method({Static:true , Public:false}, "DeserializeType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$.Type, $.String]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$.Type, $.String]), 
       TypeModel_DeserializeType
     );
 
     $.Method({Static:false, Public:true }, "DeserializeWithLengthPrefix", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32
         ]), 
       TypeModel_DeserializeWithLengthPrefix$0C
@@ -22691,8 +22666,8 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, "DeserializeWithLengthPrefix", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32, $asm0E.TypeRef("ProtoBuf.Serializer+TypeResolver")
         ]), 
       TypeModel_DeserializeWithLengthPrefix$0D
@@ -22700,8 +22675,8 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, "DeserializeWithLengthPrefix", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32, $asm0E.TypeRef("ProtoBuf.Serializer+TypeResolver"), 
           $jsilcore.TypeRef("JSIL.Reference", [$.Int32])
         ]), 
@@ -22710,8 +22685,8 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:false}, "DeserializeWithLengthPrefix", 
       new JSIL.MethodSignature($.Object, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32, $asm0E.TypeRef("ProtoBuf.Serializer+TypeResolver"), 
           $jsilcore.TypeRef("JSIL.Reference", [$.Int32]), $jsilcore.TypeRef("JSIL.Reference", [$.Boolean]), 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
@@ -22720,55 +22695,55 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "GetKey", 
-      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")])]), 
+      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")])]), 
       TypeModel_GetKey$10
     );
 
     $.Method({Static:true , Public:true }, "GetKeyImpD", 
-      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Type")]), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Int32, [$jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Type")]), $asm14.TypeRef("System.Type")]), 
       TypeModel_GetKeyImpD
     );
 
     $.Method({Static:true , Public:false}, "GetListItemType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$.Type, $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$.Type, $asm14.TypeRef("System.Type")]), 
       TypeModel_GetListItemType
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "GetSchema", 
-      new JSIL.MethodSignature($.String, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.String, [$asm14.TypeRef("System.Type")]), 
       TypeModel_GetSchema
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "GetType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$.String, $asm0D.TypeRef("System.Reflection.Assembly")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$.String, $asm14.TypeRef("System.Reflection.Assembly")]), 
       TypeModel_GetType$11
     );
 
     $.Method({Static:false, Public:false}, "GetWireType", 
       new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.WireType"), [
           $asm0E.TypeRef("ProtoBuf.ProtoTypeCode"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")]), $jsilcore.TypeRef("JSIL.Reference", [$.Int32])
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")]), $jsilcore.TypeRef("JSIL.Reference", [$.Int32])
         ]), 
       TypeModel_GetWireType
     );
 
     $.Method({Static:false, Public:true }, "IsDefined", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       TypeModel_IsDefined
     );
 
     $.Method({Static:false, Public:false}, "MapType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$asm14.TypeRef("System.Type")]), 
       TypeModel_MapType$12
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "MapType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$asm0D.TypeRef("System.Type"), $.Boolean]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$asm14.TypeRef("System.Type"), $.Boolean]), 
       TypeModel_MapType$13
     );
 
     $.Method({Static:false, Public:false}, "PrepareDeserialize", 
-      new JSIL.MethodSignature($.Boolean, [$.Object, $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")])]), 
+      new JSIL.MethodSignature($.Boolean, [$.Object, $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")])]), 
       TypeModel_PrepareDeserialize
     );
 
@@ -22776,37 +22751,37 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Action($asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventHandler")), 
       TypeModel_remove_DynamicTypeFormatting
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:true , Public:false}, "ResolveKnownType", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [
           $.String, $.Type, 
-          $asm0D.TypeRef("System.Reflection.Assembly")
+          $asm14.TypeRef("System.Reflection.Assembly")
         ]), 
       TypeModel_ResolveKnownType
     );
 
     $.Method({Static:true , Public:false}, "ResolveListAdd", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Reflection.MethodInfo"), [
-          $.Type, $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$.Boolean])
+      new JSIL.MethodSignature($asm14.TypeRef("System.Reflection.MethodInfo"), [
+          $.Type, $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$.Boolean])
         ]), 
       TypeModel_ResolveListAdd
     );
 
     $.Method({Static:true , Public:false}, "ResolveProxies", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Type"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Type"), [$asm14.TypeRef("System.Type")]), 
       TypeModel_ResolveProxies
     );
 
     $.Method({Static:false, Public:true }, "Serialize", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.IO.Stream"), $.Object]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.IO.Stream"), $.Object]), 
       TypeModel_Serialize$14
     );
 
     $.Method({Static:false, Public:true }, "Serialize", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
       TypeModel_Serialize$15
@@ -22823,14 +22798,14 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:true , Public:false}, "SerializeType", 
-      new JSIL.MethodSignature($.String, [$.Type, $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.String, [$.Type, $asm14.TypeRef("System.Type")]), 
       TypeModel_SerializeType
     );
 
     $.Method({Static:false, Public:true }, "SerializeWithLengthPrefix", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32
         ]), 
       TypeModel_SerializeWithLengthPrefix$17
@@ -22838,8 +22813,8 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, "SerializeWithLengthPrefix", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.IO.Stream"), $.Object, 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm14.TypeRef("System.IO.Stream"), $.Object, 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32, $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
       TypeModel_SerializeWithLengthPrefix$18
@@ -22848,30 +22823,30 @@ JSIL.MakeEnum(
     $.Method({Static:true , Public:false}, "TestEnumerableListPatterns", 
       new JSIL.MethodSignature(null, [
           $.Type, $asm0E.TypeRef("ProtoBuf.Meta.BasicList"), 
-          $asm0D.TypeRef("System.Type")
+          $asm14.TypeRef("System.Type")
         ]), 
       TypeModel_TestEnumerableListPatterns
     );
 
     $.Method({Static:true , Public:true }, "ThrowCannotCreateInstance", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Type")), 
       TypeModel_ThrowCannotCreateInstance
     );
 
     $.Method({Static:true , Public:false}, "ThrowUnexpectedSubtype", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type")]), 
       TypeModel_ThrowUnexpectedSubtype
     );
 
     $.Method({Static:true , Public:false}, "ThrowUnexpectedType", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Type")), 
       TypeModel_ThrowUnexpectedType
     );
 
     $.Method({Static:false, Public:false}, "TryDeserializeAuxiliaryType", 
       new JSIL.MethodSignature($.Boolean, [
           $asm0E.TypeRef("ProtoBuf.ProtoReader"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
-          $.Int32, $asm0D.TypeRef("System.Type"), 
+          $.Int32, $asm14.TypeRef("System.Type"), 
           $jsilcore.TypeRef("JSIL.Reference", [$.Object]), $.Boolean, 
           $.Boolean, $.Boolean, 
           $.Boolean
@@ -22883,7 +22858,7 @@ JSIL.MakeEnum(
       new JSIL.MethodSignature($.Boolean, [
           $.Type, $asm0E.TypeRef("ProtoBuf.ProtoReader"), 
           $asm0E.TypeRef("ProtoBuf.DataFormat"), $.Int32, 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type"), 
           $jsilcore.TypeRef("JSIL.Reference", [$.Object])
         ]), 
       TypeModel_TryDeserializeList
@@ -22891,20 +22866,20 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:false}, "TrySerializeAuxiliaryType", 
       new JSIL.MethodSignature($.Boolean, [
-          $asm0E.TypeRef("ProtoBuf.ProtoWriter"), $asm0D.TypeRef("System.Type"), 
+          $asm0E.TypeRef("ProtoBuf.ProtoWriter"), $asm14.TypeRef("System.Type"), 
           $asm0E.TypeRef("ProtoBuf.DataFormat"), $.Int32, 
           $.Object, $.Boolean
         ]), 
       TypeModel_TrySerializeAuxiliaryType
     );
 
-    $.Field({Static:true , Public:false, ReadOnly:true }, "ilist", $asm0D.TypeRef("System.Type"), function ($pi) {
-        return $asm0D.System.Collections.IList.__Type__;
+    $.Field({Static:true , Public:false, ReadOnly:true }, "ilist", $asm14.TypeRef("System.Type"), function ($pi) {
+        return $asm14.System.Collections.IList.__Type__;
       });
 
     $.Field({Static:false, Public:false}, "DynamicTypeFormatting", $asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventHandler"))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function TypeModel__cctor () {
@@ -22932,16 +22907,16 @@ JSIL.MakeEnum(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.PrefixStyle)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.Serializer_TypeResolver)) ();
@@ -22950,13 +22925,13 @@ JSIL.MakeEnum(
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.SerializationContext)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
   };
 
 
@@ -23003,7 +22978,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.TypeModel+DeserializeItemsIterator", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -23013,8 +22988,8 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.IO.Stream"), 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.IO.Stream"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.PrefixStyle"), 
           $.Int32, $asm0E.TypeRef("ProtoBuf.Serializer+TypeResolver"), 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
@@ -23032,24 +23007,24 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
       DeserializeItemsIterator_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator");
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       DeserializeItemsIterator_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset");
+      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset");
 
     $.Field({Static:false, Public:false}, "haveObject", $.Boolean);
 
     $.Field({Static:false, Public:false}, "current", $.Object);
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "source", $asm0D.TypeRef("System.IO.Stream"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "source", $asm14.TypeRef("System.IO.Stream"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "style", $asm0E.TypeRef("ProtoBuf.PrefixStyle"));
 
@@ -23064,8 +23039,8 @@ JSIL.MakeEnum(
     $.Property({Static:false, Public:true , Virtual:true }, "Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
-      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable")
+      /* 0 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
+      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable")
     );
 
 
@@ -23082,13 +23057,13 @@ JSIL.MakeEnum(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.IO.Stream)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.PrefixStyle)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.SerializationContext)) ();
@@ -23097,7 +23072,7 @@ JSIL.MakeEnum(
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel_DeserializeItemsIterator)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(JSIL.MethodSignature.Return($asm0D.TypeRef("System.Object")))) ();
+    return ($S00 = JSIL.Memoize(JSIL.MethodSignature.Return($asm14.TypeRef("System.Object")))) ();
   };
 
 
@@ -23136,7 +23111,7 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm0D.TypeRef("System.IO.Stream"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.TypeModel"), $asm14.TypeRef("System.IO.Stream"), 
           $asm0E.TypeRef("ProtoBuf.PrefixStyle"), $.Int32, 
           $asm0E.TypeRef("ProtoBuf.SerializationContext")
         ]), 
@@ -23149,23 +23124,23 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lT$g.GetEnumerator", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("T")]), null), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("T")]), null), 
       DeserializeItemsIterator$b1_System_Collections_Generic_IEnumerable$lT$g_GetEnumerator
     )
-      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("T")]), "GetEnumerator");
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("T")]), "GetEnumerator");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       DeserializeItemsIterator$b1_System_IDisposable_Dispose
     )
-      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose");
+      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose");
 
     $.Property({Static:false, Public:true , Virtual:true }, "Current", $.GenericParameter("T"));
 
     $.ImplementInterfaces(
-      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("T")]), 
-      /* 3 */ $asm0D.TypeRef("System.IDisposable"), 
-      /* 4 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("T")])
+      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$.GenericParameter("T")]), 
+      /* 3 */ $asm14.TypeRef("System.IDisposable"), 
+      /* 4 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("T")])
     );
 
 
@@ -23179,7 +23154,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "ProtoBuf.Meta.TypeModel+CallbackType", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: false, 
     IsFlags: false, 
   }, 
@@ -23199,7 +23174,7 @@ JSIL.MakeEnum(
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_MatchPredicate)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList)) ();
@@ -23208,34 +23183,34 @@ JSIL.MakeEnum(
     return ($T03 = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.Meta.LockContentedEventHandler)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.Delegate)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Delegate)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T0E = function () {
     return ($T0E = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel_BasicType)) ();
@@ -23244,7 +23219,7 @@ JSIL.MakeEnum(
     return ($T0F = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MemberInfo))) ();
+    return ($T10 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MemberInfo))) ();
   };
   var $T11 = function () {
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -23256,19 +23231,19 @@ JSIL.MakeEnum(
     return ($T13 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T15 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm0D.System.Collections.IEnumerator)) ();
+    return ($T16 = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0D.System.Collections.IEnumerable)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.Collections.IEnumerable)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm0D.System.IDisposable)) ();
+    return ($T18 = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $T19 = function () {
     return ($T19 = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Meta.SubType))) ();
@@ -23283,7 +23258,7 @@ JSIL.MakeEnum(
     return ($T1C = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T1D = function () {
-    return ($T1D = JSIL.Memoize($asm0D.System.Activator)) ();
+    return ($T1D = JSIL.Memoize($asm14.System.Activator)) ();
   };
   var $T1E = function () {
     return ($T1E = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType_AttributeFamily)) ();
@@ -23292,40 +23267,40 @@ JSIL.MakeEnum(
     return ($T1F = JSIL.Memoize($asm0E.ProtoBuf.Meta.BasicList_NodeEnumerator)) ();
   };
   var $T20 = function () {
-    return ($T20 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T20 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T21 = function () {
     return ($T21 = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel_Singleton)) ();
   };
   var $T22 = function () {
-    return ($T22 = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T22 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T23 = function () {
-    return ($T23 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T23 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T24 = function () {
     return ($T24 = JSIL.Memoize($asm0E.ProtoBuf.ProtoException)) ();
   };
   var $T25 = function () {
-    return ($T25 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T25 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T26 = function () {
-    return ($T26 = JSIL.Memoize($asm0D.System.Text.StringBuilder)) ();
+    return ($T26 = JSIL.Memoize($asm14.System.Text.StringBuilder)) ();
   };
   var $T27 = function () {
     return ($T27 = JSIL.Memoize(System.Array.Of($asm0E.ProtoBuf.Meta.MetaType))) ();
   };
   var $T28 = function () {
-    return ($T28 = JSIL.Memoize($asm0D.System.Array)) ();
+    return ($T28 = JSIL.Memoize($asm14.System.Array)) ();
   };
   var $T29 = function () {
     return ($T29 = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType_Comparer)) ();
   };
   var $T2A = function () {
-    return ($T2A = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T2A = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T2B = function () {
-    return ($T2B = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
+    return ($T2B = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
   };
   var $T2C = function () {
     return ($T2C = JSIL.Memoize($asm0E.ProtoBuf.Serializers.ParseableSerializer)) ();
@@ -23334,118 +23309,118 @@ JSIL.MakeEnum(
     return ($T2D = JSIL.Memoize($asm0E.ProtoBuf.ProtoTypeCode)) ();
   };
   var $T2E = function () {
-    return ($T2E = JSIL.Memoize($asm0D.System.Threading.Monitor)) ();
+    return ($T2E = JSIL.Memoize($asm14.System.Threading.Monitor)) ();
   };
   var $T2F = function () {
     return ($T2F = JSIL.Memoize($asm0E.ProtoBuf.Meta.LockContentedEventArgs)) ();
   };
   var $T30 = function () {
-    return ($T30 = JSIL.Memoize(System.Array.Of($asm0D.System.Type))) ();
+    return ($T30 = JSIL.Memoize(System.Array.Of($asm14.System.Type))) ();
   };
   var $T31 = function () {
-    return ($T31 = JSIL.Memoize($asm0D.System.Collections.Generic.IDictionary$b2)) ();
+    return ($T31 = JSIL.Memoize($asm14.System.Collections.Generic.IDictionary$b2)) ();
   };
   var $T32 = function () {
-    return ($T32 = JSIL.Memoize($asm0D.System.Collections.Generic.KeyValuePair$b2)) ();
+    return ($T32 = JSIL.Memoize($asm14.System.Collections.Generic.KeyValuePair$b2)) ();
   };
   var $T33 = function () {
-    return ($T33 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2)) ();
+    return ($T33 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2)) ();
   };
   var $T34 = function () {
-    return ($T34 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1)) ();
+    return ($T34 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1)) ();
   };
   var $T35 = function () {
     return ($T35 = JSIL.Memoize($asm0E.ProtoBuf.ProtoWriter)) ();
   };
   var $T36 = function () {
-    return ($T36 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T36 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T37 = function () {
-    return ($T37 = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T37 = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T38 = function () {
-    return ($T38 = JSIL.Memoize($asm0D.System.TimeoutException)) ();
+    return ($T38 = JSIL.Memoize($asm14.System.TimeoutException)) ();
   };
   var $T39 = function () {
-    return ($T39 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T39 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T3A = function () {
     return ($T3A = JSIL.Memoize($asm0E.ProtoBuf.Meta.CallbackSet)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Object"), $asm0D.TypeRef("System.Object")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Object"), $asm14.TypeRef("System.Object")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Object"), $asm0D.TypeRef("System.Object")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Object"), $asm14.TypeRef("System.Object")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Int32")])]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Int32")])]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type")]))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
-  };
-  var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Int32")]), $asm0D.TypeRef("System.Int32"), 
-        $asm0D.TypeRef("System.Int32")
+    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [
+        $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Int32")]), $asm14.TypeRef("System.Int32"), 
+        $asm14.TypeRef("System.Int32")
       ]))) ();
   };
+  var $S09 = function () {
+    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.Exception")]))) ();
+  };
   var $S0A = function () {
-    return ($S0A = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Exception")]))) ();
+    return ($S0A = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Text.StringBuilder"), null))) ();
   };
   var $S0B = function () {
-    return ($S0B = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Text.StringBuilder"), null))) ();
+    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Char")]))) ();
   };
   var $S0C = function () {
-    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Char")]))) ();
+    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S0D = function () {
-    return ($S0D = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S0D = JSIL.Memoize(new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm14.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]))) ();
   };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.Object")]))) ();
+    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.Object")]))) ();
   };
   var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S10 = function () {
     return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0E.TypeRef("ProtoBuf.ProtoException"), null))) ();
   };
   var $S11 = function () {
-    return ($S11 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S11 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S12 = function () {
-    return ($S12 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.TimeoutException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S12 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.TimeoutException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S13 = function () {
-    return ($S13 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S13 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm0D.System.Collections.IEnumerable.GetEnumerator)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.Collections.IEnumerable.GetEnumerator)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.MoveNext)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.get_Current)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.Collections.IEnumerator.get_Current)) ();
   };
   var $IM03 = function () {
-    return ($IM03 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
+    return ($IM03 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
   };
   var $IM04 = function () {
     return ($IM04 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer.get_ExpectedType)) ();
@@ -23485,10 +23460,10 @@ JSIL.MakeEnum(
     } else {
       opaqueToken.set(0);
       var flag3 = !(!type.get_IsInterface() || 
-        !$S03().CallVirtual("IsAssignableFrom", null, this.MapType($T06().ienumerable), type)) && 
+        !(this.MapType($T06().ienumerable)).IsAssignableFrom(type)) && 
       ($T03().GetListItemType(this, type) === null);
       if (flag3) {
-        throw $S04().Construct("IEnumerable[<T>] data cannot be used as a meta-type unless an Add method can be resolved");
+        throw $S03().Construct("IEnumerable[<T>] data cannot be used as a meta-type unless an Add method can be resolved");
       }
       try {
         metaType = this.RecogniseCommonTypes(type);
@@ -23496,7 +23471,7 @@ JSIL.MakeEnum(
         if (flag4) {
           var flag5 = !applyDefaultBehaviour;
           if (flag5) {
-            throw $S05().Construct(JSIL.ConcatString("Default behaviour must be observed for certain types with special handling; ", type.get_FullName()), "applyDefaultBehaviour");
+            throw $S04().Construct(JSIL.ConcatString("Default behaviour must be observed for certain types with special handling; ", type.get_FullName()), "applyDefaultBehaviour");
           }
           applyDefaultBehaviour = false;
         }
@@ -23508,7 +23483,7 @@ JSIL.MakeEnum(
         this.TakeLock(/* ref */ opaqueToken);
         var flag7 = this.FindWithoutAdd(type) !== null;
         if (flag7) {
-          throw $S05().Construct("Duplicate type", "type");
+          throw $S04().Construct("Duplicate type", "type");
         }
         this.ThrowIfFrozen();
         (this.types).Add(metaType);
@@ -23536,7 +23511,7 @@ JSIL.MakeEnum(
   }; 
 
   function RuntimeTypeModel_AddContention () {
-    $S06().CallStatic($T0C(), "Increment", null, /* ref */ new JSIL.MemberReference(this, "contentionCounter"));
+    $S05().CallStatic($T0C(), "Increment", null, /* ref */ new JSIL.MemberReference(this, "contentionCounter"));
   }; 
 
   function RuntimeTypeModel_BasicTypeFinderImpl (value, ctx) {
@@ -23698,7 +23673,7 @@ JSIL.MakeEnum(
     if (flag) {
       var requiresOldValue = $IM05().Call(serializer, null);
       if (requiresOldValue) {
-        value = $S07().CallStatic($T1D(), "CreateInstance", null, $IM04().Call(serializer, null));
+        value = $S06().CallStatic($T1D(), "CreateInstance", null, $IM04().Call(serializer, null));
       }
       var result = $IM06().Call(serializer, null, value, source);
     } else {
@@ -23810,7 +23785,7 @@ JSIL.MakeEnum(
 
   function RuntimeTypeModel_Freeze () {
     if (this.GetOption(2)) {
-      throw $S08().Construct("The default model cannot be frozen");
+      throw $S07().Construct("The default model cannot be frozen");
     }
     this.SetOption(4, true);
   }; 
@@ -23848,7 +23823,7 @@ JSIL.MakeEnum(
   }; 
 
   function RuntimeTypeModel_GetContention () {
-    return $S09().CallStatic($T0C(), "CompareExchange", null, /* ref */ new JSIL.MemberReference(this, "contentionCounter"), 0, 0);
+    return $S08().CallStatic($T0C(), "CompareExchange", null, /* ref */ new JSIL.MemberReference(this, "contentionCounter"), 0, 0);
   }; 
 
   function RuntimeTypeModel_GetEnumMap (type) {
@@ -23881,7 +23856,7 @@ JSIL.MakeEnum(
         if (flag2) {
           throw $exception;
         }
-        throw $S0A().Construct((ex.get_Message() + " (" + type.get_FullName() + ")"), ex);
+        throw $S09().Construct((ex.get_Message() + " (" + type.get_FullName() + ")"), ex);
       }
     }
     return result;
@@ -23896,7 +23871,6 @@ JSIL.MakeEnum(
   }; 
 
   function RuntimeTypeModel_GetSchema (type) {
-    var $s00 = new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", ["!!0"]), $asm0D.TypeRef("System.Collections.Generic.IComparer`1", ["!!0"])], ["T"]);
     var wireType = new JSIL.BoxedVariable($asm0E.ProtoBuf.WireType.Variant);
     var basicList = new ($T02())();
     var metaType = null;
@@ -23933,14 +23907,14 @@ JSIL.MakeEnum(
       if (flag5) {
         var num = (this.FindOrAddAuto(type, false, false, false) | 0);
         if (num < 0) {
-          throw $S05().Construct("The type specified is not a contract-type", "type");
+          throw $S04().Construct("The type specified is not a contract-type", "type");
         }
         metaType = ($T06().$Cast((this.types).get_Item(num))).GetSurrogateOrBaseOrSelf(false);
         basicList.Add(metaType);
         this.CascadeDependents(basicList, metaType);
       }
     }
-    var stringBuilder = $S0B().Construct();
+    var stringBuilder = $S0A().Construct();
     var text = null;
     var flag7 = !flag;
     if (flag7) {
@@ -23984,25 +23958,25 @@ JSIL.MakeEnum(
     }
     var flag12 = !$T1C().IsNullOrEmpty(text);
     if (flag12) {
-      $S0C().CallVirtual("Append", null, $S0D().CallVirtual("Append", null, $S0D().CallVirtual("Append", null, stringBuilder, "package "), text), ";");
+      $S0B().CallVirtual("Append", null, $S0C().CallVirtual("Append", null, $S0C().CallVirtual("Append", null, stringBuilder, "package "), text), ";");
       $T1C().AppendLine(stringBuilder);
     }
     var flag13 = new JSIL.BoxedVariable(false);
-    var stringBuilder2 = $S0B().Construct();
+    var stringBuilder2 = $S0A().Construct();
     var array = JSIL.Array.New($T06(), basicList.get_Count());
     basicList.CopyTo(array, 0);
-    $s00.CallStatic($T28(), "Sort$b1", [$asm0E.ProtoBuf.Meta.MetaType], array, $T29().Default);
+    $S0D().CallStatic($T28(), "Sort$b1", [$asm0E.ProtoBuf.Meta.MetaType], array, $T29().Default);
     var flag14 = flag;
     if (flag14) {
-      $S0D().CallVirtual("Append", null, $S0D().CallVirtual("Append", null, $S0D().CallVirtual("Append", null, $T1C().AppendLine(stringBuilder2), "message "), type.get_Name()), " {");
-      $S0D().CallVirtual("Append", null, $S0D().CallVirtual("Append", null, $S0D().CallVirtual("Append", null, $T06().NewLine(stringBuilder2, 1), "optional "), this.GetSchemaTypeName(
+      $S0C().CallVirtual("Append", null, $S0C().CallVirtual("Append", null, $S0C().CallVirtual("Append", null, $T1C().AppendLine(stringBuilder2), "message "), type.get_Name()), " {");
+      $S0C().CallVirtual("Append", null, $S0C().CallVirtual("Append", null, $S0C().CallVirtual("Append", null, $T06().NewLine(stringBuilder2, 1), "optional "), this.GetSchemaTypeName(
             type, 
             $T13().Default, 
             false, 
             false, 
             /* ref */ flag13
           )), " value = 1;");
-      $S0C().CallVirtual("Append", null, $T1C().AppendLine(stringBuilder2), "}");
+      $S0B().CallVirtual("Append", null, $T1C().AppendLine(stringBuilder2), "}");
     } else {
 
       for (var i = 0; i < (array.length | 0); ) {
@@ -24018,7 +23992,7 @@ JSIL.MakeEnum(
     }
     var flag16 = flag13.get();
     if (flag16) {
-      $S0D().CallVirtual("Append", null, stringBuilder, "import \"bcl.proto\"; // schema for protobuf-net's handling of core .NET types");
+      $S0C().CallVirtual("Append", null, stringBuilder, "import \"bcl.proto\"; // schema for protobuf-net's handling of core .NET types");
       $T1C().AppendLine(stringBuilder);
     }
     return ($T1C().AppendLine($S0E().CallVirtual("Append", null, stringBuilder, stringBuilder2))).toString();
@@ -24297,7 +24271,7 @@ JSIL.MakeEnum(
 
   function RuntimeTypeModel_set_AutoAddMissingTypes (value) {
     if (!value && this.GetOption(2)) {
-      throw $S08().Construct("The default model must allow missing types");
+      throw $S07().Construct("The default model must allow missing types");
     }
     this.ThrowIfFrozen();
     this.SetOption(8, value);
@@ -24320,7 +24294,7 @@ JSIL.MakeEnum(
 
   function RuntimeTypeModel_set_UseImplicitZeroDefaults (value) {
     if (!value && this.GetOption(2)) {
-      throw $S08().Construct("UseImplicitZeroDefaults cannot be disabled on the default model");
+      throw $S07().Construct("UseImplicitZeroDefaults cannot be disabled on the default model");
     }
     this.SetOption(32, value);
   }; 
@@ -24344,12 +24318,12 @@ JSIL.MakeEnum(
     if (flag) {
       throw $S12().Construct("Timeout while inspecting metadata; this may indicate a deadlock. This can often be avoided by preparing necessary serializers during application initialization, rather than allowing multiple threads to perform the initial metadata inspection; please also see the LockContended event");
     }
-    opaqueToken.set($S09().CallStatic($T0C(), "CompareExchange", null, /* ref */ new JSIL.MemberReference(this, "contentionCounter"), 0, 0));
+    opaqueToken.set($S08().CallStatic($T0C(), "CompareExchange", null, /* ref */ new JSIL.MemberReference(this, "contentionCounter"), 0, 0));
   }; 
 
   function RuntimeTypeModel_ThrowIfFrozen () {
     if (this.GetOption(4)) {
-      throw $S08().Construct("The model cannot be changed once frozen");
+      throw $S07().Construct("The model cannot be changed once frozen");
     }
   }; 
 
@@ -24357,14 +24331,12 @@ JSIL.MakeEnum(
     var wireType = new JSIL.BoxedVariable($asm0E.ProtoBuf.WireType.Variant);
     var num = ((this.basicTypes).IndexOf($thisType.BasicTypeFinder, type) | 0);
     var flag = num >= 0;
-    var flag2 = new JSIL.BoxedVariable(false);
     if (flag) {
       var result = ($T0E().$Cast((this.basicTypes).get_Item(num))).get_Serializer();
     } else {
-      var obj = this.basicTypes;
-      flag2.set(false);
+      var basicList = this.basicTypes;
       try {
-        $T2E().Enter(obj, /* ref */ flag2);
+        JSIL.UnknownMember("System.Void System.Threading.Monitor::Enter(System.Object,System.Boolean&)").LValue;
         num = ((this.basicTypes).IndexOf($thisType.BasicTypeFinder, type) | 0);
         var flag3 = num >= 0;
         if (flag3) {
@@ -24392,8 +24364,8 @@ JSIL.MakeEnum(
           result = protoSerializer;
         }
       } finally {
-        if (flag2.get()) {
-          $T2E().Exit(obj);
+        if (false) {
+          $T2E().Exit(basicList);
         }
       }
     }
@@ -24410,13 +24382,13 @@ JSIL.MakeEnum(
       }
       var flag3 = !factory.get_IsStatic();
       if (flag3) {
-        throw $S05().Construct("A factory-method must be static", "factory");
+        throw $S04().Construct("A factory-method must be static", "factory");
       }
       var flag4 = !((type === null) || 
         (factory.get_ReturnType() === type)) && 
       (factory.get_ReturnType() !== this.MapType($T0D().__Type__));
       if (flag4) {
-        throw $S05().Construct(JSIL.ConcatString("The factory-method must return object", (
+        throw $S04().Construct(JSIL.ConcatString("The factory-method must return object", (
             (type === null)
                ? ""
                : JSIL.ConcatString(" or ", type.get_FullName()))
@@ -24424,7 +24396,7 @@ JSIL.MakeEnum(
       }
       var flag5 = !$T3A().CheckCallbackParameters(this, factory);
       if (flag5) {
-        throw $S05().Construct(("Invalid factory signature in " + (factory.get_DeclaringType()).get_FullName() + "." + factory.get_Name()), "factory");
+        throw $S04().Construct(("Invalid factory signature in " + (factory.get_DeclaringType()).get_FullName() + "." + factory.get_Name()), "factory");
       }
     }
   }; 
@@ -24453,7 +24425,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "Add", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm0D.TypeRef("System.Type"), $.Boolean]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm14.TypeRef("System.Type"), $.Boolean]), 
       RuntimeTypeModel_Add
     );
 
@@ -24461,7 +24433,7 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Action($asm0E.TypeRef("ProtoBuf.Meta.LockContentedEventHandler")), 
       RuntimeTypeModel_add_LockContended
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false}, "AddContention", 
       JSIL.MethodSignature.Void, 
@@ -24479,7 +24451,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "Create", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_Create
     );
 
@@ -24493,14 +24465,14 @@ JSIL.MakeEnum(
 
     $.Method({Static:false, Public:false}, "FindOrAddAuto", 
       new JSIL.MethodSignature($.Int32, [
-          $asm0D.TypeRef("System.Type"), $.Boolean, 
+          $asm14.TypeRef("System.Type"), $.Boolean, 
           $.Boolean, $.Boolean
         ]), 
       RuntimeTypeModel_FindOrAddAuto
     );
 
     $.Method({Static:false, Public:false}, "FindWithoutAdd", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_FindWithoutAdd
     );
 
@@ -24535,7 +24507,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "get_Item", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_get_Item
     );
 
@@ -24555,20 +24527,20 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "GetEnumMap", 
-      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.EnumSerializer+EnumPair")]), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm0E.TypeRef("ProtoBuf.Serializers.EnumSerializer+EnumPair")]), [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_GetEnumMap
     );
 
     $.Method({Static:false, Public:false}, "GetKey", 
       new JSIL.MethodSignature($.Int32, [
-          $asm0D.TypeRef("System.Type"), $.Boolean, 
+          $asm14.TypeRef("System.Type"), $.Boolean, 
           $.Boolean
         ]), 
       RuntimeTypeModel_GetKey$01
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "GetKeyImpl", 
-      new JSIL.MethodSignature($.Int32, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Int32, [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_GetKeyImpl
     );
 
@@ -24578,13 +24550,13 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "GetSchema", 
-      new JSIL.MethodSignature($.String, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.String, [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_GetSchema
     );
 
     $.Method({Static:false, Public:false}, "GetSchemaTypeName", 
       new JSIL.MethodSignature($.String, [
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
           $.Boolean, $.Boolean, 
           $jsilcore.TypeRef("JSIL.Reference", [$.Boolean])
         ]), 
@@ -24592,12 +24564,12 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "GetTypes", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerable")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerable")), 
       RuntimeTypeModel_GetTypes
     );
 
     $.Method({Static:false, Public:false}, "IsPrepared", 
-      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_IsPrepared
     );
 
@@ -24607,7 +24579,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "RecogniseCommonTypes", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Meta.MetaType"), [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_RecogniseCommonTypes
     );
 
@@ -24620,12 +24592,12 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Action($asm0E.TypeRef("ProtoBuf.Meta.LockContentedEventHandler")), 
       RuntimeTypeModel_remove_LockContended
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false}, "ResolveListTypes", 
       new JSIL.MethodSignature(null, [
-          $asm0D.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")]), 
-          $jsilcore.TypeRef("JSIL.Reference", [$asm0D.TypeRef("System.Type")])
+          $asm14.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")]), 
+          $jsilcore.TypeRef("JSIL.Reference", [$asm14.TypeRef("System.Type")])
         ]), 
       RuntimeTypeModel_ResolveListTypes
     );
@@ -24669,7 +24641,7 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "SetDefaultFactory", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.MethodInfo")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.MethodInfo")), 
       RuntimeTypeModel_SetDefaultFactory
     );
 
@@ -24689,12 +24661,12 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:false}, "TryGetBasicTypeSerializer", 
-      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), [$asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), [$asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_TryGetBasicTypeSerializer
     );
 
     $.Method({Static:false, Public:false}, "VerifyFactory", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Type")]), 
       RuntimeTypeModel_VerifyFactory
     );
 
@@ -24736,10 +24708,10 @@ JSIL.MakeEnum(
     $.Field({Static:false, Public:false}, "contentionCounter", $.Int32);
 
     $.Field({Static:false, Public:false}, "LockContended", $asm0E.TypeRef("ProtoBuf.Meta.LockContentedEventHandler"))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "defaultFactory", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "defaultFactory", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
 
     function RuntimeTypeModel__cctor () {
@@ -24773,7 +24745,7 @@ JSIL.MakeEnum(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
+    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
 
 })();
 
@@ -24790,7 +24762,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.RuntimeTypeModel+Singleton", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -24826,7 +24798,7 @@ JSIL.MakeEnum(
 (function BasicType$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
@@ -24847,7 +24819,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.RuntimeTypeModel+BasicType", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -24856,7 +24828,7 @@ JSIL.MakeEnum(
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer")]), 
       BasicType__ctor
     );
 
@@ -24866,15 +24838,15 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "get_Type", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       BasicType_get_Type
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "serializer", $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"));
 
-    $.Property({Static:false, Public:true }, "Type", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "Type", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true }, "Serializer", $asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"));
 
@@ -24889,10 +24861,10 @@ JSIL.MakeEnum(
 (function LockContentedEventArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -24906,7 +24878,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "ProtoBuf.Meta.LockContentedEventArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -24937,14 +24909,14 @@ JSIL.MakeEnum(
 /* delegate ProtoBuf.Meta.LockContentedEventHandler */ 
 
 JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [], 
-  new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Object"), $asm0E.TypeRef("ProtoBuf.Meta.LockContentedEventArgs")]));
+  new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Object"), $asm0E.TypeRef("ProtoBuf.Meta.LockContentedEventArgs")]));
 
 /* class ProtoBuf.Meta.SubType */ 
 
 (function SubType$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.MetaType)) ();
@@ -24953,10 +24925,10 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm0E.ProtoBuf.WireType)) ();
@@ -24971,10 +24943,10 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
     return ($T08 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.TagDecorator)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -25015,7 +24987,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.SubType", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -25076,16 +25048,16 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
 (function Comparer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.SubType)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.Meta.SubType"), $asm0E.TypeRef("ProtoBuf.Meta.SubType")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.Meta.SubType"), $asm0E.TypeRef("ProtoBuf.Meta.SubType")]))) ();
   };
 
 
@@ -25114,7 +25086,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.SubType+Comparer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -25150,8 +25122,8 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
     );
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.IComparer"), 
-      /* 1 */ $asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0E.TypeRef("ProtoBuf.Meta.SubType")])
+      /* 0 */ $asm14.TypeRef("System.Collections.IComparer"), 
+      /* 1 */ $asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0E.TypeRef("ProtoBuf.Meta.SubType")])
     );
 
 
@@ -25165,31 +25137,31 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
 (function TypeFormatEventArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -25239,7 +25211,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "ProtoBuf.Meta.TypeFormatEventArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -25253,7 +25225,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
     );
 
     $.Method({Static:false, Public:false}, ".ctor", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Type")), 
       TypeFormatEventArgs__ctor$01
     );
 
@@ -25263,7 +25235,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
     );
 
     $.Method({Static:false, Public:true }, "get_Type", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       TypeFormatEventArgs_get_Type
     );
 
@@ -25273,17 +25245,17 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
     );
 
     $.Method({Static:false, Public:true }, "set_Type", 
-      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Type")), 
       TypeFormatEventArgs_set_Type
     );
 
-    $.Field({Static:false, Public:false}, "type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false}, "type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false}, "formattedName", $.String);
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "typeFixed", $.Boolean);
 
-    $.Property({Static:false, Public:true }, "Type", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "Type", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true }, "FormattedName", $.String);
 
@@ -25296,7 +25268,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.LockContentedEventHandler", true, [],
 /* delegate ProtoBuf.Meta.TypeFormatEventHandler */ 
 
 JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [], 
-  new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Object"), $asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventArgs")]));
+  new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Object"), $asm0E.TypeRef("ProtoBuf.Meta.TypeFormatEventArgs")]));
 
 /* class ProtoBuf.Meta.ValueMember */ 
 
@@ -25306,31 +25278,31 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     return ($T00 = JSIL.Memoize($asm0E.ProtoBuf.Meta.RuntimeTypeModel)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Type)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0E.ProtoBuf.DataFormat)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0E.ProtoBuf.Helpers)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm0E.ProtoBuf.Meta.TypeModel)) ();
@@ -25345,13 +25317,13 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     return ($T0D = JSIL.Memoize($asm0E.ProtoBuf.Serializers.IProtoSerializer)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
+    return ($T0E = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0F = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
+    return ($T10 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
   };
   var $T11 = function () {
     return ($T11 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.TagDecorator)) ();
@@ -25378,94 +25350,94 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     return ($T18 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.UriDecorator)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
+    return ($T1A = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
   };
   var $T1B = function () {
     return ($T1B = JSIL.Memoize($asm0E.ProtoBuf.Serializers.FieldDecorator)) ();
   };
   var $T1C = function () {
-    return ($T1C = JSIL.Memoize($asm0D.System.Reflection.MethodInfo)) ();
+    return ($T1C = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
   };
   var $T1D = function () {
     return ($T1D = JSIL.Memoize($asm0E.ProtoBuf.Serializers.MemberSpecifiedDecorator)) ();
   };
   var $T1E = function () {
-    return ($T1E = JSIL.Memoize($asm0D.System.Enum)) ();
+    return ($T1E = JSIL.Memoize($asm14.System.Enum)) ();
   };
   var $T1F = function () {
-    return ($T1F = JSIL.Memoize($asm0D.System.SByte)) ();
+    return ($T1F = JSIL.Memoize($asm14.System.SByte)) ();
   };
   var $T20 = function () {
-    return ($T20 = JSIL.Memoize($asm0D.System.Byte)) ();
+    return ($T20 = JSIL.Memoize($asm14.System.Byte)) ();
   };
   var $T21 = function () {
-    return ($T21 = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T21 = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T22 = function () {
-    return ($T22 = JSIL.Memoize($asm0D.System.UInt16)) ();
+    return ($T22 = JSIL.Memoize($asm14.System.UInt16)) ();
   };
   var $T23 = function () {
-    return ($T23 = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T23 = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T24 = function () {
-    return ($T24 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T24 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T25 = function () {
-    return ($T25 = JSIL.Memoize($asm0D.System.UInt64)) ();
+    return ($T25 = JSIL.Memoize($asm14.System.UInt64)) ();
   };
   var $T26 = function () {
     return ($T26 = JSIL.Memoize($asm0E.ProtoBuf.ProtoTypeCode)) ();
   };
   var $T27 = function () {
-    return ($T27 = JSIL.Memoize($asm0D.System.Char)) ();
+    return ($T27 = JSIL.Memoize($asm14.System.Char)) ();
   };
   var $T28 = function () {
-    return ($T28 = JSIL.Memoize($asm0D.System.FormatException)) ();
+    return ($T28 = JSIL.Memoize($asm14.System.FormatException)) ();
   };
   var $T29 = function () {
-    return ($T29 = JSIL.Memoize($asm0D.System.Globalization.NumberStyles)) ();
+    return ($T29 = JSIL.Memoize($asm14.System.Globalization.NumberStyles)) ();
   };
   var $T2A = function () {
-    return ($T2A = JSIL.Memoize($asm0D.System.Globalization.CultureInfo)) ();
+    return ($T2A = JSIL.Memoize($asm14.System.Globalization.CultureInfo)) ();
   };
   var $T2B = function () {
-    return ($T2B = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T2B = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T2C = function () {
-    return ($T2C = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T2C = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T2D = function () {
-    return ($T2D = JSIL.Memoize($asm0D.System.Decimal)) ();
+    return ($T2D = JSIL.Memoize($asm14.System.Decimal)) ();
   };
   var $T2E = function () {
-    return ($T2E = JSIL.Memoize($asm0D.System.DateTime)) ();
+    return ($T2E = JSIL.Memoize($asm14.System.DateTime)) ();
   };
   var $T2F = function () {
-    return ($T2F = JSIL.Memoize($asm0D.System.TimeSpan)) ();
+    return ($T2F = JSIL.Memoize($asm14.System.TimeSpan)) ();
   };
   var $T30 = function () {
-    return ($T30 = JSIL.Memoize($asm0D.System.Guid)) ();
+    return ($T30 = JSIL.Memoize($asm14.System.Guid)) ();
   };
   var $T31 = function () {
-    return ($T31 = JSIL.Memoize($asm0D.System.Convert)) ();
+    return ($T31 = JSIL.Memoize($asm14.System.Convert)) ();
   };
   var $T32 = function () {
-    return ($T32 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.ParameterInfo))) ();
+    return ($T32 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.ParameterInfo))) ();
   };
   var $T33 = function () {
-    return ($T33 = JSIL.Memoize($asm0D.System.Reflection.MethodBase)) ();
+    return ($T33 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
   };
   var $T34 = function () {
-    return ($T34 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
+    return ($T34 = JSIL.Memoize($asm14.System.ArgumentException)) ();
   };
   var $T35 = function () {
-    return ($T35 = JSIL.Memoize($asm0D.System.Void)) ();
+    return ($T35 = JSIL.Memoize($asm14.System.Void)) ();
   };
   var $T36 = function () {
-    return ($T36 = JSIL.Memoize($asm0D.System.Reflection.ParameterInfo)) ();
+    return ($T36 = JSIL.Memoize($asm14.System.Reflection.ParameterInfo)) ();
   };
   var $T37 = function () {
     return ($T37 = JSIL.Memoize($asm0E.ProtoBuf.Serializers.EnumSerializer)) ();
@@ -25540,76 +25512,73 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     return ($T4E = JSIL.Memoize($asm0E.ProtoBuf.Serializers.SubItemSerializer)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), null))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), null))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.FormatException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.FormatException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.SByte"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.Globalization.NumberStyles"), 
+        $asm14.TypeRef("System.IFormatProvider")
+      ]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.SByte"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Globalization.NumberStyles"), 
-        $asm0D.TypeRef("System.IFormatProvider")
+    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Byte"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.Globalization.NumberStyles"), 
+        $asm14.TypeRef("System.IFormatProvider")
       ]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Byte"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Globalization.NumberStyles"), 
-        $asm0D.TypeRef("System.IFormatProvider")
+    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int16"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.Globalization.NumberStyles"), 
+        $asm14.TypeRef("System.IFormatProvider")
       ]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int16"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Globalization.NumberStyles"), 
-        $asm0D.TypeRef("System.IFormatProvider")
+    return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.UInt16"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.Globalization.NumberStyles"), 
+        $asm14.TypeRef("System.IFormatProvider")
       ]))) ();
   };
   var $S0A = function () {
-    return ($S0A = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.UInt16"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Globalization.NumberStyles"), 
-        $asm0D.TypeRef("System.IFormatProvider")
+    return ($S0A = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Single"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.Globalization.NumberStyles"), 
+        $asm14.TypeRef("System.IFormatProvider")
       ]))) ();
   };
   var $S0B = function () {
-    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Single"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Globalization.NumberStyles"), 
-        $asm0D.TypeRef("System.IFormatProvider")
+    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Double"), [
+        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.Globalization.NumberStyles"), 
+        $asm14.TypeRef("System.IFormatProvider")
       ]))) ();
   };
   var $S0C = function () {
-    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Double"), [
-        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Globalization.NumberStyles"), 
-        $asm0D.TypeRef("System.IFormatProvider")
-      ]))) ();
+    return ($S0C = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Guid"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S0D = function () {
-    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Guid"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S0D = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Object")]))) ();
   };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Object")]))) ();
-  };
-  var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
-        $asm0D.TypeRef("System.Object"), $asm0D.TypeRef("System.Type"), 
-        $asm0D.TypeRef("System.IFormatProvider")
+    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
+        $asm14.TypeRef("System.Object"), $asm14.TypeRef("System.Type"), 
+        $asm14.TypeRef("System.IFormatProvider")
       ]))) ();
   };
-  var $S10 = function () {
-    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+  var $S0F = function () {
+    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -25877,7 +25846,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
   }; 
 
   function ValueMember_GetRawEnumValue () {
-    var value = $S05().CallVirtual("GetValue", null, $T1A().$Cast(this.member), null);
+    var value = ($T1A().$Cast(this.member)).GetValue(null);
     switch (($T07().GetTypeCode($T1E().GetUnderlyingType(($T1A().$Cast(this.member)).get_FieldType()))).valueOf()) {
       case 5: 
         var result = $T1F().$Cast(value);
@@ -25962,22 +25931,22 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
             result = $T27().$Box(text[0]);
             return result;
           }
-          throw $S06().Construct(("Single character expected: \"" + text + "\""));
+          throw $S05().Construct(("Single character expected: \"" + text + "\""));
 
         case 5: 
-          result = $T1F().$Box($S07().CallStatic($T1F(), "Parse", null, text, $T29().Integer, $T2A().get_InvariantCulture()));
+          result = $T1F().$Box($S06().CallStatic($T1F(), "Parse", null, text, $T29().Integer, $T2A().get_InvariantCulture()));
           return result;
 
         case 6: 
-          result = $T20().$Box($S08().CallStatic($T20(), "Parse", null, text, $T29().Integer, $T2A().get_InvariantCulture()));
+          result = $T20().$Box($S07().CallStatic($T20(), "Parse", null, text, $T29().Integer, $T2A().get_InvariantCulture()));
           return result;
 
         case 7: 
-          result = $T21().$Box($S09().CallStatic($T21(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
+          result = $T21().$Box($S08().CallStatic($T21(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
           return result;
 
         case 8: 
-          result = $T22().$Box($S0A().CallStatic($T22(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
+          result = $T22().$Box($S09().CallStatic($T22(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
           return result;
 
         case 9: 
@@ -25997,11 +25966,11 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
           return result;
 
         case 13: 
-          result = $T2B().$Box($S0B().CallStatic($T2B(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
+          result = $T2B().$Box($S0A().CallStatic($T2B(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
           return result;
 
         case 14: 
-          result = $T2C().$Box($S0C().CallStatic($T2C(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
+          result = $T2C().$Box($S0B().CallStatic($T2C(), "Parse", null, text, $T29().Any, $T2A().get_InvariantCulture()));
           return result;
 
         case 15: 
@@ -26026,7 +25995,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
               return result;
 
             case 102: 
-              result = $S0D().Construct(text);
+              result = $S0C().Construct(text);
               return result;
 
             case 103: 
@@ -26040,9 +26009,9 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     }
     var flag5 = $T07().IsEnum(type);
     if (flag5) {
-      result = $S0E().CallStatic($T1E(), "ToObject", null, type, value);
+      result = $S0D().CallStatic($T1E(), "ToObject", null, type, value);
     } else {
-      result = $S0F().CallStatic($T31(), "ChangeType", null, value, type, $T2A().get_InvariantCulture());
+      result = $S0E().CallStatic($T31(), "ChangeType", null, value, type, $T2A().get_InvariantCulture());
     }
     return result;
   }; 
@@ -26111,7 +26080,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
       getSpecified.get_IsStatic() || 
       ((getSpecified.GetParameters().length | 0) > 0);
       if (flag2) {
-        throw $S10().Construct("Invalid pattern for checking member-specified", "getSpecified");
+        throw $S0F().Construct("Invalid pattern for checking member-specified", "getSpecified");
       }
     }
     var flag3 = setSpecified !== null;
@@ -26121,7 +26090,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
       (((parameters = setSpecified.GetParameters()).length | 0) !== 1) || 
       ((parameters[0]).get_ParameterType() !== (this.model).MapType($T09().__Type__));
       if (flag4) {
-        throw $S10().Construct("Invalid pattern for setting member-specified", "setSpecified");
+        throw $S0F().Construct("Invalid pattern for setting member-specified", "setSpecified");
       }
     }
     this.ThrowIfFrozen();
@@ -26340,7 +26309,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.ValueMember", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -26350,10 +26319,10 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0D.TypeRef("System.Type"), 
-          $.Int32, $asm0D.TypeRef("System.Reflection.MemberInfo"), 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
+          $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm14.TypeRef("System.Type"), 
+          $.Int32, $asm14.TypeRef("System.Reflection.MemberInfo"), 
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
           $.Object
         ]), 
       ValueMember__ctor$00
@@ -26362,8 +26331,8 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     $.Method({Static:false, Public:false}, ".ctor", 
       new JSIL.MethodSignature(null, [
           $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $.Int32, 
-          $asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Type"), 
-          $asm0D.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat")
+          $asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Type"), 
+          $asm14.TypeRef("System.Type"), $asm0E.TypeRef("ProtoBuf.DataFormat")
         ]), 
       ValueMember__ctor$01
     );
@@ -26384,7 +26353,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     );
 
     $.Method({Static:false, Public:true }, "get_DefaultType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ValueMember_get_DefaultType
     );
 
@@ -26419,17 +26388,17 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     );
 
     $.Method({Static:false, Public:true }, "get_ItemType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ValueMember_get_ItemType
     );
 
     $.Method({Static:false, Public:true }, "get_Member", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Reflection.MemberInfo")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Reflection.MemberInfo")), 
       ValueMember_get_Member
     );
 
     $.Method({Static:false, Public:true }, "get_MemberType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ValueMember_get_MemberType
     );
 
@@ -26444,7 +26413,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     );
 
     $.Method({Static:false, Public:true }, "get_ParentType", 
-      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
       ValueMember_get_ParentType
     );
 
@@ -26484,7 +26453,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     );
 
     $.Method({Static:true , Public:false}, "ParseDefaultValue", 
-      new JSIL.MethodSignature($.Object, [$asm0D.TypeRef("System.Type"), $.Object]), 
+      new JSIL.MethodSignature($.Object, [$asm14.TypeRef("System.Type"), $.Object]), 
       ValueMember_ParseDefaultValue
     );
 
@@ -26547,7 +26516,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     );
 
     $.Method({Static:false, Public:true }, "SetSpecified", 
-      new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Reflection.MethodInfo"), $asm0D.TypeRef("System.Reflection.MethodInfo")]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Reflection.MethodInfo"), $asm14.TypeRef("System.Reflection.MethodInfo")]), 
       ValueMember_SetSpecified
     );
 
@@ -26559,7 +26528,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     $.Method({Static:true , Public:false}, "TryGetCoreSerializer", 
       new JSIL.MethodSignature($asm0E.TypeRef("ProtoBuf.Serializers.IProtoSerializer"), [
           $asm0E.TypeRef("ProtoBuf.Meta.RuntimeTypeModel"), $asm0E.TypeRef("ProtoBuf.DataFormat"), 
-          $asm0D.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$asm0E.TypeRef("ProtoBuf.WireType")]), 
+          $asm14.TypeRef("System.Type"), $jsilcore.TypeRef("JSIL.Reference", [$asm0E.TypeRef("ProtoBuf.WireType")]), 
           $.Boolean, $.Boolean, 
           $.Boolean, $.Boolean
         ]), 
@@ -26568,15 +26537,15 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "fieldNumber", $.Int32);
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "member", $asm0D.TypeRef("System.Reflection.MemberInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "member", $asm14.TypeRef("System.Reflection.MemberInfo"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "parentType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "parentType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "itemType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "itemType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "defaultType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "defaultType", $asm14.TypeRef("System.Type"));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "memberType", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "memberType", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:false}, "defaultValue", $.Object);
 
@@ -26590,9 +26559,9 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
 
     $.Field({Static:false, Public:false}, "dynamicType", $.Boolean);
 
-    $.Field({Static:false, Public:false}, "getSpecified", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "getSpecified", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
-    $.Field({Static:false, Public:false}, "setSpecified", $asm0D.TypeRef("System.Reflection.MethodInfo"));
+    $.Field({Static:false, Public:false}, "setSpecified", $asm14.TypeRef("System.Reflection.MethodInfo"));
 
     $.Field({Static:false, Public:false}, "$name", $.String);
 
@@ -26610,15 +26579,15 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
 
     $.Property({Static:false, Public:true }, "FieldNumber", $.Int32);
 
-    $.Property({Static:false, Public:true }, "Member", $asm0D.TypeRef("System.Reflection.MemberInfo"));
+    $.Property({Static:false, Public:true }, "Member", $asm14.TypeRef("System.Reflection.MemberInfo"));
 
-    $.Property({Static:false, Public:true }, "ItemType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "ItemType", $asm14.TypeRef("System.Type"));
 
-    $.Property({Static:false, Public:true }, "MemberType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "MemberType", $asm14.TypeRef("System.Type"));
 
-    $.Property({Static:false, Public:true }, "DefaultType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "DefaultType", $asm14.TypeRef("System.Type"));
 
-    $.Property({Static:false, Public:true }, "ParentType", $asm0D.TypeRef("System.Type"));
+    $.Property({Static:false, Public:true }, "ParentType", $asm14.TypeRef("System.Type"));
 
     $.Property({Static:false, Public:true }, "DefaultValue", $.Object);
 
@@ -26653,16 +26622,16 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
 (function Comparer$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0E.ProtoBuf.Meta.ValueMember)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), $asm0E.TypeRef("ProtoBuf.Meta.ValueMember")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm0E.TypeRef("ProtoBuf.Meta.ValueMember"), $asm0E.TypeRef("ProtoBuf.Meta.ValueMember")]))) ();
   };
 
 
@@ -26691,7 +26660,7 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "ProtoBuf.Meta.ValueMember+Comparer", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -26727,8 +26696,8 @@ JSIL.MakeDelegate("ProtoBuf.Meta.TypeFormatEventHandler", true, [],
     );
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.Collections.IComparer"), 
-      /* 1 */ $asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0E.TypeRef("ProtoBuf.Meta.ValueMember")])
+      /* 0 */ $asm14.TypeRef("System.Collections.IComparer"), 
+      /* 1 */ $asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0E.TypeRef("ProtoBuf.Meta.ValueMember")])
     );
 
 

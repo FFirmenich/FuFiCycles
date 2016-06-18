@@ -19,18 +19,18 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T02 = JSIL.Memoize(System.Array.Of($asm06.Fusee.Math.Core.float3))) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S02 = function () {
@@ -126,7 +126,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.AABBf", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -182,7 +182,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
 (function double2$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm06.Fusee.Math.Core.double3)) ();
@@ -191,41 +191,41 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.double4)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.double2))) ();
+    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.double2))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm06.Fusee.Math.Core.QuaternionD)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm0D.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double2")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm14.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double2")]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double2")]), $asm0D.TypeRef("System.Double"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double2")]), $asm14.TypeRef("System.Double"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double2")])
       ]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double2")]), $asm0D.TypeRef("System.Double"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double2")]), $asm14.TypeRef("System.Double"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double2")])
       ]))) ();
   };
@@ -236,7 +236,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Double"), [$asm0D.TypeRef("System.Double")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Double"), [$asm14.TypeRef("System.Double")]))) ();
   };
   var $S06 = function () {
     return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -720,7 +720,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.double2", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -738,31 +738,31 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       double2__ctor$01
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
     $.Method({Static:false, Public:true }, ".ctor", 
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.double3")), 
       double2__ctor$02
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
     $.Method({Static:false, Public:true }, ".ctor", 
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.double4")), 
       double2__ctor$03
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($.Type), 
       double2_Add$04
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double2_Add$05
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Add", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -841,13 +841,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Double), 
       double2_Div$10
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
       double2_Div$11
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature(null, [
@@ -856,7 +856,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double2_Div$12
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Divide", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
@@ -926,7 +926,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double2_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_PerpendicularLeft", 
       JSIL.MethodSignature.Return($.Type), 
@@ -973,13 +973,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Double), 
       double2_Mult$1C
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
       double2_Mult$1D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature(null, [
@@ -988,7 +988,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double2_Mult$1E
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Multiply", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
@@ -1090,43 +1090,43 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       new JSIL.MethodSignature(null, [$.Double, $.Double]), 
       double2_Scale$2B
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($.Type), 
       double2_Scale$2C
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double2_Scale$2D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "set_Parse", 
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double2_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "Sub", 
       JSIL.MethodSignature.Action($.Type), 
       double2_Sub$2E
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Sub", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double2_Sub$2F
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
       double2_Sub$30
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature(null, [
@@ -1135,7 +1135,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double2_Sub$31
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Subtract", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -1186,8 +1186,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true , ReadOnly:true }, "One", $.Type);
 
     $.Field({Static:true , Public:false}, "double2$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function double2__cctor () {
@@ -1219,7 +1219,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:true , Public:true }, "Parse", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -1233,7 +1233,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
 (function double3$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm06.Fusee.Math.Core.double2)) ();
@@ -1242,22 +1242,22 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.double4)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.double3))) ();
+    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.double3))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm06.Fusee.Math.Core.double4x4)) ();
@@ -1267,22 +1267,22 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm0D.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double3")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm14.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double3")]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double3")]), $asm0D.TypeRef("System.Double"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double3")]), $asm14.TypeRef("System.Double"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double3")])
       ]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double3")]), $asm0D.TypeRef("System.Double"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double3")]), $asm14.TypeRef("System.Double"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double3")])
       ]))) ();
   };
@@ -1293,10 +1293,10 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Double"), [$asm0D.TypeRef("System.Double")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Double"), [$asm14.TypeRef("System.Double")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")]))) ();
   };
   var $S07 = function () {
     return ($S07 = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -2002,7 +2002,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.double3", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -2038,13 +2038,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       double3_Add$04
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double3_Add$05
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Add", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -2149,13 +2149,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Double), 
       double3_Div$14
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
       double3_Div$15
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature(null, [
@@ -2164,7 +2164,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double3_Div$16
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Divide", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
@@ -2244,7 +2244,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double3_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_r", 
       JSIL.MethodSignature.Return($.Double), 
@@ -2291,13 +2291,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Double), 
       double3_Mult$20
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
       double3_Mult$21
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature(null, [
@@ -2306,7 +2306,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double3_Mult$22
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Multiply", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
@@ -2411,19 +2411,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double3_Scale$2F
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($.Type), 
       double3_Scale$30
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double3_Scale$31
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "set_b", 
       JSIL.MethodSignature.Action($.Double), 
@@ -2439,7 +2439,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double3_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_r", 
       JSIL.MethodSignature.Action($.Double), 
@@ -2455,19 +2455,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       double3_Sub$32
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Sub", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double3_Sub$33
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
       double3_Sub$34
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature(null, [
@@ -2476,7 +2476,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double3_Sub$35
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Subtract", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -2609,8 +2609,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true , ReadOnly:true }, "One", $.Type);
 
     $.Field({Static:true , Public:false}, "double3$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function double3__cctor () {
@@ -2648,7 +2648,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:true , Public:true }, "Parse", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -2662,7 +2662,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
 (function double4$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm06.Fusee.Math.Core.double2)) ();
@@ -2671,22 +2671,22 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.double3)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.double4))) ();
+    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.double4))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm06.Fusee.Math.Core.double4x4)) ();
@@ -2696,22 +2696,22 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm0D.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double4")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm14.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double4")]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double4")]), $asm0D.TypeRef("System.Double"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double4")]), $asm14.TypeRef("System.Double"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double4")])
       ]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double4")]), $asm0D.TypeRef("System.Double"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double4")]), $asm14.TypeRef("System.Double"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.double4")])
       ]))) ();
   };
@@ -2722,15 +2722,15 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Double"), [$asm0D.TypeRef("System.Double")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Double"), [$asm14.TypeRef("System.Double")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")]))) ();
   };
   var $S07 = function () {
     return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S08 = function () {
@@ -3425,7 +3425,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.double4", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -3466,13 +3466,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       double4_Add$05
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double4_Add$06
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Add", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -3525,7 +3525,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Double), 
       double4_Div$0D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
@@ -3623,7 +3623,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double4_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_r", 
       JSIL.MethodSignature.Return($.Double), 
@@ -3696,7 +3696,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Double), 
       double4_Mult$1D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Double]), 
@@ -3814,19 +3814,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4_Scale$2C
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($.Type), 
       double4_Scale$2D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double4_Scale$2E
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "set_a", 
       JSIL.MethodSignature.Action($.Double), 
@@ -3847,7 +3847,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double4_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_r", 
       JSIL.MethodSignature.Action($.Double), 
@@ -3873,13 +3873,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       double4_Sub$2F
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Sub", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       double4_Sub$30
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -3964,8 +3964,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true , ReadOnly:true }, "One", $.Type);
 
     $.Field({Static:true , Public:false}, "double4$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function double4__cctor () {
@@ -4011,7 +4011,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:true , Public:true }, "Parse", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -4028,28 +4028,28 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T00 = JSIL.Memoize($asm06.Fusee.Math.Core.double4)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.double3)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.double4x4))) ();
+    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.double4x4))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [
@@ -4059,33 +4059,33 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S04 = function () {
     return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm0D.TypeRef("System.Double")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm14.TypeRef("System.Double")]))) ();
   };
 
 
@@ -4923,7 +4923,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.double4x4", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -5043,7 +5043,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4x4_CreatePerspectiveFieldOfView_ROW$0A
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreatePerspectiveFieldOfView_ROW", 
       new JSIL.MethodSignature($.Type, [
@@ -5052,7 +5052,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4x4_CreatePerspectiveFieldOfView_ROW$0B
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreatePerspectiveOffCenter", 
       new JSIL.MethodSignature(null, [
@@ -5082,7 +5082,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4x4_CreatePerspectiveOffCenter_ROW
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreatePerspectiveOffCenterRH", 
       new JSIL.MethodSignature(null, [
@@ -5108,13 +5108,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       new JSIL.MethodSignature(null, [$.Double, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
       double4x4_CreateRotationX_ROW$10
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationX_ROW", 
       new JSIL.MethodSignature($.Type, [$.Double]), 
       double4x4_CreateRotationX_ROW$11
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationY", 
       new JSIL.MethodSignature(null, [$.Double, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
@@ -5130,13 +5130,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       new JSIL.MethodSignature(null, [$.Double, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
       double4x4_CreateRotationY_ROW$14
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationY_ROW", 
       new JSIL.MethodSignature($.Type, [$.Double]), 
       double4x4_CreateRotationY_ROW$15
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationZ", 
       new JSIL.MethodSignature(null, [$.Double, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
@@ -5181,7 +5181,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4x4_CreateTranslation_ROW$1C
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateTranslation_ROW", 
       new JSIL.MethodSignature($.Type, [
@@ -5190,7 +5190,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4x4_CreateTranslation_ROW$1D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:false, Public:true , Virtual:true }, "Object.Equals", 
       new JSIL.MethodSignature($.Boolean, [$.Object]), 
@@ -5321,7 +5321,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double4x4_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "GetHashCode", 
       JSIL.MethodSignature.Return($.Int32), 
@@ -5369,7 +5369,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4x4_LookAt_ROW$23
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "LookAt_ROW", 
       new JSIL.MethodSignature($.Type, [
@@ -5381,7 +5381,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       double4x4_LookAt_ROW$24
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "LookAtRH", 
       new JSIL.MethodSignature($.Type, [
@@ -5559,7 +5559,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       double4x4_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:true , Public:true }, "Substract", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -5628,8 +5628,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true }, "Zero", $.Type);
 
     $.Field({Static:true , Public:false}, "double4x4$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function double4x4__cctor () {
@@ -5693,7 +5693,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:true , Public:true }, "Parse", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -5708,7 +5708,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
 (function float2$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
@@ -5717,44 +5717,44 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.float2))) ();
+    return ($T08 = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.float2))) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm06.Fusee.Math.Core.Quaternion)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm0D.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float2")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm14.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float2")]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float2")]), $asm0D.TypeRef("System.Single"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float2")]), $asm14.TypeRef("System.Single"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float2")])
       ]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float2")]), $asm0D.TypeRef("System.Single"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float2")]), $asm14.TypeRef("System.Single"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float2")])
       ]))) ();
   };
@@ -5765,7 +5765,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Single"), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Single"), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S06 = function () {
     return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -6288,7 +6288,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.float2", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -6306,31 +6306,31 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       float2__ctor$01
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
     $.Method({Static:false, Public:true }, ".ctor", 
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.float3")), 
       float2__ctor$02
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
     $.Method({Static:false, Public:true }, ".ctor", 
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.float4")), 
       float2__ctor$03
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($.Type), 
       float2_Add$04
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float2_Add$05
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Add", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -6409,13 +6409,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Single), 
       float2_Div$10
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
       float2_Div$11
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature(null, [
@@ -6424,7 +6424,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float2_Div$12
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Divide", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
@@ -6499,7 +6499,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float2_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_PerpendicularLeft", 
       JSIL.MethodSignature.Return($.Type), 
@@ -6561,13 +6561,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Single), 
       float2_Mult$1C
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
       float2_Mult$1D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature(null, [
@@ -6576,7 +6576,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float2_Mult$1E
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Multiply", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
@@ -6683,19 +6683,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       new JSIL.MethodSignature(null, [$.Single, $.Single]), 
       float2_Scale$2C
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($.Type), 
       float2_Scale$2D
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float2_Scale$2E
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "set_g", 
       JSIL.MethodSignature.Action($.Single), 
@@ -6706,7 +6706,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float2_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_r", 
       JSIL.MethodSignature.Action($.Single), 
@@ -6727,19 +6727,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       float2_Sub$2F
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Sub", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float2_Sub$30
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
       float2_Sub$31
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature(null, [
@@ -6748,7 +6748,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float2_Sub$32
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Subtract", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -6801,8 +6801,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true , ReadOnly:true }, "One", $.Type);
 
     $.Field({Static:true , Public:false}, "float2$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function float2__cctor () {
@@ -6842,7 +6842,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:true , Public:true }, "Parse", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -6857,7 +6857,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
 (function float3$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm06.Fusee.Math.Core.float2)) ();
@@ -6869,16 +6869,16 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T03 = JSIL.Memoize($asm06.Fusee.Math.Core.double3)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T08 = function () {
     return ($T08 = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
@@ -6887,10 +6887,10 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T09 = JSIL.Memoize(System.Array.Of($asm06.Fusee.Math.Core.float3))) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.float3))) ();
+    return ($T0A = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.float3))) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0C = function () {
     return ($T0C = JSIL.Memoize($asm06.Fusee.Math.Core.float4x4)) ();
@@ -6900,22 +6900,22 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm0D.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float3")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm14.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float3")]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float3")]), $asm0D.TypeRef("System.Single"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float3")]), $asm14.TypeRef("System.Single"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float3")])
       ]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float3")]), $asm0D.TypeRef("System.Single"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float3")]), $asm14.TypeRef("System.Single"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float3")])
       ]))) ();
   };
@@ -6926,10 +6926,10 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Single"), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Single"), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S07 = function () {
     return ($S07 = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -6941,7 +6941,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.double3")]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S0A = function () {
     return ($S0A = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -7727,7 +7727,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.float3", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -7768,13 +7768,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       float3_Add$05
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float3_Add$06
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Add", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -7879,13 +7879,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Single), 
       float3_Div$15
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
       float3_Div$16
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature(null, [
@@ -7894,7 +7894,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float3_Div$17
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Divide", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
@@ -7974,7 +7974,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float3_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_r", 
       JSIL.MethodSignature.Return($.Single), 
@@ -8026,13 +8026,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Single), 
       float3_Mult$21
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
       float3_Mult$22
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature(null, [
@@ -8041,7 +8041,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float3_Mult$23
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Multiply", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
@@ -8161,19 +8161,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float3_Scale$31
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($.Type), 
       float3_Scale$32
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float3_Scale$33
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "set_b", 
       JSIL.MethodSignature.Action($.Single), 
@@ -8189,7 +8189,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float3_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_r", 
       JSIL.MethodSignature.Action($.Single), 
@@ -8210,19 +8210,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       float3_Sub$34
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Sub", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float3_Sub$35
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
       float3_Sub$36
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature(null, [
@@ -8231,7 +8231,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float3_Sub$37
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Subtract", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -8367,8 +8367,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true , ReadOnly:true }, "One", $.Type);
 
     $.Field({Static:true , Public:false}, "float3$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function float3__cctor () {
@@ -8408,7 +8408,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:true , Public:true }, "Parse", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -8426,19 +8426,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T00 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.float4x4)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3x3"), [
@@ -8448,17 +8448,17 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3x3"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
 
@@ -8675,7 +8675,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.float3x3", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -8973,7 +8973,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:false, Public:true }, "IsAffine", $.Boolean);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -8987,7 +8987,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
 (function float4$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm06.Fusee.Math.Core.float2)) ();
@@ -8999,31 +8999,31 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T03 = JSIL.Memoize($asm06.Fusee.Math.Core.double4)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.IndexOutOfRangeException)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.IndexOutOfRangeException)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T0B = function () {
     return ($T0B = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.float4))) ();
+    return ($T0C = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.float4))) ();
   };
   var $T0D = function () {
     return ($T0D = JSIL.Memoize($asm06.Fusee.Math.Core.float4x4)) ();
@@ -9033,22 +9033,22 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm0D.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float4")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm14.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float4")]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4")]), $asm0D.TypeRef("System.Single"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4")]), $asm14.TypeRef("System.Single"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4")])
       ]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4")]), $asm0D.TypeRef("System.Single"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4")]), $asm14.TypeRef("System.Single"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4")])
       ]))) ();
   };
@@ -9059,18 +9059,18 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IndexOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IndexOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Single"), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Single"), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S08 = function () {
     return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S09 = function () {
@@ -9083,7 +9083,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($S0A = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.double4")]))) ();
   };
   var $S0B = function () {
-    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Double"), [$asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Int32")]))) ();
+    return ($S0B = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Double"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Int32")]))) ();
   };
   var $S0C = function () {
     return ($S0C = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -9871,7 +9871,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.float4", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -9917,13 +9917,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       float4_Add$06
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Add", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float4_Add$07
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Add() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Add", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -9976,7 +9976,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Single), 
       float4_Div$0E
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Divide() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Div", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
@@ -10084,7 +10084,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float4_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_r", 
       JSIL.MethodSignature.Return($.Single), 
@@ -10162,7 +10162,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Single), 
       float4_Mult$1E
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Single]), 
@@ -10305,19 +10305,19 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4_Scale$30
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($.Type), 
       float4_Scale$31
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Scale", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float4_Scale$32
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Multiply() method instead."]; });
 
     $.Method({Static:false, Public:true }, "set_a", 
       JSIL.MethodSignature.Action($.Single), 
@@ -10343,7 +10343,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float4_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_r", 
       JSIL.MethodSignature.Action($.Single), 
@@ -10374,13 +10374,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($.Type), 
       float4_Sub$33
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:false, Public:true }, "Sub", 
       JSIL.MethodSignature.Action($jsilcore.TypeRef("JSIL.Reference", [$.Type])), 
       float4_Sub$34
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use static Subtract() method instead."]; });
 
     $.Method({Static:true , Public:true }, "Sub", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -10469,8 +10469,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true , ReadOnly:true }, "One", $.Type);
 
     $.Field({Static:true , Public:false}, "float4$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function float4__cctor () {
@@ -10522,13 +10522,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:false, Public:true }, "Item", $.Single);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; })
+    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; })
     .Attribute($asm0E.TypeRef("ProtoBuf.ProtoContractAttribute"));
 
 })();
@@ -10541,7 +10541,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T00 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.double4x4)) ();
@@ -10550,28 +10550,28 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     return ($T03 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.Exception)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm0D.System.String, $asm06.Fusee.Math.Core.float4x4))) ();
+    return ($T0A = JSIL.Memoize($asm06.Fusee.Math.Core.Converter$b2.Of($asm14.System.String, $asm06.Fusee.Math.Core.float4x4))) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0B = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [
@@ -10581,42 +10581,42 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Single"), $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4x4")])]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Single"), $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.float4x4")])]))) ();
   };
   var $S05 = function () {
     return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Exception"), [$asm0D.TypeRef("System.String")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Exception"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S07 = function () {
     return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm14.TypeRef("System.Single")]))) ();
   };
 
 
@@ -11505,7 +11505,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.float4x4", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -11630,7 +11630,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4x4_CreatePerspectiveFieldOfView_ROW$0B
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreatePerspectiveFieldOfView_ROW", 
       new JSIL.MethodSignature($.Type, [
@@ -11639,7 +11639,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4x4_CreatePerspectiveFieldOfView_ROW$0C
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreatePerspectiveOffCenter", 
       new JSIL.MethodSignature(null, [
@@ -11669,7 +11669,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4x4_CreatePerspectiveOffCenter_ROW
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreatePerspectiveOffCenterRH", 
       new JSIL.MethodSignature(null, [
@@ -11695,13 +11695,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       new JSIL.MethodSignature(null, [$.Single, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
       float4x4_CreateRotationX_ROW$11
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationX_ROW", 
       new JSIL.MethodSignature($.Type, [$.Single]), 
       float4x4_CreateRotationX_ROW$12
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationY", 
       new JSIL.MethodSignature(null, [$.Single, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
@@ -11717,13 +11717,13 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       new JSIL.MethodSignature(null, [$.Single, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
       float4x4_CreateRotationY_ROW$15
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationY_ROW", 
       new JSIL.MethodSignature($.Type, [$.Single]), 
       float4x4_CreateRotationY_ROW$16
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateRotationZ", 
       new JSIL.MethodSignature(null, [$.Single, $jsilcore.TypeRef("JSIL.Reference", [$.Type])]), 
@@ -11804,7 +11804,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4x4_CreateTranslation_ROW$23
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "CreateTranslation_ROW", 
       new JSIL.MethodSignature($.Type, [
@@ -11813,7 +11813,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4x4_CreateTranslation_ROW$24
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:false, Public:true , Virtual:true }, "Object.Equals", 
       new JSIL.MethodSignature($.Boolean, [$.Object]), 
@@ -11944,7 +11944,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float4x4_get_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "GetHashCode", 
       JSIL.MethodSignature.Return($.Int32), 
@@ -11992,7 +11992,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4x4_LookAt_ROW$2A
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "LookAt_ROW", 
       new JSIL.MethodSignature($.Type, [
@@ -12004,7 +12004,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
         ]), 
       float4x4_LookAt_ROW$2B
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Only for testing and debugging purposes during the row notation -> column notation code transition of the math library"]; });
 
     $.Method({Static:true , Public:true }, "LookAtRH", 
       new JSIL.MethodSignature($.Type, [
@@ -12197,7 +12197,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
       JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type])), 
       float4x4_set_Parse
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:true , Public:true }, "Substract", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -12266,8 +12266,8 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Field({Static:true , Public:true }, "Zero", $.Type);
 
     $.Field({Static:true , Public:false}, "float4x4$Parse$value", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
 
     function float4x4__cctor () {
@@ -12331,7 +12331,7 @@ JSIL.DeclareNamespace("Fusee.Math.Core");
     $.Property({Static:true , Public:true }, "Parse", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Type]));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -12351,40 +12351,40 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
 (function M$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Int64)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Int64)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.UInt32)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.UInt32)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0D.System.Int16)) ();
+    return ($T07 = JSIL.Memoize($asm14.System.Int16)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0D.System.UInt16)) ();
+    return ($T08 = JSIL.Memoize($asm14.System.UInt16)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
+    return ($T09 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Single"), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Single"), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -12850,12 +12850,12 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
     $ = $ib;
 
     $.Constant({Static:true , Public:true }, "PiOver4", $.Single, 0.7853982)
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"));
+    .Attribute($asm14.TypeRef("System.ObsoleteAttribute"));
 
 })();
 
@@ -12867,43 +12867,43 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
     return ($T00 = JSIL.Memoize($asm06.Fusee.Math.Core.double3)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm06.Fusee.Math.Core.double4)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.QuaternionD"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [
-        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
-        $asm0D.TypeRef("System.Double")
+        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
+        $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.QuaternionD"), [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm0D.TypeRef("System.Double")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.QuaternionD"), [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm14.TypeRef("System.Double")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm0D.TypeRef("System.Double")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm14.TypeRef("System.Double")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm0D.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double3")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm14.TypeRef("System.Double"), $asm06.TypeRef("Fusee.Math.Core.double3")]))) ();
   };
   var $S05 = function () {
     return ($S05 = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -12913,7 +12913,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
   };
   var $S06 = function () {
     return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.QuaternionD")]), $asm0D.TypeRef("System.Double"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.QuaternionD")]), $asm14.TypeRef("System.Double"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.QuaternionD")])
       ]))) ();
   };
@@ -13286,7 +13286,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.QuaternionD", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -13405,7 +13405,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
       QuaternionD_Mult$0A
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature(null, [
@@ -13414,7 +13414,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
         ]), 
       QuaternionD_Mult$0B
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
 
     $.Method({Static:true , Public:true }, "Multiply", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -13585,7 +13585,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
     $.Property({Static:false, Public:true }, "LengthSquared", $.Double);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 
@@ -13602,22 +13602,22 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
     return ($T00 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Single)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0D.System.Math)) ();
+    return ($T02 = JSIL.Memoize($asm14.System.Math)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm0D.System.Double)) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Double)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize(System.Array.Of($asm06.Fusee.Math.Core.float3))) ();
@@ -13629,31 +13629,31 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
     return ($T09 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm0D.System.String)) ();
+    return ($T0A = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.Quaternion"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.Quaternion"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.Quaternion"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0D.TypeRef("System.Single")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm14.TypeRef("System.Single")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm0D.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float3")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm14.TypeRef("System.Single"), $asm06.TypeRef("Fusee.Math.Core.float3")]))) ();
   };
   var $S06 = function () {
     return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [
@@ -13663,17 +13663,17 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
   };
   var $S07 = function () {
     return ($S07 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.Quaternion")]), $asm0D.TypeRef("System.Single"), 
+        $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.Quaternion")]), $asm14.TypeRef("System.Single"), 
         $jsilcore.TypeRef("JSIL.Reference", [$asm06.TypeRef("Fusee.Math.Core.Quaternion")])
       ]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")]))) ();
+    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Single"), [
-        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
-        $asm0D.TypeRef("System.Single")
+    return ($S09 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Single"), [
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
       ]))) ();
   };
 
@@ -14135,7 +14135,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Math.Core.Quaternion", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -14269,7 +14269,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
       Quaternion_Mult$0A
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
 
     $.Method({Static:true , Public:true }, "Mult", 
       new JSIL.MethodSignature(null, [
@@ -14278,7 +14278,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
         ]), 
       Quaternion_Mult$0B
     )
-      .Attribute($asm0D.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
+      .Attribute($asm14.TypeRef("System.ObsoleteAttribute"), function () { return ["Use Multiply instead."]; });
 
     $.Method({Static:true , Public:true }, "Multiply", 
       new JSIL.MethodSignature($.Type, [$.Type, $.Type]), 
@@ -14459,7 +14459,7 @@ JSIL.MakeDelegate("Fusee.Math.Core.Converter`2", true, ["in TInput", "out TOutpu
     $.Property({Static:false, Public:true }, "LengthSquared", $.Single);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type])
+      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type])
     );
 
 

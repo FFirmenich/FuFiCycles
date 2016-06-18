@@ -16,7 +16,7 @@ contentManifest["Fusee.Tutorial.Web.contentproj"] = [
     ["Script",	"Fusee.Xirkit.Ext.js",	{  "sizeBytes": 44215 }],
     ["Script",	"Fusee.Engine.Imp.Graphics.Web.Ext.js",	{  "sizeBytes": 105980 }],
     ["Script",	"SystemExternals.js",	{  "sizeBytes": 11976 }],
-    ["File",	"Assets/CycleLand.fus",	{  "sizeBytes": 660408 }],
+    ["File",	"Assets/CycleLand.fus",	{  "sizeBytes": 660821 }],
     ["Image",	"Assets/Leaves.jpg",	{  "sizeBytes": 19815 }],
     ["File",	"Assets/PixelShader.frag",	{  "sizeBytes": 872 }],
     ["File",	"Assets/PixelShader2.frag",	{  "sizeBytes": 530 }],

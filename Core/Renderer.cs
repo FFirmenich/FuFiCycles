@@ -7,7 +7,7 @@ using Fusee.Math.Core;
 using Fusee.Serialization;
 using Fusee.Xene;
 
-namespace Fusee.Tutorial.Core {
+namespace Fusee.FuFiCycles.Core {
 	class Renderer : SceneVisitor {
 		public ShaderEffect ShaderEffect;
 

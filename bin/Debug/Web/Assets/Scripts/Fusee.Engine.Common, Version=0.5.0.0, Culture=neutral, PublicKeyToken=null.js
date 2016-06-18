@@ -10,7 +10,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Common");
 (function FuseeApplicationAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
   };
 
 
@@ -21,7 +21,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Common");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Attribute"), 
+      BaseType: $asm14.TypeRef("System.Attribute"), 
       Name: "Fusee.Engine.Common.FuseeApplicationAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -48,7 +48,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Common");
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.Class]; });
+    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.Class]; });
 
 })();
 
@@ -76,7 +76,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.DeviceCategory", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -97,7 +97,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.AxisNature", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -113,7 +113,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.AxisDirection", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -130,7 +130,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.AxisBoundedType", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -147,7 +147,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.AxisDescription", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -182,7 +182,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.AxisImpDescription", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -207,7 +207,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.ButtonImpDescription", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -232,7 +232,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.ButtonDescription", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -256,7 +256,7 @@ JSIL.MakeEnum(
 (function AxisValueChangedArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -265,7 +265,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.AxisValueChangedArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -293,7 +293,7 @@ JSIL.MakeEnum(
 (function ButtonValueChangedArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -302,7 +302,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.ButtonValueChangedArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -333,15 +333,15 @@ JSIL.MakeInterface(
     $.Method({}, "get_Desc", JSIL.MethodSignature.Return($.String));
     $.Method({}, "get_Category", JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.DeviceCategory")));
     $.Method({}, "get_AxesCount", JSIL.MethodSignature.Return($.Int32));
-    $.Method({}, "get_AxisImpDesc", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])));
+    $.Method({}, "get_AxisImpDesc", JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])));
     $.Method({}, "GetAxis", new JSIL.MethodSignature($.Single, [$.Int32]));
-    $.Method({}, "add_AxisValueChanged", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])));
-    $.Method({}, "remove_AxisValueChanged", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])));
+    $.Method({}, "add_AxisValueChanged", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])));
+    $.Method({}, "remove_AxisValueChanged", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])));
     $.Method({}, "get_ButtonCount", JSIL.MethodSignature.Return($.Int32));
-    $.Method({}, "get_ButtonImpDesc", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])));
+    $.Method({}, "get_ButtonImpDesc", JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])));
     $.Method({}, "GetButton", new JSIL.MethodSignature($.Boolean, [$.Int32]));
-    $.Method({}, "add_ButtonValueChanged", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])));
-    $.Method({}, "remove_ButtonValueChanged", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])));
+    $.Method({}, "add_ButtonValueChanged", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])));
+    $.Method({}, "remove_ButtonValueChanged", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])));
     $.Property({}, "Id");
     $.Property({}, "Desc");
     $.Property({}, "Category");
@@ -371,7 +371,7 @@ JSIL.MakeInterface(
 (function NewDeviceImpConnectedArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -380,7 +380,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.NewDeviceImpConnectedArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -406,7 +406,7 @@ JSIL.MakeInterface(
 (function DeviceImpDisconnectedArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -415,7 +415,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.DeviceImpDisconnectedArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -442,17 +442,17 @@ JSIL.MakeInterface(
 
 JSIL.MakeInterface(
   "Fusee.Engine.Common.IInputDriverImp", true, [], function ($) {
-    $.Method({}, "get_Devices", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")])));
+    $.Method({}, "get_Devices", JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")])));
     $.Method({}, "get_DriverId", JSIL.MethodSignature.Return($.String));
     $.Method({}, "get_DriverDesc", JSIL.MethodSignature.Return($.String));
-    $.Method({}, "add_NewDeviceConnected", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])));
-    $.Method({}, "remove_NewDeviceConnected", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])));
-    $.Method({}, "add_DeviceDisconnected", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])));
-    $.Method({}, "remove_DeviceDisconnected", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])));
+    $.Method({}, "add_NewDeviceConnected", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])));
+    $.Method({}, "remove_NewDeviceConnected", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])));
+    $.Method({}, "add_DeviceDisconnected", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])));
+    $.Method({}, "remove_DeviceDisconnected", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])));
     $.Property({}, "Devices");
     $.Property({}, "DriverId");
     $.Property({}, "DriverDesc");
-  }, [$asm0D.TypeRef("System.IDisposable")]);
+  }, [$asm14.TypeRef("System.IDisposable")]);
 
 /* struct Fusee.Engine.Common.CharInfoStruct */ 
 
@@ -460,7 +460,7 @@ JSIL.MakeInterface(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.CharInfoStruct", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -828,7 +828,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.HingeFlags", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: true, 
   }, 
@@ -928,7 +928,7 @@ JSIL.MakeInterface(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.IPEndpointData", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -973,7 +973,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Common.NetConfigValues", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1009,7 +1009,7 @@ JSIL.MakeInterface(
 (function NetStatusValues$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
 
 
@@ -1033,7 +1033,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Common.NetStatusValues", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1050,33 +1050,33 @@ JSIL.MakeInterface(
       JSIL.MethodSignature.Return($.Boolean), 
       NetStatusValues_get_Connected
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_Connecting", 
       JSIL.MethodSignature.Return($.Boolean), 
       NetStatusValues_get_Connecting
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_Connected", 
       JSIL.MethodSignature.Action($.Boolean), 
       NetStatusValues_set_Connected
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_Connecting", 
       JSIL.MethodSignature.Action($.Boolean), 
       NetStatusValues_set_Connecting
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Field({Static:false, Public:false}, "NetStatusValues$Connected$value", $.Boolean)
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "NetStatusValues$Connecting$value", $.Boolean)
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:true }, "LastStatus", $asm03.TypeRef("Fusee.Engine.Common.ConnectionStatus"));
 
@@ -1095,7 +1095,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.SysType", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1120,9 +1120,9 @@ JSIL.MakeInterface(
     $.Method({}, "set_Config", JSIL.MethodSignature.Action($asm03.TypeRef("Fusee.Engine.Common.NetConfigValues")));
     $.Method({}, "get_Status", JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.NetStatusValues")));
     $.Method({}, "set_Status", JSIL.MethodSignature.Action($asm03.TypeRef("Fusee.Engine.Common.NetStatusValues")));
-    $.Method({}, "get_Connections", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm03.TypeRef("Fusee.Engine.Common.INetworkConnection")])));
+    $.Method({}, "get_Connections", JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.List`1", [$asm03.TypeRef("Fusee.Engine.Common.INetworkConnection")])));
     $.Method({}, "GetLocalIp", JSIL.MethodSignature.Return($.String));
-    $.Method({}, "get_IncomingMsg", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm03.TypeRef("Fusee.Engine.Common.INetworkMsg")])));
+    $.Method({}, "get_IncomingMsg", JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.List`1", [$asm03.TypeRef("Fusee.Engine.Common.INetworkMsg")])));
     $.Method({}, "StartPeer", JSIL.MethodSignature.Action($.Int32));
     $.Method({}, "add_ConnectionUpdate", JSIL.MethodSignature.Action($asm03.TypeRef("Fusee.Engine.Common.ConnectionUpdateEvent")));
     $.Method({}, "remove_ConnectionUpdate", JSIL.MethodSignature.Action($asm03.TypeRef("Fusee.Engine.Common.ConnectionUpdateEvent")));
@@ -1149,7 +1149,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.ConnectionStatus", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1170,7 +1170,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.MessageType", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1197,7 +1197,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.MessageDelivery", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1216,7 +1216,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.MsgDataTypes", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1235,7 +1235,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.NetworkMsgType", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -1283,7 +1283,7 @@ JSIL.MakeInterface(
 (function InitEventArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -1292,7 +1292,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.InitEventArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1316,7 +1316,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.PointToPointFlags", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1371,14 +1371,14 @@ JSIL.MakeInterface(
           $.Boolean
         ]));
     $.Method({}, "CloseGameWindow", JSIL.MethodSignature.Void);
-    $.Method({}, "add_Init", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
-    $.Method({}, "remove_Init", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
-    $.Method({}, "add_UnLoad", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
-    $.Method({}, "remove_UnLoad", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
-    $.Method({}, "add_Render", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])));
-    $.Method({}, "remove_Render", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])));
-    $.Method({}, "add_Resize", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])));
-    $.Method({}, "remove_Resize", JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])));
+    $.Method({}, "add_Init", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
+    $.Method({}, "remove_Init", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
+    $.Method({}, "add_UnLoad", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
+    $.Method({}, "remove_UnLoad", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])));
+    $.Method({}, "add_Render", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])));
+    $.Method({}, "remove_Render", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])));
+    $.Method({}, "add_Resize", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])));
+    $.Method({}, "remove_Resize", JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])));
     $.Property({}, "Width");
     $.Property({}, "Height");
     $.Property({}, "Caption");
@@ -1396,7 +1396,7 @@ JSIL.MakeInterface(
     $.Method({}, "set_ClearDepth", JSIL.MethodSignature.Action($.Single));
     $.Method({}, "get_ClearDepth", JSIL.MethodSignature.Return($.Single));
     $.Method({}, "CreateShader", new JSIL.MethodSignature($asm03.TypeRef("Fusee.Engine.Common.IShaderProgramImp"), [$.String, $.String]));
-    $.Method({}, "GetShaderParamList", new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IList`1", [$asm03.TypeRef("Fusee.Engine.Common.ShaderParamInfo")]), [$asm03.TypeRef("Fusee.Engine.Common.IShaderProgramImp")]));
+    $.Method({}, "GetShaderParamList", new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IList`1", [$asm03.TypeRef("Fusee.Engine.Common.ShaderParamInfo")]), [$asm03.TypeRef("Fusee.Engine.Common.IShaderProgramImp")]));
     $.Method({}, "GetShaderParam", new JSIL.MethodSignature($asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), [$asm03.TypeRef("Fusee.Engine.Common.IShaderProgramImp"), $.String]));
     $.Method({}, "GetParamValue", new JSIL.MethodSignature($.Single, [$asm03.TypeRef("Fusee.Engine.Common.IShaderProgramImp"), $asm03.TypeRef("Fusee.Engine.Common.IShaderParam")]));
     $.Method({OriginalName: "SetShaderParam"}, "SetShaderParam1f", new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $.Single]));
@@ -1707,10 +1707,10 @@ JSIL.MakeInterface(
 (function KeyEventArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm0D.System.Boolean)) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm03.Fusee.Engine.Common.KeyCodes)) ();
@@ -1754,7 +1754,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.KeyEventArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1771,65 +1771,65 @@ JSIL.MakeInterface(
       JSIL.MethodSignature.Return($.Boolean), 
       KeyEventArgs_get_Alt
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_Control", 
       JSIL.MethodSignature.Return($.Boolean), 
       KeyEventArgs_get_Control
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_KeyCode", 
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.KeyCodes")), 
       KeyEventArgs_get_KeyCode
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_Shift", 
       JSIL.MethodSignature.Return($.Boolean), 
       KeyEventArgs_get_Shift
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_Alt", 
       JSIL.MethodSignature.Action($.Boolean), 
       KeyEventArgs_set_Alt
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_Control", 
       JSIL.MethodSignature.Action($.Boolean), 
       KeyEventArgs_set_Control
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_KeyCode", 
       JSIL.MethodSignature.Action($asm03.TypeRef("Fusee.Engine.Common.KeyCodes")), 
       KeyEventArgs_set_KeyCode
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_Shift", 
       JSIL.MethodSignature.Action($.Boolean), 
       KeyEventArgs_set_Shift
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Field({Static:false, Public:false}, "KeyEventArgs$Shift$value", $.Boolean)
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "KeyEventArgs$Alt$value", $.Boolean)
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "KeyEventArgs$Control$value", $.Boolean)
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "KeyEventArgs$KeyCode$value", $asm03.TypeRef("Fusee.Engine.Common.KeyCodes"))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Property({Static:false, Public:true }, "Shift", $.Boolean);
 
@@ -1850,7 +1850,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.LightType", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1867,7 +1867,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.Light", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -1903,7 +1903,7 @@ JSIL.MakeEnum(
 (function MouseEventArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm03.Fusee.Engine.Common.MouseButtons)) ();
@@ -1934,7 +1934,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.MouseEventArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1951,33 +1951,33 @@ JSIL.MakeEnum(
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.MouseButtons")), 
       MouseEventArgs_get_Button
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_Position", 
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.Point")), 
       MouseEventArgs_get_Position
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_Button", 
       JSIL.MethodSignature.Action($asm03.TypeRef("Fusee.Engine.Common.MouseButtons")), 
       MouseEventArgs_set_Button
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_Position", 
       JSIL.MethodSignature.Action($asm03.TypeRef("Fusee.Engine.Common.Point")), 
       MouseEventArgs_set_Position
     )
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Field({Static:false, Public:false}, "MouseEventArgs$Button$value", $asm03.TypeRef("Fusee.Engine.Common.MouseButtons"))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "MouseEventArgs$Position$value", $asm03.TypeRef("Fusee.Engine.Common.Point"))
-      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Property({Static:false, Public:true }, "Button", $asm03.TypeRef("Fusee.Engine.Common.MouseButtons"));
 
@@ -1995,7 +1995,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.Point", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -2022,7 +2022,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.RenderState", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2052,7 +2052,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.BlendOperation", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2070,7 +2070,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.Compare", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2091,7 +2091,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.Cull", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2107,7 +2107,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.Blend", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2132,7 +2132,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.FillMode", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2148,7 +2148,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.ClearFlags", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: true, 
   }, 
@@ -2165,7 +2165,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.KeyCodes", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2371,7 +2371,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.MouseButtons", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: true, 
   }, 
@@ -2388,7 +2388,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.MouseAxes", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2409,7 +2409,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.CursorType", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2424,7 +2424,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.ControllerButton", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2447,7 +2447,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.TouchAxes", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2478,7 +2478,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Engine.Common.TouchPoints", 
-    BaseType: $asm0D.TypeRef("System.Int32"), 
+    BaseType: $asm14.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2502,7 +2502,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.Object"), 
+      BaseType: $asm14.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Common.Helper", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -2583,7 +2583,7 @@ JSIL.MakeEnum(
 (function Rectangle$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
 
 
@@ -2603,7 +2603,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.Rectangle", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -2654,7 +2654,7 @@ JSIL.MakeEnum(
 (function RenderEventArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -2663,7 +2663,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.RenderEventArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -2687,7 +2687,7 @@ JSIL.MakeEnum(
 (function ResizeEventArgs$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0D.System.EventArgs)) ();
+    return ($T00 = JSIL.Memoize($asm14.System.EventArgs)) ();
   };
 
 
@@ -2696,7 +2696,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.EventArgs"), 
+      BaseType: $asm14.TypeRef("System.EventArgs"), 
       Name: "Fusee.Engine.Common.ResizeEventArgs", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -2721,7 +2721,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm0D.TypeRef("System.ValueType"), 
+      BaseType: $asm14.TypeRef("System.ValueType"), 
       Name: "Fusee.Engine.Common.ShaderParamInfo", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -2732,7 +2732,7 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:true }, "Size", $.Int32);
 
-    $.Field({Static:false, Public:true }, "Type", $asm0D.TypeRef("System.Type"));
+    $.Field({Static:false, Public:true }, "Type", $asm14.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:true }, "Name", $.String);
 

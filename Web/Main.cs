@@ -5,7 +5,7 @@ using Fusee.Serialization;
 
 namespace Fusee.FuFiCycles.Web
 {
-    public class Tutorial
+    public class FuFiCycles
     {
         public static void Main()
         {
