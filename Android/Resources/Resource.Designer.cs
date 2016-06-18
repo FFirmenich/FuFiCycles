@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Fusee.FuFiCycles.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Fusee.Tutorial.Android.Resource", IsApplication=true)]
 
-namespace Fusee.FuFiCycles.Android
+namespace Fusee.Tutorial.Android
 {
 	
 	
@@ -26,10 +26,10 @@ namespace Fusee.FuFiCycles.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Fusee.Base.Imp.Android.Resource.String.ApplicationName = global::Fusee.FuFiCycles.Android.Resource.String.ApplicationName;
-			global::Fusee.Base.Imp.Android.Resource.String.Hello = global::Fusee.FuFiCycles.Android.Resource.String.Hello;
-			global::Fusee.Engine.Imp.Graphics.Android.Resource.String.ApplicationName = global::Fusee.FuFiCycles.Android.Resource.String.ApplicationName;
-			global::Fusee.Engine.Imp.Graphics.Android.Resource.String.Hello = global::Fusee.FuFiCycles.Android.Resource.String.Hello;
+			global::Fusee.Base.Imp.Android.Resource.String.ApplicationName = global::Fusee.Tutorial.Android.Resource.String.ApplicationName;
+			global::Fusee.Base.Imp.Android.Resource.String.Hello = global::Fusee.Tutorial.Android.Resource.String.Hello;
+			global::Fusee.Engine.Imp.Graphics.Android.Resource.String.ApplicationName = global::Fusee.Tutorial.Android.Resource.String.ApplicationName;
+			global::Fusee.Engine.Imp.Graphics.Android.Resource.String.Hello = global::Fusee.Tutorial.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

@@ -23,3 +23,4 @@ D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Desktop\Debug\Fusee.Tutorial.De
 D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Desktop\Debug\Fusee.Tutorial.Desktop.pdb
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\CycleLand.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Wall.fus
+D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Wall.fus
