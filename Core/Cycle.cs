@@ -8,6 +8,7 @@ using Fusee.Engine.Core;
 using Fusee.Math.Core;
 using Fusee.Serialization;
 using Fusee.Xene;
+using System.Diagnostics;
 
 namespace Fusee.FuFiCycles.Core {
 
@@ -18,7 +19,19 @@ namespace Fusee.FuFiCycles.Core {
 		private float speed;
 		private float3 color;
 		private TransformComponent cycle;
-		public InputKeys input_keys = new InputKeys();
+		public InputKeys input_keys;
+
+		public Cycle (int id) {
+			setPlayerId(id);
+
+			if(id == 1) {
+				input_keys = new InputKeys("A", "D");
+			} else if (id == 2) {
+				input_keys = new InputKeys("LEFT", "RIGHT");
+			} else {
+				Debug.WriteLine("ACHTUNG: Spieler 3 aufwärts haben keine Keys zugeordnet.");
+			}
+		}
 
 		//Get-Methods
 		public int getPlayerId() {
@@ -46,7 +59,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		//Set-Methods
-		public void setPlayerId(int id) {
+		private void setPlayerId(int id) {
 			this.player_id = id;
 		}
 

@@ -8,6 +8,10 @@ namespace Fusee.FuFiCycles.Core {
 		private String key_left;
 		private String key_right;
 
+		public InputKeys(String left, String right) {
+			setKeyLeft(left);
+			setKeyRight(right);
+		}
 
 		public String getKeyLeft() {
 			return this.key_left;
