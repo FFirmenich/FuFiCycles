@@ -10,11 +10,11 @@ using Fusee.Base.Core;
 using Fusee.Base.Imp.Android;
 using Fusee.Engine.Imp.Graphics.Android;
 using Fusee.Serialization;
-using Fusee.Tutorial.Core;
+using Fusee.FuFiCycles.Core;
 using Font = Fusee.Base.Core.Font;
 using Path = Fusee.Base.Common.Path;
 
-namespace Fusee.Tutorial.Android
+namespace Fusee.FuFiCycles.Android
 {
 	[Activity (Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon",
 #if __ANDROID_11__
@@ -72,7 +72,7 @@ namespace Fusee.Tutorial.Android
                     });
                 AssetStorage.RegisterProvider(fap);
 
-                var app = new Core.Tutorial();
+                var app = new Core.FuFiCycles();
 
 		        // Inject Fusee.Engine InjectMe dependencies (hard coded)
 		        RenderCanvasImp rci = new RenderCanvasImp(ApplicationContext, null, delegate { app.Run(); });

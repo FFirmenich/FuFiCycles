@@ -44,7 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tutorial.cs" />
+    <Compile Include="FuFiCycles.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Fusee.Base.Common">

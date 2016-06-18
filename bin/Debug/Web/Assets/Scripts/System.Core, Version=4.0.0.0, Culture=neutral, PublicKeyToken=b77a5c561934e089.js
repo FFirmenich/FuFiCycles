@@ -19919,7 +19919,7 @@ JSIL.DeclareNamespace("System.Security.Cryptography.Xml");
 
 
   JSIL.MakeType({
-      BaseType: $asm15.TypeRef("System.Security.Cryptography.Xml.SignedXml"), 
+      BaseType: $asm14.TypeRef("System.Security.Cryptography.Xml.SignedXml"), 
       Name: "System.Security.Cryptography.Xml.ManifestSignedXml", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -20011,7 +20011,7 @@ JSIL.DeclareNamespace("System.Security.Cryptography.Xml");
     );
 
     $.ExternalMethod({Static:true , Public:false}, "VerifyStrongNameSignatureTransforms", 
-      new JSIL.MethodSignature($asm11.TypeRef("System.Security.Cryptography.SignatureVerificationResult"), [$asm15.TypeRef("System.Security.Cryptography.Xml.SignedInfo")])
+      new JSIL.MethodSignature($asm11.TypeRef("System.Security.Cryptography.SignatureVerificationResult"), [$asm14.TypeRef("System.Security.Cryptography.Xml.SignedInfo")])
     );
 
     $.Field({Static:false, Public:false}, "m_manifest", $asm11.TypeRef("System.Security.ManifestKinds"));

@@ -21,9 +21,8 @@ var $asm10 = JSIL.GetAssembly("System.Configuration, Version=4.0.0.0, Culture=ne
 var $asm11 = JSIL.GetAssembly("System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
 var $asm12 = JSIL.GetAssembly("System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
 var $asm13 = JSIL.GetAssembly("System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
-var $asm14 = JSIL.GetAssembly("mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
-var $asm15 = JSIL.GetAssembly("System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a");
-var $asm16 = JSIL.GetAssembly("System.Data.SqlXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
+var $asm14 = JSIL.GetAssembly("System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a");
+var $asm15 = JSIL.GetAssembly("System.Data.SqlXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
 
 if (typeof (contentManifest) !== "object") { JSIL.GlobalNamespace.contentManifest = {}; };
 contentManifest["Fusee.Tutorial.Web.exe"] = [
@@ -31,19 +30,19 @@ contentManifest["Fusee.Tutorial.Web.exe"] = [
     ["Script", "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.js", { "sizeBytes": 9208059 }],
     ["Script", "Fusee.Base.Imp.Web, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 17245 }],
     ["Script", "Fusee.Tutorial.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 41117 }],
-    ["Script", "Fusee.Base.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 140256 }],
+    ["Script", "Fusee.Base.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 140339 }],
     ["Script", "Fusee.SerializationSerializer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 142591 }],
     ["Script", "Fusee.Base.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 13183 }],
     ["Script", "Fusee.Serialization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 38768 }],
     ["Script", "Fusee.Engine.Imp.Graphics.Web, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 152077 }],
-    ["Script", "Fusee.Engine.Core, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 911188 }],
+    ["Script", "Fusee.Engine.Core, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 911848 }],
     ["Script", "Fusee.Engine.Common, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 111006 }],
-    ["Script", "protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 933915 }],
-    ["Script", "Fusee.Xene, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 124063 }],
+    ["Script", "protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 936391 }],
+    ["Script", "Fusee.Xene, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 124478 }],
     ["Script", "Fusee.Math.Core, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 533423 }],
     ["Script", "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.js", { "sizeBytes": 3040262 }],
     ["Script", "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.js", { "sizeBytes": 6378439 }],
-    ["Script", "Fusee.Xirkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 174704 }],
+    ["Script", "Fusee.Xirkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 175560 }],
     ["Script", "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.js", { "sizeBytes": 4199569 }],
     ["Script", "System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.js", { "sizeBytes": 173084 }],
     ["Script", "System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.js", { "sizeBytes": 648484 }],

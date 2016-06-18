@@ -10,7 +10,7 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
 (function InjectMeAttribute$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Attribute)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Attribute)) ();
   };
 
 
@@ -19,7 +19,7 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Attribute"), 
+      BaseType: $asm0D.TypeRef("System.Attribute"), 
       Name: "Fusee.Base.Common.InjectMeAttribute", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -38,7 +38,7 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm14.System.AttributeTargets.$Flags("Field", "Parameter", "Property")]; });
+    .Attribute($asm0D.TypeRef("System.AttributeUsageAttribute"), function () { return [$asm0D.System.AttributeTargets.$Flags("Field", "Parameter", "Property")]; });
 
 })();
 
@@ -47,10 +47,10 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
 (function ColorUint$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Byte)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Byte)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
@@ -59,79 +59,79 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     return ($T03 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.UInt32)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.UInt32)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize(System.Array.Of($asm14.System.Single))) ();
+    return ($T06 = JSIL.Memoize(System.Array.Of($asm0D.System.Single))) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
+    return ($T07 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
+    return ($T0A = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm14.System.String)) ();
+    return ($T0C = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.IFormatProvider)) ();
+    return ($T0D = JSIL.Memoize($asm0D.System.IFormatProvider)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm14.TypeRef("System.Int32")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm14.TypeRef("System.UInt32")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm0D.TypeRef("System.UInt32")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
   };
   var $S04 = function () {
     return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
       ]))) ();
   };
   var $S05 = function () {
     return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [
-        $asm14.TypeRef("System.Byte"), $asm14.TypeRef("System.Byte"), 
-        $asm14.TypeRef("System.Byte"), $asm14.TypeRef("System.Byte")
+        $asm0D.TypeRef("System.Byte"), $asm0D.TypeRef("System.Byte"), 
+        $asm0D.TypeRef("System.Byte"), $asm0D.TypeRef("System.Byte")
       ]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm14.TypeRef("System.Int32")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm14.TypeRef("System.UInt32")]))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm0D.TypeRef("System.UInt32")]))) ();
   };
   var $S08 = function () {
     return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single")
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single")
       ]))) ();
   };
   var $S09 = function () {
     return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
       ]))) ();
   };
   var $S0A = function () {
-    return ($S0A = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.String"), [$asm14.TypeRef("System.IFormatProvider")]))) ();
+    return ($S0A = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.String"), [$asm0D.TypeRef("System.IFormatProvider")]))) ();
   };
 
 
@@ -240,7 +240,7 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     if (flag2) {
       throw $S03().Construct("copyFrom", "Not enough pixel data to copy from given index.");
     }
-    this.R = (copyFrom[index] | 0);
+    this.R = (copyFrom[(((index | 0) + 0) | 0)] | 0);
     this.G = (copyFrom[(((index | 0) + 1) | 0)] | 0);
     this.B = (copyFrom[(((index | 0) + 2) | 0)] | 0);
     if (noAlpha) {
@@ -814,7 +814,7 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.ValueType"), 
+      BaseType: $asm0D.TypeRef("System.ValueType"), 
       Name: "Fusee.Base.Common.ColorUint", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -1241,12 +1241,12 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     );
 
     $.Method({Static:false, Public:true }, "ToString", 
-      new JSIL.MethodSignature($.String, [$asm14.TypeRef("System.IFormatProvider")]), 
+      new JSIL.MethodSignature($.String, [$asm0D.TypeRef("System.IFormatProvider")]), 
       ColorUint_ToString$35
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "ToString", 
-      new JSIL.MethodSignature($.String, [$.String, $asm14.TypeRef("System.IFormatProvider")]), 
+      new JSIL.MethodSignature($.String, [$.String, $asm0D.TypeRef("System.IFormatProvider")]), 
       ColorUint_ToString$36
     );
 
@@ -1834,14 +1834,14 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     $.Property({Static:false, Public:true }, "Item", $.Byte);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.IEquatable`1", [$.Type]), 
-      /* 1 */ $asm14.TypeRef("System.IFormattable")
+      /* 0 */ $asm0D.TypeRef("System.IEquatable`1", [$.Type]), 
+      /* 1 */ $asm0D.TypeRef("System.IFormattable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
+    .Attribute($asm0D.TypeRef("System.Reflection.DefaultMemberAttribute"), function () { return ["Item"]; });
 
 })();
 
@@ -1850,7 +1850,7 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Base.Common.FileMode", 
-    BaseType: $asm14.TypeRef("System.Int32"), 
+    BaseType: $asm0D.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -1870,7 +1870,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.ValueType"), 
+      BaseType: $asm0D.TypeRef("System.ValueType"), 
       Name: "Fusee.Base.Common.GlyphInfo", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -1918,37 +1918,37 @@ JSIL.MakeInterface(
 (function StreamAssetProvider$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.Type, $asm00.Fusee.Base.Common.AssetHandler))) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.Type, $asm00.Fusee.Base.Common.AssetHandler))) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm00.Fusee.Base.Common.GetCallback)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.NotImplementedException)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.NotImplementedException)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Type)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Type)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm00.Fusee.Base.Common.AssetHandler)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T07 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.IO.Stream)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Type"), $asm00.TypeRef("Fusee.Base.Common.AssetHandler")]), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Type"), $asm00.TypeRef("Fusee.Base.Common.AssetHandler")]), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotImplementedException"), null))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotImplementedException"), null))) ();
   };
 
 
@@ -2010,7 +2010,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Base.Common.StreamAssetProvider", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -2029,17 +2029,17 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "CanGet", 
-      new JSIL.MethodSignature($.Boolean, [$.String, $asm14.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$.String, $asm0D.TypeRef("System.Type")]), 
       StreamAssetProvider_CanGet
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "CanHandleType", 
-      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]), 
       StreamAssetProvider_CanHandleType
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "GetAsset", 
-      new JSIL.MethodSignature($.Object, [$.String, $asm14.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($.Object, [$.String, $asm0D.TypeRef("System.Type")]), 
       StreamAssetProvider_GetAsset
     );
 
@@ -2048,7 +2048,7 @@ JSIL.MakeInterface(
       StreamAssetProvider_RegisterTypeHandler
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_assetHandlers", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Type"), $asm00.TypeRef("Fusee.Base.Common.AssetHandler")]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_assetHandlers", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Type"), $asm00.TypeRef("Fusee.Base.Common.AssetHandler")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm00.TypeRef("Fusee.Base.Common.IAssetProvider")
@@ -2065,7 +2065,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Base.Common.GetCallbackState", 
-    BaseType: $asm14.TypeRef("System.Int32"), 
+    BaseType: $asm0D.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2080,19 +2080,19 @@ JSIL.MakeEnum(
 
 JSIL.MakeDelegate("Fusee.Base.Common.GetCallback", true, [], 
   new JSIL.MethodSignature(null, [
-      $asm00.TypeRef("Fusee.Base.Common.GetCallbackState"), $asm14.TypeRef("System.Object"), 
-      $asm14.TypeRef("System.Type")
+      $asm00.TypeRef("Fusee.Base.Common.GetCallbackState"), $asm0D.TypeRef("System.Object"), 
+      $asm0D.TypeRef("System.Type")
     ]));
 
 /* delegate Fusee.Base.Common.AssetDecoder */ 
 
 JSIL.MakeDelegate("Fusee.Base.Common.AssetDecoder", true, [], 
-  new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.Object")]));
+  new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Object")]));
 
 /* delegate Fusee.Base.Common.AssetChecker */ 
 
 JSIL.MakeDelegate("Fusee.Base.Common.AssetChecker", true, [], 
-  new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm14.TypeRef("System.String")]));
+  new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.String")]));
 
 /* struct Fusee.Base.Common.AssetHandler */ 
 
@@ -2100,7 +2100,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.AssetChecker", true, [],
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.ValueType"), 
+      BaseType: $asm0D.TypeRef("System.ValueType"), 
       Name: "Fusee.Base.Common.AssetHandler", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -2109,7 +2109,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.AssetChecker", true, [],
     }, function ($ib) {
     $ = $ib;
 
-    $.Field({Static:false, Public:true }, "ReturnedType", $asm14.TypeRef("System.Type"));
+    $.Field({Static:false, Public:true }, "ReturnedType", $asm0D.TypeRef("System.Type"));
 
     $.Field({Static:false, Public:true }, "Decoder", $asm00.TypeRef("Fusee.Base.Common.AssetDecoder"));
 
@@ -2125,9 +2125,9 @@ JSIL.MakeDelegate("Fusee.Base.Common.AssetChecker", true, [],
 
 JSIL.MakeInterface(
   "Fusee.Base.Common.IAssetProvider", true, [], function ($) {
-    $.Method({}, "CanHandleType", new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Type")]));
-    $.Method({}, "GetAsset", new JSIL.MethodSignature($.Object, [$.String, $asm14.TypeRef("System.Type")]));
-    $.Method({}, "CanGet", new JSIL.MethodSignature($.Boolean, [$.String, $asm14.TypeRef("System.Type")]));
+    $.Method({}, "CanHandleType", new JSIL.MethodSignature($.Boolean, [$asm0D.TypeRef("System.Type")]));
+    $.Method({}, "GetAsset", new JSIL.MethodSignature($.Object, [$.String, $asm0D.TypeRef("System.Type")]));
+    $.Method({}, "CanGet", new JSIL.MethodSignature($.Boolean, [$.String, $asm0D.TypeRef("System.Type")]));
     $.Method({}, "BeginGetAsset", new JSIL.MethodSignature(null, [$.String, $asm00.TypeRef("Fusee.Base.Common.GetCallback")]));
     $.Method({}, "RegisterTypeHandler", JSIL.MethodSignature.Action($asm00.TypeRef("Fusee.Base.Common.AssetHandler")));
   }, []);
@@ -2136,7 +2136,7 @@ JSIL.MakeInterface(
 
 JSIL.MakeInterface(
   "Fusee.Base.Common.IIOImp", true, [], function ($) {
-    $.Method({}, "StreamFromFile", new JSIL.MethodSignature($asm14.TypeRef("System.IO.Stream"), [$.String, $asm00.TypeRef("Fusee.Base.Common.FileMode")]));
+    $.Method({}, "StreamFromFile", new JSIL.MethodSignature($asm0D.TypeRef("System.IO.Stream"), [$.String, $asm00.TypeRef("Fusee.Base.Common.FileMode")]));
   }, []);
 
 /* enum Fusee.Base.Common.ImagePixelFormat */ 
@@ -2144,7 +2144,7 @@ JSIL.MakeInterface(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Base.Common.ImagePixelFormat", 
-    BaseType: $asm14.TypeRef("System.Int32"), 
+    BaseType: $asm0D.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -2160,13 +2160,13 @@ JSIL.MakeEnum(
 (function ImageData$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm00.Fusee.Base.Common.ImageData_$l$gc__DisplayClass14_0)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm00.Fusee.Base.Common.ImageData_CopyFunc)) ();
@@ -2178,88 +2178,88 @@ JSIL.MakeEnum(
     return ($T05 = JSIL.Memoize($asm00.Fusee.Base.Common.ImagePixelFormat)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.ArgumentOutOfRangeException)) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentOutOfRangeException)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm00.Fusee.Base.Common.ColorUint)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Byte)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.Byte)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
+    return ($T0C = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
+    return ($T0D = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
   };
   var $T0E = function () {
     return ($T0E = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm14.System.Buffer)) ();
+    return ($T0F = JSIL.Memoize($asm0D.System.Buffer)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")])]))) ();
+    return ($S08 = JSIL.Memoize(new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")])]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentOutOfRangeException"), null))) ();
+    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentOutOfRangeException"), null))) ();
   };
   var $S0A = function () {
     return ($S0A = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [
-        $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), $asm14.TypeRef("System.Int32"), 
-        $asm14.TypeRef("System.Boolean")
+        $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), $asm0D.TypeRef("System.Int32"), 
+        $asm0D.TypeRef("System.Boolean")
       ]))) ();
   };
   var $S0B = function () {
     return ($S0B = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [
-        $asm14.TypeRef("System.Byte"), $asm14.TypeRef("System.Byte"), 
-        $asm14.TypeRef("System.Byte"), $asm14.TypeRef("System.Byte")
+        $asm0D.TypeRef("System.Byte"), $asm0D.TypeRef("System.Byte"), 
+        $asm0D.TypeRef("System.Byte"), $asm0D.TypeRef("System.Byte")
       ]))) ();
   };
   var $S0C = function () {
-    return ($S0C = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S0C = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S0D = function () {
-    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
+    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
   };
 
 
@@ -2545,7 +2545,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.ValueType"), 
+      BaseType: $asm0D.TypeRef("System.ValueType"), 
       Name: "Fusee.Base.Common.ImageData", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -2636,29 +2636,29 @@ JSIL.MakeEnum(
 /* delegate Fusee.Base.Common.ImageData+CopyFunc */ 
 
 JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [], 
-  new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]));
+  new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]));
 
 /* class Fusee.Base.Common.ImageData+<>c__DisplayClass14_0 */ 
 
 (function $l$gc__DisplayClass14_0$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Array)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Array)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm00.Fusee.Base.Common.ImageData)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Byte)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Byte)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.MethodSignature(null, [
-        $asm14.TypeRef("System.Array"), $asm14.TypeRef("System.Int32"), 
-        $asm14.TypeRef("System.Array"), $asm14.TypeRef("System.Int32"), 
-        $asm14.TypeRef("System.Int32")
+        $asm0D.TypeRef("System.Array"), $asm0D.TypeRef("System.Int32"), 
+        $asm0D.TypeRef("System.Array"), $asm0D.TypeRef("System.Int32"), 
+        $asm0D.TypeRef("System.Int32")
       ]))) ();
   };
 
@@ -2677,40 +2677,40 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
   }; 
 
   function $l$gc__DisplayClass14_0_$lBlt$gb__1 (idp, isp) {
-    this.dst.PixelData[idp] = (this.src.PixelData[isp] | 0);
+    this.dst.PixelData[(((idp | 0) + 0) | 0)] = (this.src.PixelData[(((isp | 0) + 0) | 0)] | 0);
     this.dst.PixelData[(((idp | 0) + 1) | 0)] = (this.src.PixelData[(((isp | 0) + 1) | 0)] | 0);
     this.dst.PixelData[(((idp | 0) + 2) | 0)] = (this.src.PixelData[(((isp | 0) + 2) | 0)] | 0);
     this.dst.PixelData[(((idp | 0) + 3) | 0)] = 255;
   }; 
 
   function $l$gc__DisplayClass14_0_$lBlt$gb__2 (idp, isp) {
-    this.dst.PixelData[idp] = (this.src.PixelData[isp] | 0);
+    this.dst.PixelData[(((idp | 0) + 0) | 0)] = (this.src.PixelData[isp] | 0);
     this.dst.PixelData[(((idp | 0) + 1) | 0)] = (this.src.PixelData[isp] | 0);
     this.dst.PixelData[(((idp | 0) + 2) | 0)] = (this.src.PixelData[isp] | 0);
     this.dst.PixelData[(((idp | 0) + 3) | 0)] = 255;
   }; 
 
   function $l$gc__DisplayClass14_0_$lBlt$gb__3 (idp, isp) {
-    this.dst.PixelData[idp] = (this.src.PixelData[isp] | 0);
+    this.dst.PixelData[(((idp | 0) + 0) | 0)] = (this.src.PixelData[(((isp | 0) + 0) | 0)] | 0);
     this.dst.PixelData[(((idp | 0) + 1) | 0)] = (this.src.PixelData[(((isp | 0) + 1) | 0)] | 0);
     this.dst.PixelData[(((idp | 0) + 2) | 0)] = (this.src.PixelData[(((isp | 0) + 2) | 0)] | 0);
   }; 
 
   function $l$gc__DisplayClass14_0_$lBlt$gb__4 (idp, isp) {
-    this.dst.PixelData[idp] = (this.src.PixelData[isp] | 0);
+    this.dst.PixelData[(((idp | 0) + 0) | 0)] = (this.src.PixelData[isp] | 0);
     this.dst.PixelData[(((idp | 0) + 1) | 0)] = (this.src.PixelData[isp] | 0);
     this.dst.PixelData[(((idp | 0) + 2) | 0)] = (this.src.PixelData[isp] | 0);
   }; 
 
   function $l$gc__DisplayClass14_0_$lBlt$gb__5 (idp, isp) {
-    var num = (this.src.PixelData[isp] | 0);
+    var num = (this.src.PixelData[(((isp | 0) + 0) | 0)] | 0);
     var num2 = (this.src.PixelData[(((isp | 0) + 1) | 0)] | 0);
     var num3 = (this.src.PixelData[(((isp | 0) + 2) | 0)] | 0);
     this.dst.PixelData[idp] = (((((((((((((num + num) | 0) + num3) | 0) + num2) | 0) + num2) | 0) + num2) | 0) / 6) | 0) & 0xFF);
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Base.Common.ImageData+<>c__DisplayClass14_0", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -2766,7 +2766,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -2775,7 +2775,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
 (function $l$gc__DisplayClass14_1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm00.Fusee.Base.Common.ImageData)) ();
@@ -2797,7 +2797,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Base.Common.ImageData+<>c__DisplayClass14_1", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -2822,7 +2822,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -2831,69 +2831,69 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
 (function Path$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Char)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Char)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize(System.Array.Of($asm14.System.Char))) ();
+    return ($T03 = JSIL.Memoize(System.Array.Of($asm0D.System.Char))) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.ArgumentException)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize(System.Array.Of($asm14.System.String))) ();
+    return ($T07 = JSIL.Memoize(System.Array.Of($asm0D.System.String))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Text.StringBuilder)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.Text.StringBuilder)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.NotImplementedException)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.NotImplementedException)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.Globalization.CultureInfo)) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.Globalization.CultureInfo)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm14.System.Globalization.CompareOptions)) ();
+    return ($T0C = JSIL.Memoize($asm0D.System.Globalization.CompareOptions)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.String"), [$jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Char")])]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.String"), [$jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Char")])]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Text.StringBuilder"), null))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Text.StringBuilder"), null))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S05 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotImplementedException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotImplementedException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [
-        $asm14.TypeRef("System.String"), $asm14.TypeRef("System.String"), 
-        $asm14.TypeRef("System.Globalization.CultureInfo"), $asm14.TypeRef("System.Globalization.CompareOptions")
+    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [
+        $asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String"), 
+        $asm0D.TypeRef("System.Globalization.CultureInfo"), $asm0D.TypeRef("System.Globalization.CompareOptions")
       ]))) ();
   };
 
@@ -3476,7 +3476,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
     if (path === null) {
       throw $S02().Construct(parameterName);
     }
-    var flag2 = JSIL.UnknownMember("System.Boolean System.String::IsNullOrWhiteSpace(System.String)").LValue;
+    var flag2 = $T01().IsNullOrWhiteSpace(path);
     if (flag2) {
       throw $S00().Construct("Path is empty");
     }
@@ -3515,7 +3515,7 @@ JSIL.MakeDelegate("Fusee.Base.Common.ImageData+CopyFunc", false, [],
       Path_Combine$01
     )
       .Parameter(0, "paths", function (_) {
-          _.Attribute($asm14.TypeRef("System.ParamArrayAttribute"))
+          _.Attribute($asm0D.TypeRef("System.ParamArrayAttribute"))
         });
 
     $.Method({Static:true , Public:true }, "Combine", 

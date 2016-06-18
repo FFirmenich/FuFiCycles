@@ -10,3 +10,15 @@ D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.C
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.Core.pdb
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.FuFiCycles.Core.csprojResolveAssemblyReference.cache
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\CycleLand.fus
+D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\Leaves.jpg
+D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\PixelShader.frag
+D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\VertexShader.vert
+D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\Sphere.jpg
+D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\CycleLand.fus
+D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\PixelShader2.frag
+D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\VertexShader2.vert
+D:\Development\FuFiCycles\bin\Debug\Libraries\Fusee.Tutorial.Core.dll
+D:\Development\FuFiCycles\bin\Debug\Libraries\Fusee.Tutorial.Core.pdb
+D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.FuFiCycles.Core.csprojResolveAssemblyReference.cache
+D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.Core.dll
+D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.Core.pdb

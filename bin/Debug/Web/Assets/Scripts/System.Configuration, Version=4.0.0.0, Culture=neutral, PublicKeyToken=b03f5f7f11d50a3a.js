@@ -12667,7 +12667,7 @@ JSIL.MakeEnum(
     );
 
     $.ExternalMethod({Static:false, Public:false}, "GetSymEncryptionMethod", 
-      JSIL.MethodSignature.Return($asm15.TypeRef("System.Security.Cryptography.Xml.EncryptionMethod"))
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Security.Cryptography.Xml.EncryptionMethod"))
     );
 
     $.ExternalMethod({Static:false, Public:true }, "ImportKey", 
@@ -16075,7 +16075,7 @@ JSIL.MakeDelegate("System.Configuration.ValidatorCallback", true, [],
 
 
   JSIL.MakeType({
-      BaseType: $asm15.TypeRef("System.Security.Cryptography.Xml.EncryptedXml"), 
+      BaseType: $asm14.TypeRef("System.Security.Cryptography.Xml.EncryptedXml"), 
       Name: "System.Configuration.FipsAwareEncryptedXml", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -16088,11 +16088,11 @@ JSIL.MakeDelegate("System.Configuration.ValidatorCallback", true, [],
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "GetDecryptionKey", 
-      new JSIL.MethodSignature($asm0D.TypeRef("System.Security.Cryptography.SymmetricAlgorithm"), [$asm15.TypeRef("System.Security.Cryptography.Xml.EncryptedData"), $.String])
+      new JSIL.MethodSignature($asm0D.TypeRef("System.Security.Cryptography.SymmetricAlgorithm"), [$asm14.TypeRef("System.Security.Cryptography.Xml.EncryptedData"), $.String])
     );
 
     $.ExternalMethod({Static:true , Public:false}, "IsAesDetected", 
-      new JSIL.MethodSignature($.Boolean, [$asm15.TypeRef("System.Security.Cryptography.Xml.EncryptedData"), $.String])
+      new JSIL.MethodSignature($.Boolean, [$asm14.TypeRef("System.Security.Cryptography.Xml.EncryptedData"), $.String])
     );
 
 

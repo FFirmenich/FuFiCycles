@@ -15,16 +15,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T00 = JSIL.Memoize($asm03.Fusee.Engine.Common.IRenderCanvasImp)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.ArgumentNullException)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm05.Fusee.Engine.Imp.Graphics.Web.RenderCanvasImp)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.ArgumentException)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.ArgumentException)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm05.Fusee.Engine.Imp.Graphics.Web.KeyboardDeviceImp)) ();
@@ -36,28 +36,28 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T07 = JSIL.Memoize($asm05.Fusee.Engine.Imp.Graphics.Web.TouchDeviceImp)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.DeviceImpDisconnectedArgs))) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.DeviceImpDisconnectedArgs))) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.Delegate)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.Delegate)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.NewDeviceImpConnectedArgs))) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.NewDeviceImpConnectedArgs))) ();
   };
   var $T0C = function () {
     return ($T0C = JSIL.Memoize($asm05.Fusee.Engine.Imp.Graphics.Web.RenderCanvasInputDriverImp_$lget_Devices$gd__6)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.Type)) ();
+    return ($T0D = JSIL.Memoize($asm0D.System.Type)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentNullException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.ArgumentException"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.String")]))) ();
   };
 
 
@@ -146,7 +146,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.RenderCanvasInputDriverImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -160,16 +160,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_DeviceDisconnected", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])), 
       RenderCanvasInputDriverImp_add_DeviceDisconnected
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_NewDeviceConnected", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])), 
       RenderCanvasInputDriverImp_add_NewDeviceConnected
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "Dispose", 
       JSIL.MethodSignature.Action($.Boolean), 
@@ -182,7 +182,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_Devices", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")])), 
       RenderCanvasInputDriverImp_get_Devices
     );
 
@@ -197,16 +197,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_DeviceDisconnected", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")])), 
       RenderCanvasInputDriverImp_remove_DeviceDisconnected
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_NewDeviceConnected", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")])), 
       RenderCanvasInputDriverImp_remove_NewDeviceConnected
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Field({Static:false, Public:false}, "_canvas", $.Object);
 
@@ -216,29 +216,29 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.Field({Static:false, Public:false}, "_touch", $asm05.TypeRef("Fusee.Engine.Imp.Graphics.Web.TouchDeviceImp"));
 
-    $.Field({Static:false, Public:false}, "DeviceDisconnected", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "DeviceDisconnected", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "NewDeviceConnected", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "NewDeviceConnected", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "disposedValue", $.Boolean);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "Devices", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]));
+    $.Property({Static:false, Public:true , Virtual:true }, "Devices", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]));
 
     $.Property({Static:false, Public:true , Virtual:true }, "DriverDesc", $.String);
 
     $.Property({Static:false, Public:true , Virtual:true }, "DriverId", $.String);
 
-    $.Event({Static:false, Public:true , Virtual:true }, "DeviceDisconnected", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "DeviceDisconnected", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.DeviceImpDisconnectedArgs")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "NewDeviceConnected", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "NewDeviceConnected", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm03.TypeRef("Fusee.Engine.Common.IInputDriverImp"), 
-      /* 1 */ $asm14.TypeRef("System.IDisposable")
+      /* 1 */ $asm0D.TypeRef("System.IDisposable")
     );
 
 
@@ -252,16 +252,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function $lget_Devices$gd__6$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Threading.Thread)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Threading.Thread)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
   };
 
 
@@ -331,7 +331,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.RenderCanvasInputDriverImp+<get_Devices>d__6", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -343,55 +343,55 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
       JSIL.MethodSignature.Action($.Int32), 
       $lget_Devices$gd__6__ctor
     )
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "MoveNext", 
       JSIL.MethodSignature.Return($.Boolean), 
       $lget_Devices$gd__6_MoveNext
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lFusee.Engine.Common.IInputDeviceImp$g.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")])), 
       $lget_Devices$gd__6_System_Collections_Generic_IEnumerable$lFusee_Engine_Common_IInputDeviceImp$g_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Engine.Common.IInputDeviceImp$g.get_Current", 
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")), 
       $lget_Devices$gd__6_System_Collections_Generic_IEnumerator$lFusee_Engine_Common_IInputDeviceImp$g_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
       $lget_Devices$gd__6_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lget_Devices$gd__6_System_Collections_IEnumerator_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       $lget_Devices$gd__6_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       $lget_Devices$gd__6_System_IDisposable_Dispose
     )
-      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
@@ -406,17 +406,17 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), 
-      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), 
-      /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
-      /* 4 */ $asm14.TypeRef("System.IDisposable")
+      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), 
+      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable"), 
+      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")]), 
+      /* 3 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
+      /* 4 */ $asm0D.TypeRef("System.IDisposable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -425,46 +425,46 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function KeyboardDeviceImp$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Collections.IEnumerator)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Enum)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Enum)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm03.Fusee.Engine.Common.KeyCodes)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize(System.Array.Of($asm14.System.String))) ();
+    return ($T05 = JSIL.Memoize(System.Array.Of($asm0D.System.String))) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm14.System.Array)) ();
+    return ($T07 = JSIL.Memoize($asm0D.System.Array)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonDescription)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.AxisValueChangedArgs))) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.AxisValueChangedArgs))) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.Delegate)) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.Delegate)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
+    return ($T0C = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ButtonValueChangedArgs))) ();
+    return ($T0D = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ButtonValueChangedArgs))) ();
   };
   var $T0E = function () {
     return ($T0E = JSIL.Memoize($asm05.Fusee.Engine.Imp.Graphics.Web.KeyboardDeviceImp_$lget_AxisImpDesc$gd__9)) ();
@@ -476,25 +476,25 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T10 = JSIL.Memoize($asm03.Fusee.Engine.Common.DeviceCategory)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm14.System.Type)) ();
+    return ($T11 = JSIL.Memoize($asm0D.System.Type)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
+    return ($T12 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
   };
   var $T13 = function () {
     return ($T13 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonValueChangedArgs)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Int32"), $asm03.TypeRef("Fusee.Engine.Common.ButtonDescription")]), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Int32"), $asm03.TypeRef("Fusee.Engine.Common.ButtonDescription")]), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
+    return ($IM00 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm14.System.Collections.IEnumerator.get_Current)) ();
+    return ($IM01 = JSIL.Memoize($asm0D.System.Collections.IEnumerator.get_Current)) ();
   };
 
 
@@ -616,7 +616,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.KeyboardDeviceImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -630,16 +630,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_AxisValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
       KeyboardDeviceImp_add_AxisValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_ButtonValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
       KeyboardDeviceImp_add_ButtonValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.ExternalMethod({Static:false, Public:false}, "ConnectCanvasEvents", 
       JSIL.MethodSignature.Void
@@ -651,7 +651,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_AxisImpDesc", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
       KeyboardDeviceImp_get_AxisImpDesc
     );
 
@@ -661,7 +661,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ButtonImpDesc", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
       KeyboardDeviceImp_get_ButtonImpDesc
     );
 
@@ -701,36 +701,36 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_AxisValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
       KeyboardDeviceImp_remove_AxisValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_ButtonValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
       KeyboardDeviceImp_remove_ButtonValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
-    $.Field({Static:false, Public:false}, "_keyDescriptions", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.ButtonDescription")]));
+    $.Field({Static:false, Public:false}, "_keyDescriptions", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.ButtonDescription")]));
 
     $.Field({Static:false, Public:false}, "_canvas", $.Object);
 
-    $.Field({Static:false, Public:false}, "AxisValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "AxisValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "ButtonValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "ButtonValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Property({Static:false, Public:true , Virtual:true }, "AxesCount", $.Int32);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "AxisImpDesc", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
+    $.Property({Static:false, Public:true , Virtual:true }, "AxisImpDesc", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
 
     $.Property({Static:false, Public:true , Virtual:true }, "ButtonCount", $.Int32);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ButtonImpDesc", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
+    $.Property({Static:false, Public:true , Virtual:true }, "ButtonImpDesc", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
 
     $.Property({Static:false, Public:true , Virtual:true }, "Category", $asm03.TypeRef("Fusee.Engine.Common.DeviceCategory"));
 
@@ -738,9 +738,9 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.Property({Static:false, Public:true , Virtual:true }, "Id", $.String);
 
-    $.Event({Static:false, Public:true , Virtual:true }, "AxisValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "AxisValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "ButtonValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "ButtonValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")
@@ -757,16 +757,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function $lget_AxisImpDesc$gd__9$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Threading.Thread)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Threading.Thread)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
   };
 
 
@@ -815,7 +815,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.KeyboardDeviceImp+<get_AxisImpDesc>d__9", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -827,55 +827,55 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
       JSIL.MethodSignature.Action($.Int32), 
       $lget_AxisImpDesc$gd__9__ctor
     )
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "MoveNext", 
       JSIL.MethodSignature.Return($.Boolean), 
       $lget_AxisImpDesc$gd__9_MoveNext
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lFusee.Engine.Common.AxisImpDescription$g.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
       $lget_AxisImpDesc$gd__9_System_Collections_Generic_IEnumerable$lFusee_Engine_Common_AxisImpDescription$g_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Engine.Common.AxisImpDescription$g.get_Current", 
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")), 
       $lget_AxisImpDesc$gd__9_System_Collections_Generic_IEnumerator$lFusee_Engine_Common_AxisImpDescription$g_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
       $lget_AxisImpDesc$gd__9_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lget_AxisImpDesc$gd__9_System_Collections_IEnumerator_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       $lget_AxisImpDesc$gd__9_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       $lget_AxisImpDesc$gd__9_System_IDisposable_Dispose
     )
-      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
@@ -890,17 +890,17 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
-      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
-      /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
-      /* 4 */ $asm14.TypeRef("System.IDisposable")
+      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
+      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable"), 
+      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
+      /* 3 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
+      /* 4 */ $asm0D.TypeRef("System.IDisposable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -909,43 +909,43 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function $lget_ButtonImpDesc$gd__13$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Threading.Thread)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Threading.Thread)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.IDisposable)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.IDisposable)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Exception)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Exception)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T05 = function () {
     return ($T05 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonDescription)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2_ValueCollection.Of($asm14.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2_ValueCollection.Of($asm0D.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
+    return ($T07 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2_ValueCollection_Enumerator.Of($asm14.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2_ValueCollection_Enumerator.Of($asm0D.System.Int32, $asm03.Fusee.Engine.Common.ButtonDescription))) ();
   };
   var $T09 = function () {
     return ($T09 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonImpDescription)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.NotSupportedException)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
+    return ($IM00 = JSIL.Memoize($asm0D.System.IDisposable.Dispose)) ();
   };
 
 
@@ -1032,7 +1032,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.KeyboardDeviceImp+<get_ButtonImpDesc>d__13", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -1044,7 +1044,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
       JSIL.MethodSignature.Action($.Int32), 
       $lget_ButtonImpDesc$gd__13__ctor
     )
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false}, "$l$gm__Finally1", 
       JSIL.MethodSignature.Void, 
@@ -1055,49 +1055,49 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
       JSIL.MethodSignature.Return($.Boolean), 
       $lget_ButtonImpDesc$gd__13_MoveNext
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lFusee.Engine.Common.ButtonImpDescription$g.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
       $lget_ButtonImpDesc$gd__13_System_Collections_Generic_IEnumerable$lFusee_Engine_Common_ButtonImpDescription$g_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Engine.Common.ButtonImpDescription$g.get_Current", 
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")), 
       $lget_ButtonImpDesc$gd__13_System_Collections_Generic_IEnumerator$lFusee_Engine_Common_ButtonImpDescription$g_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
       $lget_ButtonImpDesc$gd__13_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lget_ButtonImpDesc$gd__13_System_Collections_IEnumerator_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       $lget_ButtonImpDesc$gd__13_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       $lget_ButtonImpDesc$gd__13_System_IDisposable_Dispose
     )
-      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
@@ -1107,7 +1107,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.Field({Static:false, Public:true }, "$l$g4__this", $asm05.TypeRef("Fusee.Engine.Imp.Graphics.Web.KeyboardDeviceImp"));
 
-    $.Field({Static:false, Public:false}, "$l$gs__1", $asm14.TypeRef("System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.ButtonDescription")]));
+    $.Field({Static:false, Public:false}, "$l$gs__1", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.ButtonDescription")]));
 
     $.Field({Static:false, Public:false}, "$lkey$g5__2", $asm03.TypeRef("Fusee.Engine.Common.ButtonDescription"));
 
@@ -1116,17 +1116,17 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
-      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
-      /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
-      /* 4 */ $asm14.TypeRef("System.IDisposable")
+      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
+      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable"), 
+      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
+      /* 3 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
+      /* 4 */ $asm0D.TypeRef("System.IDisposable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -1135,7 +1135,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function MouseDeviceImp$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonImpDescription)) ();
@@ -1159,16 +1159,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T07 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisBoundedType)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.AxisValueChangedArgs))) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.AxisValueChangedArgs))) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.Delegate)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.Delegate)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ButtonValueChangedArgs))) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ButtonValueChangedArgs))) ();
   };
   var $T0C = function () {
     return ($T0C = JSIL.Memoize($asm05.Fusee.Engine.Imp.Graphics.Web.MouseDeviceImp_$lget_AxisImpDesc$gd__18)) ();
@@ -1180,19 +1180,19 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T0E = JSIL.Memoize($asm03.Fusee.Engine.Common.DeviceCategory)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm14.System.Type)) ();
+    return ($T0F = JSIL.Memoize($asm0D.System.Type)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T10 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
+    return ($T11 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T12 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T13 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T14 = function () {
     return ($T14 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonValueChangedArgs)) ();
@@ -1204,7 +1204,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T16 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisValueChangedArgs)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
   };
 
 
@@ -1461,7 +1461,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.MouseDeviceImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1475,16 +1475,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_AxisValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
       MouseDeviceImp_add_AxisValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_ButtonValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
       MouseDeviceImp_add_ButtonValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.ExternalMethod({Static:false, Public:false}, "ConnectCanvasEvents", 
       JSIL.MethodSignature.Void
@@ -1496,7 +1496,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_AxisImpDesc", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
       MouseDeviceImp_get_AxisImpDesc
     );
 
@@ -1506,7 +1506,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ButtonImpDesc", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
       MouseDeviceImp_get_ButtonImpDesc
     );
 
@@ -1564,16 +1564,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_AxisValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
       MouseDeviceImp_remove_AxisValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_ButtonValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
       MouseDeviceImp_remove_ButtonValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Field({Static:false, Public:false}, "_currentMouseWheel", $.Single);
 
@@ -1589,21 +1589,21 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.Field({Static:false, Public:false}, "_mouseYDesc", $asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription"));
 
-    $.Field({Static:false, Public:false}, "AxisValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "AxisValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "ButtonValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "ButtonValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Property({Static:false, Public:true , Virtual:true }, "AxesCount", $.Int32);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "AxisImpDesc", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
+    $.Property({Static:false, Public:true , Virtual:true }, "AxisImpDesc", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
 
     $.Property({Static:false, Public:true , Virtual:true }, "ButtonCount", $.Int32);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ButtonImpDesc", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
+    $.Property({Static:false, Public:true , Virtual:true }, "ButtonImpDesc", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
 
     $.Property({Static:false, Public:true , Virtual:true }, "Category", $asm03.TypeRef("Fusee.Engine.Common.DeviceCategory"));
 
@@ -1611,9 +1611,9 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.Property({Static:false, Public:true , Virtual:true }, "Id", $.String);
 
-    $.Event({Static:false, Public:true , Virtual:true }, "AxisValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "AxisValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "ButtonValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "ButtonValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")
@@ -1630,10 +1630,10 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function $lget_AxisImpDesc$gd__18$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Threading.Thread)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Threading.Thread)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisImpDescription)) ();
@@ -1651,10 +1651,10 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T06 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisBoundedType)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
+    return ($T07 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
   };
 
 
@@ -1803,7 +1803,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.MouseDeviceImp+<get_AxisImpDesc>d__18", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -1815,55 +1815,55 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
       JSIL.MethodSignature.Action($.Int32), 
       $lget_AxisImpDesc$gd__18__ctor
     )
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "MoveNext", 
       JSIL.MethodSignature.Return($.Boolean), 
       $lget_AxisImpDesc$gd__18_MoveNext
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lFusee.Engine.Common.AxisImpDescription$g.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
       $lget_AxisImpDesc$gd__18_System_Collections_Generic_IEnumerable$lFusee_Engine_Common_AxisImpDescription$g_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Engine.Common.AxisImpDescription$g.get_Current", 
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")), 
       $lget_AxisImpDesc$gd__18_System_Collections_Generic_IEnumerator$lFusee_Engine_Common_AxisImpDescription$g_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
       $lget_AxisImpDesc$gd__18_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lget_AxisImpDesc$gd__18_System_Collections_IEnumerator_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       $lget_AxisImpDesc$gd__18_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       $lget_AxisImpDesc$gd__18_System_IDisposable_Dispose
     )
-      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
@@ -1878,17 +1878,17 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
-      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
-      /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
-      /* 4 */ $asm14.TypeRef("System.IDisposable")
+      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
+      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable"), 
+      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), 
+      /* 3 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
+      /* 4 */ $asm0D.TypeRef("System.IDisposable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -1897,16 +1897,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function $lget_ButtonImpDesc$gd__22$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Threading.Thread)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Threading.Thread)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.NotSupportedException)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.NotSupportedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotSupportedException"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotSupportedException"), null))) ();
   };
 
 
@@ -1976,7 +1976,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.MouseDeviceImp+<get_ButtonImpDesc>d__22", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -1988,55 +1988,55 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
       JSIL.MethodSignature.Action($.Int32), 
       $lget_ButtonImpDesc$gd__22__ctor
     )
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "MoveNext", 
       JSIL.MethodSignature.Return($.Boolean), 
       $lget_ButtonImpDesc$gd__22_MoveNext
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lFusee.Engine.Common.ButtonImpDescription$g.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
       $lget_ButtonImpDesc$gd__22_System_Collections_Generic_IEnumerable$lFusee_Engine_Common_ButtonImpDescription$g_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Engine.Common.ButtonImpDescription$g.get_Current", 
       JSIL.MethodSignature.Return($asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")), 
       $lget_ButtonImpDesc$gd__22_System_Collections_Generic_IEnumerator$lFusee_Engine_Common_ButtonImpDescription$g_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.IEnumerator")), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.IEnumerator")), 
       $lget_ButtonImpDesc$gd__22_System_Collections_IEnumerable_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerable"), "GetEnumerator")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
       JSIL.MethodSignature.Return($.Object), 
       $lget_ButtonImpDesc$gd__22_System_Collections_IEnumerator_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "get_Current")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "get_Current")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Reset", 
       JSIL.MethodSignature.Void, 
       $lget_ButtonImpDesc$gd__22_System_Collections_IEnumerator_Reset
     )
-      .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "Reset")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.Collections.IEnumerator"), "Reset")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.IDisposable.Dispose", 
       JSIL.MethodSignature.Void, 
       $lget_ButtonImpDesc$gd__22_System_IDisposable_Dispose
     )
-      .Overrides($asm14.TypeRef("System.IDisposable"), "Dispose")
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
+      .Overrides($asm0D.TypeRef("System.IDisposable"), "Dispose")
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
@@ -2051,17 +2051,17 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
-      /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
-      /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
-      /* 4 */ $asm14.TypeRef("System.IDisposable")
+      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
+      /* 1 */ $asm0D.TypeRef("System.Collections.IEnumerable"), 
+      /* 2 */ $asm0D.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), 
+      /* 3 */ $asm0D.TypeRef("System.Collections.IEnumerator"), 
+      /* 4 */ $asm0D.TypeRef("System.IDisposable")
     );
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -2070,13 +2070,13 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function TouchDeviceImp$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.Int32, $asm03.Fusee.Engine.Common.AxisImpDescription))) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.Int32, $asm03.Fusee.Engine.Common.AxisImpDescription))) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.Int32, $asm14.System.Int32))) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.Int32, $asm0D.System.Int32))) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisImpDescription)) ();
@@ -2094,13 +2094,13 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T07 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisBoundedType)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.Int32, $asm03.Fusee.Engine.Common.ButtonImpDescription))) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0D.System.Int32, $asm03.Fusee.Engine.Common.ButtonImpDescription))) ();
   };
   var $T0B = function () {
     return ($T0B = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonImpDescription)) ();
@@ -2109,34 +2109,34 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T0C = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonDescription)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.AxisValueChangedArgs))) ();
+    return ($T0D = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.AxisValueChangedArgs))) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm14.System.Delegate)) ();
+    return ($T0E = JSIL.Memoize($asm0D.System.Delegate)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
+    return ($T0F = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ButtonValueChangedArgs))) ();
+    return ($T10 = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ButtonValueChangedArgs))) ();
   };
   var $T11 = function () {
     return ($T11 = JSIL.Memoize($asm03.Fusee.Engine.Common.DeviceCategory)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm14.System.Type)) ();
+    return ($T12 = JSIL.Memoize($asm0D.System.Type)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T13 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T14 = function () {
     return ($T14 = JSIL.Memoize($asm11.System.Linq.Enumerable)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T15 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
+    return ($T16 = JSIL.Memoize($asm0D.System.InvalidOperationException)) ();
   };
   var $T17 = function () {
     return ($T17 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonValueChangedArgs)) ();
@@ -2145,19 +2145,19 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T18 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisValueChangedArgs)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Int32"), $asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), [$asm14.TypeRef("System.Int32")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Int32"), $asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]), [$asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Int32"), $asm14.TypeRef("System.Int32")]), [$asm14.TypeRef("System.Int32")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Int32"), $asm0D.TypeRef("System.Int32")]), [$asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Int32"), $asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), [$asm14.TypeRef("System.Int32")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Int32"), $asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), [$asm0D.TypeRef("System.Int32")]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), "!!0"], ["TSource"]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.InvalidOperationException"), [$asm0D.TypeRef("System.String")]))) ();
   };
 
 
@@ -2330,7 +2330,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   function TouchDeviceImp_get_NextFreeTouchIndex () {
 
     for (var i = 0; i < (this._nTouchPointsSupported | 0); i = ((i + 1) | 0)) {
-      var flag = !$S03().CallStatic($T14(), "Contains$b1", [$asm14.System.Int32], (this._activeTouchpoints).get_Values(), i);
+      var flag = !$S03().CallStatic($T14(), "Contains$b1", [$asm0D.System.Int32], (this._activeTouchpoints).get_Values(), i);
       if (flag) {
         var result = i;
         return result;
@@ -2493,7 +2493,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.TouchDeviceImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -2507,16 +2507,16 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_AxisValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
       TouchDeviceImp_add_AxisValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_ButtonValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
       TouchDeviceImp_add_ButtonValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.ExternalMethod({Static:false, Public:false}, "ConnectCanvasEvents", 
       JSIL.MethodSignature.Void
@@ -2528,7 +2528,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_AxisImpDesc", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")])), 
       TouchDeviceImp_get_AxisImpDesc
     );
 
@@ -2538,7 +2538,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "get_ButtonImpDesc", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")])), 
       TouchDeviceImp_get_ButtonImpDesc
     );
 
@@ -2613,34 +2613,34 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_AxisValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")])), 
       TouchDeviceImp_remove_AxisValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_ButtonValueChanged", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")])), 
       TouchDeviceImp_remove_ButtonValueChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
-    $.Field({Static:false, Public:false}, "_tpAxisDescs", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
+    $.Field({Static:false, Public:false}, "_tpAxisDescs", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
 
-    $.Field({Static:false, Public:false}, "_tpButtonDescs", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
+    $.Field({Static:false, Public:false}, "_tpButtonDescs", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
 
-    $.Field({Static:false, Public:false}, "_activeTouchpoints", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $.Int32]));
+    $.Field({Static:false, Public:false}, "_activeTouchpoints", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$.Int32, $.Int32]));
 
     $.Field({Static:false, Public:false}, "_nTouchPointsSupported", $.Int32);
 
     $.Field({Static:false, Public:false}, "_canvas", $.Object);
 
-    $.Field({Static:false, Public:false}, "AxisValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "AxisValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "ButtonValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "ButtonValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Property({Static:false, Public:false}, "NextFreeTouchIndex", $.Int32);
 
@@ -2652,15 +2652,15 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.Property({Static:false, Public:true , Virtual:true }, "AxesCount", $.Int32);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "AxisImpDesc", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
+    $.Property({Static:false, Public:true , Virtual:true }, "AxisImpDesc", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisImpDescription")]));
 
     $.Property({Static:false, Public:true , Virtual:true }, "ButtonCount", $.Int32);
 
-    $.Property({Static:false, Public:true , Virtual:true }, "ButtonImpDesc", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
+    $.Property({Static:false, Public:true , Virtual:true }, "ButtonImpDesc", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "AxisValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "AxisValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.AxisValueChangedArgs")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "ButtonValueChanged", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "ButtonValueChanged", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ButtonValueChangedArgs")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm03.TypeRef("Fusee.Engine.Common.IInputDeviceImp")
@@ -2686,7 +2686,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.MeshImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -2727,32 +2727,32 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "MeshImp$VerticesSet$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "MeshImp$NormalsSet$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "MeshImp$ColorsSet$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "MeshImp$TrianglesSet$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "MeshImp$UVsSet$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "MeshImp$BoneWeightsSet$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "MeshImp$BoneIndicesSet$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.ExternalProperty({Static:false, Public:true , Virtual:true }, "VerticesSet", $.Boolean);
 
@@ -2783,19 +2783,19 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function RenderCanvasImp$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.InitEventArgs))) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.InitEventArgs))) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Delegate)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Delegate)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.RenderEventArgs))) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.RenderEventArgs))) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ResizeEventArgs))) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.EventHandler$b1.Of($asm03.Fusee.Engine.Common.ResizeEventArgs))) ();
   };
 
 
@@ -2887,7 +2887,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.RenderCanvasImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -2900,28 +2900,28 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_Init", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
       RenderCanvasImp_add_Init
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_Render", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])), 
       RenderCanvasImp_add_Render
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_Resize", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])), 
       RenderCanvasImp_add_Resize
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "add_UnLoad", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
       RenderCanvasImp_add_UnLoad
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "CloseGameWindow", 
       JSIL.MethodSignature.Void
@@ -2936,28 +2936,28 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_Init", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
       RenderCanvasImp_remove_Init
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_Render", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")])), 
       RenderCanvasImp_remove_Render
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_Resize", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")])), 
       RenderCanvasImp_remove_Resize
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "remove_UnLoad", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")])), 
       RenderCanvasImp_remove_UnLoad
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "Run", 
       JSIL.MethodSignature.Void
@@ -2976,48 +2976,48 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Field({Static:false, Public:false}, "RenderCanvasImp$Width$value", $.Int32)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "RenderCanvasImp$Height$value", $.Int32)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "RenderCanvasImp$Caption$value", $.String)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "RenderCanvasImp$DeltaTime$value", $.Single)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "RenderCanvasImp$VerticalSync$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "RenderCanvasImp$EnableBlending$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "RenderCanvasImp$Fullscreen$value", $.Boolean)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "Init", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "Init", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "UnLoad", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "UnLoad", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "Render", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "Render", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "Resize", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "Resize", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.ExternalProperty({Static:false, Public:true , Virtual:true }, "Width", $.Int32);
 
@@ -3033,13 +3033,13 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.ExternalProperty({Static:false, Public:true , Virtual:true }, "Fullscreen", $.Boolean);
 
-    $.Event({Static:false, Public:true , Virtual:true }, "Init", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "Init", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "UnLoad", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "UnLoad", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.InitEventArgs")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "Render", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "Render", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.RenderEventArgs")]));
 
-    $.Event({Static:false, Public:true , Virtual:true }, "Resize", $asm14.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")]));
+    $.Event({Static:false, Public:true , Virtual:true }, "Resize", $asm0D.TypeRef("System.EventHandler`1", [$asm03.TypeRef("Fusee.Engine.Common.ResizeEventArgs")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm03.TypeRef("Fusee.Engine.Common.IRenderCanvasImp")
@@ -3056,58 +3056,58 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 (function RenderContextImp$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.IO.Stream)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.IO.Stream)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Exception)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Exception)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Int64)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Int64)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.IO.MemoryStream)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.IO.MemoryStream)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize(System.Array.Of($asm14.System.Byte))) ();
+    return ($T06 = JSIL.Memoize(System.Array.Of($asm0D.System.Byte))) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm14.System.Byte)) ();
+    return ($T07 = JSIL.Memoize($asm0D.System.Byte)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.IO.BinaryReader)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.IO.BinaryReader)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.Text.StringBuilder)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.Text.StringBuilder)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.String)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.MemoryStream"), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.MemoryStream"), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.IO.BinaryReader"), [$asm14.TypeRef("System.IO.Stream")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.IO.BinaryReader"), [$asm0D.TypeRef("System.IO.Stream")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Int32"), [
-        $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Byte")]), $asm14.TypeRef("System.Int32"), 
-        $asm14.TypeRef("System.Int32")
+    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [
+        $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Byte")]), $asm0D.TypeRef("System.Int32"), 
+        $asm0D.TypeRef("System.Int32")
       ]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Text.StringBuilder"), null))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Text.StringBuilder"), null))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Text.StringBuilder"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Text.StringBuilder"), [$asm0D.TypeRef("System.String")]))) ();
   };
 
 
@@ -3254,7 +3254,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.RenderContextImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3315,17 +3315,17 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:true }, "GetFileBytes", 
-      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Byte]), [$asm14.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$.Byte]), [$asm0D.TypeRef("System.IO.Stream")]), 
       RenderContextImp_GetFileBytes
     );
 
     $.Method({Static:false, Public:true }, "GetHeaderInfo", 
-      new JSIL.MethodSignature($.String, [$asm14.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($.String, [$asm0D.TypeRef("System.IO.Stream")]), 
       RenderContextImp_GetHeaderInfo
     );
 
     $.Method({Static:false, Public:true }, "GetImageType", 
-      new JSIL.MethodSignature($.String, [$asm14.TypeRef("System.IO.Stream")]), 
+      new JSIL.MethodSignature($.String, [$asm0D.TypeRef("System.IO.Stream")]), 
       RenderContextImp_GetImageType
     );
 
@@ -3353,15 +3353,15 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "GetShaderParamList", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IList`1", [$asm03.TypeRef("Fusee.Engine.Common.ShaderParamInfo")]), [$asm03.TypeRef("Fusee.Engine.Common.IShaderProgramImp")])
+      new JSIL.MethodSignature($asm0D.TypeRef("System.Collections.Generic.IList`1", [$asm03.TypeRef("Fusee.Engine.Common.ShaderParamInfo")]), [$asm03.TypeRef("Fusee.Engine.Common.IShaderProgramImp")])
     );
 
     $.ExternalMethod({Static:false, Public:true }, "LoadFont", 
-      new JSIL.MethodSignature($asm03.TypeRef("Fusee.Engine.Common.IFont"), [$asm14.TypeRef("System.IO.Stream"), $.UInt32])
+      new JSIL.MethodSignature($asm03.TypeRef("Fusee.Engine.Common.IFont"), [$asm0D.TypeRef("System.IO.Stream"), $.UInt32])
     );
 
     $.ExternalMethod({Static:false, Public:true }, "LoadImage", 
-      new JSIL.MethodSignature($asm00.TypeRef("Fusee.Base.Common.ImageData"), [$asm14.TypeRef("System.IO.Stream")])
+      new JSIL.MethodSignature($asm00.TypeRef("Fusee.Base.Common.ImageData"), [$asm0D.TypeRef("System.IO.Stream")])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "Render", 
@@ -3469,12 +3469,12 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Field({Static:false, Public:false}, "RenderContextImp$ClearColor$value", $asm06.TypeRef("Fusee.Math.Core.float4"))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Field({Static:false, Public:false}, "RenderContextImp$ClearDepth$value", $.Single)
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.ExternalProperty({Static:false, Public:true , Virtual:true }, "ClearColor", $asm06.TypeRef("Fusee.Math.Core.float4"));
 
@@ -3497,7 +3497,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.ShaderParam", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3528,7 +3528,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.ShaderProgramImp", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -3558,7 +3558,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Engine.Imp.Graphics.Web.Texture", 
       IsPublic: false, 
       IsReferenceType: true, 
