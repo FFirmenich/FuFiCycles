@@ -123,9 +123,7 @@ namespace Fusee.FuFiCycles.Core {
 
 			bool directionChanged = false;
 
-
-
-			// Wuggy XForm
+			// Cycle Rotation
 			float cycleYaw = _cycleTransform.Rotation.y;
 			if (Keyboard.GetKey(input_keys.getKeyLeft())) {
 				if (aPressed == false) {
@@ -146,8 +144,7 @@ namespace Fusee.FuFiCycles.Core {
 				dPressed = false;
 			}
 			cycleYaw = FuFiCycles.NormRot(cycleYaw);
-			float3 cyclePos = _cycleTransform.Translation;
-			cyclePos += new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed();
+			float3 cyclePos = _cycleTransform.Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed();
 			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
 			_cycleTransform.Translation = cyclePos;
 
@@ -160,7 +157,7 @@ namespace Fusee.FuFiCycles.Core {
 			int z = (int)System.Math.Floor(cyclePos.z + 0.5);
 			try {
 				if (FuFiCycles._mapMirror[x, z] == 0) {
-					FuFiCycles._mapMirror[x, z] = 1;
+					FuFiCycles._mapMirror[x, z] = getPlayerId();
 				} else {
 					// If value at _mapMirror[x, z] isn't 0, there is already a wall
 					collision();
@@ -170,12 +167,30 @@ namespace Fusee.FuFiCycles.Core {
 				collision();
 			}
 
-			// get Wall if new direction
+			// get new wall if direction has changed
 			if (directionChanged || _firstFrame) {
 				_cycleWall = getWall(x, z);
 			}
 
 			// draw wall
+			prepareWall(cycleYaw);
+
+			_renderer.Traverse(_cycle.Children);
+			_renderer.Traverse(_wall.Children);
+
+			// after first frame set _firstFrame var false
+			if (_firstFrame) {
+				_firstFrame = false;
+			}
+		}
+
+		private void collision() {
+			Debug.WriteLine("collision");
+			setSpeed(0);
+		}
+
+		private void prepareWall(float cycleYaw) {
+
 			// if wall is under ground, move it up
 			// TODO: check if countdown is finished and game started
 			if (_cycleWall.Translation.y == -150) {
@@ -197,19 +212,6 @@ namespace Fusee.FuFiCycles.Core {
 				_cycleWall.Translation.z -= getSpeed() / 2;
 				_cycleWall.Scale.z = _cycleWall.Scale.z - getSpeed();
 			}
-
-			_renderer.Traverse(_cycle.Children);
-			_renderer.Traverse(_wall.Children);
-
-			// after first frame set _firstFrame var false
-			if (_firstFrame) {
-				_firstFrame = false;
-			}
-		}
-
-		private void collision() {
-			Debug.WriteLine("collision");
-			setSpeed(0);
 		}
 
 		private TransformComponent getWall(int x, int z) {
