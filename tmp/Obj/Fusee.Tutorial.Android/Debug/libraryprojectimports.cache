@@ -2,13 +2,16 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Base.Imp.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Engine.Imp.Graphics.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Base.Imp.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Engine.Imp.Graphics.Android\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
-  <ResolvedAssetDirectories />
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Base.Imp.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Engine.Imp.Graphics.Android\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Base.Imp.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Engine.Imp.Graphics.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Base.Imp.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.Tutorial.Android\Debug\__library_projects__\Fusee.Engine.Imp.Graphics.Android.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>
