@@ -21,6 +21,7 @@ D:\Development\FuFiCycles\bin\Debug\Libraries\Fusee.Tutorial.Core.pdb
 D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.FuFiCycles.Core.csprojResolveAssemblyReference.cache
 D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.Core.dll
 D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Core\Debug\Fusee.Tutorial.Core.pdb
-D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\CycleLand.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Wall.fus
 D:\Development\FuFiCycles\bin\Debug\Libraries\Assets\Wall.fus
+D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Cycle.fus
+D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Land.fus

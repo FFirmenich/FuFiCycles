@@ -1,31 +1,32 @@
-﻿using System;
+﻿using Fusee.Engine.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Fusee.FuFiCycles.Core {
 	class InputKeys {
-		private String key_left;
-		private String key_right;
+		private KeyCodes key_left;
+		private KeyCodes key_right;
 
-		public InputKeys(String left, String right) {
+		public InputKeys(KeyCodes left, KeyCodes right) {
 			setKeyLeft(left);
 			setKeyRight(right);
 		}
 
-		public String getKeyLeft() {
+		public KeyCodes getKeyLeft() {
 			return this.key_left;
 		}
 
-		public String getKeyRight() {
+		public KeyCodes getKeyRight() {
 			return this.key_right;
 		}
 
-		public void setKeyLeft(String input_key) {
+		public void setKeyLeft(KeyCodes input_key) {
 			this.key_left = input_key;
 		}
 
-		public void setKeyRight(String input_key) {
+		public void setKeyRight(KeyCodes input_key) {
 			this.key_right = input_key;
 		}
 	}

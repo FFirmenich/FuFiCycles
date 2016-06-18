@@ -15,6 +15,8 @@ using System;
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production")]
 	public class FuFiCycles : RenderCanvas {
+		private List<Cycle> cycles = new List<Cycle>();
+
 		// angle variables
 		private static float _angleHorz = M.PiOver6 * 2.0f, _angleVert = -M.PiOver6 * 0.5f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
 		private static float2 _offset;
@@ -24,51 +26,34 @@ namespace Fusee.FuFiCycles.Core {
 		private const float Damping = 0.8f;
 
 		private SceneContainer _scene;
-		private SceneContainer _wall;
 		private float4x4 _sceneScale;
 		private float4x4 _projection;
 		private bool _twoTouchRepeated;
 
 		private bool _keys;
 
-		private TransformComponent _cycleTransform;
-		private TransformComponent _cycleWheelR;
-		private TransformComponent _cycleWheelL;
-
-		private TransformComponent _cycleWall;
-		private List<SceneNodeContainer> _walls = new List<SceneNodeContainer>();
-
 		private Dictionary<float3, int> _cyclePositions = new Dictionary<float3, int>();
 
 		private int _mapSize = 0;
-		private float[,] _mapMirror;
+		public static float[,] _mapMirror;
 
 		private Renderer _renderer;
-
-		private bool aPressed = false;
-		private bool dPressed = false;
-		private bool _firstFrame = true;
-
-		float _speed = 5;
-
 
 		// Init is called on startup. 
 		public override void Init() {
 			// Load the scene
-			_scene = AssetStorage.Get<SceneContainer>("CycleLand.fus");
-			_wall = AssetStorage.Get<SceneContainer>("Wall.fus");
+			_scene = AssetStorage.Get<SceneContainer>("Land.fus");
 			_sceneScale = float4x4.CreateScale(0.04f);
 
 			// Instantiate our self-written renderer
 			_renderer = new Renderer(RC);
 
-			// Find some transform nodes we want to manipulate in the scene
-			_cycleTransform = _scene.Children.FindNodes(c => c.Name == "bike").First()?.GetTransform();
-			_cycleWheelR = _scene.Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
-			_cycleWheelL = _scene.Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
+			// Add two cycles to the list
+			cycles.Add(new Cycle(1));
+			//cycles.Add(new Cycle(2));
 
 			// set Map Size
-			MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
+			//MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
 			_mapSize = 5000;
 			_mapMirror = new float[_mapSize, _mapSize];
 
@@ -126,82 +111,7 @@ namespace Fusee.FuFiCycles.Core {
 				}
 			}
 
-			bool directionChanged = false;
-
-			// Wuggy XForm
-			float cycleYaw = _cycleTransform.Rotation.y;
-			if (Keyboard.GetKey(KeyCodes.A)) {
-				if (aPressed == false) {
-					cycleYaw = cycleYaw - M.PiOver2;
-					directionChanged = true;
-				}
-				aPressed = true;
-			} else {
-				aPressed = false;
-			}
-			if (Keyboard.GetKey(KeyCodes.D)) {
-				if (dPressed == false) {
-					cycleYaw = cycleYaw + M.PiOver2;
-					directionChanged = true;
-				}
-				dPressed = true;
-			} else {
-				dPressed = false;
-			}
-			cycleYaw = NormRot(cycleYaw);
-			float3 cyclePos = _cycleTransform.Translation;
-			cyclePos += new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * _speed;
-			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
-			_cycleTransform.Translation = cyclePos;
-
-			// Wheels
-			_cycleWheelR.Rotation += new float3(_speed * 0.008f, 0, 0);
-			_cycleWheelL.Rotation += new float3(_speed * 0.008f, 0, 0);
-
-			//Write Position into Array and throw crash if cycle collides with a wall or map border
-			int x = (int)System.Math.Floor(cyclePos.x + 0.5);
-			int z = (int)System.Math.Floor(cyclePos.z + 0.5);
-			try {
-				if (_mapMirror[x, z] == 0) {
-					_mapMirror[x, z] = 1;
-				} else {
-					// If value at _mapMirror[x, z] isn't 0, there is already a wall
-					collision();
-				}
-			} catch (IndexOutOfRangeException e) {
-				// If Index is out of Range a Cycle has collided with the border of the map
-				collision();
-			}
-			
-			// get Wall if new direction
-			if(directionChanged || _firstFrame) {
-				_cycleWall = getWall(x, z);
-			}
-
-			// draw wall
-			// if wall is under ground, move it up
-			// TODO: check if countdown is finished and game started
-			if (_cycleWall.Translation.y == -150) {
-				_cycleWall.Translation.y = 0;
-			}
-
-			// draw wall
-			float val = 0.1f;
-			if (cycleYaw < M.PiOver2 + val && cycleYaw > M.PiOver2 - val) {
-				_cycleWall.Translation.x += _speed / 2;
-				_cycleWall.Scale.x = _cycleWall.Scale.x - _speed;
-			} else if (cycleYaw > -val && cycleYaw < val) {
-				_cycleWall.Translation.z += _speed / 2;
-				_cycleWall.Scale.z = _cycleWall.Scale.z - _speed;
-			} else if (cycleYaw < -M.PiOver2 + val && cycleYaw > -M.PiOver2 - val) {
-				_cycleWall.Translation.x -= _speed / 2;
-				_cycleWall.Scale.x = _cycleWall.Scale.x - _speed;
-			} else if (cycleYaw > M.Pi - val && cycleYaw < M.Pi + val) {
-				_cycleWall.Translation.z -= _speed / 2;
-				_cycleWall.Scale.z = _cycleWall.Scale.z - _speed;
-				Debug.WriteLine("hinten");
-			}
-			
+			// zoom
 			_zoom += _zoomVel;
 			// Limit zoom
 			if (_zoom < 80)
@@ -220,7 +130,6 @@ namespace Fusee.FuFiCycles.Core {
 			// Wrap-around to keep _angleRoll between -PI and + PI
 			_angleRoll = M.MinAngle(_angleRoll);
 
-
 			// Create the camera matrix and set it as the current ModelView transformation
 			var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(_angleHorz);
 			var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
@@ -228,18 +137,19 @@ namespace Fusee.FuFiCycles.Core {
 			var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
 			RC.Projection = mtxOffset * _projection;
 
-
+			// Render
+			// render Scene
 			_renderer.Traverse(_scene.Children);
-			_renderer.Traverse(_wall.Children);
+
+			// render Cycles with their walls
+			for(int i = 0; i < cycles.Count; i++) {
+				cycles[i].renderAFrame(_renderer);
+			}
 
 			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered farame) on the front buffer.
 			Present();
-
-			if (_firstFrame) {
-				_firstFrame = false;
-			}
 		}
-
+		
 		public static float NormRot(float rot) {
 			while (rot > M.Pi)
 				rot -= M.TwoPi;
@@ -247,8 +157,6 @@ namespace Fusee.FuFiCycles.Core {
 				rot += M.TwoPi;
 			return rot;
 		}
-
-
 
 		// Is called when the window was resized
 		public override void Resize() {
@@ -263,28 +171,5 @@ namespace Fusee.FuFiCycles.Core {
 			// Back clipping happens at 2000 (Anything further away from the camera than 2000 world units gets clipped, polygons will be cut)
 			_projection = float4x4.CreatePerspectiveFieldOfView(M.PiOver4, aspectRatio, 1, 20000);
 		}
-
-		private void collision() {
-			Debug.WriteLine("collision");
-			_speed = 0;
-		}
-
-		private TransformComponent getWall(int x, int z) {
-			SceneNodeContainer w = new SceneNodeContainer();
-			w.Name = "wall";
-			w.Components = new List<SceneComponentContainer>();
-			TransformComponent tc = new TransformComponent();
-			tc.Translation = new float3(x, 0, z);
-			tc.Scale = new float3(1, 1, 1);
-			w.Components.Add(tc);
-			w.Components.Add(_wall.Children.FindNodes(c => c.Name == "wall").First().GetMesh());
-
-			_wall.Children.Add(w);
-
-			_walls.Add(w);
-
-			return _walls.Last().GetTransform();
-		}
-
 	}
 }
