@@ -46,7 +46,7 @@ namespace Fusee.FuFiCycles.Core {
 			return this.position;
 		}
 
-		public float speed() {
+		public float getSpeed() {
 			return this.speed;
 		}
 
