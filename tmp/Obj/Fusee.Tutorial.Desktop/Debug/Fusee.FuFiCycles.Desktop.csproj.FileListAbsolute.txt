@@ -13,7 +13,6 @@ D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Leaves.jpg
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\PixelShader.frag
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\VertexShader.vert
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Sphere.jpg
-D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\CycleLand.fus
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\PixelShader2.frag
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\VertexShader2.vert
 D:\Development\FuFiCycles\bin\Debug\Desktop\Fusee.Tutorial.Desktop.exe
@@ -25,3 +24,5 @@ D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Wall.fus
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Wall.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Cycle.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Land.fus
+D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Land.fus
+D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Cycle.fus
