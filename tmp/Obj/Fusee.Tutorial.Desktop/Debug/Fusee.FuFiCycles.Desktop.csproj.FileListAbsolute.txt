@@ -13,7 +13,6 @@ D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Leaves.jpg
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\PixelShader.frag
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\VertexShader.vert
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Sphere.jpg
-D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\CycleLand.fus
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\PixelShader2.frag
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\VertexShader2.vert
 D:\Development\FuFiCycles\bin\Debug\Desktop\Fusee.Tutorial.Desktop.exe
@@ -24,4 +23,9 @@ D:\Development\FuFiCycles\tmp\Obj\Fusee.Tutorial.Desktop\Debug\Fusee.Tutorial.De
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Wall.fus
 D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Wall.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Land.fus
+<<<<<<< HEAD
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Cycle.fus
+=======
+D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Land.fus
+D:\Development\FuFiCycles\bin\Debug\Desktop\Assets\Cycle.fus
+>>>>>>> 2b0853b60ed6f4a3fab5eb33f1f5b175f79dcb81

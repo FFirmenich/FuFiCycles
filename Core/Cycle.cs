@@ -173,17 +173,17 @@ namespace Fusee.FuFiCycles.Core {
 				dPressed = false;
 			}
 			cycleYaw = FuFiCycles.NormRot(cycleYaw);
-			float3 cyclePos = _cycleTransform.Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed();
+			setPosition(_cycleTransform.Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed());
 			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
-			_cycleTransform.Translation = cyclePos;
+			_cycleTransform.Translation = getPosition();
 
 			// Wheels
 			_cycleWheelR.Rotation += new float3(getSpeed() * 0.008f, 0, 0);
 			_cycleWheelL.Rotation += new float3(getSpeed() * 0.008f, 0, 0);
 
 			//Write Position into Array and throw crash if cycle collides with a wall or map border
-			int x = (int)System.Math.Floor(cyclePos.x + 0.5);
-			int z = (int)System.Math.Floor(cyclePos.z + 0.5);
+			int x = (int)System.Math.Floor(getPosition().x + 0.5);
+			int z = (int)System.Math.Floor(getPosition().z + 0.5);
 			try {
 				if (FuFiCycles._mapMirror[x, z] == 0) {
 					FuFiCycles._mapMirror[x, z] = getPlayerId();

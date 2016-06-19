@@ -18,7 +18,7 @@ namespace Fusee.FuFiCycles.Core {
 		private List<Cycle> cycles = new List<Cycle>();
 
 		// angle variables
-		private static float _angleHorz = M.PiOver6 * 2.0f, _angleVert = -M.PiOver6 * 0.5f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
+		private static float _angleHorz = 0, _angleVert = -M.PiOver6 * 0.2f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
 		private static float2 _offset;
 		private static float2 _offsetInit;
 
@@ -72,43 +72,13 @@ namespace Fusee.FuFiCycles.Core {
 			}
 
 			var curDamp = (float)System.Math.Exp(-Damping * DeltaTime);
-
-			// Zoom & Roll
-			if (Touch.TwoPoint) {
-				if (!_twoTouchRepeated) {
-					_twoTouchRepeated = true;
-					_angleRollInit = Touch.TwoPointAngle - _angleRoll;
-					_offsetInit = Touch.TwoPointMidPoint - _offset;
-				}
-				_zoomVel = Touch.TwoPointDistanceVel * -0.01f;
-				_angleRoll = Touch.TwoPointAngle - _angleRollInit;
-				_offset = Touch.TwoPointMidPoint - _offsetInit;
+			
+			if (_keys) {
+				_angleVelHorz = -RotationSpeed * Keyboard.LeftRightAxis * 0.002f;
+				_angleVelVert = -RotationSpeed * Keyboard.UpDownAxis * 0.002f;
 			} else {
-				_twoTouchRepeated = false;
-				_zoomVel = Mouse.WheelVel * -0.5f;
-				_angleRoll *= curDamp * 0.8f;
-				_offset *= curDamp * 0.8f;
-			}
-
-			// UpDown / LeftRight rotation
-			if (Mouse.LeftButton) {
-				_keys = false;
-				_angleVelHorz = -RotationSpeed * Mouse.XVel * 0.000002f;
-				_angleVelVert = -RotationSpeed * Mouse.YVel * 0.000002f;
-			} else if (Touch.GetTouchActive(TouchPoints.Touchpoint_0) && !Touch.TwoPoint) {
-				_keys = false;
-				float2 touchVel;
-				touchVel = Touch.GetVelocity(TouchPoints.Touchpoint_0);
-				_angleVelHorz = -RotationSpeed * touchVel.x * 0.000002f;
-				_angleVelVert = -RotationSpeed * touchVel.y * 0.000002f;
-			} else {
-				if (_keys) {
-					_angleVelHorz = -RotationSpeed * Keyboard.LeftRightAxis * 0.002f;
-					_angleVelVert = -RotationSpeed * Keyboard.UpDownAxis * 0.002f;
-				} else {
-					_angleVelHorz *= curDamp;
-					_angleVelVert *= curDamp;
-				}
+				_angleVelHorz *= curDamp;
+				_angleVelVert *= curDamp;
 			}
 
 			// zoom
@@ -133,7 +103,7 @@ namespace Fusee.FuFiCycles.Core {
 			// Create the camera matrix and set it as the current ModelView transformation
 			var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(_angleHorz);
 			var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
-			_renderer.View = mtxCam * mtxRot * _sceneScale;
+			_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(- (new float3(cycles[0].getPosition().x, cycles[0].getPosition().y, cycles[0].getPosition().z)));
 			var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
 			RC.Projection = mtxOffset * _projection;
 
