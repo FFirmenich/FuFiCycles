@@ -13,7 +13,7 @@ JSIL.DeclareNamespace("Fusee.Serialization");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.SceneComponentContainer", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -70,7 +70,7 @@ JSIL.DeclareNamespace("Fusee.Serialization");
       AnimationComponent__ctor
     );
 
-    $.Field({Static:false, Public:true }, "AnimationTracks", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.AnimationTrackContainer")]))
+    $.Field({Static:false, Public:true }, "AnimationTracks", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.AnimationTrackContainer")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [3]; });
 
 
@@ -89,7 +89,7 @@ JSIL.DeclareNamespace("Fusee.Serialization");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.AnimationKeyContainerBase", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -345,7 +345,7 @@ JSIL.DeclareNamespace("Fusee.Serialization");
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Serialization.LerpType", 
-    BaseType: $asm14.TypeRef("System.Int32"), 
+    BaseType: $asm0D.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -369,7 +369,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.AnimationTrackContainer", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -388,13 +388,13 @@ JSIL.MakeEnum(
     $.Field({Static:false, Public:true }, "Property", $.String)
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [2]; });
 
-    $.Field({Static:false, Public:true }, "KeyType", $asm14.TypeRef("System.Type"))
+    $.Field({Static:false, Public:true }, "KeyType", $asm0D.TypeRef("System.Type"))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [3]; });
 
     $.Field({Static:false, Public:true }, "LerpType", $asm09.TypeRef("Fusee.Serialization.LerpType"))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [5]; });
 
-    $.Field({Static:false, Public:true }, "KeyFrames", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.AnimationKeyContainerBase")]))
+    $.Field({Static:false, Public:true }, "KeyFrames", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.AnimationKeyContainerBase")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [4]; });
 
 
@@ -443,7 +443,7 @@ JSIL.MakeEnum(
 JSIL.MakeEnum(
   {
     FullName: "Fusee.Serialization.LightType", 
-    BaseType: $asm14.TypeRef("System.Int32"), 
+    BaseType: $asm0D.TypeRef("System.Int32"), 
     IsPublic: true, 
     IsFlags: false, 
   }, 
@@ -506,7 +506,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.MatChannelContainer", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -585,7 +585,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.BumpChannelContainer", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -707,7 +707,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.ValueType"), 
+      BaseType: $asm0D.TypeRef("System.ValueType"), 
       Name: "Fusee.Serialization.SceneHeader", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -744,7 +744,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.SceneContainer", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -760,7 +760,7 @@ JSIL.MakeEnum(
     $.Field({Static:false, Public:true }, "Header", $asm09.TypeRef("Fusee.Serialization.SceneHeader"))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [1]; });
 
-    $.Field({Static:false, Public:true }, "Children", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]))
+    $.Field({Static:false, Public:true }, "Children", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [2]; });
 
 
@@ -828,7 +828,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.SceneNodeContainer", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -844,17 +844,17 @@ JSIL.MakeEnum(
     $.Field({Static:false, Public:true }, "Name", $.String)
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [1]; });
 
-    $.Field({Static:false, Public:true }, "Components", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]))
+    $.Field({Static:false, Public:true }, "Components", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [2]; });
 
-    $.Field({Static:false, Public:true }, "Children", $asm14.TypeRef("System.Collections.Generic.List`1", [$.Type]))
+    $.Field({Static:false, Public:true }, "Children", $asm0D.TypeRef("System.Collections.Generic.List`1", [$.Type]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [3]; });
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
     .Attribute($asm0E.TypeRef("ProtoBuf.ProtoContractAttribute"))
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{Name,nq}, {(Components==null)? \"No\" : Components.Count.ToString(),nq} components, {(Children==null)? \"No\" : Children.Count.ToString(),nq} children"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{Name,nq}, {(Components==null)? \"No\" : Components.Count.ToString(),nq} components, {(Children==null)? \"No\" : Children.Count.ToString(),nq} children"]; });
 
 })();
 
@@ -885,13 +885,13 @@ JSIL.MakeEnum(
       WeightComponent__ctor
     );
 
-    $.Field({Static:false, Public:true }, "WeightMap", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeightList")]))
+    $.Field({Static:false, Public:true }, "WeightMap", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeightList")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [1]; });
 
-    $.Field({Static:false, Public:true }, "Joints", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]))
+    $.Field({Static:false, Public:true }, "Joints", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [2]; });
 
-    $.Field({Static:false, Public:true }, "BindingMatrices", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm08.TypeRef("Fusee.Math.Core.float4x4")]))
+    $.Field({Static:false, Public:true }, "BindingMatrices", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm08.TypeRef("Fusee.Math.Core.float4x4")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [3]; });
 
 
@@ -907,7 +907,7 @@ JSIL.MakeEnum(
   var $, $thisType;
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.ValueType"), 
+      BaseType: $asm0D.TypeRef("System.ValueType"), 
       Name: "Fusee.Serialization.VertexWeight", 
       IsPublic: true, 
       IsReferenceType: false, 
@@ -934,7 +934,7 @@ JSIL.MakeEnum(
 (function VertexWeightList$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm09.Fusee.Serialization.VertexWeight))) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1.Of($asm09.Fusee.Serialization.VertexWeight))) ();
   };
 
 
@@ -950,7 +950,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.VertexWeightList", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -964,22 +964,22 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "get_VertexWeights", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")])), 
       VertexWeightList_get_VertexWeights
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_VertexWeights", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")])), 
       VertexWeightList_set_VertexWeights
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
-    $.Field({Static:false, Public:false}, "VertexWeightList$VertexWeights$value", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "VertexWeightList$VertexWeights$value", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Property({Static:false, Public:true }, "VertexWeights", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")]))
+    $.Property({Static:false, Public:true }, "VertexWeights", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.VertexWeight")]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [1]; });
 
 
@@ -994,7 +994,7 @@ JSIL.MakeEnum(
 (function JointWeightColumn$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm14.System.Double))) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1.Of($asm0D.System.Double))) ();
   };
 
 
@@ -1010,7 +1010,7 @@ JSIL.MakeEnum(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Serialization.JointWeightColumn", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1024,22 +1024,22 @@ JSIL.MakeEnum(
     );
 
     $.Method({Static:false, Public:true }, "get_JointWeights", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.List`1", [$.Double])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.List`1", [$.Double])), 
       JointWeightColumn_get_JointWeights
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_JointWeights", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.List`1", [$.Double])), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Collections.Generic.List`1", [$.Double])), 
       JointWeightColumn_set_JointWeights
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
-    $.Field({Static:false, Public:false}, "JointWeightColumn$JointWeights$value", $asm14.TypeRef("System.Collections.Generic.List`1", [$.Double]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+    $.Field({Static:false, Public:false}, "JointWeightColumn$JointWeights$value", $asm0D.TypeRef("System.Collections.Generic.List`1", [$.Double]))
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Property({Static:false, Public:true }, "JointWeights", $asm14.TypeRef("System.Collections.Generic.List`1", [$.Double]))
+    $.Property({Static:false, Public:true }, "JointWeights", $asm0D.TypeRef("System.Collections.Generic.List`1", [$.Double]))
       .Attribute($asm0E.TypeRef("ProtoBuf.ProtoMemberAttribute"), function () { return [1]; });
 
 

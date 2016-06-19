@@ -30212,7 +30212,7 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:false}, "hasRootNode", $.Boolean);
 
-    $.Field({Static:false, Public:false}, "singleText", $asm16.TypeRef("System.Xml.Xsl.Runtime.StringConcat"));
+    $.Field({Static:false, Public:false}, "singleText", $asm15.TypeRef("System.Xml.Xsl.Runtime.StringConcat"));
 
     $.Field({Static:false, Public:false}, "baseUri", $.String);
 
@@ -46709,7 +46709,7 @@ JSIL.MakeEnum(
       .Attribute($asm13.TypeRef("__DynamicallyInvokableAttribute"));
 
     $.ExternalMethod({Static:false, Public:false}, ".ctor", 
-      JSIL.MethodSignature.Action($asm16.TypeRef("System.Xml.Xsl.Runtime.XmlQueryDataReader"))
+      JSIL.MethodSignature.Action($asm15.TypeRef("System.Xml.Xsl.Runtime.XmlQueryDataReader"))
     );
 
     $.ExternalMethod({Static:false, Public:false}, "AddConformanceWrapper", 
@@ -46855,7 +46855,7 @@ JSIL.MakeEnum(
       .Attribute($asm13.TypeRef("__DynamicallyInvokableAttribute"));
 
     $.ExternalMethod({Static:false, Public:false}, "GetObjectData", 
-      JSIL.MethodSignature.Action($asm16.TypeRef("System.Xml.Xsl.Runtime.XmlQueryDataWriter"))
+      JSIL.MethodSignature.Action($asm15.TypeRef("System.Xml.Xsl.Runtime.XmlQueryDataWriter"))
     );
 
     $.ExternalMethod({Static:false, Public:false}, "Initialize", 
@@ -113857,7 +113857,7 @@ JSIL.MakeEnum(
     );
 
     $.ExternalMethod({Static:false, Public:false}, "TestCompile", 
-      new JSIL.MethodSignature($asm16.TypeRef("System.Xml.Xsl.Qil.QilExpression"), [
+      new JSIL.MethodSignature($asm15.TypeRef("System.Xml.Xsl.Qil.QilExpression"), [
           $.Object, $asm13.TypeRef("System.Xml.Xsl.XsltSettings"), 
           $asm13.TypeRef("System.Xml.XmlResolver")
         ])
@@ -113979,9 +113979,9 @@ JSIL.MakeEnum(
 
     $.Field({Static:false, Public:false}, "outputSettings", $asm13.TypeRef("System.Xml.XmlWriterSettings"));
 
-    $.Field({Static:false, Public:false}, "qil", $asm16.TypeRef("System.Xml.Xsl.Qil.QilExpression"));
+    $.Field({Static:false, Public:false}, "qil", $asm15.TypeRef("System.Xml.Xsl.Qil.QilExpression"));
 
-    $.Field({Static:false, Public:false}, "command", $asm16.TypeRef("System.Xml.Xsl.XmlILCommand"));
+    $.Field({Static:false, Public:false}, "command", $asm15.TypeRef("System.Xml.Xsl.XmlILCommand"));
 
     $.Field({Static:true , Public:false}, "GeneratedCodeCtor", $asm0D.TypeRef("System.Reflection.ConstructorInfo"));
 
@@ -114411,7 +114411,7 @@ JSIL.MakeInterface(
     );
 
     $.ExternalMethod({Static:false, Public:false}, "get_Debugger", 
-      JSIL.MethodSignature.Return($asm16.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger"))
+      JSIL.MethodSignature.Return($asm15.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger"))
     );
 
     $.ExternalMethod({Static:false, Public:true }, "Load", 
@@ -114592,19 +114592,19 @@ JSIL.MakeInterface(
 
     $.Field({Static:false, Public:false}, "isDocumentResolverSet", $.Boolean);
 
-    $.Field({Static:false, Public:false}, "_CompiledStylesheet", $asm16.TypeRef("System.Xml.Xsl.XsltOld.Stylesheet"));
+    $.Field({Static:false, Public:false}, "_CompiledStylesheet", $asm15.TypeRef("System.Xml.Xsl.XsltOld.Stylesheet"));
 
-    $.Field({Static:false, Public:false}, "_QueryStore", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm16.TypeRef("System.Xml.Xsl.XsltOld.TheQuery")]));
+    $.Field({Static:false, Public:false}, "_QueryStore", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm15.TypeRef("System.Xml.Xsl.XsltOld.TheQuery")]));
 
-    $.Field({Static:false, Public:false}, "_RootAction", $asm16.TypeRef("System.Xml.Xsl.XsltOld.RootAction"));
+    $.Field({Static:false, Public:false}, "_RootAction", $asm15.TypeRef("System.Xml.Xsl.XsltOld.RootAction"));
 
-    $.Field({Static:false, Public:false}, "$debugger", $asm16.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger"));
+    $.Field({Static:false, Public:false}, "$debugger", $asm15.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger"));
 
     $.Property({Static:false, Public:false}, "_DocumentResolver", $asm13.TypeRef("System.Xml.XmlResolver"));
 
     $.Property({Static:false, Public:true }, "XmlResolver", $asm13.TypeRef("System.Xml.XmlResolver"));
 
-    $.Property({Static:false, Public:false}, "Debugger", $asm16.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger"));
+    $.Property({Static:false, Public:false}, "Debugger", $asm15.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger"));
 
 
     return function (newThisType) { $thisType = newThisType; }; 
@@ -114644,7 +114644,7 @@ JSIL.MakeInterface(
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "OnInstructionExecute", 
-      JSIL.MethodSignature.Action($asm16.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltProcessor"))
+      JSIL.MethodSignature.Action($asm15.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltProcessor"))
     );
 
     $.Field({Static:false, Public:false}, "unknownDebugger", $.Object);
@@ -114656,7 +114656,7 @@ JSIL.MakeInterface(
     $.Field({Static:false, Public:false}, "onExecute", $asm0D.TypeRef("System.Reflection.MethodInfo"));
 
     $.ImplementInterfaces(
-      /* 0 */ $asm16.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger")
+      /* 0 */ $asm15.TypeRef("System.Xml.Xsl.XsltOld.Debugger.IXsltDebugger")
     );
 
 

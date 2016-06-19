@@ -9,25 +9,25 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
 (function Animation$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.ChannelBase))) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.ChannelBase))) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0C.Fusee.Xirkit.Circuit)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Type)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Type)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T07 = function () {
     return ($T07 = JSIL.Memoize($asm0C.Fusee.Xirkit.ChannelBase)) ();
@@ -36,19 +36,19 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
     return ($T08 = JSIL.Memoize($asm0C.Fusee.Xirkit.Node)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.NotImplementedException)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.NotImplementedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")]), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")]), null))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotImplementedException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotImplementedException"), [$asm0D.TypeRef("System.String")]))) ();
   };
 
 
@@ -147,7 +147,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Animation", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -189,7 +189,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
     );
 
     $.Method({Static:false, Public:true }, "get_ChannelBaseList", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")])), 
       Animation_get_ChannelBaseList
     );
 
@@ -208,7 +208,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
       Animation_SetTick
     );
 
-    $.Field({Static:false, Public:false}, "_channels", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")]));
+    $.Field({Static:false, Public:false}, "_channels", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")]));
 
     $.Field({Static:false, Public:false}, "_animHandler", $asm0C.TypeRef("Fusee.Xirkit.Circuit"));
 
@@ -220,7 +220,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
 
     $.Field({Static:false, Public:false}, "_direction", $.Boolean);
 
-    $.Property({Static:false, Public:true }, "ChannelBaseList", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")]));
+    $.Property({Static:false, Public:true }, "ChannelBaseList", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.ChannelBase")]));
 
     $.Property({Static:false, Public:true }, "AnimationMode", $.Int32);
 
@@ -235,25 +235,28 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
 (function ChainedMemberAccessor$b2$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize(System.Array.Of($asm14.System.Reflection.MemberInfo))) ();
+    return ($T00 = JSIL.Memoize(System.Array.Of($asm0D.System.Reflection.MemberInfo))) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Reflection.MemberInfo)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Reflection.MemberInfo)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
+  };
+  var $S00 = function () {
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
   };
 
 
@@ -283,7 +286,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
   }; 
 
   function ChainedMemberAccessor$b2_$l_ctor$gb__7_0 (ii) {
-    this._oList[(((ii | 0) + 1) | 0)] = ($T05().$Cast(this._miList[ii])).GetValue(this._oList[ii]);
+    this._oList[(((ii | 0) + 1) | 0)] = $S00().CallVirtual("GetValue", null, $T05().$Cast(this._miList[ii]), this._oList[ii]);
   }; 
 
   function ChainedMemberAccessor$b2_$l_ctor$gb__7_1 (ii) {
@@ -321,7 +324,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.ChainedMemberAccessor`2", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -332,7 +335,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")]), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
+          $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MemberInfo")]), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
           $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
         ]), 
       ChainedMemberAccessor$b2__ctor
@@ -342,25 +345,25 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
       JSIL.MethodSignature.Action($.Int32), 
       ChainedMemberAccessor$b2_$l_ctor$gb__7_0
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false}, "$l.ctor$gb__7_1", 
       JSIL.MethodSignature.Action($.Int32), 
       ChainedMemberAccessor$b2_$l_ctor$gb__7_1
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false}, "$l.ctor$gb__7_2", 
       JSIL.MethodSignature.Action($.Int32), 
       ChainedMemberAccessor$b2_$l_ctor$gb__7_2
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false}, "$l.ctor$gb__7_3", 
       JSIL.MethodSignature.Action($.Int32), 
       ChainedMemberAccessor$b2_$l_ctor$gb__7_3
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true , Virtual:true }, "Get", 
       new JSIL.MethodSignature($.GenericParameter("TPin"), [$.Object]), 
@@ -376,7 +379,7 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
 
     $.Field({Static:false, Public:false}, "_o2p", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")]));
 
-    $.Field({Static:false, Public:false}, "_miList", $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")]));
+    $.Field({Static:false, Public:false}, "_miList", $jsilcore.TypeRef("System.Array", [$asm0D.TypeRef("System.Reflection.MemberInfo")]));
 
     $.Field({Static:false, Public:false}, "_oList", $jsilcore.TypeRef("System.Array", [$.Object]));
 
@@ -391,14 +394,14 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_miList[0].Name}...{_miList[_miList.Length-1].Name}"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_miList[0].Name}...{_miList[_miList.Length-1].Name}"]; });
 
 })();
 
 /* delegate Fusee.Xirkit.ChainedMemberAccessor`2+PrePost */ 
 
 JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin", "TObj"], 
-  JSIL.MethodSignature.Action($asm14.TypeRef("System.Int32")));
+  JSIL.MethodSignature.Action($asm0D.TypeRef("System.Int32")));
 
 /* class Fusee.Xirkit.ChannelBase */ 
 
@@ -413,7 +416,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.ChannelBase", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -451,19 +454,19 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
     return ($T00 = JSIL.Memoize($asm0C.Fusee.Xirkit.ChannelBase)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Delegate)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Delegate)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm11.System.Linq.Enumerable)) ();
@@ -474,7 +477,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
 
 
   function Channel$b1__ctor$00 (timeChanged, lerpFunc) {
-    var $s00 = new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]), null);
+    var $s00 = new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]), null);
     this._timeline = $s00.Construct();
     this._comparer = new ($asm0C.Fusee.Xirkit.ListSort$b1.Of($thisType.TValue.get(this))) ();
     $T00().prototype._ctor.call(this);
@@ -488,7 +491,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   }; 
 
   function Channel$b1__ctor$01 (lerpFunc) {
-    var $s00 = new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]), null);
+    var $s00 = new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]), null);
     this._timeline = $s00.Construct();
     this._comparer = new ($asm0C.Fusee.Xirkit.ListSort$b1.Of($thisType.TValue.get(this))) ();
     $T00().prototype._ctor.call(this);
@@ -496,7 +499,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   }; 
 
   function Channel$b1__ctor$02 (lerpFunc, value) {
-    var $s00 = new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]), null);
+    var $s00 = new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]), null);
     this._timeline = $s00.Construct();
     this._comparer = new ($asm0C.Fusee.Xirkit.ListSort$b1.Of($thisType.TValue.get(this))) ();
     $T00().prototype._ctor.call(this);
@@ -515,27 +518,27 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   }; 
 
   function Channel$b1_AddKeyframe$03 (keyframe) {
-    var $s00 = new JSIL.MethodSignature($asm14.System.Boolean, [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]);
+    var $s00 = new JSIL.MethodSignature($asm0D.System.Boolean, [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]);
     var $s01 = new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]);
-    var $s02 = new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])])]);
+    var $s02 = new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])])]);
     var flag = $s00.Call($thisType.Of($thisType.TValue.get(this)).prototype, "ContainsKey", null, this, keyframe);
     if (flag) {
       $thisType.Of($thisType.TValue.get(this)).prototype.RemoveKeyframe.call(this, keyframe.get_Time());
     }
     $s01.CallVirtual("Add", null, this._timeline, keyframe);
-    $s02.Call($asm14.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))).prototype, "Sort", null, this._timeline, this._comparer);
+    $s02.Call($asm0D.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))).prototype, "Sort", null, this._timeline, this._comparer);
   }; 
 
   function Channel$b1_AddKeyframe$04 (time, value) {
-    var $s00 = new JSIL.MethodSignature($asm14.System.Boolean, [$asm14.System.Single]);
+    var $s00 = new JSIL.MethodSignature($asm0D.System.Boolean, [$asm0D.System.Single]);
     var $s01 = new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]);
-    var $s02 = new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])])]);
+    var $s02 = new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])])]);
     var flag = $s00.Call($thisType.Of($thisType.TValue.get(this)).prototype, "ContainsKey", null, this, time);
     if (flag) {
       $thisType.Of($thisType.TValue.get(this)).prototype.RemoveKeyframe.call(this, time);
     }
     $s01.CallVirtual("Add", null, this._timeline, new ($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))) (time, JSIL.CloneParameter($thisType.TValue.get(this), value)));
-    $s02.Call($asm14.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))).prototype, "Sort", null, this._timeline, this._comparer);
+    $s02.Call($asm0D.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))).prototype, "Sort", null, this._timeline, this._comparer);
   }; 
 
   function Channel$b1_ContainsKey$05 (keyframe) {
@@ -552,9 +555,10 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   }; 
 
   function Channel$b1_ContainsKey$06 (time) {
+    var $s00 = new JSIL.MethodSignature($asm0D.System.Boolean, [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])]);
     var $closure0 = new ($asm0C.Fusee.Xirkit.Channel$b1_$l$gc__DisplayClass20_0.Of($thisType.TValue.get(this))) ();
     $closure0.time = +time;
-    return $S00().CallStatic($T06(), "Any$b1", [$asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))], this._timeline, JSIL.UnknownMember($closure0, $asm0C.Fusee.Xirkit.Channel$b1_$l$gc__DisplayClass20_0.Of($thisType.TValue.get(this)).prototype.$lContainsKey$gb__0).LValue);
+    return $S00().CallStatic($T06(), "Any$b1", [$asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))], this._timeline, $asm0D.System.Func$b2.Of($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this)), $asm0D.System.Boolean).New($closure0, null, new JSIL.MethodPointerInfo($asm0C.Fusee.Xirkit.Channel$b1_$l$gc__DisplayClass20_0.Of($thisType.TValue.get(this)), "$lContainsKey$gb__0", $s00, false, false)));
   }; 
 
   function Channel$b1_get_Duration () {
@@ -610,14 +614,14 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   }; 
 
   function Channel$b1_RemoveKeyframe (time) {
-    var $s00 = new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])])]);
+    var $s00 = new JSIL.MethodSignature(null, [$asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$thisType.TValue.get(this)])])]);
 
     for (var i = 0; i < ((this._timeline).get_Count() | 0); i = ((i + 1) | 0)) {
       var flag = +((this._timeline).get_Item(i)).get_Time() === +time;
       if (flag) {
         (this._timeline).RemoveAt(i);
       }
-      $s00.Call($asm14.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))).prototype, "Sort", null, this._timeline, this._comparer);
+      $s00.Call($asm0D.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))).prototype, "Sort", null, this._timeline, this._comparer);
     }
   }; 
 
@@ -659,7 +663,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
       new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.Channel`1+SetChanelValue", [$.GenericParameter("TValue")])]), 
       Channel$b1_add_TimeChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "AddKeyframe", 
       new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$.GenericParameter("TValue")])]), 
@@ -700,7 +704,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
       new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.Channel`1+SetChanelValue", [$.GenericParameter("TValue")])]), 
       Channel$b1_remove_TimeChanged
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "RemoveKeyframe", 
       JSIL.MethodSignature.Action($.Single), 
@@ -713,14 +717,14 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
     );
 
     $.Field({Static:false, Public:false}, "TimeChanged", $asm0C.TypeRef("Fusee.Xirkit.Channel`1+SetChanelValue", [$.GenericParameter("TValue")]))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_timeline", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$.GenericParameter("TValue")])]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_timeline", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$.GenericParameter("TValue")])]));
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "_lerpIt", $asm0C.TypeRef("Fusee.Xirkit.Channel`1+LerpFunc", [$.GenericParameter("TValue")]));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_comparer", $asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$.GenericParameter("TValue")])]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_comparer", $asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$.GenericParameter("TValue")])]));
 
     $.Field({Static:false, Public:false}, "_value", $.GenericParameter("TValue"));
 
@@ -741,7 +745,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
 JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+LerpFunc", false, ["TValue"], 
   new JSIL.MethodSignature(new JSIL.GenericParameter("TValue", "Fusee.Xirkit.Channel`1+LerpFunc"), [
       new JSIL.GenericParameter("TValue", "Fusee.Xirkit.Channel`1+LerpFunc"), new JSIL.GenericParameter("TValue", "Fusee.Xirkit.Channel`1+LerpFunc"), 
-      $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
+      $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
     ]));
 
 /* delegate Fusee.Xirkit.Channel`1+SetChanelValue */ 
@@ -762,7 +766,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Channel`1+<>c__DisplayClass20_0", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -786,7 +790,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -795,25 +799,25 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 (function Circuit$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Node))) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.Node))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0C.Fusee.Xirkit.Node)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.NotImplementedException)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.NotImplementedException)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]), null))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.Node")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.NotImplementedException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.NotImplementedException"), [$asm0D.TypeRef("System.String")]))) ();
   };
 
 
@@ -870,7 +874,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Circuit", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -909,12 +913,12 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
     );
 
     $.Method({Static:false, Public:true }, "get_NodeList", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")])), 
       Circuit_get_NodeList
     );
 
     $.Method({Static:false, Public:true }, "get_RootList", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")])), 
       Circuit_get_RootList
     );
 
@@ -923,13 +927,13 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
       Circuit_Reset
     );
 
-    $.Field({Static:false, Public:false}, "_nodeList", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
+    $.Field({Static:false, Public:false}, "_nodeList", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
 
-    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
+    $.Field({Static:false, Public:false}, "_rootList", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
 
-    $.Property({Static:false, Public:true }, "NodeList", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
+    $.Property({Static:false, Public:true }, "NodeList", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
 
-    $.Property({Static:false, Public:true }, "RootList", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
+    $.Property({Static:false, Public:true }, "RootList", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.Node")]));
 
 
     return function (newThisType) { $thisType = newThisType; }; 
@@ -942,10 +946,13 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 (function FieldAccesssor$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
+  };
+  var $S00 = function () {
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
   };
 
 
@@ -954,7 +961,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
   }; 
 
   function FieldAccesssor$b1_Get (o) {
-    return $thisType.T.get(this).$Cast((this._fieldInfo).GetValue(o));
+    return $thisType.T.get(this).$Cast($S00().CallVirtual("GetValue", null, this._fieldInfo, o));
   }; 
 
   function FieldAccesssor$b1_Set (o, val) {
@@ -962,7 +969,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.FieldAccesssor`1", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -972,7 +979,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.FieldInfo")), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.FieldInfo")), 
       FieldAccesssor$b1__ctor
     );
 
@@ -986,7 +993,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
       FieldAccesssor$b1_Set
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_fieldInfo", $asm14.TypeRef("System.Reflection.FieldInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_fieldInfo", $asm0D.TypeRef("System.Reflection.FieldInfo"));
 
     $.ImplementInterfaces(
       /* 0 */ $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")])
@@ -995,7 +1002,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_fieldInfo.Name}"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_fieldInfo.Name}"]; });
 
 })();
 
@@ -1004,10 +1011,13 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 (function ConvertingFieldAccessor$b2$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Reflection.FieldInfo)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Reflection.FieldInfo)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
+  };
+  var $S00 = function () {
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.Object")]))) ();
   };
 
 
@@ -1018,7 +1028,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
   }; 
 
   function ConvertingFieldAccessor$b2_Get (o) {
-    return this._o2p(JSIL.CloneParameter($thisType.TObj.get(this), $thisType.TObj.get(this).$Cast((this._fieldInfo).GetValue(o))));
+    return this._o2p(JSIL.CloneParameter($thisType.TObj.get(this), $thisType.TObj.get(this).$Cast($S00().CallVirtual("GetValue", null, this._fieldInfo, o))));
   }; 
 
   function ConvertingFieldAccessor$b2_Set (o, val) {
@@ -1026,7 +1036,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.ConvertingFieldAccessor`2", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1037,7 +1047,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm14.TypeRef("System.Reflection.FieldInfo"), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
+          $asm0D.TypeRef("System.Reflection.FieldInfo"), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
           $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
         ]), 
       ConvertingFieldAccessor$b2__ctor
@@ -1053,7 +1063,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
       ConvertingFieldAccessor$b2_Set
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_fieldInfo", $asm14.TypeRef("System.Reflection.FieldInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_fieldInfo", $asm0D.TypeRef("System.Reflection.FieldInfo"));
 
     $.Field({Static:false, Public:false}, "_p2o", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
 
@@ -1066,7 +1076,7 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_fieldInfo.Name}"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_fieldInfo.Name}"]; });
 
 })();
 
@@ -1080,7 +1090,7 @@ JSIL.MakeInterface(
 /* delegate Fusee.Xirkit.ReceivedValueHandler */ 
 
 JSIL.MakeDelegate("Fusee.Xirkit.ReceivedValueHandler", true, [], 
-  new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm14.TypeRef("System.EventArgs")]));
+  new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm0D.TypeRef("System.EventArgs")]));
 
 /* interface Fusee.Xirkit.IInPin */ 
 
@@ -1089,7 +1099,7 @@ JSIL.MakeInterface(
     $.Method({}, "get_Member", JSIL.MethodSignature.Return($.String));
     $.Method({}, "add_ReceivedValue", JSIL.MethodSignature.Action($asm0C.TypeRef("Fusee.Xirkit.ReceivedValueHandler")));
     $.Method({}, "remove_ReceivedValue", JSIL.MethodSignature.Action($asm0C.TypeRef("Fusee.Xirkit.ReceivedValueHandler")));
-    $.Method({}, "GetPinType", JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")));
+    $.Method({}, "GetPinType", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")));
     $.Property({}, "Member");
   }, []);
 
@@ -1109,7 +1119,7 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0C.Fusee.Xirkit.Node)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
   };
 
 
@@ -1127,7 +1137,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Pin", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1161,7 +1171,7 @@ JSIL.MakeInterface(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{N.O}.{Member}"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{N.O}.{Member}"]; });
 
 })();
 
@@ -1173,7 +1183,7 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0C.Fusee.Xirkit.Node)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0C.Fusee.Xirkit.Pin)) ();
@@ -1182,10 +1192,10 @@ JSIL.MakeInterface(
     return ($T03 = JSIL.Memoize($asm0C.Fusee.Xirkit.ReceivedValueHandler)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Delegate)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Delegate)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.Threading.Interlocked)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.Threading.Interlocked)) ();
   };
 
 
@@ -1256,7 +1266,7 @@ JSIL.MakeInterface(
       JSIL.MethodSignature.Action($asm0C.TypeRef("Fusee.Xirkit.ReceivedValueHandler")), 
       InPin$b1_add_ReceivedValue
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "get_MemberAccessor", 
       new JSIL.MethodSignature($asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")]), null), 
@@ -1264,7 +1274,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "GetPinType", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
       InPin$b1_GetPinType
     );
 
@@ -1272,7 +1282,7 @@ JSIL.MakeInterface(
       JSIL.MethodSignature.Action($asm0C.TypeRef("Fusee.Xirkit.ReceivedValueHandler")), 
       InPin$b1_remove_ReceivedValue
     )
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "set_MemberAccessor", 
       new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")])]), 
@@ -1287,8 +1297,8 @@ JSIL.MakeInterface(
     $.Field({Static:false, Public:false}, "_memberAccessor", $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")]));
 
     $.Field({Static:false, Public:false}, "ReceivedValue", $asm0C.TypeRef("Fusee.Xirkit.ReceivedValueHandler"))
-      .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
-      .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
+      .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
+      .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm0D.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
     $.Property({Static:false, Public:true }, "MemberAccessor", $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")]));
 
@@ -1308,7 +1318,7 @@ JSIL.MakeInterface(
 
 JSIL.MakeInterface(
   "Fusee.Xirkit.IOutPin", true, [], function ($) {
-    $.Method({}, "GetPinType", JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")));
+    $.Method({}, "GetPinType", JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")));
     $.Method({}, "get_Member", JSIL.MethodSignature.Return($.String));
     $.Method({}, "Propagate", JSIL.MethodSignature.Void);
     $.Method({}, "Attach", JSIL.MethodSignature.Action($asm0C.TypeRef("Fusee.Xirkit.IInPin")));
@@ -1321,13 +1331,13 @@ JSIL.MakeInterface(
 (function Keyframe$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Math)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Math)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Double"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Int32")]))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Double"), [$asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Int32")]))) ();
   };
 
 
@@ -1353,7 +1363,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Keyframe`1", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1406,10 +1416,10 @@ JSIL.MakeInterface(
 (function Lerp$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Double)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Double)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm08.Fusee.Math.Core.float2)) ();
@@ -1424,7 +1434,7 @@ JSIL.MakeInterface(
     return ($T05 = JSIL.Memoize($asm08.Fusee.Math.Core.float4)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T06 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
 
 
@@ -1541,13 +1551,13 @@ JSIL.MakeInterface(
 (function ListSort$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
 
 
@@ -1566,7 +1576,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.ListSort`1", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1586,7 +1596,7 @@ JSIL.MakeInterface(
     );
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$.GenericParameter("TValue")])])
+      /* 0 */ $asm0D.TypeRef("System.Collections.Generic.IComparer`1", [$asm0C.TypeRef("Fusee.Xirkit.Keyframe`1", [$.GenericParameter("TValue")])])
     );
 
 
@@ -1600,22 +1610,22 @@ JSIL.MakeInterface(
 (function Node$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0C.Fusee.Xirkit.ICalculationPerformer)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.IOutPin))) ();
+    return ($T02 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.IOutPin))) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.IInPin))) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1.Of($asm0C.Fusee.Xirkit.IInPin))) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm0C.Fusee.Xirkit.IInPin, $asm14.System.Boolean))) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Collections.Generic.Dictionary$b2.Of($asm0C.Fusee.Xirkit.IInPin, $asm0D.System.Boolean))) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T05 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm0C.Fusee.Xirkit.IOutPin)) ();
@@ -1624,22 +1634,22 @@ JSIL.MakeInterface(
     return ($T07 = JSIL.Memoize($asm0C.Fusee.Xirkit.IInPin)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T08 = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T09 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.Type)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.Type)) ();
   };
   var $T0B = function () {
     return ($T0B = JSIL.Memoize($asm0C.Fusee.Xirkit.Node_$l$gc__DisplayClass12_0)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm14.System.Predicate$b1.Of($asm0C.Fusee.Xirkit.IInPin))) ();
+    return ($T0C = JSIL.Memoize($asm0D.System.Predicate$b1.Of($asm0C.Fusee.Xirkit.IInPin))) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.Exception)) ();
+    return ($T0D = JSIL.Memoize($asm0D.System.Exception)) ();
   };
   var $T0E = function () {
     return ($T0E = JSIL.Memoize($asm0C.Fusee.Xirkit.PinFactory)) ();
@@ -1651,34 +1661,34 @@ JSIL.MakeInterface(
     return ($T10 = JSIL.Memoize($asm0C.Fusee.Xirkit.Node_$l$gc__DisplayClass11_0)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm14.System.Predicate$b1.Of($asm0C.Fusee.Xirkit.IOutPin))) ();
+    return ($T11 = JSIL.Memoize($asm0D.System.Predicate$b1.Of($asm0C.Fusee.Xirkit.IOutPin))) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm14.System.EventArgs)) ();
+    return ($T12 = JSIL.Memoize($asm0D.System.EventArgs)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]), null))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]), null))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm14.TypeRef("System.Boolean")]), null))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm0D.TypeRef("System.Boolean")]), null))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Exception"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0D.TypeRef("System.Exception"), [$asm0D.TypeRef("System.String")]))) ();
   };
   var $S05 = function () {
     return ($S05 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm14.TypeRef("System.EventArgs")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm0D.TypeRef("System.EventArgs")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Boolean"), [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]))) ();
+    return ($S07 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]))) ();
   };
   var $S08 = function () {
     return ($S08 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]))) ();
@@ -1832,7 +1842,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Node", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -1859,7 +1869,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true }, "get_InPins", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")])), 
       Node_get_InPins
     );
 
@@ -1869,12 +1879,12 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true }, "get_OutPins", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")])), 
       Node_get_OutPins
     );
 
     $.Method({Static:false, Public:false}, "GetInPin", 
-      new JSIL.MethodSignature($asm0C.TypeRef("Fusee.Xirkit.IInPin"), [$.String, $asm14.TypeRef("System.Type")]), 
+      new JSIL.MethodSignature($asm0C.TypeRef("Fusee.Xirkit.IInPin"), [$.String, $asm0D.TypeRef("System.Type")]), 
       Node_GetInPin
     );
 
@@ -1884,7 +1894,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "OnReceivedValue", 
-      new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm14.TypeRef("System.EventArgs")]), 
+      new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $asm0D.TypeRef("System.EventArgs")]), 
       Node_OnReceivedValue
     );
 
@@ -1908,11 +1918,11 @@ JSIL.MakeInterface(
       Node_set_O
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_outPinList", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_outPinList", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_inPinList", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_inPinList", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]));
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_inPinActualList", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $.Boolean]));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_inPinActualList", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0C.TypeRef("Fusee.Xirkit.IInPin"), $.Boolean]));
 
     $.Field({Static:false, Public:false}, "_o", $.Object);
 
@@ -1920,16 +1930,16 @@ JSIL.MakeInterface(
 
     $.Property({Static:false, Public:true }, "O", $.Object);
 
-    $.Property({Static:false, Public:true }, "OutPins", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]));
+    $.Property({Static:false, Public:true }, "OutPins", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IOutPin")]));
 
-    $.Property({Static:false, Public:true }, "InPins", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]));
+    $.Property({Static:false, Public:true }, "InPins", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]));
 
     $.Property({Static:false, Public:true }, "AllPinsActual", $.Boolean);
 
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{O}"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{O}"]; });
 
 })();
 
@@ -1941,7 +1951,7 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0C.Fusee.Xirkit.IOutPin)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0C.Fusee.Xirkit.IOutPin.get_Member)) ();
@@ -1956,7 +1966,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Node+<>c__DisplayClass11_0", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -1979,7 +1989,7 @@ JSIL.MakeInterface(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -1991,7 +2001,7 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0C.Fusee.Xirkit.IInPin)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0C.Fusee.Xirkit.IInPin.get_Member)) ();
@@ -2006,7 +2016,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.Node+<>c__DisplayClass12_0", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -2029,7 +2039,7 @@ JSIL.MakeInterface(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -2041,7 +2051,7 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm0C.Fusee.Xirkit.Node)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.String)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0C.Fusee.Xirkit.Pin)) ();
@@ -2050,12 +2060,12 @@ JSIL.MakeInterface(
     return ($T03 = JSIL.Memoize($asm0C.Fusee.Xirkit.IInPin)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T04 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
 
 
   function OutPin$b1__ctor (n, member, memberAccessor) {
-    var $s00 = new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.InPin`1", [$thisType.T.get(this)])]), null);
+    var $s00 = new JSIL.ConstructorSignature($asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.InPin`1", [$thisType.T.get(this)])]), null);
     $T02().prototype._ctor.call(this, n, member);
     this._links = $s00.Construct();
     this._memberAccessor = memberAccessor;
@@ -2131,7 +2141,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true }, "get_InPins", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")])), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")])), 
       OutPin$b1_get_InPins
     );
 
@@ -2141,7 +2151,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true , Virtual:true }, "GetPinType", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Type")), 
+      JSIL.MethodSignature.Return($asm0D.TypeRef("System.Type")), 
       OutPin$b1_GetPinType
     );
 
@@ -2160,13 +2170,13 @@ JSIL.MakeInterface(
       OutPin$b1_set_MemberAccessor
     );
 
-    $.Field({Static:false, Public:false}, "_links", $asm14.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.InPin`1", [$.GenericParameter("T")])]));
+    $.Field({Static:false, Public:false}, "_links", $asm0D.TypeRef("System.Collections.Generic.List`1", [$asm0C.TypeRef("Fusee.Xirkit.InPin`1", [$.GenericParameter("T")])]));
 
     $.Field({Static:false, Public:false}, "_memberAccessor", $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")]));
 
     $.Property({Static:false, Public:true }, "MemberAccessor", $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")]));
 
-    $.Property({Static:false, Public:true }, "InPins", $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]));
+    $.Property({Static:false, Public:true }, "InPins", $asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm0C.TypeRef("Fusee.Xirkit.IInPin")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm0C.TypeRef("Fusee.Xirkit.IOutPin")
@@ -2193,7 +2203,7 @@ JSIL.MakeInterface(
     $.ExternalMethod({Static:true , Public:true }, "CreateInPin", 
       new JSIL.MethodSignature($asm0C.TypeRef("Fusee.Xirkit.IInPin"), [
           $asm0C.TypeRef("Fusee.Xirkit.Node"), $.String, 
-          $asm14.TypeRef("System.Type")
+          $asm0D.TypeRef("System.Type")
         ])
     );
 
@@ -2209,7 +2219,7 @@ JSIL.MakeInterface(
       new JSIL.MethodSignature(null, [$asm0C.TypeRef("Fusee.Xirkit.Node"), $asm0C.TypeRef("Fusee.Xirkit.IOutPin")])
     );
 
-    $.Field({Static:true , Public:false}, "_convMap", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Type"), $asm14.TypeRef("System.Delegate")])]), null);
+    $.Field({Static:true , Public:false}, "_convMap", $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Collections.Generic.Dictionary`2", [$asm0D.TypeRef("System.Type"), $asm0D.TypeRef("System.Delegate")])]), null);
 
 
     function PinFactory__cctor () {
@@ -2232,7 +2242,7 @@ JSIL.MakeInterface(
 (function $l$gc$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Int32)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm08.Fusee.Math.Core.float3)) ();
@@ -2241,7 +2251,7 @@ JSIL.MakeInterface(
     return ($T02 = JSIL.Memoize($asm08.Fusee.Math.Core.float2)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T03 = JSIL.Memoize($asm0D.System.Object)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm08.Fusee.Math.Core.double2)) ();
@@ -2262,69 +2272,69 @@ JSIL.MakeInterface(
     return ($T09 = JSIL.Memoize($asm08.Fusee.Math.Core.float4x4)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T0A = JSIL.Memoize($asm0D.System.Single)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.Double)) ();
+    return ($T0B = JSIL.Memoize($asm0D.System.Double)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T0C = JSIL.Memoize($asm0D.System.Boolean)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.String)) ();
+    return ($T0D = JSIL.Memoize($asm0D.System.String)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single")
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")]))) ();
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double")
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double")
       ]))) ();
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")
       ]))) ();
   };
   var $S04 = function () {
     return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
-        $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double"), 
+        $asm0D.TypeRef("System.Double"), $asm0D.TypeRef("System.Double")
       ]))) ();
   };
   var $S05 = function () {
     return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
       ]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")]))) ();
   };
   var $S07 = function () {
     return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
-        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single"), 
+        $asm0D.TypeRef("System.Single"), $asm0D.TypeRef("System.Single")
       ]))) ();
   };
 
@@ -3053,7 +3063,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.PinFactory+<>c", 
       IsPublic: false, 
       IsReferenceType: true, 
@@ -4208,7 +4218,7 @@ JSIL.MakeInterface(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
+    .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
 })();
 
@@ -4217,10 +4227,10 @@ JSIL.MakeInterface(
 (function PropertyAccessor$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
   };
 
 
@@ -4237,7 +4247,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.PropertyAccessor`1", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -4247,7 +4257,7 @@ JSIL.MakeInterface(
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Reflection.PropertyInfo")), 
+      JSIL.MethodSignature.Action($asm0D.TypeRef("System.Reflection.PropertyInfo")), 
       PropertyAccessor$b1__ctor
     );
 
@@ -4261,7 +4271,7 @@ JSIL.MakeInterface(
       PropertyAccessor$b1_Set
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_propertyInfo", $asm14.TypeRef("System.Reflection.PropertyInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_propertyInfo", $asm0D.TypeRef("System.Reflection.PropertyInfo"));
 
     $.ImplementInterfaces(
       /* 0 */ $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("T")])
@@ -4270,7 +4280,7 @@ JSIL.MakeInterface(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_propertyInfo.Name}"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_propertyInfo.Name}"]; });
 
 })();
 
@@ -4279,10 +4289,10 @@ JSIL.MakeInterface(
 (function ConvertingPropertyAccessor$b2$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Reflection.PropertyInfo)) ();
+    return ($T00 = JSIL.Memoize($asm0D.System.Reflection.PropertyInfo)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Object)) ();
+    return ($T01 = JSIL.Memoize($asm0D.System.Object)) ();
   };
 
 
@@ -4301,7 +4311,7 @@ JSIL.MakeInterface(
   }; 
 
   JSIL.MakeType({
-      BaseType: $asm14.TypeRef("System.Object"), 
+      BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.Xirkit.ConvertingPropertyAccessor`2", 
       IsPublic: true, 
       IsReferenceType: true, 
@@ -4312,7 +4322,7 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm14.TypeRef("System.Reflection.PropertyInfo"), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
+          $asm0D.TypeRef("System.Reflection.PropertyInfo"), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
           $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
         ]), 
       ConvertingPropertyAccessor$b2__ctor
@@ -4328,7 +4338,7 @@ JSIL.MakeInterface(
       ConvertingPropertyAccessor$b2_Set
     );
 
-    $.Field({Static:false, Public:false, ReadOnly:true }, "_propertyInfo", $asm14.TypeRef("System.Reflection.PropertyInfo"));
+    $.Field({Static:false, Public:false, ReadOnly:true }, "_propertyInfo", $asm0D.TypeRef("System.Reflection.PropertyInfo"));
 
     $.Field({Static:false, Public:false}, "_p2o", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
 
@@ -4341,7 +4351,7 @@ JSIL.MakeInterface(
 
     return function (newThisType) { $thisType = newThisType; }; 
   })
-    .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_propertyInfo.Name}"]; });
+    .Attribute($asm0D.TypeRef("System.Diagnostics.DebuggerDisplayAttribute"), function () { return ["{_propertyInfo.Name}"]; });
 
 })();
 

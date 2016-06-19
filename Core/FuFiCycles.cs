@@ -18,17 +18,16 @@ namespace Fusee.FuFiCycles.Core {
 		private List<Cycle> cycles = new List<Cycle>();
 
 		// angle variables
-		private static float _angleHorz = 0, _angleVert = -M.PiOver6 * 0.2f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
+		public static float _angleHorz = 0, _angleVert = -M.PiOver6 * 0.2f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
 		private static float2 _offset;
 		private static float2 _offsetInit;
 
-		private const float RotationSpeed = 7;
-		private const float Damping = 0.8f;
+		public const float RotationSpeed = 7;
+		private const float Damping = 8f;
 
 		private SceneContainer _scene;
 		private float4x4 _sceneScale;
 		private float4x4 _projection;
-		private bool _twoTouchRepeated;
 
 		private bool _keys;
 
@@ -70,17 +69,19 @@ namespace Fusee.FuFiCycles.Core {
 			if (Keyboard.LeftRightAxis != 0 || Keyboard.UpDownAxis != 0) {
 				_keys = true;
 			}
-
-			var curDamp = (float)System.Math.Exp(-Damping * DeltaTime);
+			
+			var curDamp = (float)System.Math.Exp(0.1f);
 			
 			if (_keys) {
+				Debug.WriteLine(Keyboard.LeftRightAxis);
 				_angleVelHorz = -RotationSpeed * Keyboard.LeftRightAxis * 0.002f;
 				_angleVelVert = -RotationSpeed * Keyboard.UpDownAxis * 0.002f;
-			} else {
+			}/*
+			else {
 				_angleVelHorz *= curDamp;
 				_angleVelVert *= curDamp;
-			}
-
+			}*/
+			
 			// zoom
 			_zoom += _zoomVel;
 			// Limit zoom

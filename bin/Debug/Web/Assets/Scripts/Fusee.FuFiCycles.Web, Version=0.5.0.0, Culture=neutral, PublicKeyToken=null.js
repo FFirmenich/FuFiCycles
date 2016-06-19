@@ -173,9 +173,9 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Web");
     return ($T0A = JSIL.Memoize($asm00.Fusee.Base.Common.FileMode)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm14.TypeRef("System.Object"), [
-        $asm14.TypeRef("System.IO.Stream"), $asm14.TypeRef("System.Object"), 
-        $asm14.TypeRef("System.Type")
+    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [
+        $asm0D.TypeRef("System.IO.Stream"), $asm0D.TypeRef("System.Object"), 
+        $asm0D.TypeRef("System.Type")
       ]))) ();
   };
 

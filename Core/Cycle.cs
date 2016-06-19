@@ -40,6 +40,8 @@ namespace Fusee.FuFiCycles.Core {
 		private bool aPressed = false;
 		private bool dPressed = false;
 
+		private const float RotationSpeed = 7;
+
 		public Cycle (int id) {
 			setPlayerId(id);
 
@@ -95,6 +97,10 @@ namespace Fusee.FuFiCycles.Core {
 
 		public TransformComponent getCycle() {
 			return this.cycle;
+		}
+
+		public InputKeys getInputKeys() {
+			return this.input_keys;
 		}
 
 		//Set-Methods
@@ -156,7 +162,9 @@ namespace Fusee.FuFiCycles.Core {
 			float cycleYaw = _cycleTransform.Rotation.y;
 			if (Keyboard.GetKey(input_keys.getKeyLeft())) {
 				if (aPressed == false) {
-					cycleYaw = cycleYaw - M.PiOver2;
+					FuFiCycles._angleHorz += M.PiOver2;
+					//FuFiCycles._angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
+					cycleYaw -= M.PiOver2;
 					directionChanged = true;
 				}
 				aPressed = true;
@@ -165,13 +173,18 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			if (Keyboard.GetKey(input_keys.getKeyRight())) {
 				if (dPressed == false) {
-					cycleYaw = cycleYaw + M.PiOver2;
+					FuFiCycles._angleHorz -= M.PiOver2;
+					//FuFiCycles._angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
+					cycleYaw += M.PiOver2;
 					directionChanged = true;
 				}
 				dPressed = true;
 			} else {
 				dPressed = false;
 			}
+
+			if (dPressed) { 
+}
 			cycleYaw = FuFiCycles.NormRot(cycleYaw);
 			setPosition(_cycleTransform.Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed());
 			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
