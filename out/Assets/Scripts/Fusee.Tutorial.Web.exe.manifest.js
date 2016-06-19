@@ -10,8 +10,8 @@ var $asm05 = JSIL.GetAssembly("Fusee.Engine.Imp.Graphics.Web, Version=0.0.0.0, C
 var $asm06 = JSIL.GetAssembly("Fusee.Math.Core, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null");
 var $asm07 = JSIL.GetAssembly("Fusee.Serialization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
 var $asm08 = JSIL.GetAssembly("Fusee.SerializationSerializer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
-var $asm09 = JSIL.GetAssembly("Fusee.Tutorial.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
-var $asm0A = JSIL.GetAssembly("Fusee.Tutorial.Web, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null");
+var $asm09 = JSIL.GetAssembly("Fusee.FuFiCycles.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
+var $asm0A = JSIL.GetAssembly("Fusee.FuFiCycles.Web, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null");
 var $asm0B = JSIL.GetAssembly("Fusee.Xene, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
 var $asm0C = JSIL.GetAssembly("Fusee.Xirkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
 var $asm0D = JSIL.GetAssembly("mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
@@ -26,11 +26,11 @@ var $asm15 = JSIL.GetAssembly("System.Security, Version=4.0.0.0, Culture=neutral
 var $asm16 = JSIL.GetAssembly("System.Data.SqlXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
 
 if (typeof (contentManifest) !== "object") { JSIL.GlobalNamespace.contentManifest = {}; };
-contentManifest["Fusee.Tutorial.Web.exe"] = [
-    ["Script", "Fusee.Tutorial.Web, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 10154 }],
+contentManifest["Fusee.FuFiCycles.Web.exe"] = [
+    ["Script", "Fusee.FuFiCycles.Web, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 10154 }],
     ["Script", "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.js", { "sizeBytes": 9206491 }],
     ["Script", "Fusee.Base.Imp.Web, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 17245 }],
-    ["Script", "Fusee.Tutorial.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 41180 }],
+    ["Script", "Fusee.FuFiCycles.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 41180 }],
     ["Script", "Fusee.Base.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 140256 }],
     ["Script", "Fusee.SerializationSerializer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 142591 }],
     ["Script", "Fusee.Base.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 13183 }],

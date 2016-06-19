@@ -53,10 +53,10 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
+    return ($T02 = JSIL.Memoize($asm08.Fusee.Math.Core.float4)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
+    return ($T03 = JSIL.Memoize($asm08.Fusee.Math.Core.float3)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm14.System.UInt32)) ();
@@ -119,13 +119,13 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm00.TypeRef("Fusee.Base.Common.ColorUint"), [$asm14.TypeRef("System.UInt32")]))) ();
   };
   var $S08 = function () {
-    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
+    return ($S08 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
         $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S09 = function () {
-    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [
+    return ($S09 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
       ]))) ();
@@ -851,12 +851,12 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     );
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.float4")), 
+      JSIL.MethodSignature.Action($asm08.TypeRef("Fusee.Math.Core.float4")), 
       ColorUint__ctor$04
     );
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$asm06.TypeRef("Fusee.Math.Core.float3"), $.Single]), 
+      new JSIL.MethodSignature(null, [$asm08.TypeRef("Fusee.Math.Core.float3"), $.Single]), 
       ColorUint__ctor$05
     );
 
@@ -1074,22 +1074,22 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     );
 
     $.Method({Static:true , Public:true }, "op_Explicit", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$.Type]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$.Type]), 
       ColorUint_op_Explicit$22
     );
 
     $.Method({Static:true , Public:true }, "op_Explicit", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$.Type]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$.Type]), 
       ColorUint_op_Explicit$23
     );
 
     $.Method({Static:true , Public:true }, "op_Explicit", 
-      new JSIL.MethodSignature($.Type, [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($.Type, [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       ColorUint_op_Explicit$24
     );
 
     $.Method({Static:true , Public:true }, "op_Explicit", 
-      new JSIL.MethodSignature($.Type, [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($.Type, [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       ColorUint_op_Explicit$25
     );
 
@@ -1216,12 +1216,12 @@ JSIL.DeclareNamespace("Fusee.Base.Common");
     );
 
     $.Method({Static:false, Public:true }, "Tofloat3", 
-      JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.float3")), 
+      JSIL.MethodSignature.Return($asm08.TypeRef("Fusee.Math.Core.float3")), 
       ColorUint_Tofloat3
     );
 
     $.Method({Static:false, Public:true }, "Tofloat4", 
-      JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.float4")), 
+      JSIL.MethodSignature.Return($asm08.TypeRef("Fusee.Math.Core.float4")), 
       ColorUint_Tofloat4
     );
 
@@ -2202,7 +2202,7 @@ JSIL.MakeEnum(
     return ($T0D = JSIL.Memoize($asm14.System.ArgumentNullException)) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm06.Fusee.Math.Core.M)) ();
+    return ($T0E = JSIL.Memoize($asm08.Fusee.Math.Core.M)) ();
   };
   var $T0F = function () {
     return ($T0F = JSIL.Memoize($asm14.System.Buffer)) ();

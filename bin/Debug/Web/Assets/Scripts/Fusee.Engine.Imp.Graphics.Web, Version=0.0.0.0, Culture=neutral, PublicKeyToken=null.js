@@ -1198,7 +1198,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($T14 = JSIL.Memoize($asm03.Fusee.Engine.Common.ButtonValueChangedArgs)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm06.Fusee.Math.Core.float2)) ();
+    return ($T15 = JSIL.Memoize($asm08.Fusee.Math.Core.float2)) ();
   };
   var $T16 = function () {
     return ($T16 = JSIL.Memoize($asm03.Fusee.Engine.Common.AxisValueChangedArgs)) ();
@@ -1549,7 +1549,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.Method({Static:false, Public:false}, "OnCanvasMouseMove", 
-      JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.float2")), 
+      JSIL.MethodSignature.Action($asm08.TypeRef("Fusee.Math.Core.float2")), 
       MouseDeviceImp_OnCanvasMouseMove
     );
 
@@ -3298,14 +3298,14 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "DebugLine", 
       new JSIL.MethodSignature(null, [
-          $asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.float3"), 
-          $asm06.TypeRef("Fusee.Math.Core.float4")
+          $asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.float3"), 
+          $asm08.TypeRef("Fusee.Math.Core.float4")
         ])
     );
 
     $.ExternalMethod({Static:false, Public:true }, "FixTextKerning", 
-      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float3")]), [
-          $asm03.TypeRef("Fusee.Engine.Common.IFont"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float3")]), [
+          $asm03.TypeRef("Fusee.Engine.Common.IFont"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
           $.String, $.Single
         ])
     );
@@ -3369,11 +3369,11 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetBoneIndices", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float4")])])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float4")])])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetBoneWeights", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float4")])])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float4")])])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetColors", 
@@ -3381,7 +3381,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetNormals", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float3")])])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float3")])])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetRenderState", 
@@ -3401,27 +3401,27 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetShaderParamMtx4fArray", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float4x4")])])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float4x4")])])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetShaderParamfloat4x4", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm06.TypeRef("Fusee.Math.Core.float4x4")])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm08.TypeRef("Fusee.Math.Core.float4x4")])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetShaderParam4fArray", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float4")])])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float4")])])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetShaderParam4f", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm06.TypeRef("Fusee.Math.Core.float4")])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm08.TypeRef("Fusee.Math.Core.float4")])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetShaderParam3f", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm06.TypeRef("Fusee.Math.Core.float3")])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm08.TypeRef("Fusee.Math.Core.float3")])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetShaderParam2f", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm06.TypeRef("Fusee.Math.Core.float2")])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IShaderParam"), $asm08.TypeRef("Fusee.Math.Core.float2")])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetShaderParamTexture", 
@@ -3433,11 +3433,11 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetUVs", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float2")])])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float2")])])
     );
 
     $.ExternalMethod({Static:false, Public:true , Virtual:true }, "SetVertices", 
-      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm06.TypeRef("Fusee.Math.Core.float3")])])
+      new JSIL.MethodSignature(null, [$asm03.TypeRef("Fusee.Engine.Common.IMeshImp"), $jsilcore.TypeRef("System.Array", [$asm08.TypeRef("Fusee.Math.Core.float3")])])
     );
 
     $.ExternalMethod({Static:false, Public:true }, "TextOnImage", 
@@ -3468,7 +3468,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
         ])
     );
 
-    $.Field({Static:false, Public:false}, "RenderContextImp$ClearColor$value", $asm06.TypeRef("Fusee.Math.Core.float4"))
+    $.Field({Static:false, Public:false}, "RenderContextImp$ClearColor$value", $asm08.TypeRef("Fusee.Math.Core.float4"))
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
@@ -3476,7 +3476,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.ExternalProperty({Static:false, Public:true , Virtual:true }, "ClearColor", $asm06.TypeRef("Fusee.Math.Core.float4"));
+    $.ExternalProperty({Static:false, Public:true , Virtual:true }, "ClearColor", $asm08.TypeRef("Fusee.Math.Core.float4"));
 
     $.ExternalProperty({Static:false, Public:true , Virtual:true }, "ClearDepth", $.Single);
 

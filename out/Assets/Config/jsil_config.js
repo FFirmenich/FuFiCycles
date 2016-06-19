@@ -11,8 +11,8 @@ var jsilConfig = {
 	premultipliedAlpha: true,
 
 	manifests: [
-		"Fusee.Tutorial.Web.exe",
-		"Fusee.Tutorial.Web.contentproj",
+		"Fusee.FuFiCycles.Web.exe",
+		"Fusee.FuFiCycles.Web.contentproj",
 	],
 
 	updateProgressBar: function (prefix, suffix, bytesLoaded, bytesTotal) {

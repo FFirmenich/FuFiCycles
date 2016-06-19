@@ -332,8 +332,8 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")]), $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
-          $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
+          $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")]), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
+          $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
         ]), 
       ChainedMemberAccessor$b2__ctor
     );
@@ -372,9 +372,9 @@ JSIL.DeclareNamespace("Fusee.Xirkit");
       ChainedMemberAccessor$b2_Set
     );
 
-    $.Field({Static:false, Public:false}, "_p2o", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
+    $.Field({Static:false, Public:false}, "_p2o", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
 
-    $.Field({Static:false, Public:false}, "_o2p", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")]));
+    $.Field({Static:false, Public:false}, "_o2p", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")]));
 
     $.Field({Static:false, Public:false}, "_miList", $jsilcore.TypeRef("System.Array", [$asm14.TypeRef("System.Reflection.MemberInfo")]));
 
@@ -1037,8 +1037,8 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm14.TypeRef("System.Reflection.FieldInfo"), $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
-          $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
+          $asm14.TypeRef("System.Reflection.FieldInfo"), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
+          $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
         ]), 
       ConvertingFieldAccessor$b2__ctor
     );
@@ -1055,9 +1055,9 @@ JSIL.MakeDelegate("Fusee.Xirkit.Channel`1+SetChanelValue", false, ["TValue"],
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "_fieldInfo", $asm14.TypeRef("System.Reflection.FieldInfo"));
 
-    $.Field({Static:false, Public:false}, "_p2o", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
+    $.Field({Static:false, Public:false}, "_p2o", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
 
-    $.Field({Static:false, Public:false}, "_o2p", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")]));
+    $.Field({Static:false, Public:false}, "_o2p", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("TPin")])
@@ -1412,16 +1412,16 @@ JSIL.MakeInterface(
     return ($T01 = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.float2)) ();
+    return ($T02 = JSIL.Memoize($asm08.Fusee.Math.Core.float2)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
+    return ($T03 = JSIL.Memoize($asm08.Fusee.Math.Core.float3)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm06.Fusee.Math.Core.Quaternion)) ();
+    return ($T04 = JSIL.Memoize($asm08.Fusee.Math.Core.Quaternion)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
+    return ($T05 = JSIL.Memoize($asm08.Fusee.Math.Core.float4)) ();
   };
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm14.System.Int32)) ();
@@ -1483,32 +1483,32 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:true , Public:true }, "Float2Lerp", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [
-          $asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.float2"), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [
+          $asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.float2"), 
           $.Single, $.Single
         ]), 
       Lerp_Float2Lerp
     );
 
     $.Method({Static:true , Public:true }, "Float3Lerp", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-          $asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.float3"), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [
+          $asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.float3"), 
           $.Single, $.Single
         ]), 
       Lerp_Float3Lerp
     );
 
     $.Method({Static:true , Public:true }, "Float3QuaternionSlerp", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
-          $asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.float3"), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [
+          $asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.float3"), 
           $.Single, $.Single
         ]), 
       Lerp_Float3QuaternionSlerp
     );
 
     $.Method({Static:true , Public:true }, "Float4Lerp", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [
-          $asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.float4"), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [
+          $asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.float4"), 
           $.Single, $.Single
         ]), 
       Lerp_Float4Lerp
@@ -2235,31 +2235,31 @@ JSIL.MakeInterface(
     return ($T00 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm06.Fusee.Math.Core.float3)) ();
+    return ($T01 = JSIL.Memoize($asm08.Fusee.Math.Core.float3)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.float2)) ();
+    return ($T02 = JSIL.Memoize($asm08.Fusee.Math.Core.float2)) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm14.System.Object)) ();
   };
   var $T04 = function () {
-    return ($T04 = JSIL.Memoize($asm06.Fusee.Math.Core.double2)) ();
+    return ($T04 = JSIL.Memoize($asm08.Fusee.Math.Core.double2)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm06.Fusee.Math.Core.double3)) ();
+    return ($T05 = JSIL.Memoize($asm08.Fusee.Math.Core.double3)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm06.Fusee.Math.Core.double4)) ();
+    return ($T06 = JSIL.Memoize($asm08.Fusee.Math.Core.double4)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm06.Fusee.Math.Core.double4x4)) ();
+    return ($T07 = JSIL.Memoize($asm08.Fusee.Math.Core.double4x4)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm06.Fusee.Math.Core.float4)) ();
+    return ($T08 = JSIL.Memoize($asm08.Fusee.Math.Core.float4)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm06.Fusee.Math.Core.float4x4)) ();
+    return ($T09 = JSIL.Memoize($asm08.Fusee.Math.Core.float4x4)) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm14.System.Single)) ();
@@ -2274,28 +2274,28 @@ JSIL.MakeInterface(
     return ($T0D = JSIL.Memoize($asm14.System.String)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
         $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [
+    return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [
         $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
         $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [
         $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
         $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double")
       ]))) ();
   };
   var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [
         $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
         $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
         $asm14.TypeRef("System.Double"), $asm14.TypeRef("System.Double"), 
@@ -2307,16 +2307,16 @@ JSIL.MakeInterface(
       ]))) ();
   };
   var $S05 = function () {
-    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [
+    return ($S05 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
       ]))) ();
   };
   var $S06 = function () {
-    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")]))) ();
+    return ($S06 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")]))) ();
   };
   var $S07 = function () {
-    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [
+    return ($S07 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
@@ -3077,167 +3077,167 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_10", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_10
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_100", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_100
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_101", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_101
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_102", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_102
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_103", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_103
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_104", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_104
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_105", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_105
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_106", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_106
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_107", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_107
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_108", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_108
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_109", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_109
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_11", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_11
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_110", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_110
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_111", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_111
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_112", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_112
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_113", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_113
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_114", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_114
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_115", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_115
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_116", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_116
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_117", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_117
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_118", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_118
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_119", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_119
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_12", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_12
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_120", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_120
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_121", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.float3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.float3")]), 
       $l$gc_$lInitConvMap$gb__9_121
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_122", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_122
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_123", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_123
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_124", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_124
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_125", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_125
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_126", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_126
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_127", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_127
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_128", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_128
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_129", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_129
     );
 
@@ -3247,52 +3247,52 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_130", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_130
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_131", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_131
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_132", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_132
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_133", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_133
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_134", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.float4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.float4")]), 
       $l$gc_$lInitConvMap$gb__9_134
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_135", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_135
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_136", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_136
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_137", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_137
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_138", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_138
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_139", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_139
     );
 
@@ -3302,52 +3302,52 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_140", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_140
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_141", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_141
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_142", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_142
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_143", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_143
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_144", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_144
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_145", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_145
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_146", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_146
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_147", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.float4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.float4x4")]), 
       $l$gc_$lInitConvMap$gb__9_147
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_148", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_148
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_149", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_149
     );
 
@@ -3357,52 +3357,52 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_150", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_150
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_151", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_151
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_152", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_152
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_153", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_153
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_154", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_154
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_155", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_155
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_156", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_156
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_157", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_157
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_158", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_158
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_159", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_159
     );
 
@@ -3412,7 +3412,7 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_160", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.double4x4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.double4x4")]), 
       $l$gc_$lInitConvMap$gb__9_160
     );
 
@@ -3422,12 +3422,12 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_18", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_18
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_19", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_19
     );
 
@@ -3437,32 +3437,32 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_20", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_20
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_21", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_21
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_22", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_22
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_23", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_23
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_24", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_24
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_25", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$.Single]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$.Single]), 
       $l$gc_$lInitConvMap$gb__9_25
     );
 
@@ -3497,42 +3497,42 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_31", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_31
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_32", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_32
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_33", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_33
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_34", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_34
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_35", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_35
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_36", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_36
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_37", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_37
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_38", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$.Double]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$.Double]), 
       $l$gc_$lInitConvMap$gb__9_38
     );
 
@@ -3567,47 +3567,47 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_44", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_44
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_45", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_45
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_46", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_46
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_47", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_47
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_48", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_48
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_49", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_49
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_5", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_5
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_50", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_50
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_51", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$.Boolean]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$.Boolean]), 
       $l$gc_$lInitConvMap$gb__9_51
     );
 
@@ -3637,563 +3637,563 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_57", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_57
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_58", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_58
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_59", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_59
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_6", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_6
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_60", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_60
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_61", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_61
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_62", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_62
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_63", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_63
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_64", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_64
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_65", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_65
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_66", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_66
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_67", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_67
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_68", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_68
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_69", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.double2")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.double2")]), 
       $l$gc_$lInitConvMap$gb__9_69
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_7", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_7
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_70", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_70
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_71", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_71
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_72", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_72
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_73", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_73
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_74", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_74
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_75", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_75
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_76", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_76
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_77", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_77
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_78", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_78
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_79", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_79
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_8", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_8
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_80", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_80
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_81", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_81
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_82", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.double3")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.double3")]), 
       $l$gc_$lInitConvMap$gb__9_82
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_83", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_83
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_84", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_84
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_85", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_85
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_86", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_86
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_87", 
-      new JSIL.MethodSignature($.String, [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($.String, [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_87
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_88", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double2"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double2"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_88
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_89", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double3"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double3"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_89
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_9", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$.Int32]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$.Int32]), 
       $l$gc_$lInitConvMap$gb__9_9
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_90", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_90
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_91", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_91
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_92", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float2"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float2"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_92
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_93", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float3"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_93
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_94", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_94
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_95", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.double4x4"), [$asm06.TypeRef("Fusee.Math.Core.double4")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.double4x4"), [$asm08.TypeRef("Fusee.Math.Core.double4")]), 
       $l$gc_$lInitConvMap$gb__9_95
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_96", 
-      new JSIL.MethodSignature($.Int32, [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($.Int32, [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_96
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_97", 
-      new JSIL.MethodSignature($.Single, [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($.Single, [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_97
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_98", 
-      new JSIL.MethodSignature($.Double, [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($.Double, [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_98
     );
 
     $.Method({Static:false, Public:false}, "$lInitConvMap$gb__9_99", 
-      new JSIL.MethodSignature($.Boolean, [$asm06.TypeRef("Fusee.Math.Core.float2")]), 
+      new JSIL.MethodSignature($.Boolean, [$asm08.TypeRef("Fusee.Math.Core.float2")]), 
       $l$gc_$lInitConvMap$gb__9_99
     );
 
     $.Field({Static:true , Public:true , ReadOnly:true }, "$l$g9", $.Type);
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_0", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_0", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_1", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_1", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_2", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_2", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_3", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_3", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_4", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_4", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_5", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_5", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_6", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_6", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_7", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_7", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_8", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_8", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_9", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_9", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_10", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_10", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_11", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_11", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_12", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_12", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Int32, $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_13", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_13", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_14", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_14", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_15", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_15", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_16", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_16", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_17", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_17", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_18", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_18", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_19", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_19", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_20", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_20", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_21", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_21", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_22", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_22", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_23", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_23", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_24", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_24", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_25", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_25", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Single, $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_26", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_26", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_27", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_27", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_28", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_28", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_29", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_29", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_30", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_30", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_31", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_31", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_32", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_32", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_33", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_33", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_34", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_34", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_35", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_35", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_36", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_36", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_37", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_37", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_38", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_38", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Double, $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_39", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_39", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_40", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_40", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_41", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_41", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_42", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_42", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_43", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_43", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_44", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_44", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_45", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_45", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_46", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_46", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_47", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_47", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_48", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_48", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_49", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_49", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_50", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_50", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_51", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_51", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.Boolean, $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_52", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_52", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_53", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_53", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_54", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_54", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_55", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_55", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_56", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_56", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.String, $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_57", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_57", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_58", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_58", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_59", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_59", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_60", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_60", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_61", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_61", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_62", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_62", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_63", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_63", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_64", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_64", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_65", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_65", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_66", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_66", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_67", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_67", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_68", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_68", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_69", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double2"), $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_69", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double2"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_70", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_70", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_71", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_71", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_72", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_72", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_73", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_73", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_74", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_74", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_75", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_75", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_76", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_76", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_77", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_77", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_78", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_78", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_79", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_79", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_80", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_80", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_81", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_81", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_82", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double3"), $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_82", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double3"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_83", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_83", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_84", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_84", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_85", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_85", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_86", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_86", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_87", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_87", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_88", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_88", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_89", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_89", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_90", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_90", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_91", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_91", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_92", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_92", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_93", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_93", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_94", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_94", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_95", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_95", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_96", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_96", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_97", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_97", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_98", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_98", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_99", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_99", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_100", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_100", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_101", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_101", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_102", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_102", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_103", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_103", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_104", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_104", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_105", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_105", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_106", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_106", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_107", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_107", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_108", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float2"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_108", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float2"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_109", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_109", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_110", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_110", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_111", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_111", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_112", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_112", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_113", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_113", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_114", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_114", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_115", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_115", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_116", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_116", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_117", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_117", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_118", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_118", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_119", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_119", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_120", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_120", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_121", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float3"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_121", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float3"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_122", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_122", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_123", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_123", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_124", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_124", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_125", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_125", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_126", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_126", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_127", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_127", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_128", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_128", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_129", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_129", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_130", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_130", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_131", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_131", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_132", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_132", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_133", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_133", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_134", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4"), $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_134", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_135", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_135", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_136", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_136", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_137", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_137", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_138", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_138", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_139", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_139", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_140", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_140", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_141", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_141", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_142", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_142", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_143", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_143", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_144", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_144", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_145", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_145", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_146", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_146", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_147", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_147", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_148", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $.Int32]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_148", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $.Int32]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_149", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $.Single]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_149", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $.Single]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_150", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $.Double]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_150", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $.Double]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_151", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $.String]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_151", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $.String]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_152", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $.Boolean]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_152", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $.Boolean]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_153", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.double2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_153", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.double2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_154", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.double3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_154", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.double3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_155", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.double4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_155", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.double4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_156", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.double4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_156", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.double4x4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_157", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.float2")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_157", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.float2")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_158", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.float3")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_158", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.float3")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_159", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.float4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_159", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.float4")]));
 
-    $.Field({Static:true , Public:true }, "$l$g9__9_160", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$asm06.TypeRef("Fusee.Math.Core.double4x4"), $asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:true , Public:true }, "$l$g9__9_160", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$asm08.TypeRef("Fusee.Math.Core.double4x4"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
 
     function $l$gc__cctor () {
@@ -4312,8 +4312,8 @@ JSIL.MakeInterface(
 
     $.Method({Static:false, Public:true }, ".ctor", 
       new JSIL.MethodSignature(null, [
-          $asm14.TypeRef("System.Reflection.PropertyInfo"), $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
-          $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
+          $asm14.TypeRef("System.Reflection.PropertyInfo"), $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]), 
+          $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")])
         ]), 
       ConvertingPropertyAccessor$b2__ctor
     );
@@ -4330,9 +4330,9 @@ JSIL.MakeInterface(
 
     $.Field({Static:false, Public:false, ReadOnly:true }, "_propertyInfo", $asm14.TypeRef("System.Reflection.PropertyInfo"));
 
-    $.Field({Static:false, Public:false}, "_p2o", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
+    $.Field({Static:false, Public:false}, "_p2o", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TPin"), $.GenericParameter("TObj")]));
 
-    $.Field({Static:false, Public:false}, "_o2p", $asm06.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")]));
+    $.Field({Static:false, Public:false}, "_o2p", $asm08.TypeRef("Fusee.Math.Core.Converter`2", [$.GenericParameter("TObj"), $.GenericParameter("TPin")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm0C.TypeRef("Fusee.Xirkit.IMemberAccessor`1", [$.GenericParameter("TPin")])

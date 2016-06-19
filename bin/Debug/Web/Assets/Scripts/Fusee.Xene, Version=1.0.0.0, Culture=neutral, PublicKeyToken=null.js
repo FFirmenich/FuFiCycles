@@ -9,16 +9,16 @@ JSIL.DeclareNamespace("Fusee.Xene");
 (function ContainerExtensions$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm07.Fusee.Serialization.SceneNodeContainer)) ();
+    return ($T00 = JSIL.Memoize($asm09.Fusee.Serialization.SceneNodeContainer)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm07.Fusee.Serialization.SceneComponentContainer)) ();
+    return ($T01 = JSIL.Memoize($asm09.Fusee.Serialization.SceneComponentContainer)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm07.Fusee.Serialization.SceneComponentContainer))) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm09.Fusee.Serialization.SceneComponentContainer))) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm14.System.Type)) ();
@@ -27,34 +27,34 @@ JSIL.DeclareNamespace("Fusee.Xene");
     return ($T05 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm07.Fusee.Serialization.LightComponent)) ();
+    return ($T06 = JSIL.Memoize($asm09.Fusee.Serialization.LightComponent)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm07.Fusee.Serialization.MaterialComponent)) ();
+    return ($T07 = JSIL.Memoize($asm09.Fusee.Serialization.MaterialComponent)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm07.Fusee.Serialization.MeshComponent)) ();
+    return ($T08 = JSIL.Memoize($asm09.Fusee.Serialization.MeshComponent)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm07.Fusee.Serialization.TransformComponent)) ();
+    return ($T09 = JSIL.Memoize($asm09.Fusee.Serialization.TransformComponent)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm07.Fusee.Serialization.WeightComponent)) ();
+    return ($T0A = JSIL.Memoize($asm09.Fusee.Serialization.WeightComponent)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm06.Fusee.Math.Core.float4x4)) ();
+    return ($T0B = JSIL.Memoize($asm08.Fusee.Math.Core.float4x4)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]))) ();
   };
   var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.float4x4"), $asm06.TypeRef("Fusee.Math.Core.float4x4")]))) ();
+    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm06.TypeRef("Fusee.Math.Core.float3")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm08.TypeRef("Fusee.Math.Core.float3")]))) ();
   };
 
 
@@ -143,14 +143,14 @@ JSIL.DeclareNamespace("Fusee.Xene");
     $ = $ib;
 
     $.Method({Static:true , Public:true }, "AddComponent", 
-      new JSIL.MethodSignature(null, [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]), 
+      new JSIL.MethodSignature(null, [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]), 
       ContainerExtensions_AddComponent
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "GetComponent", 
-      new JSIL.MethodSignature($asm07.TypeRef("Fusee.Serialization.SceneComponentContainer"), [
-          $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Type"), 
+      new JSIL.MethodSignature($asm09.TypeRef("Fusee.Serialization.SceneComponentContainer"), [
+          $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Type"), 
           $.Int32
         ]), 
       ContainerExtensions_GetComponent
@@ -158,43 +158,43 @@ JSIL.DeclareNamespace("Fusee.Xene");
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "GetComponent", 
-      new JSIL.MethodSignature("!!0", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32], ["TComp"]), 
+      new JSIL.MethodSignature("!!0", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32], ["TComp"]), 
       ContainerExtensions_GetComponent$b1
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "GetLight", 
-      new JSIL.MethodSignature($asm07.TypeRef("Fusee.Serialization.LightComponent"), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
+      new JSIL.MethodSignature($asm09.TypeRef("Fusee.Serialization.LightComponent"), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
       ContainerExtensions_GetLight
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "GetMaterial", 
-      new JSIL.MethodSignature($asm07.TypeRef("Fusee.Serialization.MaterialComponent"), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
+      new JSIL.MethodSignature($asm09.TypeRef("Fusee.Serialization.MaterialComponent"), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
       ContainerExtensions_GetMaterial
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "GetMesh", 
-      new JSIL.MethodSignature($asm07.TypeRef("Fusee.Serialization.MeshComponent"), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
+      new JSIL.MethodSignature($asm09.TypeRef("Fusee.Serialization.MeshComponent"), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
       ContainerExtensions_GetMesh
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "GetTransform", 
-      new JSIL.MethodSignature($asm07.TypeRef("Fusee.Serialization.TransformComponent"), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
+      new JSIL.MethodSignature($asm09.TypeRef("Fusee.Serialization.TransformComponent"), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
       ContainerExtensions_GetTransform
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "GetWeights", 
-      new JSIL.MethodSignature($asm07.TypeRef("Fusee.Serialization.WeightComponent"), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
+      new JSIL.MethodSignature($asm09.TypeRef("Fusee.Serialization.WeightComponent"), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $.Int32]), 
       ContainerExtensions_GetWeights
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "Matrix", 
-      new JSIL.MethodSignature($asm06.TypeRef("Fusee.Math.Core.float4x4"), [$asm07.TypeRef("Fusee.Serialization.TransformComponent")]), 
+      new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4x4"), [$asm09.TypeRef("Fusee.Serialization.TransformComponent")]), 
       ContainerExtensions_Matrix
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
@@ -211,13 +211,13 @@ JSIL.DeclareNamespace("Fusee.Xene");
 (function SceneFinderExtensions$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm07.Fusee.Serialization.SceneNodeContainer)) ();
+    return ($T00 = JSIL.Memoize($asm09.Fusee.Serialization.SceneNodeContainer)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Predicate$b1.Of($asm07.Fusee.Serialization.SceneComponentContainer))) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Predicate$b1.Of($asm09.Fusee.Serialization.SceneComponentContainer))) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm0B.Fusee.Xene.SceneFinderExtensions_SceneComponentEnumerable$b1.Of($asm07.Fusee.Serialization.SceneComponentContainer))) ();
+    return ($T02 = JSIL.Memoize($asm0B.Fusee.Xene.SceneFinderExtensions_SceneComponentEnumerable$b1.Of($asm09.Fusee.Serialization.SceneComponentContainer))) ();
   };
   var $T03 = function () {
     return ($T03 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitorHelpers)) ();
@@ -226,19 +226,19 @@ JSIL.DeclareNamespace("Fusee.Xene");
     return ($T04 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T05 = function () {
-    return ($T05 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T05 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm14.System.Predicate$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T06 = JSIL.Memoize($asm14.System.Predicate$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeEnumerable$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T07 = JSIL.Memoize($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeEnumerable$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeWhereComponentEnumerable$b2.Of($asm07.Fusee.Serialization.SceneNodeContainer, $asm07.Fusee.Serialization.SceneComponentContainer))) ();
+    return ($T08 = JSIL.Memoize($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeWhereComponentEnumerable$b2.Of($asm09.Fusee.Serialization.SceneNodeContainer, $asm09.Fusee.Serialization.SceneComponentContainer))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer).GetEnumerator)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer).GetEnumerator)) ();
   };
 
 
@@ -306,7 +306,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
   }; 
 
   function SceneFinderExtensions_FindNodesWhereComponent$b1$09 (TComponent, root, match) {
-    var expr_06 = new ($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeWhereComponentEnumerable$b2.Of($asm07.Fusee.Serialization.SceneNodeContainer, TComponent)) ();
+    var expr_06 = new ($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeWhereComponentEnumerable$b2.Of($asm09.Fusee.Serialization.SceneNodeContainer, TComponent)) ();
     expr_06._match = match;
     expr_06._rootList = $T03().SingleRootEnumerator(root);
     return expr_06;
@@ -327,7 +327,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
   }; 
 
   function SceneFinderExtensions_FindNodesWhereComponent$b1$0C (TComponent, rootList, match) {
-    var expr_06 = new ($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeWhereComponentEnumerable$b2.Of($asm07.Fusee.Serialization.SceneNodeContainer, TComponent)) ();
+    var expr_06 = new ($asm0B.Fusee.Xene.SceneFinderExtensions_SceneNodeWhereComponentEnumerable$b2.Of($asm09.Fusee.Serialization.SceneNodeContainer, TComponent)) ();
     expr_06._match = match;
     expr_06._rootList = $IM00().Call(rootList, null);
     return expr_06;
@@ -344,85 +344,85 @@ JSIL.DeclareNamespace("Fusee.Xene");
     $ = $ib;
 
     $.Method({Static:true , Public:true }, "FindComponents", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
       SceneFinderExtensions_FindComponents$00
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindComponents", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
       SceneFinderExtensions_FindComponents$b1$01
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindComponents", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
       SceneFinderExtensions_FindComponents$02
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindComponents", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
       SceneFinderExtensions_FindComponents$b1$03
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodes", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])]), 
       SceneFinderExtensions_FindNodes$04
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodes", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TNode"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TNode"]), 
       SceneFinderExtensions_FindNodes$b1$05
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodes", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])]), 
       SceneFinderExtensions_FindNodes$06
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodes", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TNode"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TNode"]), 
       SceneFinderExtensions_FindNodes$b1$07
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodesWhereComponent", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
       SceneFinderExtensions_FindNodesWhereComponent$08
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodesWhereComponent", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
       SceneFinderExtensions_FindNodesWhereComponent$b1$09
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodesWhereComponent", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!1"])], ["TNode", "TComponent"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm14.TypeRef("System.Predicate`1", ["!!1"])], ["TNode", "TComponent"]), 
       SceneFinderExtensions_FindNodesWhereComponent$b2$0A
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodesWhereComponent", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")])]), 
       SceneFinderExtensions_FindNodesWhereComponent$0B
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodesWhereComponent", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!0"])], ["TComponent"]), 
       SceneFinderExtensions_FindNodesWhereComponent$b1$0C
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "FindNodesWhereComponent", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!1"])], ["TNode", "TComponent"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", ["!!1"])], ["TNode", "TComponent"]), 
       SceneFinderExtensions_FindNodesWhereComponent$b2$0D
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
@@ -478,7 +478,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 
     $.Field({Static:false, Public:false}, "_match", $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TNode")]));
 
-    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TNode")]), 
@@ -535,7 +535,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 
     $.Field({Static:false, Public:false}, "_match", $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TComponent")]));
 
-    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TComponent")]), 
@@ -592,7 +592,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 
     $.Field({Static:false, Public:false}, "_match", $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TComponent")]));
 
-    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TNode")]), 
@@ -610,7 +610,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 (function SceneVisitor$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm07.Fusee.Serialization.SceneNodeContainer)) ();
+    return ($T00 = JSIL.Memoize($asm09.Fusee.Serialization.SceneNodeContainer)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm14.System.Boolean)) ();
@@ -619,7 +619,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
     return ($T02 = JSIL.Memoize($asm14.System.Int32)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm07.Fusee.Serialization.SceneComponentContainer)) ();
+    return ($T03 = JSIL.Memoize($asm09.Fusee.Serialization.SceneComponentContainer)) ();
   };
   var $T04 = function () {
     return ($T04 = JSIL.Memoize($asm0B.Fusee.Xene.VisitComponentMethod)) ();
@@ -634,25 +634,25 @@ JSIL.DeclareNamespace("Fusee.Xene");
     return ($T07 = JSIL.Memoize($asm14.System.Collections.Generic.Dictionary$b2.Of($asm14.System.Type, $asm0B.Fusee.Xene.VisitNodeMethod))) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T08 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm0F.System.Collections.Generic.Stack$b1.Of($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer)))) ();
+    return ($T09 = JSIL.Memoize($asm0F.System.Collections.Generic.Stack$b1.Of($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer)))) ();
   };
   var $T0A = function () {
     return ($T0A = JSIL.Memoize($asm14.System.Collections.IEnumerator)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneComponentContainer))) ();
+    return ($T0B = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneComponentContainer))) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm14.System.Collections.Generic.List$b1_Enumerator.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T0C = JSIL.Memoize($asm14.System.Collections.Generic.List$b1_Enumerator.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T0D = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm07.Fusee.Serialization.SceneComponentContainer))) ();
+    return ($T0E = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm09.Fusee.Serialization.SceneComponentContainer))) ();
   };
   var $T0F = function () {
     return ($T0F = JSIL.Memoize($asm14.System.Reflection.MethodInfo)) ();
@@ -694,13 +694,13 @@ JSIL.DeclareNamespace("Fusee.Xene");
     return ($T1B = JSIL.Memoize($asm0B.Fusee.Xene.VisitorCallerFactory)) ();
   };
   var $T1C = function () {
-    return ($T1C = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T1C = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T1D = function () {
     return ($T1D = JSIL.Memoize($asm14.System.IDisposable)) ();
   };
   var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0F.TypeRef("System.Collections.Generic.Stack`1", [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])]), null))) ();
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm0F.TypeRef("System.Collections.Generic.Stack`1", [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])]), null))) ();
   };
   var $S01 = function () {
     return ($S01 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Type"), $asm0B.TypeRef("Fusee.Xene.SceneVisitor+VisitorSet")]), null))) ();
@@ -709,13 +709,13 @@ JSIL.DeclareNamespace("Fusee.Xene");
     return ($IM00 = JSIL.Memoize($asm14.System.Collections.IEnumerator.MoveNext)) ();
   };
   var $IM01 = function () {
-    return ($IM01 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneComponentContainer).get_Current)) ();
+    return ($IM01 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneComponentContainer).get_Current)) ();
   };
   var $IM02 = function () {
-    return ($IM02 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer).get_Current)) ();
+    return ($IM02 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer).get_Current)) ();
   };
   var $IM03 = function () {
-    return ($IM03 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer).GetEnumerator)) ();
+    return ($IM03 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer).GetEnumerator)) ();
   };
   var $IM04 = function () {
     return ($IM04 = JSIL.Memoize($asm14.System.IDisposable.Dispose)) ();
@@ -1102,32 +1102,32 @@ JSIL.DeclareNamespace("Fusee.Xene");
     );
 
     $.Method({Static:false, Public:false}, "DoTraverse", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       SceneVisitor_DoTraverse
     );
 
     $.Method({Static:false, Public:false}, "DoTraverseNoComponents", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       SceneVisitor_DoTraverseNoComponents
     );
 
     $.Method({Static:false, Public:false}, "DoVisitComponent", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")), 
       SceneVisitor_DoVisitComponent
     );
 
     $.Method({Static:false, Public:false}, "DoVisitComponents", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       SceneVisitor_DoVisitComponents
     );
 
     $.Method({Static:false, Public:false}, "DoVisitNode", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       SceneVisitor_DoVisitNode
     );
 
     $.Method({Static:false, Public:false}, "EnumInit", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
       SceneVisitor_EnumInit
     );
 
@@ -1142,13 +1142,13 @@ JSIL.DeclareNamespace("Fusee.Xene");
     );
 
     $.Method({Static:false, Public:false}, "get_CurrentComponent", 
-      JSIL.MethodSignature.Return($asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")), 
+      JSIL.MethodSignature.Return($asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")), 
       SceneVisitor_get_CurrentComponent
     )
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false}, "get_CurrentNode", 
-      JSIL.MethodSignature.Return($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Return($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       SceneVisitor_get_CurrentNode
     )
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
@@ -1196,13 +1196,13 @@ JSIL.DeclareNamespace("Fusee.Xene");
     );
 
     $.Method({Static:false, Public:false}, "set_CurrentComponent", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")), 
       SceneVisitor_set_CurrentComponent
     )
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:false}, "set_CurrentNode", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       SceneVisitor_set_CurrentNode
     )
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
@@ -1220,12 +1220,12 @@ JSIL.DeclareNamespace("Fusee.Xene");
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"));
 
     $.Method({Static:false, Public:true }, "Traverse", 
-      JSIL.MethodSignature.Action($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Action($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       SceneVisitor_Traverse$00
     );
 
     $.Method({Static:false, Public:true }, "Traverse", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
       SceneVisitor_Traverse$01
     );
 
@@ -1233,11 +1233,11 @@ JSIL.DeclareNamespace("Fusee.Xene");
 
     $.Field({Static:true , Public:false}, "_visitorMap", $asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Type"), $asm0B.TypeRef("Fusee.Xene.SceneVisitor+VisitorSet")]));
 
-    $.Field({Static:false, Public:false}, "SceneVisitor$CurrentNode$value", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"))
+    $.Field({Static:false, Public:false}, "SceneVisitor$CurrentNode$value", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"))
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "SceneVisitor$CurrentComponent$value", $asm07.TypeRef("Fusee.Serialization.SceneComponentContainer"))
+    $.Field({Static:false, Public:false}, "SceneVisitor$CurrentComponent$value", $asm09.TypeRef("Fusee.Serialization.SceneComponentContainer"))
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
@@ -1249,15 +1249,15 @@ JSIL.DeclareNamespace("Fusee.Xene");
       .Attribute($asm14.TypeRef("System.Runtime.CompilerServices.CompilerGeneratedAttribute"))
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerBrowsableAttribute"), function () { return [$asm14.System.Diagnostics.DebuggerBrowsableState.Never]; });
 
-    $.Field({Static:false, Public:false}, "_nodeEnumeratorStack", $asm0F.TypeRef("System.Collections.Generic.Stack`1", [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])]));
+    $.Field({Static:false, Public:false}, "_nodeEnumeratorStack", $asm0F.TypeRef("System.Collections.Generic.Stack`1", [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])]));
 
-    $.Field({Static:false, Public:false}, "_curNodeEnumerator", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+    $.Field({Static:false, Public:false}, "_curNodeEnumerator", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
-    $.Field({Static:false, Public:false}, "_curCompEnumerator", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]));
+    $.Field({Static:false, Public:false}, "_curCompEnumerator", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]));
 
-    $.Property({Static:false, Public:false}, "CurrentNode", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Property({Static:false, Public:false}, "CurrentNode", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
-    $.Property({Static:false, Public:false}, "CurrentComponent", $asm07.TypeRef("Fusee.Serialization.SceneComponentContainer"));
+    $.Property({Static:false, Public:false}, "CurrentComponent", $asm09.TypeRef("Fusee.Serialization.SceneComponentContainer"));
 
     $.Property({Static:false, Public:false}, "YieldOnCurrentNode", $.Boolean);
 
@@ -1323,7 +1323,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 (function SceneFinderBase$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitor)) ();
@@ -1357,7 +1357,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TSceneElementType")])]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TSceneElementType")])]), 
       SceneFinderBase$b1__ctor
     );
 
@@ -1371,7 +1371,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
       SceneFinderBase$b1_Reset
     );
 
-    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
     $.Field({Static:false, Public:false}, "_match", $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TSceneElementType")]));
 
@@ -1386,7 +1386,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 (function SceneNodeFinder$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitor)) ();
@@ -1431,7 +1431,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TNode")])]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TNode")])]), 
       SceneNodeFinder$b1__ctor
     );
 
@@ -1478,7 +1478,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 (function SceneComponentFinder$b1$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitor)) ();
@@ -1523,7 +1523,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TComponent")])]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TComponent")])]), 
       SceneComponentFinder$b1__ctor
     );
 
@@ -1570,7 +1570,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
 (function SceneNodeWhereComponentFinder$b2$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitor)) ();
@@ -1615,7 +1615,7 @@ JSIL.DeclareNamespace("Fusee.Xene");
     $ = $ib;
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TComponent")])]), 
+      new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), $asm14.TypeRef("System.Predicate`1", [$.GenericParameter("TComponent")])]), 
       SceneNodeWhereComponentFinder$b2__ctor
     );
 
@@ -1697,19 +1697,19 @@ JSIL.DeclareNamespace("Fusee.Xene");
 /* delegate Fusee.Xene.VisitNodeMethod */ 
 
 JSIL.MakeDelegate("Fusee.Xene.VisitNodeMethod", false, [], 
-  new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+  new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
 /* delegate Fusee.Xene.VisitComponentMethod */ 
 
 JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [], 
-  new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]));
+  new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]));
 
 /* class Fusee.Xene.SceneVisitorHelpers */ 
 
 (function SceneVisitorHelpers$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm07.Fusee.Serialization.SceneNodeContainer)) ();
+    return ($T00 = JSIL.Memoize($asm09.Fusee.Serialization.SceneNodeContainer)) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitorHelpers_$lSingleRootEnumerable$gd__1)) ();
@@ -1735,12 +1735,12 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     $ = $ib;
 
     $.Method({Static:true , Public:true }, "SingleRootEnumerable", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
       SceneVisitorHelpers_SingleRootEnumerable
     );
 
     $.Method({Static:true , Public:true }, "SingleRootEnumerator", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
       SceneVisitorHelpers_SingleRootEnumerator
     );
 
@@ -1821,10 +1821,10 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
       .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Serialization.SceneNodeContainer$g.get_Current", 
-      JSIL.MethodSignature.Return($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Return($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       $lSingleRootEnumerator$gd__0_System_Collections_Generic_IEnumerator$lFusee_Serialization_SceneNodeContainer$g_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), "get_Current")
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), "get_Current")
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.get_Current", 
@@ -1850,16 +1850,16 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
-    $.Field({Static:false, Public:false}, "$l$g2__current", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Field({Static:false, Public:false}, "$l$g2__current", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
-    $.Field({Static:false, Public:true }, "root", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Field({Static:false, Public:true }, "root", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
-    $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Serialization.SceneNodeContainer$g.Current", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Serialization.SceneNodeContainer$g.Current", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
+      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
       /* 1 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
       /* 2 */ $asm14.TypeRef("System.IDisposable")
     );
@@ -1961,17 +1961,17 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
       .Overrides($asm14.TypeRef("System.Collections.IEnumerator"), "MoveNext");
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerable$lFusee.Serialization.SceneNodeContainer$g.GetEnumerator", 
-      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
+      JSIL.MethodSignature.Return($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
       $lSingleRootEnumerable$gd__1_System_Collections_Generic_IEnumerable$lFusee_Serialization_SceneNodeContainer$g_GetEnumerator
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), "GetEnumerator")
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), "GetEnumerator")
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Serialization.SceneNodeContainer$g.get_Current", 
-      JSIL.MethodSignature.Return($asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
+      JSIL.MethodSignature.Return($asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")), 
       $lSingleRootEnumerable$gd__1_System_Collections_Generic_IEnumerator$lFusee_Serialization_SceneNodeContainer$g_get_Current
     )
-      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), "get_Current")
+      .Overrides($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), "get_Current")
       .Attribute($asm14.TypeRef("System.Diagnostics.DebuggerHiddenAttribute"));
 
     $.Method({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerable.GetEnumerator", 
@@ -2004,22 +2004,22 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
 
     $.Field({Static:false, Public:false}, "$l$g1__state", $.Int32);
 
-    $.Field({Static:false, Public:false}, "$l$g2__current", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Field({Static:false, Public:false}, "$l$g2__current", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
     $.Field({Static:false, Public:false}, "$l$gl__initialThreadId", $.Int32);
 
-    $.Field({Static:false, Public:false}, "root", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Field({Static:false, Public:false}, "root", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
-    $.Field({Static:false, Public:true }, "$l$g3__root", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Field({Static:false, Public:true }, "$l$g3__root", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
-    $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Serialization.SceneNodeContainer$g.Current", $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer"));
+    $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.Generic.IEnumerator$lFusee.Serialization.SceneNodeContainer$g.Current", $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"));
 
     $.Property({Static:false, Public:false, Virtual:true }, "System.Collections.IEnumerator.Current", $.Object);
 
     $.ImplementInterfaces(
-      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
+      /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
       /* 1 */ $asm14.TypeRef("System.Collections.IEnumerable"), 
-      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
+      /* 2 */ $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
       /* 3 */ $asm14.TypeRef("System.Collections.IEnumerator"), 
       /* 4 */ $asm14.TypeRef("System.IDisposable")
     );
@@ -2077,7 +2077,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     return ($T00 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitor)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm07.Fusee.Serialization.SceneComponentContainer)) ();
+    return ($T01 = JSIL.Memoize($asm09.Fusee.Serialization.SceneComponentContainer)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
@@ -2109,7 +2109,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     );
 
     $.Method({Static:false, Public:false}, "$lMakeComponentVisitor$gb__0", 
-      new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm07.TypeRef("Fusee.Serialization.SceneComponentContainer")]), 
+      new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm09.TypeRef("Fusee.Serialization.SceneComponentContainer")]), 
       $l$gc__DisplayClass0_0_$lMakeComponentVisitor$gb__0
     );
 
@@ -2130,7 +2130,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     return ($T00 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitor)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm07.Fusee.Serialization.SceneNodeContainer)) ();
+    return ($T01 = JSIL.Memoize($asm09.Fusee.Serialization.SceneNodeContainer)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm14.System.Reflection.MethodBase)) ();
@@ -2162,7 +2162,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     );
 
     $.Method({Static:false, Public:false}, "$lMakeNodeVistor$gb__0", 
-      new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
+      new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.SceneVisitor"), $asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]), 
       $l$gc__DisplayClass1_0_$lMakeNodeVistor$gb__0
     );
 
@@ -2183,16 +2183,16 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     return ($T00 = JSIL.Memoize($asm14.System.Type)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm07.Fusee.Serialization.SceneNodeContainer)) ();
+    return ($T01 = JSIL.Memoize($asm09.Fusee.Serialization.SceneNodeContainer)) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitorHelpers)) ();
   };
   var $T03 = function () {
-    return ($T03 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T03 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $IM00 = function () {
-    return ($IM00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer).GetEnumerator)) ();
+    return ($IM00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer).GetEnumerator)) ();
   };
 
 
@@ -2212,13 +2212,13 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     $ = $ib;
 
     $.Method({Static:true , Public:true }, "Viserate", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!1"]), [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")], ["TViserator", "TResult"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!1"]), [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")], ["TViserator", "TResult"]), 
       ViseratorExtensions_Viserate$b2$00
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
 
     $.Method({Static:true , Public:true }, "Viserate", 
-      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!1"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])], ["TViserator", "TResult"]), 
+      new JSIL.MethodSignature($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!1"]), [$asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])], ["TViserator", "TResult"]), 
       ViseratorExtensions_Viserate$b2$01
     )
       .Attribute($asm0D.TypeRef("System.Runtime.CompilerServices.ExtensionAttribute"));
@@ -2278,7 +2278,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     )
       .Overrides($asm14.TypeRef("System.Collections.IEnumerable"), "GetEnumerator");
 
-    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
     $.ImplementInterfaces(
       /* 0 */ $asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$.GenericParameter("TResult")]), 
@@ -2299,7 +2299,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     return ($T00 = JSIL.Memoize($asm0B.Fusee.Xene.SceneVisitor)) ();
   };
   var $T01 = function () {
-    return ($T01 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T01 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T02 = function () {
     return ($T02 = JSIL.Memoize($asm14.System.Boolean)) ();
@@ -2369,7 +2369,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "Init", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
       ViseratorBase$b1_Init
     );
 
@@ -2394,7 +2394,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
       ViseratorBase$b1_YieldItem
     );
 
-    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
+    $.Field({Static:false, Public:false}, "_rootList", $asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")]));
 
     $.Field({Static:false, Public:false}, "_itemQueue", $asm0F.TypeRef("System.Collections.Generic.Queue`1", [$.GenericParameter("TItem")]));
 
@@ -2419,7 +2419,7 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
 (function Viserator$b2$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm07.Fusee.Serialization.SceneNodeContainer))) ();
+    return ($T00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerator$b1.Of($asm09.Fusee.Serialization.SceneNodeContainer))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm14.System.Activator)) ();
@@ -2480,12 +2480,12 @@ JSIL.MakeDelegate("Fusee.Xene.VisitComponentMethod", false, [],
     );
 
     $.Method({Static:false, Public:true }, ".ctor", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
       Viserator$b2__ctor$01
     );
 
     $.Method({Static:false, Public:false, Virtual:true }, "Init", 
-      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm07.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
+      JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerator`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])), 
       Viserator$b2_Init
     );
 
@@ -3036,13 +3036,13 @@ JSIL.MakeInterface(
 (function StandardState$Members () {
   var $, $thisType;
   var $T00 = function () {
-    return ($T00 = JSIL.Memoize($asm0B.Fusee.Xene.CollapsingStateStack$b1.Of($asm06.Fusee.Math.Core.float4x4))) ();
+    return ($T00 = JSIL.Memoize($asm0B.Fusee.Xene.CollapsingStateStack$b1.Of($asm08.Fusee.Math.Core.float4x4))) ();
   };
   var $T01 = function () {
     return ($T01 = JSIL.Memoize($asm0B.Fusee.Xene.VisitorState)) ();
   };
   var $T02 = function () {
-    return ($T02 = JSIL.Memoize($asm06.Fusee.Math.Core.float4x4)) ();
+    return ($T02 = JSIL.Memoize($asm08.Fusee.Math.Core.float4x4)) ();
   };
 
 
@@ -3095,46 +3095,46 @@ JSIL.MakeInterface(
     );
 
     $.Method({Static:false, Public:true }, "get_Model", 
-      JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.float4x4")), 
+      JSIL.MethodSignature.Return($asm08.TypeRef("Fusee.Math.Core.float4x4")), 
       StandardState_get_Model
     );
 
     $.Method({Static:false, Public:true }, "get_Projection", 
-      JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.float4x4")), 
+      JSIL.MethodSignature.Return($asm08.TypeRef("Fusee.Math.Core.float4x4")), 
       StandardState_get_Projection
     );
 
     $.Method({Static:false, Public:true }, "get_View", 
-      JSIL.MethodSignature.Return($asm06.TypeRef("Fusee.Math.Core.float4x4")), 
+      JSIL.MethodSignature.Return($asm08.TypeRef("Fusee.Math.Core.float4x4")), 
       StandardState_get_View
     );
 
     $.Method({Static:false, Public:true }, "set_Model", 
-      JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.float4x4")), 
+      JSIL.MethodSignature.Action($asm08.TypeRef("Fusee.Math.Core.float4x4")), 
       StandardState_set_Model
     );
 
     $.Method({Static:false, Public:true }, "set_Projection", 
-      JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.float4x4")), 
+      JSIL.MethodSignature.Action($asm08.TypeRef("Fusee.Math.Core.float4x4")), 
       StandardState_set_Projection
     );
 
     $.Method({Static:false, Public:true }, "set_View", 
-      JSIL.MethodSignature.Action($asm06.TypeRef("Fusee.Math.Core.float4x4")), 
+      JSIL.MethodSignature.Action($asm08.TypeRef("Fusee.Math.Core.float4x4")), 
       StandardState_set_View
     );
 
-    $.Field({Static:false, Public:false}, "_model", $asm0B.TypeRef("Fusee.Xene.CollapsingStateStack`1", [$asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:false, Public:false}, "_model", $asm0B.TypeRef("Fusee.Xene.CollapsingStateStack`1", [$asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:false, Public:false}, "_view", $asm0B.TypeRef("Fusee.Xene.CollapsingStateStack`1", [$asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:false, Public:false}, "_view", $asm0B.TypeRef("Fusee.Xene.CollapsingStateStack`1", [$asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Field({Static:false, Public:false}, "_projection", $asm0B.TypeRef("Fusee.Xene.CollapsingStateStack`1", [$asm06.TypeRef("Fusee.Math.Core.float4x4")]));
+    $.Field({Static:false, Public:false}, "_projection", $asm0B.TypeRef("Fusee.Xene.CollapsingStateStack`1", [$asm08.TypeRef("Fusee.Math.Core.float4x4")]));
 
-    $.Property({Static:false, Public:true }, "Model", $asm06.TypeRef("Fusee.Math.Core.float4x4"));
+    $.Property({Static:false, Public:true }, "Model", $asm08.TypeRef("Fusee.Math.Core.float4x4"));
 
-    $.Property({Static:false, Public:true }, "View", $asm06.TypeRef("Fusee.Math.Core.float4x4"));
+    $.Property({Static:false, Public:true }, "View", $asm08.TypeRef("Fusee.Math.Core.float4x4"));
 
-    $.Property({Static:false, Public:true }, "Projection", $asm06.TypeRef("Fusee.Math.Core.float4x4"));
+    $.Property({Static:false, Public:true }, "Projection", $asm08.TypeRef("Fusee.Math.Core.float4x4"));
 
     $.ImplementInterfaces(
     );

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <RootNamespace>Fusee.Tutorial.Web</RootNamespace>
-    <AssemblyName>Fusee.Tutorial.Web</AssemblyName>
+    <RootNamespace>Fusee.FuFiCycles.Web</RootNamespace>
+    <AssemblyName>Fusee.FuFiCycles.Web</AssemblyName>
     <ProjectBuildRoot Condition=" '$(ProjectBuildRoot)' == '' ">..</ProjectBuildRoot>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -20,7 +20,7 @@
     <Optimize>false</Optimize>
     <!-- WARNING - NOT STANDARD-FUSEE OUTPUT PATH OutputPath>$(FuseeBuildRoot)\bin\$(Configuration)\Examples\Simple\Web</OutputPath -->
     <FuseeWebOutputPath>$(ProjectBuildRoot)\bin\$(Configuration)\Web\</FuseeWebOutputPath>
-    <OutputPath>$(ProjectBuildRoot)\tmp\Obj\$(RootNamespace)\bin\$(Configuration)\</OutputPath>
+    <OutputPath>..\tmp\Obj\Fusee.FuFiCycles.Web\bin\Debug\</OutputPath>
     <BaseIntermediateOutputPath>$(ProjectBuildRoot)\tmp\Obj\$(RootNamespace)\$(Configuration)\</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)\</IntermediateOutputPath>
     <DefineConstants>TRACE;DEBUG;PLATFORM_WEB</DefineConstants>
