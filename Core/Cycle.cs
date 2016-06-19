@@ -27,10 +27,12 @@ namespace Fusee.FuFiCycles.Core {
 		private SceneContainer _cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
 		private SceneContainer _wall = AssetStorage.Get<SceneContainer>("Wall.fus");
 
+		private SceneNodeContainer _cycleSNC;
 		private TransformComponent _cycleTransform;
 		private TransformComponent _cycleWheelR;
 		private TransformComponent _cycleWheelL;
 
+		private SceneNodeContainer _wallSNC;
 		private TransformComponent _cycleWall;
 		private List<SceneNodeContainer> _walls = new List<SceneNodeContainer>();
 
@@ -41,26 +43,33 @@ namespace Fusee.FuFiCycles.Core {
 		public Cycle (int id) {
 			setPlayerId(id);
 
-			switch(id) {
-				case 1:
-					input_keys = new InputKeys(KeyCodes.A, KeyCodes.D);
-					break;
-				case 2:
-					input_keys = new InputKeys(KeyCodes.Left, KeyCodes.Right);
-					break;
-				default:
-					Debug.WriteLine("ACHTUNG: Spieler 3 aufwärts haben keine Keys zugeordnet.");
-					break;
-			}
-
 			// Initialize Cycle-TransformComponents
-			_cycleTransform = _cycle.Children.FindNodes(c => c.Name == "cycle").First()?.GetTransform();
+			_cycleSNC = _cycle.Children.FindNodes(c => c.Name == "cycle").First();
+			_cycleTransform = _cycleSNC?.GetTransform();
 			_cycleWheelR = _cycle.Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
 			_cycleWheelL = _cycle.Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
 
+			_wallSNC = _wall.Children.FindNodes(c => c.Name == "wall").First();
+
 			// set speed
-			// TODO: set speed at another place in code
+			// TODO: let player set speed
 			setSpeed(5);
+
+			// TODO: let player pick color
+			switch (id) {
+				case 1:
+					input_keys = new InputKeys(KeyCodes.A, KeyCodes.D);
+					setColor(new float3(0, 0.9f, 1f));
+					break;
+				case 2:
+					input_keys = new InputKeys(KeyCodes.Left, KeyCodes.Right);
+					setColor(new float3(0, 1.0f, 0));
+					break;
+				default:
+					Debug.WriteLine("ACHTUNG: Spieler 3 aufwärts haben keine Keys zugeordnet.");
+					setColor(new float3(0.2f, 0.2f, 0.2f));
+					break;
+			}
 		}
 
 		//Get-Methods
@@ -107,6 +116,26 @@ namespace Fusee.FuFiCycles.Core {
 
 		public void setColor(float3 color) {
 			this.color = color;
+
+			// create new colors
+			MaterialComponent newcolor = new MaterialComponent();
+			newcolor.Diffuse = new MatChannelContainer();
+			newcolor.Diffuse.Color = color;
+
+			float intensity = 0.8f;
+			MaterialComponent newcolor2 = new MaterialComponent();
+			newcolor2.Diffuse = new MatChannelContainer();
+			newcolor2.Diffuse.Color = new float3(color.x * intensity, color.y * intensity, color.z * intensity);
+
+			float intensity2 = 0.6f;
+			MaterialComponent newcolor3 = new MaterialComponent();
+			newcolor3.Diffuse = new MatChannelContainer();
+			newcolor3.Diffuse.Color = new float3(color.x * intensity2, color.y * intensity2, color.z * intensity2);
+
+			// change model colors
+			_cycleSNC.Children[0].Components[1] = newcolor2;
+			_cycleSNC.Children[1].Components[1] = newcolor3;
+			_wallSNC.Components[1] = newcolor;
 		}
 
 		public void setCycle(TransformComponent cycle) {
@@ -222,7 +251,7 @@ namespace Fusee.FuFiCycles.Core {
 			tc.Translation = new float3(x, 0, z);
 			tc.Scale = new float3(1, 1, 1);
 			w.Components.Add(tc);
-			w.Components.Add(_wall.Children.FindNodes(c => c.Name == "wall").First().GetMesh());
+			w.Components.Add(_wallSNC?.GetMesh());
 
 			_wall.Children.Add(w);
 
