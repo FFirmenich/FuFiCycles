@@ -45,26 +45,6 @@ namespace Fusee.FuFiCycles.Core {
 			RC = rc;
 			LookupTexture("Leaves.jpg");
 			LookupTexture("Sphere.jpg");
-			_shaderEffects["effect1"] = new ShaderEffect(
-				new[] {
-					new EffectPassDeclaration {
-						VS = AssetStorage.Get<string>("VertexShader.vert"),
-						PS = AssetStorage.Get<string>("PixelShader.frag"),
-						StateSet = new RenderStateSet {
-							ZEnable = true,
-							CullMode = Cull.Counterclockwise,
-						}
-					}
-				},
-				new[] {
-					new EffectParameterDeclaration {Name="albedo", Value = float3.One},
-					new EffectParameterDeclaration {Name="shininess", Value = 1.0f},
-					new EffectParameterDeclaration {Name="specfactor", Value = 1.0f},
-					new EffectParameterDeclaration {Name="speccolor", Value = float3.Zero},
-					new EffectParameterDeclaration {Name="ambientcolor", Value = float3.Zero},
-					new EffectParameterDeclaration {Name="texture", Value = _textures["Leaves.jpg"]},
-					new EffectParameterDeclaration {Name="texmix", Value = 0.0f},
-				});
 
 			_shaderEffects["effect2"] = new ShaderEffect(
 				new[] {
@@ -73,7 +53,6 @@ namespace Fusee.FuFiCycles.Core {
 						PS = AssetStorage.Get<string>("PixelShader2.frag"),
 						StateSet = new RenderStateSet {
 							ZEnable = true,
-							CullMode = Cull.Counterclockwise,
 						}
 					}
 				},
@@ -88,7 +67,6 @@ namespace Fusee.FuFiCycles.Core {
 					new EffectParameterDeclaration {Name="texmix", Value = 0.0f},
 					});
 
-			_shaderEffects["effect1"].AttachToContext(RC);
 			_shaderEffects["effect2"].AttachToContext(RC);
 
 			ShaderEffect = _shaderEffects["effect2"];
