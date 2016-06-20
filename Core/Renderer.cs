@@ -43,7 +43,6 @@ namespace Fusee.FuFiCycles.Core {
 
 		public Renderer(RenderContext rc) {
 			RC = rc;
-			LookupTexture("Leaves.jpg");
 			LookupTexture("Sphere.jpg");
 
 			_shaderEffects["effect2"] = new ShaderEffect(

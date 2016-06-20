@@ -66,15 +66,13 @@ namespace Fusee.FuFiCycles.Core {
 			RC.Clear(ClearFlags.Color | ClearFlags.Depth);
 
 			// Mouse and keyboard movement
-			if (Keyboard.LeftRightAxis != 0 || Keyboard.UpDownAxis != 0) {
+			if (Keyboard.UpDownAxis != 0) {
 				_keys = true;
 			}
 			
 			var curDamp = (float)System.Math.Exp(0.1f);
 			
 			if (_keys) {
-				Debug.WriteLine(Keyboard.LeftRightAxis);
-				_angleVelHorz = -RotationSpeed * Keyboard.LeftRightAxis * 0.002f;
 				_angleVelVert = -RotationSpeed * Keyboard.UpDownAxis * 0.002f;
 			}/*
 			else {
