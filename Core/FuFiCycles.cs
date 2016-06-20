@@ -74,14 +74,6 @@ namespace Fusee.FuFiCycles.Core {
 			
 			var curDamp = (float)System.Math.Exp(0.1f);
 			
-			if (_keys) {
-				_angleVelVert = -RotationSpeed * Keyboard.UpDownAxis * 0.002f;
-			}/*
-			else {
-				_angleVelHorz *= curDamp;
-				_angleVelVert *= curDamp;
-			}*/
-			
 			// zoom
 			_zoom += _zoomVel;
 			// Limit zoom

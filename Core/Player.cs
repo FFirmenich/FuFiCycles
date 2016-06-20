@@ -32,6 +32,7 @@ namespace Fusee.FuFiCycles.Core {
 		private bool _firstFrame = true;
 		private bool aPressed = false;
 		private bool dPressed = false;
+		private bool updownPressed = false;
 
 		private const float RotationSpeed = 7;
 
@@ -54,11 +55,11 @@ namespace Fusee.FuFiCycles.Core {
 			// TODO: let player pick color
 			switch (id) {
 				case 1:
-					input_keys = new InputKeys(KeyCodes.A, KeyCodes.D);
+					input_keys = new InputKeys(KeyCodes.A, KeyCodes.D, KeyCodes.W, KeyCodes.S);
 					setColor(new float3(0, 0.9f, 1f));
 					break;
 				case 2:
-					input_keys = new InputKeys(KeyCodes.Left, KeyCodes.Right);
+					input_keys = new InputKeys(KeyCodes.Left, KeyCodes.Right, KeyCodes.Up, KeyCodes.Down);
 					setColor(new float3(0, 1.0f, 0));
 					break;
 				default:
@@ -135,32 +136,36 @@ namespace Fusee.FuFiCycles.Core {
 
 			// Cycle Rotation
 			float cycleYaw = _cycleTransform.Rotation.y;
-			if (Keyboard.GetKey(input_keys.getKeyLeft())) {
-				if (aPressed == false) {
-					if(this.player_id == 1) {
-						FuFiCycles._angleHorz += M.PiOver2;
-					}
-					//FuFiCycles._angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
-					cycleYaw -= M.PiOver2;
-					directionChanged = true;
+			if (Keyboard.IsKeyDown(input_keys.getKeyLeft())) {
+				if (this.player_id == 1) {
+					FuFiCycles._angleHorz += M.PiOver2;
 				}
-				aPressed = true;
-			} else {
-				aPressed = false;
+				//FuFiCycles._angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
+				cycleYaw -= M.PiOver2;
+				directionChanged = true;	
 			}
-			if (Keyboard.GetKey(input_keys.getKeyRight())) {
-				if (dPressed == false) {
-					if (this.player_id == 1) {
-						FuFiCycles._angleHorz -= M.PiOver2;
-					}
-					//FuFiCycles._angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
-					cycleYaw += M.PiOver2;
-					directionChanged = true;
+
+			if (Keyboard.IsKeyDown(input_keys.getKeyRight())) {
+				if (this.player_id == 1) {
+					//FuFiCycles._angleHorz -= M.PiOver2;
+					FuFiCycles._angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
 				}
-				dPressed = true;
-			} else {
-				dPressed = false;
+				cycleYaw += M.PiOver2;
+				directionChanged = true;
 			}
+			/*
+			if (Keyboard.IsKeyDown(input_keys.getKeyUp())) {
+				if (this.player_id == 1) {
+					FuFiCycles._angleVelVert = -RotationSpeed * -0.02f * 0.002f;
+				}
+			}
+
+			if (Keyboard.IsKeyDown(input_keys.getKeyDown())) {
+				if (this.player_id == 1) {
+					FuFiCycles._angleVelVert = -RotationSpeed * 0.02f * 0.002f;
+				}
+			}*/
+
 			cycleYaw = FuFiCycles.NormRot(cycleYaw);
 			setPosition(_cycleTransform.Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed());
 			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
