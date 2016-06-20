@@ -5,11 +5,13 @@ using Fusee.Engine.Core;
 using Fusee.Math.Core;
 using Fusee.Serialization;
 using static Fusee.Engine.Core.Input;
+using System.Linq;
+using Fusee.Xene;
 
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production")]
 	public class FuFiCycles : RenderCanvas {
-		private List<Cycle> cycles = new List<Cycle>();
+		private List<Player> players = new List<Player>();
 
 		// angle variables
 		public static float _angleHorz = 0, _angleVert = -M.PiOver6 * 0.2f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
@@ -19,9 +21,12 @@ namespace Fusee.FuFiCycles.Core {
 		public const float RotationSpeed = 7;
 		private const float Damping = 8f;
 
-		private SceneContainer _scene;
+		private SceneContainer _scene = AssetStorage.Get<SceneContainer>("Land.fus");
 		private float4x4 _sceneScale;
 		private float4x4 _projection;
+
+		private SceneContainer _cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
+		private SceneContainer _wall = AssetStorage.Get<SceneContainer>("Wall.fus");
 
 		private bool _keys;
 
@@ -35,15 +40,18 @@ namespace Fusee.FuFiCycles.Core {
 		// Init is called on startup. 
 		public override void Init() {
 			// Load the scene
-			_scene = AssetStorage.Get<SceneContainer>("Land.fus");
 			_sceneScale = float4x4.CreateScale(0.04f);
 
 			// Instantiate our self-written renderer
 			_renderer = new Renderer(RC);
 
-			// Add two cycles to the list
-			cycles.Add(new Cycle(1));
-			//cycles.Add(new Cycle(2));
+			// Add two player to the list
+			players.Add(new Player(1, new Cycle(1, _cycle), _wall));
+			players.Add(new Player(2, new Cycle(2, _cycle), _wall));
+			players[1].setPosition(new float3(600,0, 60));
+
+			// remove original cycle from cycle scene
+			_cycle.Children.Remove(_cycle.Children.FindNodes(c => c.Name == "cycle").First());
 
 			// set Map Size
 			//MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
@@ -96,7 +104,8 @@ namespace Fusee.FuFiCycles.Core {
 			// Create the camera matrix and set it as the current ModelView transformation
 			var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(_angleHorz);
 			var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
-			_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(- (new float3(cycles[0].getPosition().x, cycles[0].getPosition().y, cycles[0].getPosition().z)));
+			
+			_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[0].getPosition().x, players[0].getPosition().y, players[0].getPosition().z)));
 			var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
 			RC.Projection = mtxOffset * _projection;
 
@@ -105,8 +114,8 @@ namespace Fusee.FuFiCycles.Core {
 			_renderer.Traverse(_scene.Children);
 
 			// render Cycles with their walls
-			for(int i = 0; i < cycles.Count; i++) {
-				cycles[i].renderAFrame(_renderer);
+			for(int i = 0; i < players.Count; i++) {
+				players[i].renderAFrame(_renderer);
 			}
 
 			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered farame) on the front buffer.
