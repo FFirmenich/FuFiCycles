@@ -85,12 +85,6 @@
     <Content Include="Assets\Sphere.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\PixelShader.frag">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\VertexShader.vert">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Assets\Land.fus">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

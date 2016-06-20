@@ -18,12 +18,9 @@ contentManifest["Fusee.FuFiCycles.Web.contentproj"] = [
     ["Script",	"SystemExternals.js",	{  "sizeBytes": 11976 }],
     ["File",	"Assets/Cycle.fus",	{  "sizeBytes": 568839 }],
     ["File",	"Assets/Land.fus",	{  "sizeBytes": 85038 }],
-    ["Image",	"Assets/Leaves.jpg",	{  "sizeBytes": 19815 }],
-    ["File",	"Assets/PixelShader.frag",	{  "sizeBytes": 872 }],
     ["File",	"Assets/PixelShader2.frag",	{  "sizeBytes": 530 }],
     ["Image",	"Assets/Sphere.jpg",	{  "sizeBytes": 26951 }],
     ["Image",	"Assets/Styles/loading_rocket.png",	{  "sizeBytes": 10975 }],
-    ["File",	"Assets/VertexShader.vert",	{  "sizeBytes": 402 }],
     ["File",	"Assets/VertexShader2.vert",	{  "sizeBytes": 393 }],
     ["File",	"Assets/Wall.fus",	{  "sizeBytes": 965 }],
     ];

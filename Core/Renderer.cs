@@ -85,17 +85,7 @@ namespace Fusee.FuFiCycles.Core {
 		[VisitMethod]
 		void OnMesh(MeshComponent mesh) {
 			ShaderEffect.RenderMesh(LookupMesh(mesh));
-			// RC.Render(LookupMesh(mesh));
-
-			//ShaderEffect.RenderMesh(LookupMesh(mesh));
-			// RC.Render(LookupMesh(mesh));
-			//if (CurrentNode.Name.Contains("Tree"))
-			//{
-			//    ShaderEffectBlack.RenderMesh(LookupMesh(mesh));
-			//    ShaderEffect.RenderMesh(LookupMesh(mesh));
-			//}else {
-			//    ShaderEffect.RenderMesh(LookupMesh(mesh));
-			//}
+			
 			ShaderEffect currentShader;
 			if (_shaderEffects.TryGetValue(CurrentNode.Name, out currentShader)) {
 				currentShader.RenderMesh(LookupMesh(mesh));

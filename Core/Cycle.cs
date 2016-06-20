@@ -2,13 +2,11 @@
 using System.Linq;
 using Fusee.Base.Core;
 using Fusee.Engine.Common;
-using Fusee.Engine.Core;
 using Fusee.Math.Core;
 using Fusee.Serialization;
 using Fusee.Xene;
 using static System.Math;
 using static Fusee.Engine.Core.Input;
-using static Fusee.Engine.Core.Time;
 using System.Diagnostics;
 using System;
 
@@ -34,7 +32,6 @@ namespace Fusee.FuFiCycles.Core {
 
 		private SceneNodeContainer _wallSNC;
 		private TransformComponent _cycleWall;
-		private List<SceneNodeContainer> _walls = new List<SceneNodeContainer>();
 
 		private bool _firstFrame = true;
 		private bool aPressed = false;
@@ -122,7 +119,7 @@ namespace Fusee.FuFiCycles.Core {
 
 		public void setColor(float3 color) {
 			this.color = color;
-
+			
 			// create new colors
 			MaterialComponent newcolor = new MaterialComponent();
 			newcolor.Diffuse = new MatChannelContainer();
@@ -182,9 +179,6 @@ namespace Fusee.FuFiCycles.Core {
 			} else {
 				dPressed = false;
 			}
-
-			if (dPressed) { 
-}
 			cycleYaw = FuFiCycles.NormRot(cycleYaw);
 			setPosition(_cycleTransform.Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed());
 			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
@@ -206,17 +200,18 @@ namespace Fusee.FuFiCycles.Core {
 				}
 			} catch (IndexOutOfRangeException e) {
 				// If Index is out of Range a Cycle has collided with the border of the map
-				collision();
+				collision();			
 			}
-
+			
 			// get new wall if direction has changed
+			
 			if (directionChanged || _firstFrame) {
 				_cycleWall = getWall(x, z);
 			}
 
 			// draw wall
 			prepareWall(cycleYaw);
-
+			
 			_renderer.Traverse(_cycle.Children);
 			_renderer.Traverse(_wall.Children);
 
@@ -257,20 +252,27 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		private TransformComponent getWall(int x, int z) {
+			
 			SceneNodeContainer w = new SceneNodeContainer();
-			w.Name = "wall";
+			w.Name = "wall" + x + z;
 			w.Components = new List<SceneComponentContainer>();
+
+			// create new TransformComponent
 			TransformComponent tc = new TransformComponent();
-			tc.Translation = new float3(x, 0, z);
-			tc.Scale = new float3(1, 1, 1);
+			tc.Name = "tc" + x + z;
+			tc.Rotation = new float3(0.0f, 0.0f, 0.0f);
+			tc.Scale = new float3(1.0f, 0.5f, 1.0f);
+			tc.Translation = new float3(x, 0.0f, z);
+
 			w.Components.Add(tc);
+			w.Components.Add(_wallSNC?.GetMaterial());
 			w.Components.Add(_wallSNC?.GetMesh());
 
+			// add new wall to wall scene
 			_wall.Children.Add(w);
 
-			_walls.Add(w);
-
-			return _walls.Last().GetTransform();
+			// return new wall
+			return w.GetTransform();
 		}
 	}
 }
