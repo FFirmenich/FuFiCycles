@@ -50,7 +50,7 @@ namespace Fusee.FuFiCycles.Core {
 
 			// set speed
 			// TODO: let player set speed
-			setSpeed(5);
+			setSpeed(20);
 
 			// TODO: let player pick color
 			switch (id) {
@@ -147,8 +147,8 @@ namespace Fusee.FuFiCycles.Core {
 
 			if (Keyboard.IsKeyDown(input_keys.getKeyRight())) {
 				if (this.player_id == 1) {
-					//FuFiCycles._angleHorz -= M.PiOver2;
-					FuFiCycles._angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
+					FuFiCycles._angleHorz -= M.PiOver2;
+					//FuFiCycles._angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
 				}
 				cycleYaw += M.PiOver2;
 				directionChanged = true;
@@ -194,7 +194,7 @@ namespace Fusee.FuFiCycles.Core {
 			// get new wall if direction has changed
 			
 			if (directionChanged || _firstFrame) {
-				_cycleWall = getWall(x, z);
+				_cycleWall = getWall(x, z, cycleYaw);
 			}
 
 			// draw wall
@@ -239,8 +239,23 @@ namespace Fusee.FuFiCycles.Core {
 			}
 		}
 
-		private TransformComponent getWall(int x, int z) {
-			
+		private TransformComponent getWall(int x, int z, float cycleYaw) {
+			// fix wall position
+			float val = 0.1f;
+			if (cycleYaw < M.PiOver2 + val && cycleYaw > M.PiOver2 - val) {
+				x -= (int)getSpeed();
+				Debug.WriteLine("rechts");
+			} else if (cycleYaw > -val && cycleYaw < val) {
+				z -= (int)getSpeed();
+				Debug.WriteLine("vorne");
+			} else if (cycleYaw < -M.PiOver2 + val && cycleYaw > -M.PiOver2 - val) {
+				x += (int)getSpeed();
+				Debug.WriteLine("links");
+			} else if (cycleYaw > M.Pi - val && cycleYaw < M.Pi + val || cycleYaw > -M.Pi - val && cycleYaw < -M.Pi + val) {
+				z += (int)getSpeed();
+				Debug.WriteLine("hinten");
+			}
+
 			SceneNodeContainer w = new SceneNodeContainer();
 			w.Name = "wall" + x + z;
 			w.Components = new List<SceneComponentContainer>();
@@ -249,7 +264,7 @@ namespace Fusee.FuFiCycles.Core {
 			TransformComponent tc = new TransformComponent();
 			tc.Name = "tc" + x + z;
 			tc.Rotation = new float3(0.0f, 0.0f, 0.0f);
-			tc.Scale = new float3(1.0f, 0.5f, 1.0f);
+			tc.Scale = new float3(5.0f, 0.5f, 5.0f);
 			tc.Translation = new float3(x, 0.0f, z);
 
 			w.Components.Add(tc);

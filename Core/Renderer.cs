@@ -111,8 +111,8 @@ namespace Fusee.FuFiCycles.Core {
 				ShaderEffect.SetEffectParam("specfactor", material.Specular.Intensity);
 				ShaderEffect.SetEffectParam("speccolor", material.Specular.Color);
 			} else {
-				ShaderEffect.SetEffectParam("shininess", 0);
-				ShaderEffect.SetEffectParam("specfactor", 0);
+				ShaderEffect.SetEffectParam("shininess", 0.0f);
+				ShaderEffect.SetEffectParam("specfactor", 0.0f);
 				ShaderEffect.SetEffectParam("speccolor", float3.Zero);
 			}
 			if (material.HasEmissive) {

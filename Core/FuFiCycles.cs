@@ -55,7 +55,7 @@ namespace Fusee.FuFiCycles.Core {
 
 			// set Map Size
 			//MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
-			_mapSize = 5000;
+			_mapSize = 16000;
 			_mapMirror = new float[_mapSize, _mapSize];
 
 			// Set the clear color for the backbuffer

@@ -1,12 +1,6 @@
-D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Leaves.jpg
-D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\PixelShader.frag
-D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\VertexShader.vert
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Sphere.jpg
-D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Land.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Cycle.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Wall.fus
-D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\PixelShader2.frag
-D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\VertexShader2.vert
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Fusee.FuFiCycles.Core.dll
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Fusee.FuFiCycles.Core.pdb
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Core\Debug\Fusee.FuFiCycles.Core.dll
@@ -23,3 +17,6 @@ D:\Development\FuFiCycles\bin\Debug\Libraries\Fusee.FuFiCycles.Core.pdb
 D:\Development\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Core\Debug\Fusee.FuFiCycles.Core.csprojResolveAssemblyReference.cache
 D:\Development\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Core\Debug\Fusee.FuFiCycles.Core.dll
 D:\Development\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Core\Debug\Fusee.FuFiCycles.Core.pdb
+D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\PixelShader2.frag
+D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\VertexShader2.vert
+D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Land.fus

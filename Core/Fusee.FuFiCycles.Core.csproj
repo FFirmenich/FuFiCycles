@@ -86,21 +86,21 @@
     <Content Include="Assets\Sphere.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\Land.fus">
+    <EmbeddedResource Include="Assets\Land.fus">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Cycle.fus">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Cycle.fus">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
     <None Include="Assets\PixelShader2.frag">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Assets\VertexShader2.vert">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Content Include="Assets\Wall.fus">
+    <EmbeddedResource Include="Assets\Wall.fus">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
   </ItemGroup>
   <!-- ItemGroup>
     <Reference Include="Fusee.SerializationSerializer">
