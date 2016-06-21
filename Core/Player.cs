@@ -15,8 +15,6 @@ namespace Fusee.FuFiCycles.Core {
 	class Player {
 		private int player_id;
 		private String player_name;
-		private float3 position;
-		private float speed;
 		private float3 color;
 		private Cycle cycle;
 		public InputKeys input_keys;
@@ -30,27 +28,16 @@ namespace Fusee.FuFiCycles.Core {
 		private TransformComponent _cycleWall;
 
 		private bool _firstFrame = true;
-		private bool aPressed = false;
-		private bool dPressed = false;
-		private bool updownPressed = false;
 
 		private const float RotationSpeed = 7;
 
 		public Player (int id, Cycle cycle, SceneContainer _wall) {
-			this.cycle = cycle;
+			setCycle(cycle);
 			this._wall = _wall;
 
 			setPlayerId(id);
 
-			// Initialize Cycle-TransformComponents
-			_cycleTransform = cycle.getSNC()?.GetTransform();
-
 			_wallSNC = _wall.Children.FindNodes(c => c.Name == "wall").First();
-
-
-			// set speed
-			// TODO: let player set speed
-			setSpeed(20);
 
 			// TODO: let player pick color
 			switch (id) {
@@ -78,14 +65,6 @@ namespace Fusee.FuFiCycles.Core {
 			return this.player_name;
 		}
 
-		public float3 getPosition() {
-			return this.position;
-		}
-
-		public float getSpeed() {
-			return this.speed;
-		}
-
 		public float3 getColor() {
 			return this.color;
 		}
@@ -103,15 +82,6 @@ namespace Fusee.FuFiCycles.Core {
 			this.player_name = name;
 		}
 
-		public void setPosition(float3 position) {
-			_cycleTransform.Translation = position;
-			this.position = position;
-		}
-
-		public void setSpeed(float speed) {
-			this.speed = speed;
-		}
-
 		public void setColor(float3 color) {
 			this.color = color;
 			
@@ -127,22 +97,32 @@ namespace Fusee.FuFiCycles.Core {
 			newcolor3.Diffuse.Color = new float3(color.x * intensity2, color.y * intensity2, color.z * intensity2);
 
 			// change model colors
-			cycle.getSNC().Children[0].Components[1] = newcolor2;
-			cycle.getSNC().Children[1].Components[1] = newcolor3;
+			getCycle().getSNC().Children[0].Components[1] = newcolor2;
+			getCycle().getSNC().Children[1].Components[1] = newcolor3;
+		}
+
+		public Cycle getCycle() {
+			return this.cycle;
+		}
+
+		public void setCycle(Cycle cycle) {
+			this.cycle = cycle;
 		}
 
 		public void renderAFrame(Renderer _renderer) {
 			bool directionChanged = false;
 
 			// Cycle Rotation
-			float cycleYaw = _cycleTransform.Rotation.y;
+			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
 			if (Keyboard.IsKeyDown(input_keys.getKeyLeft())) {
 				if (this.player_id == 1) {
 					FuFiCycles._angleHorz += M.PiOver2;
 				}
 				//FuFiCycles._angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw -= M.PiOver2;
-				directionChanged = true;	
+				cycleYaw = FuFiCycles.NormRot(cycleYaw);
+				directionChanged = true;
+				cycle.setDirection(cycleYaw);
 			}
 
 			if (Keyboard.IsKeyDown(input_keys.getKeyRight())) {
@@ -151,7 +131,9 @@ namespace Fusee.FuFiCycles.Core {
 					//FuFiCycles._angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
 				}
 				cycleYaw += M.PiOver2;
+				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
+				cycle.setDirection(cycleYaw);
 			}
 			/*
 			if (Keyboard.IsKeyDown(input_keys.getKeyUp())) {
@@ -165,29 +147,48 @@ namespace Fusee.FuFiCycles.Core {
 					FuFiCycles._angleVelVert = -RotationSpeed * 0.02f * 0.002f;
 				}
 			}*/
-
-			cycleYaw = FuFiCycles.NormRot(cycleYaw);
-			setPosition(_cycleTransform.Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getSpeed());
-			_cycleTransform.Rotation = new float3(0, cycleYaw, 0);
-			_cycleTransform.Translation = getPosition();
+			getCycle().setPosition(getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getCycle().getSpeed());
+			getCycle().getSNC().GetTransform().Rotation = new float3(0, cycleYaw, 0);
+			getCycle().getSNC().GetTransform().Translation = getCycle().getPosition();
 
 			// Wheels
-			cycle.getFrontWheel().Rotation += new float3(getSpeed() * 0.008f, 0, 0);
-			cycle.getBackWheel().Rotation += new float3(getSpeed() * 0.008f, 0, 0);
+			getCycle().getFrontWheel().Rotation += new float3(getCycle().getSpeed() * 0.008f, 0, 0);
+			getCycle().getBackWheel().Rotation += new float3(getCycle().getSpeed() * 0.008f, 0, 0);
 
 			//Write Position into Array and throw crash if cycle collides with a wall or map border
-			int x = (int)System.Math.Floor(getPosition().x + 0.5);
-			int z = (int)System.Math.Floor(getPosition().z + 0.5);
+			int x = (int)System.Math.Floor(getCycle().getPosition().x + 0.5);
+			int z = (int)System.Math.Floor(getCycle().getPosition().z + 0.5);
 			try {
-				if (FuFiCycles._mapMirror[x, z] == 0) {
-					FuFiCycles._mapMirror[x, z] = getPlayerId();
-				} else {
-					// If value at _mapMirror[x, z] isn't 0, there is already a wall
-					collision();
+				// loop through all positions since last frame
+				for (int i = 0; i < cycle.getSpeed(); i++) {
+					int x2 = x;
+					int z2 = z;
+
+					switch (cycle.getDirection()) {
+						case Direction.RIGHT:
+							x2 -= i;
+							break;
+						case Direction.FORWARD:
+							z2 -= i;
+							break;
+						case Direction.LEFT:
+							x2 += i;
+							break;
+						case Direction.BACKWARD:
+							z2 += i;
+							break;
+					}
+
+					if (FuFiCycles._mapMirror[x2, z2] == 0) {
+						FuFiCycles._mapMirror[x2, z2] = getPlayerId();
+					} else {
+						// If value at _mapMirror[x2, z2] isn't 0, there is already a wall
+						getCycle().setCollided();
+					}
 				}
 			} catch (IndexOutOfRangeException e) {
 				// If Index is out of Range a Cycle has collided with the border of the map
-				collision();
+				getCycle().setCollided();
 				Debug.WriteLine(e.Message);
 			}
 			
@@ -200,18 +201,13 @@ namespace Fusee.FuFiCycles.Core {
 			// draw wall
 			prepareWall(cycleYaw);
 			
-			_renderer.Traverse(cycle.getSceneContainer().Children);
+			_renderer.Traverse(getCycle().getSceneContainer().Children);
 			_renderer.Traverse(_wall.Children);
 
 			// after first frame set _firstFrame var false
 			if (_firstFrame) {
 				_firstFrame = false;
 			}
-		}
-
-		private void collision() {
-			Debug.WriteLine("collision");
-			setSpeed(0);
 		}
 
 		private void prepareWall(float cycleYaw) {
@@ -223,37 +219,40 @@ namespace Fusee.FuFiCycles.Core {
 			}
 
 			// draw wall itself
-			float val = 0.1f;
-			if (cycleYaw < M.PiOver2 + val && cycleYaw > M.PiOver2 - val) {
-				_cycleWall.Translation.x += getSpeed() / 2;
-				_cycleWall.Scale.x = _cycleWall.Scale.x - getSpeed();
-			} else if (cycleYaw > -val && cycleYaw < val) {
-				_cycleWall.Translation.z += getSpeed() / 2;
-				_cycleWall.Scale.z = _cycleWall.Scale.z - getSpeed();
-			} else if (cycleYaw < -M.PiOver2 + val && cycleYaw > -M.PiOver2 - val) {
-				_cycleWall.Translation.x -= getSpeed() / 2;
-				_cycleWall.Scale.x = _cycleWall.Scale.x - getSpeed();
-			} else if (cycleYaw > M.Pi - val && cycleYaw < M.Pi + val || cycleYaw > -M.Pi - val && cycleYaw < -M.Pi + val) {
-				_cycleWall.Translation.z -= getSpeed() / 2;
-				_cycleWall.Scale.z = _cycleWall.Scale.z - getSpeed();
+			switch (cycle.getDirection()) {
+				case Direction.RIGHT:
+					_cycleWall.Translation.x += getCycle().getSpeed() / 2;
+					_cycleWall.Scale.x = _cycleWall.Scale.x - getCycle().getSpeed();
+					break;
+				case Direction.FORWARD:
+					_cycleWall.Translation.z += getCycle().getSpeed() / 2;
+					_cycleWall.Scale.z = _cycleWall.Scale.z - getCycle().getSpeed();
+					break;
+				case Direction.LEFT:
+					_cycleWall.Translation.x -= getCycle().getSpeed() / 2;
+					_cycleWall.Scale.x = _cycleWall.Scale.x - getCycle().getSpeed();
+					break;
+				case Direction.BACKWARD:
+					_cycleWall.Translation.z -= getCycle().getSpeed() / 2;
+					_cycleWall.Scale.z = _cycleWall.Scale.z - getCycle().getSpeed();
+					break;
 			}
 		}
 
 		private TransformComponent getWall(int x, int z, float cycleYaw) {
-			// fix wall position
-			float val = 0.1f;
-			if (cycleYaw < M.PiOver2 + val && cycleYaw > M.PiOver2 - val) {
-				x -= (int)getSpeed();
-				Debug.WriteLine("rechts");
-			} else if (cycleYaw > -val && cycleYaw < val) {
-				z -= (int)getSpeed();
-				Debug.WriteLine("vorne");
-			} else if (cycleYaw < -M.PiOver2 + val && cycleYaw > -M.PiOver2 - val) {
-				x += (int)getSpeed();
-				Debug.WriteLine("links");
-			} else if (cycleYaw > M.Pi - val && cycleYaw < M.Pi + val || cycleYaw > -M.Pi - val && cycleYaw < -M.Pi + val) {
-				z += (int)getSpeed();
-				Debug.WriteLine("hinten");
+			switch(cycle.getDirection()) {
+				case Direction.RIGHT:
+					x -= (int)getCycle().getSpeed();
+					break;
+				case Direction.FORWARD:
+					z -= (int)getCycle().getSpeed();
+					break;
+				case Direction.LEFT:
+					x += (int)getCycle().getSpeed();
+					break;
+				case Direction.BACKWARD:
+					z += (int)getCycle().getSpeed();
+					break;
 			}
 
 			SceneNodeContainer w = new SceneNodeContainer();

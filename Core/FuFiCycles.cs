@@ -48,7 +48,7 @@ namespace Fusee.FuFiCycles.Core {
 			// Add two player to the list
 			players.Add(new Player(1, new Cycle(1, _cycle), _wall));
 			players.Add(new Player(2, new Cycle(2, _cycle), _wall));
-			players[1].setPosition(new float3(600,0, 60));
+			players[1].getCycle().setPosition(new float3(600,0, 60));
 
 			// remove original cycle from cycle scene
 			_cycle.Children.Remove(_cycle.Children.FindNodes(c => c.Name == "cycle").First());
@@ -97,7 +97,7 @@ namespace Fusee.FuFiCycles.Core {
 			var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(_angleHorz);
 			var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
 			
-			_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[0].getPosition().x, players[0].getPosition().y, players[0].getPosition().z)));
+			_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[0].getCycle().getPosition().x, players[0].getCycle().getPosition().y, players[0].getCycle().getPosition().z)));
 			var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
 			RC.Projection = mtxOffset * _projection;
 
@@ -107,7 +107,9 @@ namespace Fusee.FuFiCycles.Core {
 
 			// render Cycles with their walls
 			for(int i = 0; i < players.Count; i++) {
-				players[i].renderAFrame(_renderer);
+				if (!players[i].getCycle().isCollided()) {
+					players[i].renderAFrame(_renderer);
+				}
 			}
 
 			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered farame) on the front buffer.
