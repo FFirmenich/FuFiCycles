@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 
 namespace Fusee.FuFiCycles.Core {
-	class InputKeys {
+	public class InputKeys {
 		private KeyCodes key_left;
 		private KeyCodes key_right;
 		private KeyCodes key_up;

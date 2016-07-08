@@ -12,7 +12,7 @@ using System;
 
 
 namespace Fusee.FuFiCycles.Core {
-	class Cycle {
+	public class Cycle {
 		// ccene and model vars
 		private SceneContainer sceneContainer;
 		private SceneNodeContainer sceneNodeContainer;
