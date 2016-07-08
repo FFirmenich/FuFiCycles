@@ -20,7 +20,7 @@ namespace Fusee.FuFiCycles.Core {
 		public InputKeys input_keys;
 
 		// vars for Rendering
-		SceneContainer _wall;
+		SceneContainer wall;
 
 		private TransformComponent _cycleTransform;
 
@@ -31,13 +31,13 @@ namespace Fusee.FuFiCycles.Core {
 
 		private const float RotationSpeed = 7;
 
-		public Player (int id, Cycle cycle, SceneContainer _wall) {
+		public Player (int id, Cycle cycle, SceneContainer wall) {
 			setCycle(cycle);
-			this._wall = _wall;
+			setWall(wall);
 
 			setPlayerId(id);
 
-			_wallSNC = _wall.Children.FindNodes(c => c.Name == "wall").First();
+			_wallSNC = getWall().Children.FindNodes(c => c.Name == "wall").First();
 
 			// TODO: let player pick color
 			switch (id) {
@@ -107,6 +107,14 @@ namespace Fusee.FuFiCycles.Core {
 
 		public void setCycle(Cycle cycle) {
 			this.cycle = cycle;
+		}
+
+		public SceneContainer getWall() {
+			return this.wall;
+		}
+
+		public void setWall(SceneContainer wall) {
+			this.wall = wall;
 		}
 
 		public void renderAFrame(Renderer _renderer) {
