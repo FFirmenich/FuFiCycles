@@ -67,7 +67,7 @@ namespace Fusee.FuFiCycles.Core {
 
 			// set speed
 			// TODO: let player set speed
-			setSpeed(60);
+			setSpeed(10);
 		}
 
 		private void scale() {

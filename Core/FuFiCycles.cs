@@ -7,48 +7,59 @@ using Fusee.Serialization;
 using static Fusee.Engine.Core.Input;
 using System.Linq;
 using Fusee.Xene;
+using System.Diagnostics;
 
 namespace Fusee.FuFiCycles.Core {
-	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production")]
+	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production", Width = 1920, Height = 1080)]
 	public class FuFiCycles : RenderCanvas {
+		// playerlist
 		private List<Player> players = new List<Player>();
 
-		// angle variables
-		public static float _angleHorz = 0, _angleVert = -M.PiOver6 * 0.2f, _angleVelHorz, _angleVelVert, _angleRoll, _angleRollInit, _zoomVel, _zoom;
-		private static float2 _offset;
-		private static float2 _offsetInit;
+		// shaders
+		private string vertexShader = AssetStorage.Get<string>("VertexShader2.vert");
+		private string pixelShader = AssetStorage.Get<string>("PixelShader2.frag");
 
-		public const float RotationSpeed = 7;
-		private const float Damping = 8f;
-
+		// scene containers
+		private Dictionary<string, SceneContainer> sceneContainers = new Dictionary<string, SceneContainer>();
 		private SceneContainer _scene = AssetStorage.Get<SceneContainer>("Land.fus");
-		private float4x4 _sceneScale;
-		private float4x4 _projection;
-
+		public float4x4 _sceneScale;
 		private SceneContainer _cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
 		private SceneContainer _wall = AssetStorage.Get<SceneContainer>("Wall.fus");
 
-		private bool _keys;
-
+		// cycle positions
 		private Dictionary<float3, int> _cyclePositions = new Dictionary<float3, int>();
+
+		// vars for Rendering
+		private Renderer _renderer;
+		public float _angleVert = -M.PiOver6 * 0.2f,_angleVelVert, _angleRoll, _angleRollInit, _zoom;
+		private static float2 _offset;
+		private static float2 _offsetInit;
+		public const float RotationSpeed = 7;
+		private const float Damping = 8f;
+		public bool _firstFrame = true;
 
 		private int _mapSize = 0;
 		public static float[,] _mapMirror;
 
-		private Renderer _renderer;
-
 		// Init is called on startup. 
 		public override void Init() {
-			// Load the scene
+			// Add SceneContainers to Dictionary
+			sceneContainers.Add("scene", _scene);
+			sceneContainers.Add("cycle", _cycle);
+			sceneContainers.Add("wall", _wall);
+
+			// Set Scene Scale
 			_sceneScale = float4x4.CreateScale(0.04f);
 
 			// Instantiate our self-written renderer
-			_renderer = new Renderer(RC);
+			_renderer = new Renderer(this);
 
 			// Add two player to the list
-			players.Add(new Player(1, new Cycle(1, _cycle), _wall));
-			players.Add(new Player(2, new Cycle(2, _cycle), _wall));
-			players[1].getCycle().setPosition(new float3(600,0, 60));
+			int playerNumber = 2;
+			for (int i = 0; i < playerNumber; i++) {
+				players.Add(new Player(i+1, this));
+			}
+			players[1].getCycle().setPosition(new float3(600, 0, 60));
 
 			// remove original cycle from cycle scene
 			_cycle.Children.Remove(_cycle.Children.FindNodes(c => c.Name == "cycle").First());
@@ -62,29 +73,14 @@ namespace Fusee.FuFiCycles.Core {
 			RC.ClearColor = new float4(1, 1, 1, 1);
 		}
 
-		// RenderAFrame is called once a frame
 		public override void RenderAFrame() {
 			// Clear the backbuffer
 			RC.Clear(ClearFlags.Color | ClearFlags.Depth);
-
-			// Mouse and keyboard movement
-			if (Keyboard.UpDownAxis != 0) {
-				_keys = true;
-			}
 			
 			var curDamp = (float)System.Math.Exp(0.1f);
-			
-			// zoom
-			_zoom += _zoomVel;
-			// Limit zoom
-			if (_zoom < 80)
-				_zoom = 80;
-			if (_zoom > 2000)
-				_zoom = 2000;
 
-			_angleHorz += _angleVelHorz;
-			// Wrap-around to keep _angleHorz between -PI and + PI
-			_angleHorz = M.MinAngle(_angleHorz);
+			// zoom
+			_zoom = 150;
 
 			_angleVert += _angleVelVert;
 			// Limit pitch to the range between [-PI/2, + PI/2]
@@ -92,30 +88,49 @@ namespace Fusee.FuFiCycles.Core {
 
 			// Wrap-around to keep _angleRoll between -PI and + PI
 			_angleRoll = M.MinAngle(_angleRoll);
-
-			// Create the camera matrix and set it as the current ModelView transformation
-			var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(_angleHorz);
-			var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
 			
-			_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[0].getCycle().getPosition().x, players[0].getCycle().getPosition().y, players[0].getCycle().getPosition().z)));
-			var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
-			RC.Projection = mtxOffset * _projection;
-
-			// Render
-			// render Scene
-			_renderer.Traverse(_scene.Children);
-
 			// render Cycles with their walls
 			for(int i = 0; i < players.Count; i++) {
-				if (!players[i].getCycle().isCollided()) {
-					players[i].renderAFrame(_renderer);
+				// Create the camera matrix and set it as the current ModelView transformation
+				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(players[i]._angleHorz);
+				var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
+				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
+				RC.Projection = mtxOffset * players[i].getProjection();
+				_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[i].getCycle().getPosition().x, players[i].getCycle().getPosition().y, players[i].getCycle().getPosition().z)));
+				switch (players[i].getPlayerId()) {
+					case 1:
+						RC.Viewport(0, 0, (Width / 2), Height);
+						break;
+					case 2:
+						RC.Viewport((Width / 2), 0, (Width / 2), Height);
+						break;
+					default:
+						break;
 				}
+				players[i].renderAFrame(_renderer);
+				_renderer.Traverse(sceneContainers["scene"].Children);
 			}
 
-			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered farame) on the front buffer.
+
+			// Setup Minimap
+			RC.Projection = float4x4.CreateOrthographic(_mapSize*2, _mapSize*2, 0.01f, 20);
+			_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
+			RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
+			for (int i = 0; i < players.Count; i++) {
+				players[i].renderView(_renderer);
+			}
+			_renderer.Traverse(sceneContainers["scene"].Children);
+			
+
+			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered frame) on the front buffer.
 			Present();
+
+			// after first frame set _firstFrame var false
+			if (_firstFrame) {
+				_firstFrame = false;
+			}
 		}
-		
+
 		public static float NormRot(float rot) {
 			while (rot > M.Pi)
 				rot -= M.TwoPi;
@@ -124,18 +139,27 @@ namespace Fusee.FuFiCycles.Core {
 			return rot;
 		}
 
+		public RenderContext getRC() {
+			return RC;
+		}
+
+		public string getVertexShader() {
+			return vertexShader;
+		}
+
+		public string getPixelShader() {
+			return pixelShader;
+		}
+
+		public Dictionary<string, SceneContainer> getSceneContainers() {
+			return this.sceneContainers;
+		}
+
 		// Is called when the window was resized
 		public override void Resize() {
-			// Set the new rendering area to the entire new windows size
-			RC.Viewport(0, 0, Width, Height);
-
-			// Create a new projection matrix generating undistorted images on the new aspect ratio.
-			var aspectRatio = Width / (float)Height;
-
-			// 0.25*PI Rad -> 45° Opening angle along the vertical direction. Horizontal opening angle is calculated based on the aspect ratio
-			// Front clipping happens at 1 (Objects nearer than 1 world unit get clipped)
-			// Back clipping happens at 2000 (Anything further away from the camera than 2000 world units gets clipped, polygons will be cut)
-			_projection = float4x4.CreatePerspectiveFieldOfView(M.PiOver4, aspectRatio, 1, 20000);
+			for (int i = 0; i < players.Count; i++) {
+				players[i].resize();
+			}
 		}
 	}
 }
