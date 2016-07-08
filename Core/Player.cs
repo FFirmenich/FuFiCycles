@@ -210,7 +210,7 @@ namespace Fusee.FuFiCycles.Core {
 			prepareWall(cycleYaw);
 			
 			_renderer.Traverse(getCycle().getSceneContainer().Children);
-			_renderer.Traverse(_wall.Children);
+			_renderer.Traverse(getWall().Children);
 
 			// after first frame set _firstFrame var false
 			if (_firstFrame) {
@@ -279,7 +279,7 @@ namespace Fusee.FuFiCycles.Core {
 			w.Components.Add(_wallSNC?.GetMesh());
 
 			// add new wall to wall scene
-			_wall.Children.Add(w);
+			getWall().Children.Add(w);
 
 			// set wall color
 			MaterialComponent newcolor = new MaterialComponent();
