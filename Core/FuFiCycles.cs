@@ -51,6 +51,11 @@ namespace Fusee.FuFiCycles.Core {
 			// Set Scene Scale
 			_sceneScale = float4x4.CreateScale(0.04f);
 
+			// set Map Size
+			//MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
+			_mapSize = 16000;
+			_mapMirror = new float[_mapSize, _mapSize];
+
 			// Instantiate our self-written renderer
 			_renderer = new Renderer(this);
 
@@ -59,15 +64,9 @@ namespace Fusee.FuFiCycles.Core {
 			for (int i = 0; i < playerNumber; i++) {
 				players.Add(new Player(i+1, this));
 			}
-			players[1].getCycle().setPosition(new float3(600, 0, 60));
 
 			// remove original cycle from cycle scene
 			_cycle.Children.Remove(_cycle.Children.FindNodes(c => c.Name == "cycle").First());
-
-			// set Map Size
-			//MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
-			_mapSize = 16000;
-			_mapMirror = new float[_mapSize, _mapSize];
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -153,6 +152,10 @@ namespace Fusee.FuFiCycles.Core {
 
 		public Dictionary<string, SceneContainer> getSceneContainers() {
 			return this.sceneContainers;
+		}
+
+		public int getMapSize() {
+			return _mapSize;
 		}
 
 		// Is called when the window was resized

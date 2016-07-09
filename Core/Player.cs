@@ -31,11 +31,15 @@ namespace Fusee.FuFiCycles.Core {
 		public float _angleHorz = 0;
 		public float _angleVelHorz;
 
+		// Wall Sizes
+		public static float WALL_WIDTH = 20.0f;
+		public static float WALL_HEIGHT = 0.5f;
+
 		public Player (int id, FuFiCycles instance) {
 			setInstance(instance);
 			setPlayerId(id);
 
-			setCycle(new Cycle(getPlayerId(), getInstance().getSceneContainers()["cycle"]));
+			setCycle(new Cycle(getPlayerId(), getInstance()));
 
 			_wallSNC = getInstance().getSceneContainers()["wall"].Children.FindNodes(c => c.Name == "wall").First();
 
@@ -242,6 +246,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		private TransformComponent getWall(int x, int z, float cycleYaw) {
+			// fix unwanted spaces between walls after direction has changed
 			switch(cycle.getDirection()) {
 				case Direction.RIGHT:
 					x -= (int)getCycle().getSpeed();
@@ -257,6 +262,7 @@ namespace Fusee.FuFiCycles.Core {
 					break;
 			}
 
+			//create new wall
 			SceneNodeContainer w = new SceneNodeContainer();
 			w.Name = "wall" + x + z;
 			w.Components = new List<SceneComponentContainer>();
@@ -265,7 +271,7 @@ namespace Fusee.FuFiCycles.Core {
 			TransformComponent tc = new TransformComponent();
 			tc.Name = "tc" + x + z;
 			tc.Rotation = new float3(0.0f, 0.0f, 0.0f);
-			tc.Scale = new float3(5.0f, 0.5f, 5.0f);
+			tc.Scale = new float3(WALL_WIDTH, WALL_HEIGHT, WALL_WIDTH);
 			tc.Translation = new float3(x, 0.0f, z);
 
 			w.Components.Add(tc);
@@ -315,7 +321,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		public void renderView(Renderer _renderer) {
-			_renderer.Traverse(getCycle().getSceneContainer().Children);
+			_renderer.Traverse(getInstance().getSceneContainers()["cycle"].Children);
 			_renderer.Traverse(getInstance().getSceneContainers()["wall"].Children);
 		}
 	}
