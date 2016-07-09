@@ -1,6 +1,3 @@
-D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Web\bin\Debug\Assets\Leaves.jpg
-D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Web\bin\Debug\Assets\PixelShader.frag
-D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Web\bin\Debug\Assets\VertexShader.vert
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Web\bin\Debug\Assets\Styles\browser.css
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Web\bin\Debug\Assets\Styles\loading_rocket.png
 D:\GameEngineering\FuFiCycles\tmp\Obj\Fusee.FuFiCycles.Web\bin\Debug\Assets\Sphere.jpg
