@@ -145,8 +145,8 @@ namespace Fusee.FuFiCycles.Core {
 
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
-			Debug.WriteLine(cycleYaw);
-			if (Keyboard.IsKeyDown(input_keys.getKeyLeft())) {
+			if (getInstance().keyboardKeys.keys[input_keys.getKeyLeft()].isPressed()) {
+				getInstance().keyboardKeys.keys[input_keys.getKeyLeft()].setUnpressed();
 				_angleHorz += M.PiOver2; //_angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw -= M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
@@ -154,7 +154,8 @@ namespace Fusee.FuFiCycles.Core {
 				getCycle().setDirection(cycleYaw);
 			}
 
-			if (Keyboard.IsKeyDown(input_keys.getKeyRight())) {
+			if (getInstance().keyboardKeys.keys[input_keys.getKeyRight()].isPressed()) {
+				getInstance().keyboardKeys.keys[input_keys.getKeyRight()].setUnpressed();
 				_angleHorz -= M.PiOver2; //_angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw += M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
@@ -363,6 +364,13 @@ namespace Fusee.FuFiCycles.Core {
 					_cycleWall.Scale.z -= WALL_WIDTH * 2;
 					break;
 			}
+		}
+
+		private bool isKeyDown(KeyCodes key) {
+			if (Keyboard.GetKey(key)) {
+				return true;
+			}
+			return false;
 		}
 	}
 }
