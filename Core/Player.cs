@@ -9,35 +9,39 @@ using static System.Math;
 using static Fusee.Engine.Core.Input;
 using System.Diagnostics;
 using System;
+using Fusee.Engine.Core;
 
 namespace Fusee.FuFiCycles.Core {
 
-	class Player {
+	public class Player {
 		private int player_id;
 		private String player_name;
 		private float3 color;
 		private Cycle cycle;
 		public InputKeys input_keys;
 
+		// Main instance
+		private FuFiCycles instance;
+
 		// vars for Rendering
-		SceneContainer wall;
-
-		private TransformComponent _cycleTransform;
-
+		public float4x4 projection;
 		private SceneNodeContainer _wallSNC;
+		private TransformComponent _cycleTransform;
 		private TransformComponent _cycleWall;
+		public float _angleHorz = 0;
+		public float _angleVelHorz;
 
-		private bool _firstFrame = true;
+		// Wall Sizes
+		public static float WALL_WIDTH = 20.0f;
+		public static float WALL_HEIGHT = 0.5f;
 
-		private const float RotationSpeed = 7;
-
-		public Player (int id, Cycle cycle, SceneContainer wall) {
-			setCycle(cycle);
-			setWall(wall);
-
+		public Player (int id, FuFiCycles instance) {
+			setInstance(instance);
 			setPlayerId(id);
 
-			_wallSNC = getWall().Children.FindNodes(c => c.Name == "wall").First();
+			setCycle(new Cycle(getPlayerId(), getInstance()));
+
+			_wallSNC = getInstance().getSceneContainers()["wall"].Children.FindNodes(c => c.Name == "wall").First();
 
 			// TODO: let player pick color
 			switch (id) {
@@ -53,6 +57,24 @@ namespace Fusee.FuFiCycles.Core {
 					Debug.WriteLine("ACHTUNG: Spieler 3 aufwärts haben keine Keys zugeordnet.");
 					setColor(new float3(0.2f, 0.2f, 0.2f));
 					break;
+			}
+
+			// set horizontal angle from cycle direction
+			switch(getCycle().getDirection()) {
+				case Direction.RIGHT:
+					_angleHorz = M.PiOver2;
+					break;
+				case Direction.FORWARD:
+					_angleHorz = 0;
+					break;
+				case Direction.LEFT:
+					_angleHorz = M.ThreePiOver2;
+					break;
+				case Direction.BACKWARD:
+					_angleHorz = M.Pi;
+					break;
+				default:
+					throw (new Exception("no direction found"));
 			}
 		}
 
@@ -109,40 +131,41 @@ namespace Fusee.FuFiCycles.Core {
 			this.cycle = cycle;
 		}
 
-		public SceneContainer getWall() {
-			return this.wall;
+		public FuFiCycles getInstance() {
+			return this.instance;
 		}
 
-		public void setWall(SceneContainer wall) {
-			this.wall = wall;
+		public void setInstance(FuFiCycles instance) {
+			this.instance = instance;
 		}
 
 		public void renderAFrame(Renderer _renderer) {
+
 			bool directionChanged = false;
 
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
+			Debug.WriteLine(cycleYaw);
 			if (Keyboard.IsKeyDown(input_keys.getKeyLeft())) {
-				if (this.player_id == 1) {
-					FuFiCycles._angleHorz += M.PiOver2;
-				}
-				//FuFiCycles._angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
+				_angleHorz += M.PiOver2; //_angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw -= M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
-				cycle.setDirection(cycleYaw);
+				getCycle().setDirection(cycleYaw);
 			}
 
 			if (Keyboard.IsKeyDown(input_keys.getKeyRight())) {
-				if (this.player_id == 1) {
-					FuFiCycles._angleHorz -= M.PiOver2;
-					//FuFiCycles._angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
-				}
+				_angleHorz -= M.PiOver2; //_angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw += M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
-				cycle.setDirection(cycleYaw);
+				getCycle().setDirection(cycleYaw);
 			}
+
+			_angleHorz += _angleVelHorz;
+			// Wrap-around to keep _angleHorz between -PI and + PI
+			_angleHorz = M.MinAngle(_angleHorz);
+
 			/*
 			if (Keyboard.IsKeyDown(input_keys.getKeyUp())) {
 				if (this.player_id == 1) {
@@ -156,7 +179,6 @@ namespace Fusee.FuFiCycles.Core {
 				}
 			}*/
 			getCycle().setPosition(getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getCycle().getSpeed());
-			getCycle().getSNC().GetTransform().Rotation = new float3(0, cycleYaw, 0);
 			getCycle().getSNC().GetTransform().Translation = getCycle().getPosition();
 
 			// Wheels
@@ -168,11 +190,11 @@ namespace Fusee.FuFiCycles.Core {
 			int z = (int)System.Math.Floor(getCycle().getPosition().z + 0.5);
 			try {
 				// loop through all positions since last frame
-				for (int i = 0; i < cycle.getSpeed(); i++) {
+				for (int i = 0; i < getCycle().getSpeed(); i++) {
 					int x2 = x;
 					int z2 = z;
 
-					switch (cycle.getDirection()) {
+					switch (getCycle().getDirection()) {
 						case Direction.RIGHT:
 							x2 -= i;
 							break;
@@ -201,21 +223,16 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			
 			// get new wall if direction has changed
-			
-			if (directionChanged || _firstFrame) {
+			if (directionChanged || getInstance()._firstFrame) {
 				_cycleWall = getWall(x, z, cycleYaw);
+				fixWallEdges();
 			}
 
 			// draw wall
 			prepareWall(cycleYaw);
-			
-			_renderer.Traverse(getCycle().getSceneContainer().Children);
-			_renderer.Traverse(getWall().Children);
 
-			// after first frame set _firstFrame var false
-			if (_firstFrame) {
-				_firstFrame = false;
-			}
+			// render Scene
+			renderView(_renderer);
 		}
 
 		private void prepareWall(float cycleYaw) {
@@ -227,7 +244,7 @@ namespace Fusee.FuFiCycles.Core {
 			}
 
 			// draw wall itself
-			switch (cycle.getDirection()) {
+			switch (getCycle().getDirection()) {
 				case Direction.RIGHT:
 					_cycleWall.Translation.x += getCycle().getSpeed() / 2;
 					_cycleWall.Scale.x = _cycleWall.Scale.x - getCycle().getSpeed();
@@ -248,21 +265,24 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		private TransformComponent getWall(int x, int z, float cycleYaw) {
-			switch(cycle.getDirection()) {
+			// fix unwanted spaces between walls after direction has changed
+			switch (getCycle().getDirection()) {
 				case Direction.RIGHT:
-					x -= (int)getCycle().getSpeed();
+					x -= (int)(getCycle().getSpeed());
 					break;
 				case Direction.FORWARD:
-					z -= (int)getCycle().getSpeed();
+					z -= (int)(getCycle().getSpeed());
 					break;
 				case Direction.LEFT:
-					x += (int)getCycle().getSpeed();
+					x += (int)(getCycle().getSpeed());
 					break;
 				case Direction.BACKWARD:
-					z += (int)getCycle().getSpeed();
+					z += (int)(getCycle().getSpeed());
 					break;
 			}
+			
 
+			//create new wall
 			SceneNodeContainer w = new SceneNodeContainer();
 			w.Name = "wall" + x + z;
 			w.Components = new List<SceneComponentContainer>();
@@ -271,7 +291,7 @@ namespace Fusee.FuFiCycles.Core {
 			TransformComponent tc = new TransformComponent();
 			tc.Name = "tc" + x + z;
 			tc.Rotation = new float3(0.0f, 0.0f, 0.0f);
-			tc.Scale = new float3(5.0f, 0.5f, 5.0f);
+			tc.Scale = new float3(WALL_WIDTH, WALL_HEIGHT, WALL_WIDTH);
 			tc.Translation = new float3(x, 0.0f, z);
 
 			w.Components.Add(tc);
@@ -279,7 +299,7 @@ namespace Fusee.FuFiCycles.Core {
 			w.Components.Add(_wallSNC?.GetMesh());
 
 			// add new wall to wall scene
-			getWall().Children.Add(w);
+			getInstance().getSceneContainers()["wall"].Children.Add(w);
 
 			// set wall color
 			MaterialComponent newcolor = new MaterialComponent();
@@ -292,5 +312,57 @@ namespace Fusee.FuFiCycles.Core {
 			return w.GetTransform();
 		}
 
+		// Is called when the window was resized
+		public void resize() {
+			switch(getPlayerId()) {
+				case 1:
+					getInstance().getRC().Viewport(0, 0, (getInstance().Width / 2), getInstance().Height);
+					break;
+				case 2:
+					getInstance().getRC().Viewport((getInstance().Width / 2), 0, (getInstance().Width / 2), getInstance().Height);
+					break;
+				default:
+					break;
+			}
+			var aspectRatio = (getInstance().Width / 2) / (float)getInstance().Height;
+
+			// 0.25*PI Rad -> 45° Opening angle along the vertical direction. Horizontal opening angle is calculated based on the aspect ratio
+			// Front clipping happens at 1 (Objects nearer than 1 world unit get clipped)
+			// Back clipping happens at 2000 (Anything further away from the camera than 2000 world units gets clipped, polygons will be cut)
+			setProjection(float4x4.CreatePerspectiveFieldOfView(M.PiOver4, aspectRatio, 1, 20000));
+		}
+
+		public void setProjection(float4x4 projection) {
+			this.projection = projection;
+		}
+
+		public float4x4 getProjection() {
+			return this.projection;
+		}
+
+		public void renderView(Renderer _renderer) {
+			_renderer.Traverse(getInstance().getSceneContainers()["cycle"].Children);
+			_renderer.Traverse(getInstance().getSceneContainers()["wall"].Children);
+		}
+
+		//
+		// Zusammenfassung:
+		//		fix Empty Edges between walls
+		private void fixWallEdges() {
+			switch (getCycle().getDirection()) {
+				case Direction.RIGHT:
+					_cycleWall.Scale.x -= WALL_WIDTH * 2;
+					break;
+				case Direction.FORWARD:
+					_cycleWall.Scale.z -= WALL_WIDTH * 2;
+					break;
+				case Direction.LEFT:
+					_cycleWall.Scale.x -= WALL_WIDTH * 2;
+					break;
+				case Direction.BACKWARD:
+					_cycleWall.Scale.z -= WALL_WIDTH * 2;
+					break;
+			}
+		}
 	}
 }

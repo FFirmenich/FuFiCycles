@@ -12,12 +12,14 @@ using System;
 
 
 namespace Fusee.FuFiCycles.Core {
-	class Cycle {
+	public class Cycle {
 		// ccene and model vars
-		private SceneContainer sceneContainer;
 		private SceneNodeContainer sceneNodeContainer;
 		private TransformComponent frontwheel;
 		private TransformComponent backwheel;
+
+		// Main instance
+		private FuFiCycles instance;
 
 		// speed, position etc.
 		private int id;
@@ -26,10 +28,10 @@ namespace Fusee.FuFiCycles.Core {
 		private bool collided = false;
 		private Direction direction;
 
-		public Cycle(int id, SceneContainer _cycle) {
+		public Cycle(int id, FuFiCycles instance) {
 			setId(id);
-			sceneContainer = _cycle;
-			SceneNodeContainer originalSceneNodeContainer = _cycle.Children.FindNodes(c => c.Name == "cycle").First();
+			setInstance(instance);
+			SceneNodeContainer originalSceneNodeContainer = getInstance().getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First();
 
 			sceneNodeContainer = new SceneNodeContainer();
 			sceneNodeContainer.Name = "cycle" + getId();
@@ -58,26 +60,25 @@ namespace Fusee.FuFiCycles.Core {
 				sceneNodeContainer.Children.Add(child);
 			}
 
-			frontwheel = _cycle.Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
-			backwheel = _cycle.Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
+			frontwheel = getInstance().getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
+			backwheel = getInstance().getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
 
 			scale();
 
-			sceneContainer.Children.Add(getSNC());
+			getInstance().getSceneContainers()["cycle"].Children.Add(getSNC());
 
 			// set speed
 			// TODO: let player set speed
-			setSpeed(60);
+			setSpeed(30);
+
+			// set the cycle to the right position according to its id
+			setCyclePosition();
 		}
 
 		private void scale() {
 			this.sceneNodeContainer.GetTransform().Scale.x = 30;
 			this.sceneNodeContainer.GetTransform().Scale.y = 30;
 			this.sceneNodeContainer.GetTransform().Scale.z = 30;
-		}
-
-		public SceneContainer getSceneContainer() {
-			return sceneContainer;
 		}
 
 		public SceneNodeContainer getSNC() {
@@ -131,23 +132,38 @@ namespace Fusee.FuFiCycles.Core {
 			return this.direction;
 		}
 
-		public void setDirection(float yaw) {
-			this.direction = yawToDirection(yaw);
+		public void setDirection(Direction direction) {
+			this.direction = direction;
+			getSNC().GetTransform().Rotation = new float3(0, direction.getYaw(), 0);
 		}
 
-		public Direction yawToDirection(float yaw) {
-			// fix wall position
-			float val = 0.1f;
-			if (yaw < M.PiOver2 + val && yaw > M.PiOver2 - val) {
-				return Direction.RIGHT;
-			} else if (yaw > -val && yaw < val || yaw < M.TwoPi + val && yaw > M.TwoPi - val) {
-				return Direction.FORWARD;
-			} else if (yaw < -M.PiOver2 + val && yaw > -M.PiOver2 - val || yaw < M.ThreePiOver2 + val && yaw > M.ThreePiOver2 - val) {
-				return Direction.LEFT;
-			} else if (yaw > M.Pi - val && yaw < M.Pi + val || yaw > -M.Pi - val && yaw < -M.Pi + val) {
-				return Direction.BACKWARD;
+		public void setDirection(float yaw) {
+			setDirection(DirectionMethods.directionFromYaw(yaw));
+		}
+
+		public FuFiCycles getInstance() {
+			return this.instance;
+		}
+
+		public void setInstance(FuFiCycles instance) {
+			this.instance = instance;
+		}
+
+		private void setCyclePosition() {
+			// TODO: let player pick color
+			switch (getId()) {
+				case 1:
+					setPosition(new float3(getInstance().getMapSize() / 2 + 100, 0, 100));
+					setDirection(Direction.FORWARD);
+					break;
+				case 2:
+					setPosition(new float3(getInstance().getMapSize() / 2 - 100, 0, getInstance().getMapSize() - 100));
+					setDirection(Direction.BACKWARD);
+					break;
+				default:
+					Debug.WriteLine("ACHTUNG: Spieler 3 aufwärts haben keine Positionen zugeordnet.");
+					break;
 			}
-			throw (new Exception("no direction found"));
 		}
 	}
 }

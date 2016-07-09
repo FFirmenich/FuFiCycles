@@ -8,10 +8,10 @@ using Fusee.Serialization;
 using Fusee.Xene;
 
 namespace Fusee.FuFiCycles.Core {
-	class Renderer : SceneVisitor {
+	public class Renderer : SceneVisitor {
+		public FuFiCycles instance;
 		public ShaderEffect ShaderEffect;
 
-		public RenderContext RC;
 		public float4x4 View;
 		private Dictionary<MeshComponent, Mesh> _meshes = new Dictionary<MeshComponent, Mesh>();
 		private Dictionary<string, ITexture> _textures = new Dictionary<string, ITexture>();
@@ -34,22 +34,22 @@ namespace Fusee.FuFiCycles.Core {
 			ImageData textureData = AssetStorage.Get<ImageData>(textureName);
 			ITexture texture;
 			if (!_textures.TryGetValue(textureName, out texture)) {
-				texture = RC.CreateTexture(textureData);
+				texture = getInstance().getRC().CreateTexture(textureData);
 				_textures[textureName] = texture;
 			}
 
 			return textureData;
 		}
 
-		public Renderer(RenderContext rc) {
-			RC = rc;
+		public Renderer(FuFiCycles instance) {
+			setInstance(instance);
 			LookupTexture("Sphere.jpg");
 
 			_shaderEffects["effect2"] = new ShaderEffect(
 				new[] {
 					new EffectPassDeclaration {
-						VS = AssetStorage.Get<string>("VertexShader2.vert"),
-						PS = AssetStorage.Get<string>("PixelShader2.frag"),
+						VS = getInstance().getVertexShader(),
+						PS = getInstance().getPixelShader(),
 						StateSet = new RenderStateSet {
 							ZEnable = true,
 						}
@@ -66,7 +66,7 @@ namespace Fusee.FuFiCycles.Core {
 					new EffectParameterDeclaration {Name="texmix", Value = 0.0f},
 					});
 
-			_shaderEffects["effect2"].AttachToContext(RC);
+			_shaderEffects["effect2"].AttachToContext(getInstance().getRC());
 
 			ShaderEffect = _shaderEffects["effect2"];
 		}
@@ -80,7 +80,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 		protected override void PopState() {
 			_model.Pop();
-			RC.ModelView = View * _model.Tos;
+			getInstance().getRC().ModelView = View * _model.Tos;
 		}
 		[VisitMethod]
 		void OnMesh(MeshComponent mesh) {
@@ -124,7 +124,14 @@ namespace Fusee.FuFiCycles.Core {
 		[VisitMethod]
 		void OnTransform(TransformComponent xform) {
 			_model.Tos *= xform.Matrix();
-			RC.ModelView = View * _model.Tos;
+			getInstance().getRC().ModelView = View * _model.Tos;
+		}
+
+		public void setInstance(FuFiCycles instance) {
+			this.instance = instance;
+		}
+		public FuFiCycles getInstance() {
+			return instance;
 		}
 	}
 }
