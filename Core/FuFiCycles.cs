@@ -31,7 +31,7 @@ namespace Fusee.FuFiCycles.Core {
 
 		// vars for Rendering
 		private Renderer _renderer;
-		public float _angleVert = -M.PiOver6 * 0.2f,_angleVelVert, _angleRoll, _angleRollInit, _zoom;
+		public float _angleVert = -M.PiOver6 * 0.2f, _angleVelVert, _angleRoll, _angleRollInit, _zoom;
 		private static float2 _offset;
 		private static float2 _offsetInit;
 		public const float RotationSpeed = 7;

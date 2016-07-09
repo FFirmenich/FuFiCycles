@@ -69,7 +69,7 @@ namespace Fusee.FuFiCycles.Core {
 
 			// set speed
 			// TODO: let player set speed
-			setSpeed(10);
+			setSpeed(30);
 
 			// set the cycle to the right position according to its id
 			setCyclePosition();
@@ -134,26 +134,13 @@ namespace Fusee.FuFiCycles.Core {
 
 		public void setDirection(Direction direction) {
 			this.direction = direction;
+			getSNC().GetTransform().Rotation = new float3(0, direction.getYaw(), 0);
 		}
 
 		public void setDirection(float yaw) {
-			this.direction = yawToDirection(yaw);
+			setDirection(DirectionMethods.directionFromYaw(yaw));
 		}
 
-		public Direction yawToDirection(float yaw) {
-			// fix wall position
-			float val = 0.1f;
-			if (yaw < M.PiOver2 + val && yaw > M.PiOver2 - val) {
-				return Direction.RIGHT;
-			} else if (yaw > -val && yaw < val || yaw < M.TwoPi + val && yaw > M.TwoPi - val) {
-				return Direction.FORWARD;
-			} else if (yaw < -M.PiOver2 + val && yaw > -M.PiOver2 - val || yaw < M.ThreePiOver2 + val && yaw > M.ThreePiOver2 - val) {
-				return Direction.LEFT;
-			} else if (yaw > M.Pi - val && yaw < M.Pi + val || yaw > -M.Pi - val && yaw < -M.Pi + val) {
-				return Direction.BACKWARD;
-			}
-			throw (new Exception("no direction found"));
-		}
 		public FuFiCycles getInstance() {
 			return this.instance;
 		}
@@ -166,10 +153,11 @@ namespace Fusee.FuFiCycles.Core {
 			// TODO: let player pick color
 			switch (getId()) {
 				case 1:
-					setPosition(new float3(getInstance().getMapSize() / 2, 0, 50));
+					setPosition(new float3(getInstance().getMapSize() / 2 + 100, 0, 100));
+					setDirection(Direction.FORWARD);
 					break;
 				case 2:
-					setPosition(new float3(getInstance().getMapSize() / 2, 0, getInstance().getMapSize() - 50));
+					setPosition(new float3(getInstance().getMapSize() / 2 - 100, 0, getInstance().getMapSize() - 100));
 					setDirection(Direction.BACKWARD);
 					break;
 				default:

@@ -58,6 +58,24 @@ namespace Fusee.FuFiCycles.Core {
 					setColor(new float3(0.2f, 0.2f, 0.2f));
 					break;
 			}
+
+			// set horizontal angle from cycle direction
+			switch(getCycle().getDirection()) {
+				case Direction.RIGHT:
+					_angleHorz = M.PiOver2;
+					break;
+				case Direction.FORWARD:
+					_angleHorz = 0;
+					break;
+				case Direction.LEFT:
+					_angleHorz = M.ThreePiOver2;
+					break;
+				case Direction.BACKWARD:
+					_angleHorz = M.Pi;
+					break;
+				default:
+					throw (new Exception("no direction found"));
+			}
 		}
 
 		//Get-Methods
@@ -127,12 +145,13 @@ namespace Fusee.FuFiCycles.Core {
 
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
+			Debug.WriteLine(cycleYaw);
 			if (Keyboard.IsKeyDown(input_keys.getKeyLeft())) {
 				_angleHorz += M.PiOver2; //_angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw -= M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
-				cycle.setDirection(cycleYaw);
+				getCycle().setDirection(cycleYaw);
 			}
 
 			if (Keyboard.IsKeyDown(input_keys.getKeyRight())) {
@@ -140,7 +159,7 @@ namespace Fusee.FuFiCycles.Core {
 				cycleYaw += M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
-				cycle.setDirection(cycleYaw);
+				getCycle().setDirection(cycleYaw);
 			}
 
 			_angleHorz += _angleVelHorz;
@@ -160,7 +179,6 @@ namespace Fusee.FuFiCycles.Core {
 				}
 			}*/
 			getCycle().setPosition(getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getCycle().getSpeed());
-			getCycle().getSNC().GetTransform().Rotation = new float3(0, cycleYaw, 0);
 			getCycle().getSNC().GetTransform().Translation = getCycle().getPosition();
 
 			// Wheels
@@ -172,11 +190,11 @@ namespace Fusee.FuFiCycles.Core {
 			int z = (int)System.Math.Floor(getCycle().getPosition().z + 0.5);
 			try {
 				// loop through all positions since last frame
-				for (int i = 0; i < cycle.getSpeed(); i++) {
+				for (int i = 0; i < getCycle().getSpeed(); i++) {
 					int x2 = x;
 					int z2 = z;
 
-					switch (cycle.getDirection()) {
+					switch (getCycle().getDirection()) {
 						case Direction.RIGHT:
 							x2 -= i;
 							break;
@@ -207,6 +225,7 @@ namespace Fusee.FuFiCycles.Core {
 			// get new wall if direction has changed
 			if (directionChanged || getInstance()._firstFrame) {
 				_cycleWall = getWall(x, z, cycleYaw);
+				fixWallEdges();
 			}
 
 			// draw wall
@@ -225,7 +244,7 @@ namespace Fusee.FuFiCycles.Core {
 			}
 
 			// draw wall itself
-			switch (cycle.getDirection()) {
+			switch (getCycle().getDirection()) {
 				case Direction.RIGHT:
 					_cycleWall.Translation.x += getCycle().getSpeed() / 2;
 					_cycleWall.Scale.x = _cycleWall.Scale.x - getCycle().getSpeed();
@@ -247,20 +266,21 @@ namespace Fusee.FuFiCycles.Core {
 
 		private TransformComponent getWall(int x, int z, float cycleYaw) {
 			// fix unwanted spaces between walls after direction has changed
-			switch(cycle.getDirection()) {
+			switch (getCycle().getDirection()) {
 				case Direction.RIGHT:
-					x -= (int)getCycle().getSpeed();
+					x -= (int)(getCycle().getSpeed());
 					break;
 				case Direction.FORWARD:
-					z -= (int)getCycle().getSpeed();
+					z -= (int)(getCycle().getSpeed());
 					break;
 				case Direction.LEFT:
-					x += (int)getCycle().getSpeed();
+					x += (int)(getCycle().getSpeed());
 					break;
 				case Direction.BACKWARD:
-					z += (int)getCycle().getSpeed();
+					z += (int)(getCycle().getSpeed());
 					break;
 			}
+			
 
 			//create new wall
 			SceneNodeContainer w = new SceneNodeContainer();
@@ -323,6 +343,26 @@ namespace Fusee.FuFiCycles.Core {
 		public void renderView(Renderer _renderer) {
 			_renderer.Traverse(getInstance().getSceneContainers()["cycle"].Children);
 			_renderer.Traverse(getInstance().getSceneContainers()["wall"].Children);
+		}
+
+		//
+		// Zusammenfassung:
+		//		fix Empty Edges between walls
+		private void fixWallEdges() {
+			switch (getCycle().getDirection()) {
+				case Direction.RIGHT:
+					_cycleWall.Scale.x -= WALL_WIDTH * 2;
+					break;
+				case Direction.FORWARD:
+					_cycleWall.Scale.z -= WALL_WIDTH * 2;
+					break;
+				case Direction.LEFT:
+					_cycleWall.Scale.x -= WALL_WIDTH * 2;
+					break;
+				case Direction.BACKWARD:
+					_cycleWall.Scale.z -= WALL_WIDTH * 2;
+					break;
+			}
 		}
 	}
 }
