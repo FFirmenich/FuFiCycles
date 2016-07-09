@@ -1,0 +1,132 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto Light", sans-serif;
+	font-size: 12pt;
+	color: white;
+}
+
+h1{
+	font-size: 8em;
+	margin: 0;
+	font-family: "Mathilde", sans-serif;
+}
+
+h3{
+	margin: 0;
+	font-family: "Mathilde", sans-serif;
+	font-size: 3em;
+}
+
+p{
+	margin: 0;
+}
+
+p > a {
+	color: white;
+}
+
+header{
+	display: flex;
+	color: rgb(77,77,77);
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 120px;
+	z-index: 1000;
+	background-color: white;
+	line-height: 100px;
+}
+
+#logo{
+	flex-wrap: row;
+	flex-basis: 50%;
+	padding-top: 10px;
+	padding-left: 200px;
+}
+
+#img_logo{
+	height: 100%;
+}
+
+#nav{
+	display: block;
+	flex-basis: 50%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: right;
+	padding: 10px;
+	padding-right: 50px;
+}
+
+main{
+	margin-top: 70px;
+}
+
+.pageheight{
+	height: calc(100vh - 200px);
+	position: relative;
+	padding-left: 200px;
+	padding-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(77,77,77);
+}
+
+a > span {
+	color: rgb(0,235,235);
+	font-size: 1.2em;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: 60px;
+}
+
+/* PAGES */
+#page_game{
+	background: url("./res/img/backscreen_futuristic.jpg");
+	background-size: cover;
+	background-repeat: none;
+	opacity: 0.7;
+}
+
+.container_game{
+	padding-top: 110px;
+}
+
+#game{
+	width: 800px;
+	height: 560px;
+}
+
+#page_properties{
+	background: rgb(0,235,235);
+}
+
+#page_instructions{
+	background: url("./res/img/backscreen_futuristic.jpg");
+	background-size: cover;
+	background-repeat: none;
+	opacity: 0.7;
+}
+
+#page_about{
+	background: rgb(77,77,77);
+}
+
+.little_menue{
+	height: 70px;
+	line-height: 50px;
+}
+
+.container_content{
+	display: block;
+	padding-top: 50px;
+	width: 40%;
+	float: left;
+}
