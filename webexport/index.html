@@ -28,8 +28,9 @@
 			</div>
 			<div id="page_properties" class="pageheight">
 				<h1 class="anchor">Properties</h1>
-				<div class="container_content">
-					<div id="player_names">
+				<div class="container_content container_props">
+					<div id="player_names" class="props">
+						<h3>Give each player a name.</h3>
 						<div id="name_player1">
 							<label for player1_name>Player 1:</label>
 							<input type="text" name="player_1_name" maxlength="10" placeholder="Player 1"/>
@@ -39,15 +40,21 @@
 							<input type="text" name="player_2_name" maxlength="10" placeholder="Player 2"/>
 						</div>
 					</div>
-					<div id="speed">
+					<div id="speed"  class="props">
+						<h3>If you like to make the match a bit difficulty, you can increase your speed.</h3>
 						<label for speed>cycle-speed</label>
 						<input type="range" name="speed" min="1" max="100" />
 					</div>
-					<div id="player_colors">
-						<label for player1_color>Player 1:</label>
-						<input type="color" name="player1_color" value="#00ffff">
-						<label for player2_color>Player 2:</label>
-						<input type="color" name="player2_color" value="#00ff00">
+					<div id="player_colors"  class="props">
+						<h3>Personalize your cycle with your favorite color.</h3>
+						<div id="color_player1">
+							<label for player1_color>Player 1:</label>
+							<input type="color" name="player1_color" value="#00ffff">
+						</div>
+						<div id="color_player2">
+							<label for player2_color>Player 2:</label>
+							<input type="color" name="player2_color" value="#00ff00">
+						</div>
 					</div>
 				</div>
 			</div>

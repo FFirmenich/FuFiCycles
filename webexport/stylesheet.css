@@ -130,3 +130,15 @@ a > span {
 	width: 40%;
 	float: left;
 }
+
+.container_props{
+	display: flex;
+	flex-wrap: column;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.props{
+	display: block;
+	width: 33%;
+}
