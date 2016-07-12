@@ -140,10 +140,8 @@ namespace Fusee.FuFiCycles.Core {
 			this.instance = instance;
 		}
 
-		public void renderAFrame(Renderer _renderer) {
-
+		public bool checkForDirectionChange() {
 			bool directionChanged = false;
-
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
 			if (getInstance().keyboardKeys.keys[input_keys.getKeyLeft()].isPressed()) {
@@ -163,6 +161,11 @@ namespace Fusee.FuFiCycles.Core {
 				directionChanged = true;
 				getCycle().setDirection(cycleYaw);
 			}
+			return directionChanged;
+		}
+
+		public void renderAFrame(Renderer _renderer) {
+			bool directionChanged = checkForDirectionChange();
 
 			_angleHorz += _angleVelHorz;
 			// Wrap-around to keep _angleHorz between -PI and + PI
@@ -180,7 +183,11 @@ namespace Fusee.FuFiCycles.Core {
 					FuFiCycles._angleVelVert = -RotationSpeed * 0.02f * 0.002f;
 				}
 			}*/
-			getCycle().setPosition(getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(cycleYaw), 0, (float)Cos(cycleYaw)) * getCycle().getSpeed());
+			getCycle().setPosition(
+				getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(getCycle().getDirection().getYaw()),
+				0,
+				(float)Cos(getCycle().getDirection().getYaw())) * getCycle().getSpeed()
+			);
 			getCycle().getSNC().GetTransform().Translation = getCycle().getPosition();
 
 			// Wheels
@@ -226,18 +233,18 @@ namespace Fusee.FuFiCycles.Core {
 			
 			// get new wall if direction has changed
 			if (directionChanged || getInstance()._firstFrame) {
-				_cycleWall = getWall(x, z, cycleYaw);
+				_cycleWall = getWall(x, z);
 				fixWallEdges();
 			}
 
 			// draw wall
-			prepareWall(cycleYaw);
+			prepareWall();
 
 			// render Scene
 			renderView(_renderer);
 		}
 
-		private void prepareWall(float cycleYaw) {
+		private void prepareWall() {
 
 			// if wall is under ground, move it up
 			// TODO: check if countdown is finished and game started
@@ -266,7 +273,7 @@ namespace Fusee.FuFiCycles.Core {
 			}
 		}
 
-		private TransformComponent getWall(int x, int z, float cycleYaw) {
+		private TransformComponent getWall(int x, int z) {
 			// fix unwanted spaces between walls after direction has changed
 			switch (getCycle().getDirection()) {
 				case Direction.RIGHT:

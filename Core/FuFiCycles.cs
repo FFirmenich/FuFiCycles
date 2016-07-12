@@ -102,31 +102,10 @@ namespace Fusee.FuFiCycles.Core {
 
 			// Wrap-around to keep _angleRoll between -PI and + PI
 			_angleRoll = M.MinAngle(_angleRoll);
-			
-			// render Cycles with their walls
-			for(int i = 0; i < players.Count; i++) {
-				// Create the camera matrix and set it as the current ModelView transformation
-				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(players[i]._angleHorz);
-				var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
-				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
-				RC.Projection = mtxOffset * players[i].getProjection();
-				_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[i].getCycle().getPosition().x, players[i].getCycle().getPosition().y, players[i].getCycle().getPosition().z)));
-				switch (players[i].getPlayerId()) {
-					case 1:
-						RC.Viewport(0, 0, (Width / 2), Height);
-						break;
-					case 2:
-						RC.Viewport((Width / 2), 0, (Width / 2), Height);
-						break;
-					default:
-						break;
-				}
-				players[i].renderAFrame(_renderer);
-				_renderer.Traverse(sceneContainers["landLines"].Children);
-			}
 
-
-			// MINIMAP
+			// render View for all players
+			renderPlayers();
+			// render Minimap
 			renderMiniMap();
 
 			// render gui
@@ -184,14 +163,7 @@ namespace Fusee.FuFiCycles.Core {
 			ROUNDS.Add(new Round(newRoundId));
 		}
 
-		/// <summary>
-		///  Clears all variables from the current round
-		/// </summary>
-		public void clearRoundVars() {
-
-		}
-
-		public void renderMiniMap() {
+		private void renderMiniMap() {
 			if (!SHOW_MINIMAP) {
 				return;
 			}
@@ -202,6 +174,28 @@ namespace Fusee.FuFiCycles.Core {
 				players[i].renderView(_renderer);
 			}
 			_renderer.Traverse(sceneContainers["land"].Children);
+		}
+
+		private void renderPlayers() {
+			for (int i = 0; i < players.Count; i++) {
+				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(players[i]._angleHorz);
+				var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
+				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
+				RC.Projection = mtxOffset * players[i].getProjection();
+				_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[i].getCycle().getPosition().x, players[i].getCycle().getPosition().y, players[i].getCycle().getPosition().z)));
+				switch (players[i].getPlayerId()) {
+					case 1:
+						RC.Viewport(0, 0, (Width / 2), Height);
+						break;
+					case 2:
+						RC.Viewport((Width / 2), 0, (Width / 2), Height);
+						break;
+					default:
+						break;
+				}
+				players[i].renderAFrame(_renderer);
+				_renderer.Traverse(sceneContainers["landLines"].Children);
+			}
 		}
 	}
 }
