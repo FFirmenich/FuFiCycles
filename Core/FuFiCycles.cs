@@ -31,8 +31,8 @@ namespace Fusee.FuFiCycles.Core {
 		private SceneContainer land = AssetStorage.Get<SceneContainer>("Land.fus");
 		private SceneContainer landLines = AssetStorage.Get<SceneContainer>("Land_Lines.fus");
 		public float4x4 _sceneScale;
-		private SceneContainer _cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
-		private SceneContainer _wall = AssetStorage.Get<SceneContainer>("Wall.fus");
+		private SceneContainer cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
+		private SceneContainer wall = AssetStorage.Get<SceneContainer>("Wall.fus");
 
 		// vars for Rendering
 		private Renderer _renderer;
@@ -56,8 +56,8 @@ namespace Fusee.FuFiCycles.Core {
 			// Add SceneContainers to Dictionary
 			sceneContainers.Add("land", land);
 			sceneContainers.Add("landLines", landLines);
-			sceneContainers.Add("cycle", _cycle);
-			sceneContainers.Add("wall", _wall);
+			sceneContainers.Add("cycle", cycle);
+			sceneContainers.Add("wall", wall);
 
 			// Set Scene Scale
 			_sceneScale = float4x4.CreateScale(0.04f);
