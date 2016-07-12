@@ -1,11 +1,11 @@
 @font-face {
     font-family: Mathilde;
-    src: url(mathilde.otf);
+    src: url(./res/font/mathilde.otf);
 }
 
 @font-face {
     font-family: Roboto-Light;
-    src: url(Roboto-Light.ttf);
+    src: url(./res/font/Roboto-Light.ttf);
 }
 
 html,body{
