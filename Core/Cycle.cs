@@ -3,12 +3,7 @@ using Fusee.Serialization;
 using Fusee.Xene;
 using System.Collections.Generic;
 using System.Linq;
-using Fusee.Base.Core;
-using Fusee.Engine.Common;
-using static System.Math;
-using static Fusee.Engine.Core.Input;
 using System.Diagnostics;
-using System;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
 
@@ -19,9 +14,6 @@ namespace Fusee.FuFiCycles.Core {
 		private TransformComponent frontwheel;
 		private TransformComponent backwheel;
 
-		// Main instance
-		private FuFiCycles instance;
-
 		// speed, position etc.
 		private int id;
 		private float speed;
@@ -29,10 +21,9 @@ namespace Fusee.FuFiCycles.Core {
 		private bool collided = false;
 		private Direction direction;
 
-		public Cycle(int id, FuFiCycles instance) {
+		public Cycle(int id) {
 			setId(id);
-			setInstance(instance);
-			SceneNodeContainer originalSceneNodeContainer = getInstance().getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First();
+			SceneNodeContainer originalSceneNodeContainer = INSTANCE.getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First();
 
 			sceneNodeContainer = new SceneNodeContainer();
 			sceneNodeContainer.Name = "cycle" + getId();
@@ -61,12 +52,12 @@ namespace Fusee.FuFiCycles.Core {
 				sceneNodeContainer.Children.Add(child);
 			}
 
-			frontwheel = getInstance().getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
-			backwheel = getInstance().getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
+			frontwheel = INSTANCE.getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
+			backwheel = INSTANCE.getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
 
 			scale();
 
-			getInstance().getSceneContainers()["cycle"].Children.Add(getSNC());
+			INSTANCE.getSceneContainers()["cycle"].Children.Add(getSNC());
 
 			// set speed
 			// TODO: let player set speed
@@ -141,15 +132,6 @@ namespace Fusee.FuFiCycles.Core {
 		public void setDirection(float yaw) {
 			setDirection(DirectionMethods.directionFromYaw(yaw));
 		}
-
-		public FuFiCycles getInstance() {
-			return this.instance;
-		}
-
-		public void setInstance(FuFiCycles instance) {
-			this.instance = instance;
-		}
-
 		private void setCyclePosition() {
 			// TODO: let player pick color
 			switch (getId()) {

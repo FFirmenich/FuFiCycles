@@ -4,10 +4,8 @@ using Fusee.Engine.Common;
 using Fusee.Engine.Core;
 using Fusee.Math.Core;
 using Fusee.Serialization;
-using static Fusee.Engine.Core.Input;
 using System.Linq;
 using Fusee.Xene;
-using System.Diagnostics;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
@@ -51,7 +49,7 @@ namespace Fusee.FuFiCycles.Core {
 			keyboardKeys = new KeyboardKeys();
 
 			// Init GUI
-			_gui = new GUI(this);
+			_gui = new GUI();
 
 			// Add SceneContainers to Dictionary
 			sceneContainers.Add("land", land);
@@ -70,11 +68,11 @@ namespace Fusee.FuFiCycles.Core {
 			newRound();
 
 			// Instantiate our self-written renderer
-			_renderer = new Renderer(this);
+			_renderer = new Renderer();
 
 			// Add players to the list
 			for (int i = 0; i < PLAYER_QUANTITY; i++) {
-				players.Add(new Player(i+1, this));
+				players.Add(new Player(i+1));
 			}
 
 			// remove original cycle from cycle scene

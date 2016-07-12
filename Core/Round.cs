@@ -1,9 +1,4 @@
-﻿using Fusee.Math.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using static Fusee.FuFiCycles.Core.GameSettings;
+﻿using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	/// <summary>

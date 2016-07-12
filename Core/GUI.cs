@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Fusee.Math.Core;
 using Fusee.Engine.Core.GUI;
 using Fusee.Engine.Core;
-using Fusee.Engine.Common;
 using Fusee.Base.Core;
 using System.Diagnostics;
-using Fusee.Base.Common;
+using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	public class GUI {
-		// Main instance
-		private FuFiCycles instance;
-
 		public GUIHandler guiHandler;
 
 		public GUIButton _guiFuseeLink;
@@ -28,11 +21,10 @@ namespace Fusee.FuFiCycles.Core {
 		public float score = 0;
 
 
-		public GUI(FuFiCycles instance) {
-			setInstance(instance);
+		public GUI() {
 			//guihandler
 			guiHandler = new GUIHandler();
-			guiHandler.AttachToContext(getInstance().getRC());
+			guiHandler.AttachToContext(INSTANCE.getRC());
 
 
 			var font1 = AssetStorage.Get<Font>("Roboto-Light.ttf");
@@ -99,14 +91,6 @@ namespace Fusee.FuFiCycles.Core {
 
 		public GUIHandler getGUIHandler() {
 			return this.guiHandler;
-		}
-
-		public FuFiCycles getInstance() {
-			return this.instance;
-		}
-
-		public void setInstance(FuFiCycles instance) {
-			this.instance = instance;
 		}
 	}
 }

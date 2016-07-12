@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Fusee.Base.Core;
 using Fusee.Engine.Common;
 using Fusee.Math.Core;
 using Fusee.Serialization;
@@ -9,7 +8,6 @@ using static System.Math;
 using static Fusee.Engine.Core.Input;
 using System.Diagnostics;
 using System;
-using Fusee.Engine.Core;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
@@ -20,9 +18,6 @@ namespace Fusee.FuFiCycles.Core {
 		private float3 color;
 		private Cycle cycle;
 		public InputKeys input_keys;
-
-		// Main instance
-		private FuFiCycles instance;
 
 		// vars for Rendering
 		public float4x4 projection;
@@ -36,13 +31,12 @@ namespace Fusee.FuFiCycles.Core {
 		public static float WALL_WIDTH = 20.0f;
 		public static float WALL_HEIGHT = 0.5f;
 
-		public Player (int id, FuFiCycles instance) {
-			setInstance(instance);
+		public Player (int id) {
 			setPlayerId(id);
 
-			setCycle(new Cycle(getPlayerId(), getInstance()));
+			setCycle(new Cycle(getPlayerId()));
 
-			_wallSNC = getInstance().getSceneContainers()["wall"].Children.FindNodes(c => c.Name == "wall").First();
+			_wallSNC = INSTANCE.getSceneContainers()["wall"].Children.FindNodes(c => c.Name == "wall").First();
 
 			// TODO: let player pick color
 			switch (id) {
@@ -132,20 +126,15 @@ namespace Fusee.FuFiCycles.Core {
 			this.cycle = cycle;
 		}
 
-		public FuFiCycles getInstance() {
-			return this.instance;
-		}
-
-		public void setInstance(FuFiCycles instance) {
-			this.instance = instance;
-		}
-
 		public bool checkForDirectionChange() {
+			if(getCycle().isCollided()) {
+				return false;
+			}
 			bool directionChanged = false;
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
-			if (getInstance().keyboardKeys.keys[input_keys.getKeyLeft()].isPressed()) {
-				getInstance().keyboardKeys.keys[input_keys.getKeyLeft()].setUnpressed();
+			if (INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].isPressed()) {
+				INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].setUnpressed();
 				_angleHorz += M.PiOver2; //_angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw -= M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
@@ -153,8 +142,8 @@ namespace Fusee.FuFiCycles.Core {
 				getCycle().setDirection(cycleYaw);
 			}
 
-			if (getInstance().keyboardKeys.keys[input_keys.getKeyRight()].isPressed()) {
-				getInstance().keyboardKeys.keys[input_keys.getKeyRight()].setUnpressed();
+			if (INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].isPressed()) {
+				INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].setUnpressed();
 				_angleHorz -= M.PiOver2; //_angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
 				cycleYaw += M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
@@ -232,7 +221,7 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			
 			// get new wall if direction has changed
-			if (directionChanged || getInstance()._firstFrame) {
+			if (directionChanged || INSTANCE._firstFrame) {
 				_cycleWall = getWall(x, z);
 				fixWallEdges();
 			}
@@ -308,7 +297,7 @@ namespace Fusee.FuFiCycles.Core {
 			w.Components.Add(_wallSNC?.GetMesh());
 
 			// add new wall to wall scene
-			getInstance().getSceneContainers()["wall"].Children.Add(w);
+			INSTANCE.getSceneContainers()["wall"].Children.Add(w);
 
 			// set wall color
 			MaterialComponent newcolor = new MaterialComponent();
@@ -325,15 +314,15 @@ namespace Fusee.FuFiCycles.Core {
 		public void resize() {
 			switch(getPlayerId()) {
 				case 1:
-					getInstance().getRC().Viewport(0, 0, (getInstance().Width / 2), getInstance().Height);
+					INSTANCE.getRC().Viewport(0, 0, (INSTANCE.Width / 2), INSTANCE.Height);
 					break;
 				case 2:
-					getInstance().getRC().Viewport((getInstance().Width / 2), 0, (getInstance().Width / 2), getInstance().Height);
+					INSTANCE.getRC().Viewport((INSTANCE.Width / 2), 0, (INSTANCE.Width / 2), INSTANCE.Height);
 					break;
 				default:
 					break;
 			}
-			var aspectRatio = (getInstance().Width / 2) / (float)getInstance().Height;
+			var aspectRatio = (INSTANCE.Width / 2) / (float)INSTANCE.Height;
 
 			// 0.25*PI Rad -> 45° Opening angle along the vertical direction. Horizontal opening angle is calculated based on the aspect ratio
 			// Front clipping happens at 1 (Objects nearer than 1 world unit get clipped)
@@ -350,8 +339,8 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		public void renderView(Renderer _renderer) {
-			_renderer.Traverse(getInstance().getSceneContainers()["cycle"].Children);
-			_renderer.Traverse(getInstance().getSceneContainers()["wall"].Children);
+			_renderer.Traverse(INSTANCE.getSceneContainers()["cycle"].Children);
+			_renderer.Traverse(INSTANCE.getSceneContainers()["wall"].Children);
 		}
 
 		//

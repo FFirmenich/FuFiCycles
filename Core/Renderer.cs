@@ -6,10 +6,10 @@ using Fusee.Engine.Core;
 using Fusee.Math.Core;
 using Fusee.Serialization;
 using Fusee.Xene;
+using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	public class Renderer : SceneVisitor {
-		public FuFiCycles instance;
 		public ShaderEffect ShaderEffect;
 
 		public float4x4 View;
@@ -34,22 +34,21 @@ namespace Fusee.FuFiCycles.Core {
 			ImageData textureData = AssetStorage.Get<ImageData>(textureName);
 			ITexture texture;
 			if (!_textures.TryGetValue(textureName, out texture)) {
-				texture = getInstance().getRC().CreateTexture(textureData);
+				texture = INSTANCE.getRC().CreateTexture(textureData);
 				_textures[textureName] = texture;
 			}
 
 			return textureData;
 		}
 
-		public Renderer(FuFiCycles instance) {
-			setInstance(instance);
+		public Renderer() {
 			LookupTexture("Sphere.jpg");
 
 			_shaderEffects["effect2"] = new ShaderEffect(
 				new[] {
 					new EffectPassDeclaration {
-						VS = getInstance().getVertexShader(),
-						PS = getInstance().getPixelShader(),
+						VS = INSTANCE.getVertexShader(),
+						PS = INSTANCE.getPixelShader(),
 						StateSet = new RenderStateSet {
 							ZEnable = true,
 						}
@@ -66,7 +65,7 @@ namespace Fusee.FuFiCycles.Core {
 					new EffectParameterDeclaration {Name="texmix", Value = 0.0f},
 					});
 
-			_shaderEffects["effect2"].AttachToContext(getInstance().getRC());
+			_shaderEffects["effect2"].AttachToContext(INSTANCE.getRC());
 
 			ShaderEffect = _shaderEffects["effect2"];
 		}
@@ -80,7 +79,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 		protected override void PopState() {
 			_model.Pop();
-			getInstance().getRC().ModelView = View * _model.Tos;
+			INSTANCE.getRC().ModelView = View * _model.Tos;
 		}
 		[VisitMethod]
 		void OnMesh(MeshComponent mesh) {
@@ -124,14 +123,7 @@ namespace Fusee.FuFiCycles.Core {
 		[VisitMethod]
 		void OnTransform(TransformComponent xform) {
 			_model.Tos *= xform.Matrix();
-			getInstance().getRC().ModelView = View * _model.Tos;
-		}
-
-		public void setInstance(FuFiCycles instance) {
-			this.instance = instance;
-		}
-		public FuFiCycles getInstance() {
-			return instance;
+			INSTANCE.getRC().ModelView = View * _model.Tos;
 		}
 	}
 }
