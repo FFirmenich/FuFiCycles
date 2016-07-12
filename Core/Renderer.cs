@@ -17,6 +17,10 @@ namespace Fusee.FuFiCycles.Core {
 		private Dictionary<string, ITexture> _textures = new Dictionary<string, ITexture>();
 		public Dictionary<string, ShaderEffect> _shaderEffects = new Dictionary<string, ShaderEffect>();
 		private CollapsingStateStack<float4x4> _model = new CollapsingStateStack<float4x4>();
+
+		// shaders
+		private string vertexShader = AssetStorage.Get<string>("VertexShader2.vert");
+		private string pixelShader = AssetStorage.Get<string>("PixelShader2.frag");
 		private Mesh LookupMesh(MeshComponent mc) {
 			Mesh mesh;
 			if (!_meshes.TryGetValue(mc, out mesh)) {
@@ -47,8 +51,8 @@ namespace Fusee.FuFiCycles.Core {
 			_shaderEffects["effect2"] = new ShaderEffect(
 				new[] {
 					new EffectPassDeclaration {
-						VS = INSTANCE.getVertexShader(),
-						PS = INSTANCE.getPixelShader(),
+						VS = vertexShader,
+						PS = pixelShader,
 						StateSet = new RenderStateSet {
 							ZEnable = true,
 						}

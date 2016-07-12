@@ -20,17 +20,8 @@ namespace Fusee.FuFiCycles.Core {
 		// playerlist
 		private List<Player> players = new List<Player>();
 
-		// shaders
-		private string vertexShader = AssetStorage.Get<string>("VertexShader2.vert");
-		private string pixelShader = AssetStorage.Get<string>("PixelShader2.frag");
-
 		// scene containers
 		private Dictionary<string, SceneContainer> sceneContainers = new Dictionary<string, SceneContainer>();
-		private SceneContainer land = AssetStorage.Get<SceneContainer>("Land.fus");
-		private SceneContainer landLines = AssetStorage.Get<SceneContainer>("Land_Lines.fus");
-		public float4x4 _sceneScale;
-		private SceneContainer cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
-		private SceneContainer wall = AssetStorage.Get<SceneContainer>("Wall.fus");
 
 		// vars for Rendering
 		private Renderer _renderer;
@@ -51,20 +42,9 @@ namespace Fusee.FuFiCycles.Core {
 			// Init GUI
 			_gui = new GUI();
 
-			// Add SceneContainers to Dictionary
-			sceneContainers.Add("land", land);
-			sceneContainers.Add("landLines", landLines);
-			sceneContainers.Add("cycle", cycle);
-			sceneContainers.Add("wall", wall);
+			addSceneContainers();
+			setMapSize();
 
-			// Set Scene Scale
-			_sceneScale = float4x4.CreateScale(0.04f);
-
-			// set Map Size
-			MeshComponent ground = sceneContainers["landLines"].Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
-			MAP_SIZE = (int)ground.BoundingBox.Size.x;
-
-			// start new round
 			newRound();
 
 			// Instantiate our self-written renderer
@@ -101,9 +81,7 @@ namespace Fusee.FuFiCycles.Core {
 			// Wrap-around to keep _angleRoll between -PI and + PI
 			_angleRoll = M.MinAngle(_angleRoll);
 
-			// render View for all players
 			renderPlayers();
-			// render Minimap
 			renderMiniMap();
 
 			// render gui
@@ -130,14 +108,6 @@ namespace Fusee.FuFiCycles.Core {
 			return RC;
 		}
 
-		public string getVertexShader() {
-			return vertexShader;
-		}
-
-		public string getPixelShader() {
-			return pixelShader;
-		}
-
 		public Dictionary<string, SceneContainer> getSceneContainers() {
 			return this.sceneContainers;
 		}
@@ -161,6 +131,9 @@ namespace Fusee.FuFiCycles.Core {
 			ROUNDS.Add(new Round(newRoundId));
 		}
 
+		/// <summary>
+		/// renders the mini map at the top center of the screen
+		/// </summary>
 		private void renderMiniMap() {
 			if (!SHOW_MINIMAP) {
 				return;
@@ -173,14 +146,16 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			_renderer.Traverse(sceneContainers["land"].Children);
 		}
-
+		/// <summary>
+		///  renders the View for all players
+		/// </summary>
 		private void renderPlayers() {
 			for (int i = 0; i < players.Count; i++) {
 				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(players[i]._angleHorz);
 				var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
 				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
 				RC.Projection = mtxOffset * players[i].getProjection();
-				_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[i].getCycle().getPosition().x, players[i].getCycle().getPosition().y, players[i].getCycle().getPosition().z)));
+				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(players[i].getCycle().getPosition().x, players[i].getCycle().getPosition().y, players[i].getCycle().getPosition().z)));
 				switch (players[i].getPlayerId()) {
 					case 1:
 						RC.Viewport(0, 0, (Width / 2), Height);
@@ -194,6 +169,22 @@ namespace Fusee.FuFiCycles.Core {
 				players[i].renderAFrame(_renderer);
 				_renderer.Traverse(sceneContainers["landLines"].Children);
 			}
+		}
+		/// <summary>
+		///  Set the map size according to the boundingbox of the grounds mesh
+		/// </summary>
+		private void setMapSize() {
+			MeshComponent ground = sceneContainers["landLines"].Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
+			MAP_SIZE = (int)ground.BoundingBox.Size.x;
+		}
+		/// <summary>
+		///  Add SceneContainers to Dictionary sceneContainers
+		/// </summary>
+		private void addSceneContainers() {
+			sceneContainers.Add("land", AssetStorage.Get<SceneContainer>("Land.fus"));
+			sceneContainers.Add("landLines", AssetStorage.Get<SceneContainer>("Land_Lines.fus"));
+			sceneContainers.Add("cycle", AssetStorage.Get<SceneContainer>("Cycle.fus"));
+			sceneContainers.Add("wall", AssetStorage.Get<SceneContainer>("Wall.fus"));
 		}
 	}
 }
