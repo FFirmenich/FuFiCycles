@@ -12,6 +12,12 @@ using System.Diagnostics;
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production", Width = 1920, Height = 1080)]
 	public class FuFiCycles : RenderCanvas {
+		// Game Settings
+		public static bool SHOW_MINIMAP = true;
+
+		// Keyboard Keys
+		public KeyboardKeys keyboardKeys;
+
 		// playerlist
 		private List<Player> players = new List<Player>();
 
@@ -21,7 +27,8 @@ namespace Fusee.FuFiCycles.Core {
 
 		// scene containers
 		private Dictionary<string, SceneContainer> sceneContainers = new Dictionary<string, SceneContainer>();
-		private SceneContainer _scene = AssetStorage.Get<SceneContainer>("Land.fus");
+		private SceneContainer land = AssetStorage.Get<SceneContainer>("Land.fus");
+		private SceneContainer landLines = AssetStorage.Get<SceneContainer>("Land_Lines.fus");
 		public float4x4 _sceneScale;
 		private SceneContainer _cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
 		private SceneContainer _wall = AssetStorage.Get<SceneContainer>("Wall.fus");
@@ -43,8 +50,12 @@ namespace Fusee.FuFiCycles.Core {
 
 		// Init is called on startup. 
 		public override void Init() {
+			// Init Keyboard
+			keyboardKeys = new KeyboardKeys();
+
 			// Add SceneContainers to Dictionary
-			sceneContainers.Add("scene", _scene);
+			sceneContainers.Add("land", land);
+			sceneContainers.Add("landLines", landLines);
 			sceneContainers.Add("cycle", _cycle);
 			sceneContainers.Add("wall", _wall);
 
@@ -75,6 +86,10 @@ namespace Fusee.FuFiCycles.Core {
 		public override void RenderAFrame() {
 			// Clear the backbuffer
 			RC.Clear(ClearFlags.Color | ClearFlags.Depth);
+
+			// refresh Keyboard Inputs
+			keyboardKeys.renderAFrame();
+
 			
 			var curDamp = (float)System.Math.Exp(0.1f);
 
@@ -107,18 +122,20 @@ namespace Fusee.FuFiCycles.Core {
 						break;
 				}
 				players[i].renderAFrame(_renderer);
-				_renderer.Traverse(sceneContainers["scene"].Children);
+				_renderer.Traverse(sceneContainers["landLines"].Children);
 			}
 
 
 			// Setup Minimap
-			RC.Projection = float4x4.CreateOrthographic(_mapSize*2, _mapSize*2, 0.01f, 20);
-			_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
-			RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
-			for (int i = 0; i < players.Count; i++) {
-				players[i].renderView(_renderer);
+			if(SHOW_MINIMAP) {
+				RC.Projection = float4x4.CreateOrthographic(_mapSize * 2, _mapSize * 2, 0.01f, 20);
+				_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
+				RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
+				for (int i = 0; i < players.Count; i++) {
+					players[i].renderView(_renderer);
+				}
+				_renderer.Traverse(sceneContainers["land"].Children);
 			}
-			_renderer.Traverse(sceneContainers["scene"].Children);
 			
 
 			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered frame) on the front buffer.

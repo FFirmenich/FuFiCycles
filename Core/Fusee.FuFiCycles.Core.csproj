@@ -43,6 +43,8 @@
     <OutputRoot>$(ProjectBuildRoot)\bin\$(Configuration)\</OutputRoot>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="KeyboardKeys.cs" />
+    <Compile Include="KeyboardKey.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Cycle.cs" />
     <Compile Include="Player.cs" />
@@ -91,6 +93,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Assets\Cycle.fus">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Land_Lines.fus">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="Assets\PixelShader2.frag">
