@@ -43,6 +43,9 @@
     <OutputRoot>$(ProjectBuildRoot)\bin\$(Configuration)\</OutputRoot>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GameSettings.cs" />
+    <Compile Include="Round.cs" />
+    <Compile Include="GUI.cs" />
     <Compile Include="KeyboardKeys.cs" />
     <Compile Include="KeyboardKey.cs" />
     <Compile Include="Direction.cs" />
@@ -101,6 +104,9 @@
     <None Include="Assets\PixelShader2.frag">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="Assets\Roboto-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Assets\VertexShader2.vert">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

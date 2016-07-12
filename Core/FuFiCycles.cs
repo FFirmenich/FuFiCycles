@@ -8,15 +8,16 @@ using static Fusee.Engine.Core.Input;
 using System.Linq;
 using Fusee.Xene;
 using System.Diagnostics;
+using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production", Width = 1920, Height = 1080)]
 	public class FuFiCycles : RenderCanvas {
-		// Game Settings
-		public static bool SHOW_MINIMAP = true;
-
 		// Keyboard Keys
 		public KeyboardKeys keyboardKeys;
+
+		// GUI
+		private GUI _gui;
 
 		// playerlist
 		private List<Player> players = new List<Player>();
@@ -33,9 +34,6 @@ namespace Fusee.FuFiCycles.Core {
 		private SceneContainer _cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
 		private SceneContainer _wall = AssetStorage.Get<SceneContainer>("Wall.fus");
 
-		// cycle positions
-		private Dictionary<float3, int> _cyclePositions = new Dictionary<float3, int>();
-
 		// vars for Rendering
 		private Renderer _renderer;
 		public float _angleVert = -M.PiOver6 * 0.2f, _angleVelVert, _angleRoll, _angleRollInit, _zoom;
@@ -45,13 +43,15 @@ namespace Fusee.FuFiCycles.Core {
 		private const float Damping = 8f;
 		public bool _firstFrame = true;
 
-		private int _mapSize = 0;
-		public static float[,] _mapMirror;
-
 		// Init is called on startup. 
 		public override void Init() {
+			INSTANCE = this;
+
 			// Init Keyboard
 			keyboardKeys = new KeyboardKeys();
+
+			// Init GUI
+			_gui = new GUI(this);
 
 			// Add SceneContainers to Dictionary
 			sceneContainers.Add("land", land);
@@ -63,21 +63,22 @@ namespace Fusee.FuFiCycles.Core {
 			_sceneScale = float4x4.CreateScale(0.04f);
 
 			// set Map Size
-			//MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
-			_mapSize = 16000;
-			_mapMirror = new float[_mapSize, _mapSize];
+			MeshComponent ground = sceneContainers["landLines"].Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
+			MAP_SIZE = (int)ground.BoundingBox.Size.x;
+
+			// start new round
+			newRound();
 
 			// Instantiate our self-written renderer
 			_renderer = new Renderer(this);
 
-			// Add two player to the list
-			int playerNumber = 2;
-			for (int i = 0; i < playerNumber; i++) {
+			// Add players to the list
+			for (int i = 0; i < PLAYER_QUANTITY; i++) {
 				players.Add(new Player(i+1, this));
 			}
 
 			// remove original cycle from cycle scene
-			_cycle.Children.Remove(_cycle.Children.FindNodes(c => c.Name == "cycle").First());
+			sceneContainers["cycle"].Children.Remove(sceneContainers["cycle"].Children.FindNodes(c => c.Name == "cycle").First());
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -89,7 +90,6 @@ namespace Fusee.FuFiCycles.Core {
 
 			// refresh Keyboard Inputs
 			keyboardKeys.renderAFrame();
-
 			
 			var curDamp = (float)System.Math.Exp(0.1f);
 
@@ -126,17 +126,11 @@ namespace Fusee.FuFiCycles.Core {
 			}
 
 
-			// Setup Minimap
-			if(SHOW_MINIMAP) {
-				RC.Projection = float4x4.CreateOrthographic(_mapSize * 2, _mapSize * 2, 0.01f, 20);
-				_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
-				RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
-				for (int i = 0; i < players.Count; i++) {
-					players[i].renderView(_renderer);
-				}
-				_renderer.Traverse(sceneContainers["land"].Children);
-			}
-			
+			// MINIMAP
+			renderMiniMap();
+
+			// render gui
+			_gui.getGUIHandler().RenderGUI();
 
 			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered frame) on the front buffer.
 			Present();
@@ -171,15 +165,43 @@ namespace Fusee.FuFiCycles.Core {
 			return this.sceneContainers;
 		}
 
-		public int getMapSize() {
-			return _mapSize;
-		}
-
-		// Is called when the window was resized
+		/// <summary>
+		///  Is called when the window was resized
+		/// </summary>
 		public override void Resize() {
 			for (int i = 0; i < players.Count; i++) {
 				players[i].resize();
 			}
+			// refresh GUI
+			_gui.getGUIHandler().Refresh();
+		}
+
+		/// <summary>
+		///  Inits all variables for a new round
+		/// </summary>
+		public void newRound() {
+			int newRoundId = ROUNDS.Count + 1;
+			ROUNDS.Add(new Round(newRoundId));
+		}
+
+		/// <summary>
+		///  Clears all variables from the current round
+		/// </summary>
+		public void clearRoundVars() {
+
+		}
+
+		public void renderMiniMap() {
+			if (!SHOW_MINIMAP) {
+				return;
+			}
+			RC.Projection = float4x4.CreateOrthographic(MAP_SIZE * 2, MAP_SIZE * 2, 0.01f, 20);
+			_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
+			RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
+			for (int i = 0; i < players.Count; i++) {
+				players[i].renderView(_renderer);
+			}
+			_renderer.Traverse(sceneContainers["land"].Children);
 		}
 	}
 }

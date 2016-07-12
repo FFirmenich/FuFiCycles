@@ -10,6 +10,7 @@ using static Fusee.Engine.Core.Input;
 using System.Diagnostics;
 using System;
 using Fusee.Engine.Core;
+using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 
@@ -210,8 +211,8 @@ namespace Fusee.FuFiCycles.Core {
 							break;
 					}
 
-					if (FuFiCycles._mapMirror[x2, z2] == 0) {
-						FuFiCycles._mapMirror[x2, z2] = getPlayerId();
+					if (ROUNDS.Last().getMapMirror()[x2, z2] == 0) {
+						ROUNDS.Last().getMapMirror()[x2, z2] = getPlayerId();
 					} else {
 						// If value at _mapMirror[x2, z2] isn't 0, there is already a wall
 						getCycle().setCollided();

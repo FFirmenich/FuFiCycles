@@ -21,3 +21,4 @@ D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\PixelShader2.frag
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\VertexShader2.vert
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Land.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Land_Lines.fus
+D:\GameEngineering\FuFiCycles\bin\Debug\Libraries\Assets\Roboto-Light.ttf

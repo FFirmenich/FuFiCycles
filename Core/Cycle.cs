@@ -9,6 +9,7 @@ using static System.Math;
 using static Fusee.Engine.Core.Input;
 using System.Diagnostics;
 using System;
+using static Fusee.FuFiCycles.Core.GameSettings;
 
 
 namespace Fusee.FuFiCycles.Core {
@@ -153,11 +154,11 @@ namespace Fusee.FuFiCycles.Core {
 			// TODO: let player pick color
 			switch (getId()) {
 				case 1:
-					setPosition(new float3(getInstance().getMapSize() / 2 + 100, 0, 100));
+					setPosition(new float3(MAP_SIZE / 2 + 100, 0, 100));
 					setDirection(Direction.FORWARD);
 					break;
 				case 2:
-					setPosition(new float3(getInstance().getMapSize() / 2 - 100, 0, getInstance().getMapSize() - 100));
+					setPosition(new float3(MAP_SIZE / 2 - 100, 0, MAP_SIZE - 100));
 					setDirection(Direction.BACKWARD);
 					break;
 				default:
