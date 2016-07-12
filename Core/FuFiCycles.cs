@@ -25,15 +25,17 @@ namespace Fusee.FuFiCycles.Core {
 
 		// vars for Rendering
 		private Renderer _renderer;
-		public float _angleVert = -M.PiOver6 * 0.2f, _angleVelVert, _angleRoll, _angleRollInit, _zoom;
+		public float _angleVert = -M.PiOver6 * 0.2f;
+		public float _angleVelVert;
+		public float _angleRoll;
+		public float _angleRollInit;
+		public float _zoom;
 		private static float2 _offset;
 		private static float2 _offsetInit;
-		public const float RotationSpeed = 7;
-		private const float Damping = 8f;
-		public bool _firstFrame = true;
 
 		// Init is called on startup. 
 		public override void Init() {
+			enterFullscreen();
 			INSTANCE = this;
 
 			// Init Keyboard
@@ -86,14 +88,18 @@ namespace Fusee.FuFiCycles.Core {
 
 			// render gui
 			_gui.getGUIHandler().RenderGUI();
-
-			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered frame) on the front buffer.
-			Present();
-
-			// after first frame set _firstFrame var false
-			if (_firstFrame) {
-				_firstFrame = false;
+			
+			// set first frame false
+			if (ROUNDS.Last().getFirstFrame()) {
+				ROUNDS.Last().setNotFirstFrame();
 			}
+
+			// check if escape was pressed
+			if(keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
+				exitFullscreen();
+			}
+
+			Present();
 		}
 
 		public static float NormRot(float rot) {
@@ -103,15 +109,12 @@ namespace Fusee.FuFiCycles.Core {
 				rot += M.TwoPi;
 			return rot;
 		}
-
 		public RenderContext getRC() {
 			return RC;
 		}
-
 		public Dictionary<string, SceneContainer> getSceneContainers() {
 			return this.sceneContainers;
 		}
-
 		/// <summary>
 		///  Is called when the window was resized
 		/// </summary>
@@ -122,7 +125,6 @@ namespace Fusee.FuFiCycles.Core {
 			// refresh GUI
 			_gui.getGUIHandler().Refresh();
 		}
-
 		/// <summary>
 		///  Inits all variables for a new round
 		/// </summary>
@@ -130,7 +132,6 @@ namespace Fusee.FuFiCycles.Core {
 			int newRoundId = ROUNDS.Count + 1;
 			ROUNDS.Add(new Round(newRoundId));
 		}
-
 		/// <summary>
 		/// renders the mini map at the top center of the screen
 		/// </summary>
@@ -185,6 +186,18 @@ namespace Fusee.FuFiCycles.Core {
 			sceneContainers.Add("landLines", AssetStorage.Get<SceneContainer>("Land_Lines.fus"));
 			sceneContainers.Add("cycle", AssetStorage.Get<SceneContainer>("Cycle.fus"));
 			sceneContainers.Add("wall", AssetStorage.Get<SceneContainer>("Wall.fus"));
+		}
+		/// <summary>
+		/// set view from windowed to fullscreen
+		/// </summary>
+		private void enterFullscreen() {
+			Fullscreen = true;
+		}
+		/// <summary>
+		/// set view from fullscreen to windowed screen
+		/// </summary>
+		private void exitFullscreen() {
+			Fullscreen = false;
 		}
 	}
 }

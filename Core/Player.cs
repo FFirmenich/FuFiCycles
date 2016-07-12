@@ -221,7 +221,7 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			
 			// get new wall if direction has changed
-			if (directionChanged || INSTANCE._firstFrame) {
+			if (directionChanged || ROUNDS.Last().getFirstFrame()) {
 				_cycleWall = getWall(x, z);
 				fixWallEdges();
 			}
