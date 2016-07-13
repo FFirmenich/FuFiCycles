@@ -61,7 +61,7 @@ namespace Fusee.FuFiCycles.Core {
 
 			// set speed
 			// TODO: let player set speed
-			setSpeed(30);
+			setSpeed(50);
 
 			// set the cycle to the right position according to its id
 			setStartPosition();

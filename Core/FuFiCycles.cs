@@ -26,7 +26,6 @@ namespace Fusee.FuFiCycles.Core {
 		public float _angleVelVert;
 		public float _angleRoll;
 		public float _angleRollInit;
-		public float _zoom;
 		private static float2 _offset;
 		private static float2 _offsetInit;
 
@@ -67,9 +66,6 @@ namespace Fusee.FuFiCycles.Core {
 			keyboardKeys.renderAFrame();
 			
 			var curDamp = (float)System.Math.Exp(0.1f);
-
-			// zoom
-			_zoom = 150;
 
 			_angleVert += _angleVelVert;
 			// Limit pitch to the range between [-PI/2, + PI/2]
@@ -146,9 +142,11 @@ namespace Fusee.FuFiCycles.Core {
 		///  renders the View for all players
 		/// </summary>
 		private void renderPlayers() {
+			int zoom = 100;
+
 			for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
 				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(ROUNDS.Last().getPlayers()[i]._angleHorz);
-				var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
+				var mtxCam = float4x4.LookAt(0, 20, -zoom, 0, 0, 0, 0, 1, 0);
 				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
 				RC.Projection = mtxOffset * ROUNDS.Last().getPlayers()[i].getProjection();
 				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(ROUNDS.Last().getPlayers()[i].getCycle().getPosition().x, ROUNDS.Last().getPlayers()[i].getCycle().getPosition().y, ROUNDS.Last().getPlayers()[i].getCycle().getPosition().z)));

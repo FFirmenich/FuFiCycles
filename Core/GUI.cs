@@ -10,7 +10,7 @@ namespace Fusee.FuFiCycles.Core {
 	public class GUI {
 		public GUIHandler guiHandler;
 
-		public GUIButton _guiFuseeLink;
+		public GUIButton menuButton;
 		// private GUIImage _guiFuseeLogo;
 		public FontMap fontMap1;
 		private GUIText _guiSubText;
@@ -22,45 +22,33 @@ namespace Fusee.FuFiCycles.Core {
 
 
 		public GUI() {
-			//guihandler
 			guiHandler = new GUIHandler();
 			guiHandler.AttachToContext(INSTANCE.getRC());
-
 
 			var font1 = AssetStorage.Get<Font>("Roboto-Light.ttf");
 			font1.UseKerning = true;
 			fontMap1 = new FontMap(font1, 20);
 
-			//_guiBackground = new GUIImage(AssetStorage.Get<ImageData>("himmel.jpg"), -30, -300, -5, 1500, 1000);
-			//_guiHandler.Add(_guiBackground);
-
-
 			_guiPoints = new GUIText("SCORE: 0", fontMap1, 350, 50);
 			guiHandler.Add(_guiPoints);
 
+			addMenuButton();
 		}
 
-		public void _guiFuseeLink_OnGUIButtonLeave(GUIButton sender, GUIButtonEventArgs mea) {
-			_guiFuseeLink.ButtonColor = new float4(0, 0.6f, 0.2f, 0.4f);
-			_guiFuseeLink.BorderWidth = 0;
+		public void menuButton_OnGUIButtonLeave(GUIButton sender, GUIButtonEventArgs mea) {
+			menuButton.ButtonColor = new float4(0, 0.6f, 0.2f, 0.4f);
+			menuButton.BorderWidth = 0;
 		}
 
-		public void _guiFuseeLink_OnGUIButtonEnter(GUIButton sender, GUIButtonEventArgs mea) {
-			_guiFuseeLink.ButtonColor = new float4(200, 100, 100, 130);
-			_guiFuseeLink.BorderWidth = 1;
+		public void menuButton_OnGUIButtonEnter(GUIButton sender, GUIButtonEventArgs mea) {
+			menuButton.ButtonColor = new float4(200, 100, 100, 130);
+			menuButton.BorderWidth = 1;
 		}
 
-		void _guiFuseeLink_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
+		void menuButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
 			Debug.WriteLine("Button wurde geklickt");
-			// TODO: Restart game
-			_guiFuseeLink.PosX = -300;
-			//OpenLink("http://fusee3d.org");
+			menuButton.PosX = -300;
 		}
-
-		/*  private void OpenLink(string v)
-		  {
-			  throw new NotImplementedException();
-		  }*/
 
 		internal void RenderGUI() {
 			throw new NotImplementedException();
@@ -72,15 +60,15 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 
-		public void RestartButton() {
-			_guiFuseeLink = new GUIButton("RESET", fontMap1, 570, 200, 157, 87);
-			_guiFuseeLink.ButtonColor = new float4(0, 0.6f, 0.2f, 0.4f);
-			_guiFuseeLink.BorderColor = new float4(0, 0.6f, 0.2f, 1);
-			_guiFuseeLink.BorderWidth = 0;
-			_guiFuseeLink.OnGUIButtonDown += _guiFuseeLink_OnGUIButtonDown;
-			_guiFuseeLink.OnGUIButtonEnter += _guiFuseeLink_OnGUIButtonEnter;
-			_guiFuseeLink.OnGUIButtonLeave += _guiFuseeLink_OnGUIButtonLeave;
-			guiHandler.Add(_guiFuseeLink);
+		public void addMenuButton() {
+			menuButton = new GUIButton("MENU", fontMap1, 100, 200, 157, 87);
+			menuButton.ButtonColor = new float4(0, 0.6f, 0.2f, 0.4f);
+			menuButton.BorderColor = new float4(0, 0.6f, 0.2f, 1);
+			menuButton.BorderWidth = 0;
+			menuButton.OnGUIButtonDown += menuButton_OnGUIButtonDown;
+			menuButton.OnGUIButtonEnter += menuButton_OnGUIButtonEnter;
+			menuButton.OnGUIButtonLeave += menuButton_OnGUIButtonLeave;
+			guiHandler.Add(menuButton);
 			guiHandler.Refresh();
 
 		}

@@ -9,6 +9,7 @@ using static Fusee.Engine.Core.Input;
 using System.Diagnostics;
 using System;
 using static Fusee.FuFiCycles.Core.GameSettings;
+using System.Threading;
 
 namespace Fusee.FuFiCycles.Core {
 
@@ -26,6 +27,8 @@ namespace Fusee.FuFiCycles.Core {
 		private TransformComponent _cycleWall;
 		public float _angleHorz = 0;
 		public float _angleVelHorz;
+		public int angleVelHorzTicker;
+		private List<DirectionChanger> directionChangers = new List<DirectionChanger>();
 
 		// Wall Sizes
 		public static float WALL_WIDTH = 20.0f;
@@ -133,22 +136,25 @@ namespace Fusee.FuFiCycles.Core {
 			bool directionChanged = false;
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
+			// the less ticks, the faster it turns
+			byte ticks = 10;
 			if (INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].isPressed()) {
 				INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].setUnpressed();
-				_angleHorz += M.PiOver2; //_angleVelHorz = RotationSpeed * M.PiOver4 * 0.002f;
+				directionChangers.Add(new DirectionChanger(ticks, true, this));
 				cycleYaw -= M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
 				getCycle().setDirection(cycleYaw);
-			}
-
-			if (INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].isPressed()) {
+			} else if (INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].isPressed()) {
 				INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].setUnpressed();
-				_angleHorz -= M.PiOver2; //_angleVelHorz = -RotationSpeed * M.PiOver4 * 0.002f;
+				directionChangers.Add(new DirectionChanger(ticks, false, this));
 				cycleYaw += M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
 				getCycle().setDirection(cycleYaw);
+			}
+			for(int i = 0; i < directionChangers.Count(); i++) {
+				directionChangers[i].tick();
 			}
 			return directionChanged;
 		}
@@ -367,6 +373,10 @@ namespace Fusee.FuFiCycles.Core {
 				return true;
 			}
 			return false;
+		}
+
+		public void deleteDirectionChanger(DirectionChanger directionChanger) {
+			directionChangers.Remove(directionChanger);
 		}
 	}
 }
