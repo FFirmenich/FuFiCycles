@@ -44,13 +44,16 @@ namespace Fusee.FuFiCycles.Core {
 			addSceneContainers();
 			setMapSize();
 
-			newRound();
+			// Start first round
+			ROUNDS.Add(new Round(0));
 
 			// Instantiate our self-written renderer
 			_renderer = new Renderer();
 
-			// remove original cycle from cycle scene
-			sceneContainers["cycle"].Children.Remove(sceneContainers["cycle"].Children.FindNodes(c => c.Name == "cycle").First());
+			// hide original cycle from cycle scene
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.y = -500;
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.z = MAP_SIZE / 2;
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.x = MAP_SIZE / 2; ;
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -119,16 +122,10 @@ namespace Fusee.FuFiCycles.Core {
 		///  Inits all variables for a new round
 		/// </summary>
 		public void newRound() {
-			int newId = 0;
-			if (ROUNDS.Count > 0) {
-				newId = ROUNDS.Last().getId() + 1;
-			}
-			if (newId - 1 > 1) {
-				ROUNDS[newId - 1].nullVars();
-				ROUNDS[newId - 1] = null;
-				ROUNDS.RemoveAt(newId - 1);
-			}
+			byte newId = (byte) (ROUNDS.Last().getId() + 1);
+			ROUNDS[newId - 1].nullVars();
 			ROUNDS.Add(new Round(newId));
+			Resize();
 		}
 		/// <summary>
 		/// renders the mini map at the top center of the screen
@@ -174,7 +171,7 @@ namespace Fusee.FuFiCycles.Core {
 		/// </summary>
 		private void setMapSize() {
 			MeshComponent ground = sceneContainers["landLines"].Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
-			MAP_SIZE = (int)ground.BoundingBox.Size.x;
+			MAP_SIZE = (ushort)ground.BoundingBox.Size.x;
 		}
 		/// <summary>
 		///  Add SceneContainers to Dictionary sceneContainers

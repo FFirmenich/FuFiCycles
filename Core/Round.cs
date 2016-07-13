@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Fusee.Xene;
+using System.Collections.Generic;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
@@ -6,12 +7,12 @@ namespace Fusee.FuFiCycles.Core {
 	///  One round of the game
 	/// </summary>
 	public class Round {
-		private int id;
+		private byte id;
 		private byte[,] mapMirror;
 		public bool firstFrame = true;
 		private List<Player> players = new List<Player>();
 
-		public Round(int id) {
+		public Round(byte id) {
 			this.id = id;
 			mapMirror = new byte[MAP_SIZE, MAP_SIZE];
 			addPlayers();
@@ -57,7 +58,7 @@ namespace Fusee.FuFiCycles.Core {
 		/// </summary>
 		private void addPlayers() {
 			for (int i = 0; i < PLAYER_QUANTITY; i++) {
-				players.Add(new Player((byte) (i + 1)));
+				players.Add(new Player((byte)(i + 1)));
 			}
 		}
 		/// <summary>
@@ -80,9 +81,14 @@ namespace Fusee.FuFiCycles.Core {
 			return true;
 		}
 		/// <summary>
-		/// set all vars to null to free some memory
+		/// set all vars to null to free some memory and remove cycles and walls from the map
 		/// </summary>
 		public void nullVars() {
+			for (int i = 0; i < getPlayers().Count; i++) {
+				INSTANCE.getSceneContainers()["cycle"].Children.Remove(getPlayers()[i].getCycle().getSNC());
+			}
+			INSTANCE.getSceneContainers()["wall"].Children.RemoveRange(1, INSTANCE.getSceneContainers()["wall"].Children.Count - 1);
+			// set variables null
 			mapMirror = null;
 			players = null;
 		}

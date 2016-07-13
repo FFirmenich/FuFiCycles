@@ -133,14 +133,14 @@ namespace Fusee.FuFiCycles.Core {
 			setDirection(DirectionMethods.directionFromYaw(yaw));
 		}
 		private void setStartPosition() {
-			// TODO: let player pick color
+			ushort distanceFromWall = (ushort) 500;
 			switch (getId()) {
 				case 1:
-					setPosition(new float3(MAP_SIZE / 2 + 100, 0, 100));
+					setPosition(new float3(MAP_SIZE / 2 + 100, 0, distanceFromWall));
 					setDirection(Direction.FORWARD);
 					break;
 				case 2:
-					setPosition(new float3(MAP_SIZE / 2 - 100, 0, MAP_SIZE - 100));
+					setPosition(new float3(MAP_SIZE / 2 - 100, 0, MAP_SIZE - distanceFromWall));
 					setDirection(Direction.BACKWARD);
 					break;
 				default:

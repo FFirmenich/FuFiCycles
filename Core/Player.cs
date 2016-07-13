@@ -234,7 +234,6 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		private void prepareWall() {
-
 			// if wall is under ground, move it up
 			// TODO: check if countdown is finished and game started
 			if (_cycleWall.Translation.y == -150) {
