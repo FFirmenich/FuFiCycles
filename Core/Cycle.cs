@@ -16,7 +16,7 @@ namespace Fusee.FuFiCycles.Core {
 
 		// speed, position etc.
 		private int id;
-		private float speed;
+		private int speed;
 		private float3 position;
 		private bool collided = false;
 		private Direction direction;
@@ -64,7 +64,7 @@ namespace Fusee.FuFiCycles.Core {
 			setSpeed(30);
 
 			// set the cycle to the right position according to its id
-			setCyclePosition();
+			setStartPosition();
 		}
 
 		private void scale() {
@@ -93,11 +93,11 @@ namespace Fusee.FuFiCycles.Core {
 			this.id = id;
 		}
 
-		public float getSpeed() {
+		public int getSpeed() {
 			return this.speed;
 		}
 
-		public void setSpeed(float speed) {
+		public void setSpeed(int speed) {
 			this.speed = speed;
 		}
 
@@ -132,7 +132,7 @@ namespace Fusee.FuFiCycles.Core {
 		public void setDirection(float yaw) {
 			setDirection(DirectionMethods.directionFromYaw(yaw));
 		}
-		private void setCyclePosition() {
+		private void setStartPosition() {
 			// TODO: let player pick color
 			switch (getId()) {
 				case 1:

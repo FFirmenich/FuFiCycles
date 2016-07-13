@@ -13,7 +13,7 @@ using static Fusee.FuFiCycles.Core.GameSettings;
 namespace Fusee.FuFiCycles.Core {
 
 	public class Player {
-		private int player_id;
+		private byte player_id;
 		private String player_name;
 		private float3 color;
 		private Cycle cycle;
@@ -31,7 +31,7 @@ namespace Fusee.FuFiCycles.Core {
 		public static float WALL_WIDTH = 20.0f;
 		public static float WALL_HEIGHT = 0.5f;
 
-		public Player (int id) {
+		public Player (byte id) {
 			setPlayerId(id);
 
 			setCycle(new Cycle(getPlayerId()));
@@ -74,7 +74,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		//Get-Methods
-		public int getPlayerId() {
+		public byte getPlayerId() {
 			return this.player_id;
 		}
 
@@ -91,7 +91,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		//Set-Methods
-		private void setPlayerId(int id) {
+		private void setPlayerId(byte id) {
 			this.player_id = id;
 		}
 
