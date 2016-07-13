@@ -20,6 +20,7 @@ contentManifest["Fusee.FuFiCycles.Web.contentproj"] = [
     ["File",	"Assets/Land.fus",	{  "sizeBytes": 1056 }],
     ["File",	"Assets/Land_Lines.fus",	{  "sizeBytes": 2196499 }],
     ["File",	"Assets/PixelShader2.frag",	{  "sizeBytes": 530 }],
+    ["File",	"Assets/Roboto-Light.ttf",	{  "sizeBytes": 162420 }],
     ["Image",	"Assets/Sphere.jpg",	{  "sizeBytes": 26951 }],
     ["Image",	"Assets/Styles/loading_rocket.png",	{  "sizeBytes": 10975 }],
     ["File",	"Assets/VertexShader2.vert",	{  "sizeBytes": 393 }],

@@ -16,6 +16,7 @@ namespace Fusee.FuFiCycles.Core {
 		public Dictionary<KeyCodes, KeyboardKey> keys = new Dictionary<KeyCodes,KeyboardKey>();
 
 		public KeyboardKeys() {
+			/// Player Keys
 			// WASD
 			keys.Add(KeyCodes.W, new KeyboardKey());
 			keys.Add(KeyCodes.A, new KeyboardKey());
@@ -26,6 +27,8 @@ namespace Fusee.FuFiCycles.Core {
 			keys.Add(KeyCodes.Left, new KeyboardKey());
 			keys.Add(KeyCodes.Down, new KeyboardKey());
 			keys.Add(KeyCodes.Right, new KeyboardKey());
+			/// Special Keys
+			keys.Add(KeyCodes.Escape, new KeyboardKey());
 		}
 
 		public void renderAFrame() {

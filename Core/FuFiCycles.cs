@@ -4,80 +4,56 @@ using Fusee.Engine.Common;
 using Fusee.Engine.Core;
 using Fusee.Math.Core;
 using Fusee.Serialization;
-using static Fusee.Engine.Core.Input;
 using System.Linq;
 using Fusee.Xene;
-using System.Diagnostics;
+using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production", Width = 1920, Height = 1080)]
 	public class FuFiCycles : RenderCanvas {
-		// Game Settings
-		public static bool SHOW_MINIMAP = true;
-
 		// Keyboard Keys
 		public KeyboardKeys keyboardKeys;
 
-		// playerlist
-		private List<Player> players = new List<Player>();
-
-		// shaders
-		private string vertexShader = AssetStorage.Get<string>("VertexShader2.vert");
-		private string pixelShader = AssetStorage.Get<string>("PixelShader2.frag");
+		// GUI
+		private GUI _gui;
 
 		// scene containers
 		private Dictionary<string, SceneContainer> sceneContainers = new Dictionary<string, SceneContainer>();
-		private SceneContainer land = AssetStorage.Get<SceneContainer>("Land.fus");
-		private SceneContainer landLines = AssetStorage.Get<SceneContainer>("Land_Lines.fus");
-		public float4x4 _sceneScale;
-		private SceneContainer _cycle = AssetStorage.Get<SceneContainer>("Cycle.fus");
-		private SceneContainer _wall = AssetStorage.Get<SceneContainer>("Wall.fus");
-
-		// cycle positions
-		private Dictionary<float3, int> _cyclePositions = new Dictionary<float3, int>();
 
 		// vars for Rendering
 		private Renderer _renderer;
-		public float _angleVert = -M.PiOver6 * 0.2f, _angleVelVert, _angleRoll, _angleRollInit, _zoom;
+		public float _angleVert = -M.PiOver6 * 0.2f;
+		public float _angleVelVert;
+		public float _angleRoll;
+		public float _angleRollInit;
+		public float _zoom;
 		private static float2 _offset;
 		private static float2 _offsetInit;
-		public const float RotationSpeed = 7;
-		private const float Damping = 8f;
-		public bool _firstFrame = true;
-
-		private int _mapSize = 0;
-		public static float[,] _mapMirror;
 
 		// Init is called on startup. 
 		public override void Init() {
+			enterFullscreen();
+			INSTANCE = this;
+
 			// Init Keyboard
 			keyboardKeys = new KeyboardKeys();
 
-			// Add SceneContainers to Dictionary
-			sceneContainers.Add("land", land);
-			sceneContainers.Add("landLines", landLines);
-			sceneContainers.Add("cycle", _cycle);
-			sceneContainers.Add("wall", _wall);
+			// Init GUI
+			_gui = new GUI();
 
-			// Set Scene Scale
-			_sceneScale = float4x4.CreateScale(0.04f);
+			addSceneContainers();
+			setMapSize();
 
-			// set Map Size
-			//MeshComponent ground = _scene.Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
-			_mapSize = 16000;
-			_mapMirror = new float[_mapSize, _mapSize];
+			// Start first round
+			ROUNDS.Add(new Round(0));
 
 			// Instantiate our self-written renderer
-			_renderer = new Renderer(this);
+			_renderer = new Renderer();
 
-			// Add two player to the list
-			int playerNumber = 2;
-			for (int i = 0; i < playerNumber; i++) {
-				players.Add(new Player(i+1, this));
-			}
-
-			// remove original cycle from cycle scene
-			_cycle.Children.Remove(_cycle.Children.FindNodes(c => c.Name == "cycle").First());
+			// hide original cycle from cycle scene
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.y = -500;
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.z = MAP_SIZE / 2;
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.x = MAP_SIZE / 2; ;
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -89,7 +65,6 @@ namespace Fusee.FuFiCycles.Core {
 
 			// refresh Keyboard Inputs
 			keyboardKeys.renderAFrame();
-
 			
 			var curDamp = (float)System.Math.Exp(0.1f);
 
@@ -102,49 +77,22 @@ namespace Fusee.FuFiCycles.Core {
 
 			// Wrap-around to keep _angleRoll between -PI and + PI
 			_angleRoll = M.MinAngle(_angleRoll);
-			
-			// render Cycles with their walls
-			for(int i = 0; i < players.Count; i++) {
-				// Create the camera matrix and set it as the current ModelView transformation
-				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(players[i]._angleHorz);
-				var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
-				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
-				RC.Projection = mtxOffset * players[i].getProjection();
-				_renderer.View = mtxCam * mtxRot * _sceneScale * float4x4.CreateTranslation(-(new float3(players[i].getCycle().getPosition().x, players[i].getCycle().getPosition().y, players[i].getCycle().getPosition().z)));
-				switch (players[i].getPlayerId()) {
-					case 1:
-						RC.Viewport(0, 0, (Width / 2), Height);
-						break;
-					case 2:
-						RC.Viewport((Width / 2), 0, (Width / 2), Height);
-						break;
-					default:
-						break;
-				}
-				players[i].renderAFrame(_renderer);
-				_renderer.Traverse(sceneContainers["landLines"].Children);
+
+			renderPlayers();
+			renderMiniMap();
+
+			// render gui
+			_gui.getGUIHandler().RenderGUI();
+
+			// check if escape was pressed
+			if(keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
+				exitFullscreen();
 			}
 
+			// tick the round
+			ROUNDS.Last().tick();
 
-			// Setup Minimap
-			if(SHOW_MINIMAP) {
-				RC.Projection = float4x4.CreateOrthographic(_mapSize * 2, _mapSize * 2, 0.01f, 20);
-				_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
-				RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
-				for (int i = 0; i < players.Count; i++) {
-					players[i].renderView(_renderer);
-				}
-				_renderer.Traverse(sceneContainers["land"].Children);
-			}
-			
-
-			// Swap buffers: Show the contents of the backbuffer (containing the currently rerndered frame) on the front buffer.
 			Present();
-
-			// after first frame set _firstFrame var false
-			if (_firstFrame) {
-				_firstFrame = false;
-			}
 		}
 
 		public static float NormRot(float rot) {
@@ -154,32 +102,97 @@ namespace Fusee.FuFiCycles.Core {
 				rot += M.TwoPi;
 			return rot;
 		}
-
 		public RenderContext getRC() {
 			return RC;
 		}
-
-		public string getVertexShader() {
-			return vertexShader;
-		}
-
-		public string getPixelShader() {
-			return pixelShader;
-		}
-
 		public Dictionary<string, SceneContainer> getSceneContainers() {
 			return this.sceneContainers;
 		}
-
-		public int getMapSize() {
-			return _mapSize;
-		}
-
-		// Is called when the window was resized
+		/// <summary>
+		///  Is called when the window was resized
+		/// </summary>
 		public override void Resize() {
-			for (int i = 0; i < players.Count; i++) {
-				players[i].resize();
+			for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
+				ROUNDS.Last().getPlayers()[i].resize();
 			}
+			// refresh GUI
+			_gui.getGUIHandler().Refresh();
+		}
+		/// <summary>
+		///  Inits all variables for a new round
+		/// </summary>
+		public void newRound() {
+			byte newId = (byte) (ROUNDS.Last().getId() + 1);
+			ROUNDS[newId - 1].nullVars();
+			ROUNDS.Add(new Round(newId));
+			Resize();
+		}
+		/// <summary>
+		/// renders the mini map at the top center of the screen
+		/// </summary>
+		private void renderMiniMap() {
+			if (!SHOW_MINIMAP) {
+				return;
+			}
+			RC.Projection = float4x4.CreateOrthographic(MAP_SIZE * 2, MAP_SIZE * 2, 0.01f, 20);
+			_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
+			RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
+			for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
+				ROUNDS.Last().getPlayers()[i].renderView(_renderer);
+			}
+			_renderer.Traverse(sceneContainers["land"].Children);
+		}
+		/// <summary>
+		///  renders the View for all players
+		/// </summary>
+		private void renderPlayers() {
+			for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
+				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(ROUNDS.Last().getPlayers()[i]._angleHorz);
+				var mtxCam = float4x4.LookAt(0, 20, -_zoom, 0, 0, 0, 0, 1, 0);
+				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
+				RC.Projection = mtxOffset * ROUNDS.Last().getPlayers()[i].getProjection();
+				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(ROUNDS.Last().getPlayers()[i].getCycle().getPosition().x, ROUNDS.Last().getPlayers()[i].getCycle().getPosition().y, ROUNDS.Last().getPlayers()[i].getCycle().getPosition().z)));
+				switch (ROUNDS.Last().getPlayers()[i].getPlayerId()) {
+					case 1:
+						RC.Viewport(0, 0, (Width / 2), Height);
+						break;
+					case 2:
+						RC.Viewport((Width / 2), 0, (Width / 2), Height);
+						break;
+					default:
+						break;
+				}
+				ROUNDS.Last().getPlayers()[i].renderAFrame(_renderer);
+				_renderer.Traverse(sceneContainers["landLines"].Children);
+			}
+		}
+		/// <summary>
+		///  Set the map size according to the boundingbox of the grounds mesh
+		/// </summary>
+		private void setMapSize() {
+			MeshComponent ground = sceneContainers["landLines"].Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
+			MAP_SIZE = (ushort)ground.BoundingBox.Size.x;
+		}
+		/// <summary>
+		///  Add SceneContainers to Dictionary sceneContainers
+		/// </summary>
+		private void addSceneContainers() {
+			sceneContainers.Add("land", AssetStorage.Get<SceneContainer>("Land.fus"));
+			sceneContainers.Add("landLines", AssetStorage.Get<SceneContainer>("Land_Lines.fus"));
+			sceneContainers.Add("cycle", AssetStorage.Get<SceneContainer>("Cycle.fus"));
+			sceneContainers.Add("wall", AssetStorage.Get<SceneContainer>("Wall.fus"));
+		}
+		/// <summary>
+		/// set view from windowed to fullscreen
+		/// </summary>
+		private void enterFullscreen() {
+			Fullscreen = true;
+		}
+		/// <summary>
+		/// set view from fullscreen to windowed screen
+		/// </summary>
+		private void exitFullscreen() {
+			Fullscreen = false;
 		}
 	}
 }
