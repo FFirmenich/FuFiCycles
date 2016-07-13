@@ -43,6 +43,7 @@
     <OutputRoot>$(ProjectBuildRoot)\bin\$(Configuration)\</OutputRoot>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DirectionChanger.cs" />
     <Compile Include="GameSettings.cs" />
     <Compile Include="Round.cs" />
     <Compile Include="GUI.cs" />
