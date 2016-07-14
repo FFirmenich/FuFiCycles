@@ -26,9 +26,8 @@ namespace Fusee.FuFiCycles.Core {
 		private TransformComponent _cycleTransform;
 		private TransformComponent _cycleWall;
 		public float _angleHorz = 0;
-		public float _angleVelHorz;
-		public int angleVelHorzTicker;
-		private List<DirectionChanger> directionChangers = new List<DirectionChanger>();
+		private short horzAngleTicker;
+		byte ticksPerAngleChange = 10;
 
 		// Wall Sizes
 		public static float WALL_WIDTH = 20.0f;
@@ -136,33 +135,27 @@ namespace Fusee.FuFiCycles.Core {
 			bool directionChanged = false;
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
-			// the less ticks, the faster it turns
-			byte ticks = 10;
 			if (INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].isPressed()) {
 				INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].setUnpressed();
-				directionChangers.Add(new DirectionChanger(ticks, true, this));
+				horzAngleTicker += ticksPerAngleChange;
 				cycleYaw -= M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
 				getCycle().setDirection(cycleYaw);
 			} else if (INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].isPressed()) {
 				INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].setUnpressed();
-				directionChangers.Add(new DirectionChanger(ticks, false, this));
+				horzAngleTicker -= ticksPerAngleChange;
 				cycleYaw += M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
 				getCycle().setDirection(cycleYaw);
 			}
-			for(int i = 0; i < directionChangers.Count(); i++) {
-				directionChangers[i].tick();
-			}
+			changeHorzAngle();
 			return directionChanged;
 		}
 
 		public void renderAFrame(Renderer _renderer) {
 			bool directionChanged = checkForDirectionChange();
-
-			_angleHorz += _angleVelHorz;
 			// Wrap-around to keep _angleHorz between -PI and + PI
 			_angleHorz = M.MinAngle(_angleHorz);
 
@@ -375,8 +368,15 @@ namespace Fusee.FuFiCycles.Core {
 			return false;
 		}
 
-		public void deleteDirectionChanger(DirectionChanger directionChanger) {
-			directionChangers.Remove(directionChanger);
+		private void changeHorzAngle() {
+			if (horzAngleTicker > 0) {
+				_angleHorz += M.PiOver2 / ticksPerAngleChange;
+				horzAngleTicker--;
+			}
+			if(horzAngleTicker < 0) {
+				_angleHorz -= M.PiOver2 / ticksPerAngleChange;
+				horzAngleTicker++;
+			}
 		}
 	}
 }
