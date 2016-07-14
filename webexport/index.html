@@ -3,8 +3,10 @@
 	<head>
 		<title>FuFiCycles</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 	  	<link rel="stylesheet" type="text/css" href="./stylesheet.css">
 	  	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 	  	<script src="./js/scripts.js" type="text/javascript"></script>
 	</head>
 
@@ -30,32 +32,34 @@
 				<h1 class="anchor">Properties</h1>
 				<div class="container_content container_props">
 					<div id="player_names" class="props">
-						<h3>Specify a name for your player to check your score easily.</h3><br/>
+						<h3>Specify your player with your own name that you can directly see who wins.</h3><br/>
 						<div id="name_player1">
-							<label for player1_name>Player 1:</label>
-							<input type="text" name="player_1_name" maxlength="10" placeholder="Player 1"/>
+							<input type="text" name="player_1_name" maxlength="10" placeholder="Player 1" value=""/>
 						</div>
 						<div id="name_player2">
-							<label for player2_name>Player 2:</label>
-							<input type="text" name="player_2_name" maxlength="10" placeholder="Player 2"/>
+							<input type="text" name="player_2_name" maxlength="10" placeholder="Player 2" value=""/>
 						</div>
 					</div>
 					<div id="speed"  class="props">
-						<h3>Adjust the speed of your cycles to change the difficulty.</h3><br/>
+						<h3>If you like to make the match a bit difficulty, you can increase your speed.</h3><br/>
 						<div>
-							<label for speed>cycle-speed</label>
-							<input type="range" name="speed" min="1" max="100" />
+							<label for="speed">cycle-speed: <span id="speed_value"></span></label>
+							<div id="speed_slider"></div>
 						</div>
 					</div>
 					<div id="player_colors"  class="props">
 						<h3>Personalize your cycle with your favorite color.</h3><br/>
-						<div id="color_player1">
-							<label for player1_color>Player 1:</label>
-							<input type="color" name="player1_color" value="#00ffff">
+						<div id="color_player1" class="colors">
+							<label for="player1_color" id="label_col_1">Player 1:</label>
+							<div>
+								<input type="color" id="player1_color" name="player1_color" value="#00ffff">
+							</div>
 						</div>
-						<div id="color_player2">
-							<label for player2_color>Player 2:</label>
-							<input type="color" name="player2_color" value="#00ff00">
+						<div id="color_player2" class="colors">
+							<label for="player2_color" id="label_col_2">Player 2:</label>
+							<div>
+								<input type="color" id="player2_color" name="player2_color" value="#00ff00">
+							</div>
 						</div>
 					</div>
 				</div>
