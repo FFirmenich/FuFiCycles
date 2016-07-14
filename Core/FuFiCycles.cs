@@ -15,7 +15,9 @@ namespace Fusee.FuFiCycles.Core {
 		public KeyboardKeys keyboardKeys;
 
 		// GUI
-		private GUI _gui;
+		public Font roboto = AssetStorage.Get<Font>("Roboto-Light.ttf");
+		private GUIIngame ingameGui;
+		private GUIMenu menuGui;
 
 		// scene containers
 		private Dictionary<string, SceneContainer> sceneContainers = new Dictionary<string, SceneContainer>();
@@ -23,7 +25,6 @@ namespace Fusee.FuFiCycles.Core {
 		// vars for Rendering
 		private Renderer _renderer;
 		public float _angleVert = -M.PiOver6 * 0.2f;
-		public float _angleVelVert;
 		public float _angleRoll;
 		public float _angleRollInit;
 		private static float2 _offset;
@@ -32,16 +33,21 @@ namespace Fusee.FuFiCycles.Core {
 		// Init is called on startup. 
 		public override void Init() {
 			enterFullscreen();
+
 			INSTANCE = this;
 
 			// Init Keyboard
 			keyboardKeys = new KeyboardKeys();
 
-			// Init GUI
-			_gui = new GUI();
+			// Init GUIs
+			setIngameGui(new GUIIngame());
+			setMenuGui(new GUIMenu());
 
 			addSceneContainers();
 			setMapSize();
+
+			// Set _angleRoll once
+			_angleRoll = M.MinAngle(_angleRoll);
 
 			// Start first round
 			ROUNDS.Add(new Round(0));
@@ -49,10 +55,7 @@ namespace Fusee.FuFiCycles.Core {
 			// Instantiate our self-written renderer
 			_renderer = new Renderer();
 
-			// hide original cycle from cycle scene
-			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.y = -500;
-			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.z = MAP_SIZE / 2;
-			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.x = MAP_SIZE / 2; ;
+			hideOriginalCycle();
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -64,29 +67,12 @@ namespace Fusee.FuFiCycles.Core {
 
 			// refresh Keyboard Inputs
 			keyboardKeys.renderAFrame();
-			
-			var curDamp = (float)System.Math.Exp(0.1f);
 
-			_angleVert += _angleVelVert;
-			// Limit pitch to the range between [-PI/2, + PI/2]
-			_angleVert = M.Clamp(_angleVert, -M.PiOver2, M.PiOver2);
-
-			// Wrap-around to keep _angleRoll between -PI and + PI
-			_angleRoll = M.MinAngle(_angleRoll);
-
-			renderPlayers();
-			renderMiniMap();
-
-			// render gui
-			_gui.getGUIHandler().RenderGUI();
-
-			// check if escape was pressed
-			if(keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
-				exitFullscreen();
+			if(GameSettings.SHOWMENU) {
+				tickMenu();
+			} else {
+				tickIngame();
 			}
-
-			// tick the round
-			ROUNDS.Last().tick();
 
 			Present();
 		}
@@ -108,11 +94,14 @@ namespace Fusee.FuFiCycles.Core {
 		///  Is called when the window was resized
 		/// </summary>
 		public override void Resize() {
-			for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
-				ROUNDS.Last().getPlayers()[i].resize();
+			if (GameSettings.SHOWMENU) {
+				getMenuGui().getGUIHandler().Refresh();
+			} else {
+				for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
+					ROUNDS.Last().getPlayers()[i].resize();
+				}
+				getIngameGui().getGUIHandler().Refresh();
 			}
-			// refresh GUI
-			_gui.getGUIHandler().Refresh();
 		}
 		/// <summary>
 		///  Inits all variables for a new round
@@ -191,6 +180,50 @@ namespace Fusee.FuFiCycles.Core {
 		/// </summary>
 		private void exitFullscreen() {
 			Fullscreen = false;
+		}
+		/// <summary>
+		/// move the original cycle under the ground to hide it
+		/// </summary>
+		private void hideOriginalCycle() {
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.y = -500;
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.z = MAP_SIZE / 2;
+			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.x = MAP_SIZE / 2;
+		}
+		/// <summary>
+		/// Is called to pause the game and show the menu
+		/// </summary>
+		private void enterMenu() {
+			GameSettings.SHOWMENU = true;
+		}
+		public void tickMenu() {
+			getMenuGui().getGUIHandler().RenderGUI();
+
+			if (keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
+				exitFullscreen();
+				//CloseGameWindow();
+			}
+		}
+		public void tickIngame() {
+			renderPlayers();
+			renderMiniMap();
+			getIngameGui().getGUIHandler().RenderGUI();
+			ROUNDS.Last().tick();
+
+			if (keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
+				enterMenu();
+			}
+		}
+		public void setIngameGui(GUIIngame ingameGui) {
+			this.ingameGui = ingameGui;
+		}
+		public GUIIngame getIngameGui() {
+			return this.ingameGui;
+		}
+		public void setMenuGui(GUIMenu menuGui) {
+			this.menuGui = menuGui;
+		}
+		public GUIMenu getMenuGui() {
+			return this.menuGui;
 		}
 	}
 }

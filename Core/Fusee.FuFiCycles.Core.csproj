@@ -43,10 +43,10 @@
     <OutputRoot>$(ProjectBuildRoot)\bin\$(Configuration)\</OutputRoot>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DirectionChanger.cs" />
     <Compile Include="GameSettings.cs" />
+    <Compile Include="GUIMenu.cs" />
     <Compile Include="Round.cs" />
-    <Compile Include="GUI.cs" />
+    <Compile Include="GUIIngame.cs" />
     <Compile Include="KeyboardKeys.cs" />
     <Compile Include="KeyboardKey.cs" />
     <Compile Include="Direction.cs" />
@@ -93,6 +93,9 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="Assets\AboutFuseeAssets.txt" />
+    <Content Include="Assets\MenuBackground.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Sphere.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

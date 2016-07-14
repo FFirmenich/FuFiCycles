@@ -7,7 +7,7 @@ using System.Diagnostics;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
-	public class GUI {
+	public class GUIIngame {
 		public GUIHandler guiHandler;
 
 		public GUIButton menuButton;
@@ -21,13 +21,12 @@ namespace Fusee.FuFiCycles.Core {
 		public float score = 0;
 
 
-		public GUI() {
+		public GUIIngame() {
 			guiHandler = new GUIHandler();
 			guiHandler.AttachToContext(INSTANCE.getRC());
 
-			var font1 = AssetStorage.Get<Font>("Roboto-Light.ttf");
-			font1.UseKerning = true;
-			fontMap1 = new FontMap(font1, 20);
+			INSTANCE.roboto.UseKerning = true;
+			fontMap1 = new FontMap(INSTANCE.roboto, 20);
 
 			_guiPoints = new GUIText("SCORE: 0", fontMap1, 350, 50);
 			guiHandler.Add(_guiPoints);
@@ -61,10 +60,10 @@ namespace Fusee.FuFiCycles.Core {
 
 
 		public void addMenuButton() {
-			menuButton = new GUIButton("MENU", fontMap1, 100, 200, 157, 87);
+			menuButton = new GUIButton("MENU", fontMap1, 0, 0, 200, 100);
 			menuButton.ButtonColor = new float4(0, 0.6f, 0.2f, 0.4f);
 			menuButton.BorderColor = new float4(0, 0.6f, 0.2f, 1);
-			menuButton.BorderWidth = 0;
+			menuButton.BorderWidth = 2;
 			menuButton.OnGUIButtonDown += menuButton_OnGUIButtonDown;
 			menuButton.OnGUIButtonEnter += menuButton_OnGUIButtonEnter;
 			menuButton.OnGUIButtonLeave += menuButton_OnGUIButtonLeave;

@@ -22,3 +22,4 @@ D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\VertexShader2.vert
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Land.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Land_Lines.fus
 D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\Roboto-Light.ttf
+D:\GameEngineering\FuFiCycles\bin\Debug\Desktop\Assets\MenuBackground.jpg

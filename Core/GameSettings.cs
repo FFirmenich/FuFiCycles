@@ -9,5 +9,6 @@ namespace Fusee.FuFiCycles.Core {
 		public static byte PLAYER_QUANTITY = 2;
 		public static ushort MAP_SIZE; // max size 65535
 		public static float4x4 SCENE_SCALE = float4x4.CreateScale(0.04f);
+		public static bool SHOWMENU = true;
 	}
 }
