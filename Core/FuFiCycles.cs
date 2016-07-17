@@ -7,6 +7,8 @@ using Fusee.Serialization;
 using System.Linq;
 using Fusee.Xene;
 using static Fusee.FuFiCycles.Core.GameSettings;
+using System.Diagnostics;
+using System;
 
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production", Width = 1920, Height = 1080)]
@@ -43,19 +45,11 @@ namespace Fusee.FuFiCycles.Core {
 			setIngameGui(new GUIIngame());
 			setMenuGui(new GUIMenu());
 
-			addSceneContainers();
-			setMapSize();
-
 			// Set _angleRoll once
 			_angleRoll = M.MinAngle(_angleRoll);
-
-			// Start first round
-			ROUNDS.Add(new Round(0));
-
+			
 			// Instantiate our self-written renderer
 			_renderer = new Renderer();
-
-			hideOriginalCycle();
 
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
@@ -68,7 +62,7 @@ namespace Fusee.FuFiCycles.Core {
 			// refresh Keyboard Inputs
 			keyboardKeys.renderAFrame();
 
-			if(GameSettings.SHOWMENU) {
+			if (SHOWMENU) {
 				tickMenu();
 			} else {
 				tickIngame();
@@ -94,23 +88,25 @@ namespace Fusee.FuFiCycles.Core {
 		///  Is called when the window was resized
 		/// </summary>
 		public override void Resize() {
-			if (GameSettings.SHOWMENU) {
+			if (SHOWMENU) {
 				getMenuGui().getGUIHandler().Refresh();
 			} else {
-				for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
-					ROUNDS.Last().getPlayers()[i].resize();
+				for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
+					MATCHS.Last().getPlayers()[i].resize();
 				}
 				getIngameGui().getGUIHandler().Refresh();
 			}
 		}
 		/// <summary>
-		///  Inits all variables for a new round
+		///  Inits all variables for a new match
 		/// </summary>
-		public void newRound() {
-			byte newId = (byte) (ROUNDS.Last().getId() + 1);
-			ROUNDS[newId - 1].nullVars();
-			ROUNDS.Add(new Round(newId));
-			Resize();
+		public void newMatch() {
+			try {
+				MATCHS.Last().nullVars();
+			} catch (InvalidOperationException ioe) {
+				Debug.WriteLine(ioe.StackTrace);
+			}
+			MATCHS.Add(new Match());
 		}
 		/// <summary>
 		/// renders the mini map at the top center of the screen
@@ -122,8 +118,8 @@ namespace Fusee.FuFiCycles.Core {
 			RC.Projection = float4x4.CreateOrthographic(MAP_SIZE * 2, MAP_SIZE * 2, 0.01f, 20);
 			_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
 			RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
-			for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
-				ROUNDS.Last().getPlayers()[i].renderView(_renderer);
+			for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
+				MATCHS.Last().getPlayers()[i].renderView(_renderer);
 			}
 			_renderer.Traverse(sceneContainers["land"].Children);
 		}
@@ -133,13 +129,13 @@ namespace Fusee.FuFiCycles.Core {
 		private void renderPlayers() {
 			int zoom = 100;
 
-			for (int i = 0; i < ROUNDS.Last().getPlayers().Count; i++) {
-				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(ROUNDS.Last().getPlayers()[i]._angleHorz);
+			for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
+				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(MATCHS.Last().getPlayers()[i]._angleHorz);
 				var mtxCam = float4x4.LookAt(0, 20, -zoom, 0, 0, 0, 0, 1, 0);
 				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
-				RC.Projection = mtxOffset * ROUNDS.Last().getPlayers()[i].getProjection();
-				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(ROUNDS.Last().getPlayers()[i].getCycle().getPosition().x, ROUNDS.Last().getPlayers()[i].getCycle().getPosition().y, ROUNDS.Last().getPlayers()[i].getCycle().getPosition().z)));
-				switch (ROUNDS.Last().getPlayers()[i].getPlayerId()) {
+				RC.Projection = mtxOffset * MATCHS.Last().getPlayers()[i].getProjection();
+				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(MATCHS.Last().getPlayers()[i].getCycle().getPosition().x, MATCHS.Last().getPlayers()[i].getCycle().getPosition().y, MATCHS.Last().getPlayers()[i].getCycle().getPosition().z)));
+				switch (MATCHS.Last().getPlayers()[i].getPlayerId()) {
 					case 1:
 						RC.Viewport(0, 0, (Width / 2), Height);
 						break;
@@ -149,21 +145,21 @@ namespace Fusee.FuFiCycles.Core {
 					default:
 						break;
 				}
-				ROUNDS.Last().getPlayers()[i].renderAFrame(_renderer);
+				MATCHS.Last().getPlayers()[i].renderAFrame(_renderer);
 				_renderer.Traverse(sceneContainers["landLines"].Children);
 			}
 		}
 		/// <summary>
 		///  Set the map size according to the boundingbox of the grounds mesh
 		/// </summary>
-		private void setMapSize() {
+		public void setMapSize() {
 			MeshComponent ground = sceneContainers["landLines"].Children.FindNodes(c => c.Name == "Ground").First()?.GetMesh();
 			MAP_SIZE = (ushort)ground.BoundingBox.Size.x;
 		}
 		/// <summary>
 		///  Add SceneContainers to Dictionary sceneContainers
 		/// </summary>
-		private void addSceneContainers() {
+		public void addSceneContainers() {
 			sceneContainers.Add("land", AssetStorage.Get<SceneContainer>("Land.fus"));
 			sceneContainers.Add("landLines", AssetStorage.Get<SceneContainer>("Land_Lines.fus"));
 			sceneContainers.Add("cycle", AssetStorage.Get<SceneContainer>("Cycle.fus"));
@@ -184,7 +180,7 @@ namespace Fusee.FuFiCycles.Core {
 		/// <summary>
 		/// move the original cycle under the ground to hide it
 		/// </summary>
-		private void hideOriginalCycle() {
+		public void hideOriginalCycle() {
 			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.y = -500;
 			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.z = MAP_SIZE / 2;
 			getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "cycle").First().GetTransform().Translation.x = MAP_SIZE / 2;
@@ -193,24 +189,28 @@ namespace Fusee.FuFiCycles.Core {
 		/// Is called to pause the game and show the menu
 		/// </summary>
 		private void enterMenu() {
-			GameSettings.SHOWMENU = true;
+			SHOWMENU = true;
 		}
 		public void tickMenu() {
 			getMenuGui().getGUIHandler().RenderGUI();
 
 			if (keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
-				exitFullscreen();
-				//CloseGameWindow();
+				keyboardKeys.keys[KeyCodes.Escape].setUnpressed();
+				//exitFullscreen();
+				CloseGameWindow();
 			}
 		}
 		public void tickIngame() {
 			renderPlayers();
 			renderMiniMap();
+			getIngameGui().refresh();
 			getIngameGui().getGUIHandler().RenderGUI();
-			ROUNDS.Last().tick();
+			MATCHS.Last().tick();
 
 			if (keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
+				keyboardKeys.keys[KeyCodes.Escape].setUnpressed();
 				enterMenu();
+				getMenuGui().setViewport();
 			}
 		}
 		public void setIngameGui(GUIIngame ingameGui) {

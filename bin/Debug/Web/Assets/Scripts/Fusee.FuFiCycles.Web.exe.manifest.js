@@ -30,7 +30,7 @@ contentManifest["Fusee.FuFiCycles.Web.exe"] = [
     ["Script", "Fusee.FuFiCycles.Web, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 10226 }],
     ["Script", "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.js", { "sizeBytes": 9208059 }],
     ["Script", "Fusee.Base.Imp.Web, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 17245 }],
-    ["Script", "Fusee.FuFiCycles.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 135538 }],
+    ["Script", "Fusee.FuFiCycles.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 154247 }],
     ["Script", "Fusee.Base.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 140256 }],
     ["Script", "Fusee.SerializationSerializer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 142591 }],
     ["Script", "Fusee.Base.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.js", { "sizeBytes": 13183 }],
@@ -49,6 +49,6 @@ contentManifest["Fusee.FuFiCycles.Web.exe"] = [
     ["Script", "System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.js", { "sizeBytes": 648484 }],
     ["ManifestResource", "Fusee.FuFiCycles.Core.Assets.Land.fus", { "sizeBytes": 1056, "assembly": "Fusee.FuFiCycles.Core" }],
     ["ManifestResource", "Fusee.FuFiCycles.Core.Assets.Cycle.fus", { "sizeBytes": 568839, "assembly": "Fusee.FuFiCycles.Core" }],
-    ["ManifestResource", "Fusee.FuFiCycles.Core.Assets.Land_Lines.fus", { "sizeBytes": 2196499, "assembly": "Fusee.FuFiCycles.Core" }],
+    ["ManifestResource", "Fusee.FuFiCycles.Core.Assets.Land_Lines.fus", { "sizeBytes": 2580899, "assembly": "Fusee.FuFiCycles.Core" }],
     ["ManifestResource", "Fusee.FuFiCycles.Core.Assets.Wall.fus", { "sizeBytes": 965, "assembly": "Fusee.FuFiCycles.Core" }],
 ];

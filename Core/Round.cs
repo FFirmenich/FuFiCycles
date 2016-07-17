@@ -1,5 +1,7 @@
 ﻿using Fusee.Xene;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
@@ -10,22 +12,40 @@ namespace Fusee.FuFiCycles.Core {
 		private byte id;
 		private byte[,] mapMirror;
 		public bool firstFrame = true;
-		private List<Player> players = new List<Player>();
+		private bool paused = true;
 
-		public Round(byte id) {
-			this.id = id;
+		// vars for tps
+		private int absseconds = 0;
+		private ushort tpsTemp = 0;
+		private ushort tps = 0;
+		private int second = DateTime.Now.TimeOfDay.Seconds;
+
+		public Round() {
+			this.id = (byte)MATCHS.Count();
 			mapMirror = new byte[MAP_SIZE, MAP_SIZE];
-			addPlayers();
+			INSTANCE.getIngameGui().addTimers();
 		}
 
 		public void tick() {
+			calcTps();
+			if (isPaused()) {
+				return;
+			}
 			// set first frame false
 			if (getFirstFrame()) {
-				setNotFirstFrame();
+				bool gotAllWalls = true;
+				for(int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
+					if (!MATCHS.Last().getPlayers()[i].gotFirstWall()) {
+						gotAllWalls = false;
+					}
+					if(gotAllWalls) {
+						setNotFirstFrame();
+					}
+				}
 			}
 			// fast check if there is an uncollided cycle in this round
 			if (allCyclesCollided()) {
-				INSTANCE.newRound();
+				MATCHS.Last().newRound();
 			}
 		}
 		/// <summary>
@@ -54,27 +74,12 @@ namespace Fusee.FuFiCycles.Core {
 			this.firstFrame = false;
 		}
 		/// <summary>
-		/// Add players to the list
-		/// </summary>
-		private void addPlayers() {
-			for (int i = 0; i < PLAYER_QUANTITY; i++) {
-				players.Add(new Player((byte)(i + 1)));
-			}
-		}
-		/// <summary>
-		/// Get all players
-		/// </summary>
-		/// <returns>List of all players</returns>
-		public List<Player> getPlayers() {
-			return this.players;
-		}
-		/// <summary>
 		/// True if all cycles are collided
 		/// </summary>
 		/// <returns></returns>
 		private bool allCyclesCollided() {
-			for (int i = 0; i < getPlayers().Count; i++) {
-				if (!getPlayers()[i].getCycle().isCollided()) {
+			for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
+				if (!MATCHS.Last().getPlayers()[i].getCycle().isCollided()) {
 					return false;
 				}
 			}
@@ -84,13 +89,42 @@ namespace Fusee.FuFiCycles.Core {
 		/// set all vars to null to free some memory and remove cycles and walls from the map
 		/// </summary>
 		public void nullVars() {
-			for (int i = 0; i < getPlayers().Count; i++) {
-				INSTANCE.getSceneContainers()["cycle"].Children.Remove(getPlayers()[i].getCycle().getSNC());
-			}
 			INSTANCE.getSceneContainers()["wall"].Children.RemoveRange(1, INSTANCE.getSceneContainers()["wall"].Children.Count - 1);
 			// set variables null
 			mapMirror = null;
-			players = null;
+		}
+		/// <summary>
+		/// Calculates the Ticks per Second
+		/// </summary>
+		private void calcTps() {
+			if (DateTime.Now.TimeOfDay.Seconds != second) {
+				newSecond();
+			}
+			tpsTemp++;
+		}
+		public int getTps() {
+			return tps;
+		}
+		private void newSecond() {
+			second = DateTime.Now.TimeOfDay.Seconds;
+			tps = tpsTemp;
+			tpsTemp = 0;
+			absseconds++;
+			if (getAbseconds() > 5 && isPaused()) {
+				unpause();
+			}
+		}
+		public int getAbseconds() {
+			return absseconds;
+		}
+		public bool isPaused() {
+			return paused;
+		}
+		public void pause() {
+			paused = true;
+		}
+		public void unpause() {
+			paused = false;
 		}
 	}
 }

@@ -9,30 +9,65 @@ using System.Linq;
 using Fusee.Xene;
 using System.Diagnostics;
 using System;
+using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	public class KeyboardKeys {
 		// KeyboardKey List
-		public Dictionary<KeyCodes, KeyboardKey> keys = new Dictionary<KeyCodes,KeyboardKey>();
+		public Dictionary<KeyCodes, KeyboardKey> keys = new Dictionary<KeyCodes, KeyboardKey>();
+		public Dictionary<KeyCodes, KeyboardKey> ingameKeys = new Dictionary<KeyCodes, KeyboardKey>();
+		public Dictionary<KeyCodes, KeyboardKey> menuKeys = new Dictionary<KeyCodes, KeyboardKey>();
 
 		public KeyboardKeys() {
 			/// Player Keys
 			// WASD
-			keys.Add(KeyCodes.W, new KeyboardKey());
-			keys.Add(KeyCodes.A, new KeyboardKey());
-			keys.Add(KeyCodes.S, new KeyboardKey());
-			keys.Add(KeyCodes.D, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.W, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.A, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.S, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.D, new KeyboardKey());
 			// Up Left Down Right
-			keys.Add(KeyCodes.Up, new KeyboardKey());
-			keys.Add(KeyCodes.Left, new KeyboardKey());
-			keys.Add(KeyCodes.Down, new KeyboardKey());
-			keys.Add(KeyCodes.Right, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.Up, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.Left, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.Down, new KeyboardKey());
+			ingameKeys.Add(KeyCodes.Right, new KeyboardKey());
 			/// Special Keys
 			keys.Add(KeyCodes.Escape, new KeyboardKey());
 		}
 
 		public void renderAFrame() {
+			renderKeys();
+			if (SHOWMENU) {
+				renderMenuKeys();
+			} else {
+				renderIngameKeys();
+			}
+		}
+
+		public void renderKeys() {
 			foreach (KeyValuePair<KeyCodes, KeyboardKey> entry in keys) {
+				if (Keyboard.GetKey(entry.Key)) {
+					if (!entry.Value.isDown()) {
+						entry.Value.setPressed();
+					}
+				} else {
+					entry.Value.setNotDown();
+				}
+			}
+		}
+
+		public void renderIngameKeys() {
+			foreach (KeyValuePair<KeyCodes, KeyboardKey> entry in ingameKeys) {
+				if (Keyboard.GetKey(entry.Key)) {
+					if (!entry.Value.isDown()) {
+						entry.Value.setPressed();
+					}
+				} else {
+					entry.Value.setNotDown();
+				}
+			}
+		}
+		public void renderMenuKeys() {
+			foreach (KeyValuePair<KeyCodes, KeyboardKey> entry in menuKeys) {
 				if (Keyboard.GetKey(entry.Key)) {
 					if (!entry.Value.isDown()) {
 						entry.Value.setPressed();

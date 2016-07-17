@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="GameSettings.cs" />
     <Compile Include="GUIMenu.cs" />
+    <Compile Include="Match.cs" />
     <Compile Include="Round.cs" />
     <Compile Include="GUIIngame.cs" />
     <Compile Include="KeyboardKeys.cs" />

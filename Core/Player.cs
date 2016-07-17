@@ -28,6 +28,7 @@ namespace Fusee.FuFiCycles.Core {
 		public float _angleHorz = 0;
 		private short horzAngleTicker;
 		byte ticksPerAngleChange = 10;
+		bool firstWallDrawn = false;
 
 		// Wall Sizes
 		public static float WALL_WIDTH = 20.0f;
@@ -73,6 +74,10 @@ namespace Fusee.FuFiCycles.Core {
 				default:
 					throw (new Exception("no direction found"));
 			}
+		}
+
+		~Player() {
+			INSTANCE.getSceneContainers()["cycle"].Children.Remove(getCycle().getSNC());
 		}
 
 		//Get-Methods
@@ -135,15 +140,15 @@ namespace Fusee.FuFiCycles.Core {
 			bool directionChanged = false;
 			// Cycle Rotation
 			float cycleYaw = getCycle().getSNC().GetTransform().Rotation.y;
-			if (INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].isPressed()) {
-				INSTANCE.keyboardKeys.keys[input_keys.getKeyLeft()].setUnpressed();
+			if (INSTANCE.keyboardKeys.ingameKeys[input_keys.getKeyLeft()].isPressed()) {
+				INSTANCE.keyboardKeys.ingameKeys[input_keys.getKeyLeft()].setUnpressed();
 				horzAngleTicker += ticksPerAngleChange;
 				cycleYaw -= M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
 				directionChanged = true;
 				getCycle().setDirection(cycleYaw);
-			} else if (INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].isPressed()) {
-				INSTANCE.keyboardKeys.keys[input_keys.getKeyRight()].setUnpressed();
+			} else if (INSTANCE.keyboardKeys.ingameKeys[input_keys.getKeyRight()].isPressed()) {
+				INSTANCE.keyboardKeys.ingameKeys[input_keys.getKeyRight()].setUnpressed();
 				horzAngleTicker -= ticksPerAngleChange;
 				cycleYaw += M.PiOver2;
 				cycleYaw = FuFiCycles.NormRot(cycleYaw);
@@ -171,70 +176,70 @@ namespace Fusee.FuFiCycles.Core {
 					FuFiCycles._angleVelVert = -RotationSpeed * 0.02f * 0.002f;
 				}
 			}*/
-			getCycle().setPosition(
-				getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(getCycle().getDirection().getYaw()),
-				0,
-				(float)Cos(getCycle().getDirection().getYaw())) * getCycle().getSpeed()
-			);
-			getCycle().getSNC().GetTransform().Translation = getCycle().getPosition();
+			if(!MATCHS.Last().getCurrentRound().isPaused()) {
+				getCycle().setPosition(getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(getCycle().getDirection().getYaw()), 0, (float)Cos(getCycle().getDirection().getYaw())) * getCycle().getSpeed());
 
-			// Wheels
-			getCycle().getFrontWheel().Rotation += new float3(getCycle().getSpeed() * 0.008f, 0, 0);
-			getCycle().getBackWheel().Rotation += new float3(getCycle().getSpeed() * 0.008f, 0, 0);
+				// Wheels
+				getCycle().getFrontWheel().Rotation += new float3(getCycle().getSpeed() * 0.008f, 0, 0);
+				getCycle().getBackWheel().Rotation += new float3(getCycle().getSpeed() * 0.008f, 0, 0);
 
-			//Write Position into Array and throw crash if cycle collides with a wall or map border
-			int x = (int)System.Math.Floor(getCycle().getPosition().x + 0.5);
-			int z = (int)System.Math.Floor(getCycle().getPosition().z + 0.5);
-			try {
-				// loop through all positions since last frame
-				for (int i = 0; i < getCycle().getSpeed(); i++) {
-					int x2 = x;
-					int z2 = z;
+				//Write Position into Array and throw crash if cycle collides with a wall or map border
+				int x = (int)System.Math.Floor(getCycle().getPosition().x + 0.5);
+				int z = (int)System.Math.Floor(getCycle().getPosition().z + 0.5);
+				try {
+					// loop through all positions since last frame
+					for (int i = 0; i < getCycle().getSpeed(); i++) {
+						int x2 = x;
+						int z2 = z;
 
-					switch (getCycle().getDirection()) {
-						case Direction.RIGHT:
-							x2 -= i;
-							break;
-						case Direction.FORWARD:
-							z2 -= i;
-							break;
-						case Direction.LEFT:
-							x2 += i;
-							break;
-						case Direction.BACKWARD:
-							z2 += i;
-							break;
+						switch (getCycle().getDirection()) {
+							case Direction.RIGHT:
+								x2 -= i;
+								break;
+							case Direction.FORWARD:
+								z2 -= i;
+								break;
+							case Direction.LEFT:
+								x2 += i;
+								break;
+							case Direction.BACKWARD:
+								z2 += i;
+								break;
+						}
+
+						if (MATCHS.Last().getCurrentRound().getMapMirror()[x2, z2] == 0) {
+							MATCHS.Last().getCurrentRound().getMapMirror()[x2, z2] = getPlayerId();
+						} else {
+							// If value at _mapMirror[x2, z2] isn't 0, there is already a wall
+							getCycle().setCollided();
+						}
 					}
-
-					if (ROUNDS.Last().getMapMirror()[x2, z2] == 0) {
-						ROUNDS.Last().getMapMirror()[x2, z2] = getPlayerId();
-					} else {
-						// If value at _mapMirror[x2, z2] isn't 0, there is already a wall
-						getCycle().setCollided();
-					}
+				} catch (IndexOutOfRangeException e) {
+					// If Index is out of Range a Cycle has collided with the border of the map
+					getCycle().setCollided();
+					Debug.WriteLine(e.Message);
 				}
-			} catch (IndexOutOfRangeException e) {
-				// If Index is out of Range a Cycle has collided with the border of the map
-				getCycle().setCollided();
-				Debug.WriteLine(e.Message);
-			}
-			
-			// get new wall if direction has changed
-			if (directionChanged || ROUNDS.Last().getFirstFrame()) {
-				_cycleWall = getWall(x, z);
-				fixWallEdges();
-			}
 
-			// draw wall
-			prepareWall();
+				// get new wall if direction has changed
+				if (directionChanged || MATCHS.Last().getCurrentRound().getFirstFrame()) {
+					_cycleWall = getWall(x, z);
+					fixWallEdges();
+					firstWallDrawn = true;
+				}
+
+				// draw wall
+				prepareWall();
+
+			}
 
 			// render Scene
 			renderView(_renderer);
 		}
 
 		private void prepareWall() {
-			// if wall is under ground, move it up
-			// TODO: check if countdown is finished and game started
+			if(_cycleWall == null) {
+				return;
+			}
 			if (_cycleWall.Translation.y == -150) {
 				_cycleWall.Translation.y = 0;
 			}
@@ -310,16 +315,6 @@ namespace Fusee.FuFiCycles.Core {
 
 		// Is called when the window was resized
 		public void resize() {
-			switch(getPlayerId()) {
-				case 1:
-					INSTANCE.getRC().Viewport(0, 0, (INSTANCE.Width / 2), INSTANCE.Height);
-					break;
-				case 2:
-					INSTANCE.getRC().Viewport((INSTANCE.Width / 2), 0, (INSTANCE.Width / 2), INSTANCE.Height);
-					break;
-				default:
-					break;
-			}
 			var aspectRatio = (INSTANCE.Width / 2) / (float)INSTANCE.Height;
 
 			// 0.25*PI Rad -> 45° Opening angle along the vertical direction. Horizontal opening angle is calculated based on the aspect ratio
@@ -337,13 +332,17 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		public void renderView(Renderer _renderer) {
-			_renderer.Traverse(INSTANCE.getSceneContainers()["cycle"].Children);
+			try {
+				_renderer.Traverse(INSTANCE.getSceneContainers()["cycle"].Children);
+			} catch(InvalidOperationException ioe) {
+				Debug.WriteLine(ioe.StackTrace);
+			}
 			_renderer.Traverse(INSTANCE.getSceneContainers()["wall"].Children);
 		}
 
-		//
-		// Zusammenfassung:
-		//		fix Empty Edges between walls
+		/// <summary>
+		/// fix Empty Edges between walls
+		/// </summary>
 		private void fixWallEdges() {
 			switch (getCycle().getDirection()) {
 				case Direction.RIGHT:
@@ -377,6 +376,9 @@ namespace Fusee.FuFiCycles.Core {
 				_angleHorz -= M.PiOver2 / ticksPerAngleChange;
 				horzAngleTicker++;
 			}
+		}
+		public bool gotFirstWall() {
+			return firstWallDrawn;
 		}
 	}
 }

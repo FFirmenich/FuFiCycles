@@ -18,7 +18,7 @@ contentManifest["Fusee.FuFiCycles.Web.contentproj"] = [
     ["Script",	"SystemExternals.js",	{  "sizeBytes": 11976 }],
     ["File",	"Assets/Cycle.fus",	{  "sizeBytes": 568839 }],
     ["File",	"Assets/Land.fus",	{  "sizeBytes": 1056 }],
-    ["File",	"Assets/Land_Lines.fus",	{  "sizeBytes": 2196499 }],
+    ["File",	"Assets/Land_Lines.fus",	{  "sizeBytes": 2580899 }],
     ["Image",	"Assets/MenuBackground.jpg",	{  "sizeBytes": 751555 }],
     ["File",	"Assets/PixelShader2.frag",	{  "sizeBytes": 530 }],
     ["File",	"Assets/Roboto-Light.ttf",	{  "sizeBytes": 162420 }],

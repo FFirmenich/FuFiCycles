@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Fusee.FuFiCycles.Core {
 	public static class GameSettings {
 		public static FuFiCycles INSTANCE;
-		public static List<Round> ROUNDS = new List<Round>();
+		public static List<Match> MATCHS = new List<Match>();
 		public static bool SHOW_MINIMAP = true;
 		public static byte PLAYER_QUANTITY = 2;
 		public static ushort MAP_SIZE; // max size 65535

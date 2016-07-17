@@ -11,8 +11,8 @@ namespace Fusee.FuFiCycles.Core {
 	public class Cycle {
 		// ccene and model vars
 		private SceneNodeContainer sceneNodeContainer;
-		private TransformComponent frontwheel;
-		private TransformComponent backwheel;
+		private TransformComponent frontwheel_tc;
+		private TransformComponent backwheel_tc;
 
 		// speed, position etc.
 		private int id;
@@ -52,8 +52,7 @@ namespace Fusee.FuFiCycles.Core {
 				sceneNodeContainer.Children.Add(child);
 			}
 
-			frontwheel = INSTANCE.getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_front").First()?.GetTransform();
-			backwheel = INSTANCE.getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_back").First()?.GetTransform();
+			createWheels();
 
 			scale();
 
@@ -78,11 +77,11 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		public TransformComponent getFrontWheel() {
-			return frontwheel;
+			return frontwheel_tc;
 		}
 
 		public TransformComponent getBackWheel() {
-			return backwheel;
+			return backwheel_tc;
 		}
 
 		public int getId() {
@@ -136,17 +135,48 @@ namespace Fusee.FuFiCycles.Core {
 			ushort distanceFromWall = (ushort) 500;
 			switch (getId()) {
 				case 1:
-					setPosition(new float3(MAP_SIZE / 2 + 100, 0, distanceFromWall));
+					setPosition(new float3(MAP_SIZE / 2 + 160, 0, distanceFromWall));
 					setDirection(Direction.FORWARD);
 					break;
 				case 2:
-					setPosition(new float3(MAP_SIZE / 2 - 100, 0, MAP_SIZE - distanceFromWall));
+					setPosition(new float3(MAP_SIZE / 2 - 160, 0, MAP_SIZE - distanceFromWall));
 					setDirection(Direction.BACKWARD);
 					break;
 				default:
 					Debug.WriteLine("ACHTUNG: Spieler 3 aufwärts haben keine Positionen zugeordnet.");
 					break;
 			}
+		}
+		private void createWheels() {
+			SceneNodeContainer orig_frontwheel = INSTANCE.getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_front").First();
+			SceneNodeContainer orig_backwheel = INSTANCE.getSceneContainers()["cycle"].Children.FindNodes(c => c.Name == "wheel_back").First();
+
+
+			//create frontwheel
+			SceneNodeContainer frontwheel = new SceneNodeContainer();
+			frontwheel.Name = "frontwheel" + getId();
+			frontwheel.Components = new List<SceneComponentContainer>();
+			frontwheel_tc = new TransformComponent();
+			frontwheel_tc.Name = "frontwheel_tc" + getId();
+			frontwheel_tc.Rotation = orig_frontwheel.GetTransform().Rotation;
+			frontwheel_tc.Scale = orig_frontwheel.GetTransform().Scale;
+			frontwheel_tc.Translation = orig_frontwheel.GetTransform().Translation;
+			frontwheel.Components.Add(frontwheel_tc);
+			frontwheel.Components.Add(orig_frontwheel.GetMesh());
+			getSNC().Children.Add(frontwheel);
+
+			//create backwheel
+			SceneNodeContainer backwheel = new SceneNodeContainer();
+			backwheel.Name = "backwheel" + getId();
+			backwheel.Components = new List<SceneComponentContainer>();
+			backwheel_tc = new TransformComponent();
+			backwheel_tc.Name = "backwheel_tc" + getId();
+			backwheel_tc.Rotation = orig_backwheel.GetTransform().Rotation;
+			backwheel_tc.Scale = orig_backwheel.GetTransform().Scale;
+			backwheel_tc.Translation = orig_backwheel.GetTransform().Translation;
+			backwheel.Components.Add(backwheel_tc);
+			backwheel.Components.Add(orig_backwheel.GetMesh());
+			getSNC().Children.Add(backwheel);
 		}
 	}
 }
