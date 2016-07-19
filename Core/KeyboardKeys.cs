@@ -32,13 +32,14 @@ namespace Fusee.FuFiCycles.Core {
 			ingameKeys.Add(KeyCodes.Right, new KeyboardKey());
 			/// Special Keys
 			keys.Add(KeyCodes.Escape, new KeyboardKey());
+			keys.Add(KeyCodes.Enter, new KeyboardKey());
 		}
 
 		public void renderAFrame() {
 			renderKeys();
 			if (SHOWMENU) {
 				renderMenuKeys();
-			} else {
+			} else if(!MATCHS.Last().getRounds().Last().isPaused()) {
 				renderIngameKeys();
 			}
 		}

@@ -40,6 +40,8 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Core");
 
     $.Field({Static:true , Public:true }, "SHOWMENU", $.Boolean, true);
 
+    $.Field({Static:true , Public:true }, "IS_WEB", $.Boolean, false);
+
 
     function GameSettings__cctor () {
       $thisType.SCENE_SCALE = new $asm08.Fusee.Math.Core.float4x4();
@@ -48,6 +50,7 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Core");
       $thisType.PLAYER_QUANTITY = 2;
       $thisType.SCENE_SCALE = $S01().CallStatic($T01(), "CreateScale", null, 0.04).MemberwiseClone();
       $thisType.SHOWMENU = true;
+      $thisType.IS_WEB = false;
     }; 
 
     $.Method({Static:true , Public:false}, ".cctor", 
@@ -329,12 +332,12 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Core");
       GUIMenu__ctor
     );
 
-    $.Method({Static:false, Public:false}, "activateContinueButton", 
+    $.Method({Static:false, Public:true }, "activateContinueButton", 
       JSIL.MethodSignature.Void, 
       GUIMenu_activateContinueButton
     );
 
-    $.Method({Static:false, Public:false}, "addContinueButton", 
+    $.Method({Static:false, Public:true }, "addContinueButton", 
       JSIL.MethodSignature.Void, 
       GUIMenu_addContinueButton
     );
@@ -3317,28 +3320,28 @@ JSIL.MakeEnum(
     return ($T13 = JSIL.Memoize($asm08.Fusee.Math.Core.float4)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm14.System.Exception)) ();
+    return ($T14 = JSIL.Memoize($asm14.System.Boolean)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm06.Fusee.FuFiCycles.Core.Match)) ();
+    return ($T15 = JSIL.Memoize($asm14.System.Exception)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
+    return ($T16 = JSIL.Memoize($asm06.Fusee.FuFiCycles.Core.Match)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm0F.System.Diagnostics.Debug)) ();
+    return ($T17 = JSIL.Memoize($asm14.System.InvalidOperationException)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm06.Fusee.FuFiCycles.Core.Match))) ();
+    return ($T18 = JSIL.Memoize($asm0F.System.Diagnostics.Debug)) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm14.System.Single)) ();
+    return ($T19 = JSIL.Memoize($asm14.System.Collections.Generic.List$b1.Of($asm06.Fusee.FuFiCycles.Core.Match))) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm03.Fusee.Engine.Common.ClearFlags)) ();
+    return ($T1A = JSIL.Memoize($asm14.System.Single)) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize($asm14.System.Boolean)) ();
+    return ($T1B = JSIL.Memoize($asm03.Fusee.Engine.Common.ClearFlags)) ();
   };
   var $T1C = function () {
     return ($T1C = JSIL.Memoize($asm08.Fusee.Math.Core.float4x4)) ();
@@ -3499,19 +3502,26 @@ JSIL.MakeEnum(
     this._angleRoll = +$S06().CallStatic($T10(), "MinAngle", null, this._angleRoll);
     this._renderer = new ($T11())();
     (this.RenderCanvas$RC$value.ClearColor = $S07().Construct(1, 1, 1, 1));
+    var iS_WEB = $T05().IS_WEB;
+    if (iS_WEB) {
+      this.newMatch();
+      $T05().SHOWMENU = false;
+      (this.menuGui).activateContinueButton();
+      $T05().INSTANCE.Resize();
+    }
   }; 
 
   function FuFiCycles_newMatch ($exception) {
     try {
       $S08().CallStatic($T0B(), "Last$b1", [$asm06.Fusee.FuFiCycles.Core.Match], $T05().MATCHS).nullVars();
     } catch ($exception) {
-      if ($T16().$Is($exception)) {
-        $S09().CallStatic($T17(), "WriteLine", null, ($exception).get_StackTrace());
+      if ($T17().$Is($exception)) {
+        $S09().CallStatic($T18(), "WriteLine", null, ($exception).get_StackTrace());
       } else {
         throw $exception;
       }
     }
-    $S0A().CallVirtual("Add", null, $T05().MATCHS, new ($T15())());
+    $S0A().CallVirtual("Add", null, $T05().MATCHS, new ($T16())());
   }; 
 
   function FuFiCycles_NormRot (rot) {
@@ -3525,7 +3535,7 @@ JSIL.MakeEnum(
   }; 
 
   function FuFiCycles_RenderAFrame () {
-    (this.RenderCanvas$RC$value).Clear($T1A().$Flags("Color", "Depth"));
+    (this.RenderCanvas$RC$value).Clear($T1B().$Flags("Color", "Depth"));
     (this.keyboardKeys).renderAFrame();
     var sHOWMENU = $T05().SHOWMENU;
     if (sHOWMENU) {

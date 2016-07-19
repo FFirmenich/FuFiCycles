@@ -1,6 +1,4 @@
-﻿using Fusee.Xene;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
@@ -19,13 +17,20 @@ namespace Fusee.FuFiCycles.Core {
 		private ushort tpsTemp = 0;
 		private ushort tps = 0;
 		private int second = DateTime.Now.TimeOfDay.Seconds;
+		public byte secondsToWait = 3;
+
+		// winner
+		private byte winner;
 
 		public Round() {
-			this.id = (byte)MATCHS.Count();
+			try {
+				id = (byte) MATCHS.Last().getRounds().Count();
+			} catch(Exception) {
+				id = 0;
+			}
 			mapMirror = new byte[MAP_SIZE, MAP_SIZE];
 			INSTANCE.getIngameGui().addTimers();
 		}
-
 		public void tick() {
 			calcTps();
 			if (isPaused()) {
@@ -44,7 +49,7 @@ namespace Fusee.FuFiCycles.Core {
 				}
 			}
 			// fast check if there is an uncollided cycle in this round
-			if (allCyclesCollided()) {
+			if (onlyOneCycleLeft()) {
 				MATCHS.Last().newRound();
 			}
 		}
@@ -77,13 +82,22 @@ namespace Fusee.FuFiCycles.Core {
 		/// True if all cycles are collided
 		/// </summary>
 		/// <returns></returns>
-		private bool allCyclesCollided() {
+		private bool onlyOneCycleLeft() {
+			byte cyclesLeft = (byte) MATCHS.Last().getPlayers().Count();
 			for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
-				if (!MATCHS.Last().getPlayers()[i].getCycle().isCollided()) {
-					return false;
+				if (MATCHS.Last().getPlayers()[i].getCycle().isCollided()) {
+					cyclesLeft--;
 				}
 			}
-			return true;
+			if(cyclesLeft <= 1) {
+				for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
+					if (MATCHS.Last().getPlayers()[i].getCycle().isCollided()) {
+						setWinner((MATCHS.Last().getPlayers()[i].getPlayerId()));
+					}
+				}
+				return true;
+			}
+			return false;
 		}
 		/// <summary>
 		/// set all vars to null to free some memory and remove cycles and walls from the map
@@ -110,7 +124,7 @@ namespace Fusee.FuFiCycles.Core {
 			tps = tpsTemp;
 			tpsTemp = 0;
 			absseconds++;
-			if (getAbseconds() > 5 && isPaused()) {
+			if (getAbseconds() > secondsToWait && isPaused()) {
 				unpause();
 			}
 		}
@@ -125,6 +139,12 @@ namespace Fusee.FuFiCycles.Core {
 		}
 		public void unpause() {
 			paused = false;
+		}
+		private void setWinner(byte winner_id) {
+			winner = winner_id;
+		}
+		public byte getWinner() {
+			return winner;
 		}
 	}
 }

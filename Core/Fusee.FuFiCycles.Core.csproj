@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GameSettings.cs" />
+    <Compile Include="GUI.cs" />
     <Compile Include="GUIMenu.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="Round.cs" />

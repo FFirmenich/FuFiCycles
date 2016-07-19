@@ -44,11 +44,11 @@ namespace Fusee.FuFiCycles.Core {
 			// TODO: let player pick color
 			switch (id) {
 				case 1:
-					input_keys = new InputKeys(KeyCodes.A, KeyCodes.D, KeyCodes.W, KeyCodes.S);
+					input_keys = new InputKeys(KeyCodes.Left, KeyCodes.Right, KeyCodes.Up, KeyCodes.Down);
 					setColor(new float3(0, 0.9f, 1f));
 					break;
 				case 2:
-					input_keys = new InputKeys(KeyCodes.Left, KeyCodes.Right, KeyCodes.Up, KeyCodes.Down);
+					input_keys = new InputKeys(KeyCodes.A, KeyCodes.D, KeyCodes.W, KeyCodes.S);
 					setColor(new float3(0, 1.0f, 0));
 					break;
 				default:
@@ -176,7 +176,7 @@ namespace Fusee.FuFiCycles.Core {
 					FuFiCycles._angleVelVert = -RotationSpeed * 0.02f * 0.002f;
 				}
 			}*/
-			if(!MATCHS.Last().getCurrentRound().isPaused()) {
+			if(!MATCHS.Last().getRounds().Last().isPaused()) {
 				getCycle().setPosition(getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(getCycle().getDirection().getYaw()), 0, (float)Cos(getCycle().getDirection().getYaw())) * getCycle().getSpeed());
 
 				// Wheels
@@ -207,8 +207,8 @@ namespace Fusee.FuFiCycles.Core {
 								break;
 						}
 
-						if (MATCHS.Last().getCurrentRound().getMapMirror()[x2, z2] == 0) {
-							MATCHS.Last().getCurrentRound().getMapMirror()[x2, z2] = getPlayerId();
+						if (MATCHS.Last().getRounds().Last().getMapMirror()[x2, z2] == 0) {
+							MATCHS.Last().getRounds().Last().getMapMirror()[x2, z2] = getPlayerId();
 						} else {
 							// If value at _mapMirror[x2, z2] isn't 0, there is already a wall
 							getCycle().setCollided();
@@ -221,7 +221,7 @@ namespace Fusee.FuFiCycles.Core {
 				}
 
 				// get new wall if direction has changed
-				if (directionChanged || MATCHS.Last().getCurrentRound().getFirstFrame()) {
+				if (directionChanged || MATCHS.Last().getRounds().Last().getFirstFrame()) {
 					_cycleWall = getWall(x, z);
 					fixWallEdges();
 					firstWallDrawn = true;
@@ -359,14 +359,12 @@ namespace Fusee.FuFiCycles.Core {
 					break;
 			}
 		}
-
 		private bool isKeyDown(KeyCodes key) {
 			if (Keyboard.GetKey(key)) {
 				return true;
 			}
 			return false;
 		}
-
 		private void changeHorzAngle() {
 			if (horzAngleTicker > 0) {
 				_angleHorz += M.PiOver2 / ticksPerAngleChange;

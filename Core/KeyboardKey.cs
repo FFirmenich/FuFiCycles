@@ -1,11 +1,4 @@
-﻿using Fusee.Engine.Common;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-
-namespace Fusee.FuFiCycles.Core {
+﻿namespace Fusee.FuFiCycles.Core {
 
 	public class KeyboardKey {
 		private bool down = false;

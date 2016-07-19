@@ -91,8 +91,10 @@ namespace Fusee.FuFiCycles.Core {
 			if (SHOWMENU) {
 				getMenuGui().getGUIHandler().Refresh();
 			} else {
-				for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
-					MATCHS.Last().getPlayers()[i].resize();
+				if(MATCHS.Last().getPlayers() != null) {
+					for (int i = 0; i < MATCHS.Last().getPlayers().Count(); i++) {
+						MATCHS.Last().getPlayers()[i].resize();
+					}
 				}
 				getIngameGui().getGUIHandler().Refresh();
 			}
@@ -137,10 +139,10 @@ namespace Fusee.FuFiCycles.Core {
 				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(MATCHS.Last().getPlayers()[i].getCycle().getPosition().x, MATCHS.Last().getPlayers()[i].getCycle().getPosition().y, MATCHS.Last().getPlayers()[i].getCycle().getPosition().z)));
 				switch (MATCHS.Last().getPlayers()[i].getPlayerId()) {
 					case 1:
-						RC.Viewport(0, 0, (Width / 2), Height);
+						RC.Viewport((Width / 2), 0, (Width / 2), Height);
 						break;
 					case 2:
-						RC.Viewport((Width / 2), 0, (Width / 2), Height);
+						RC.Viewport(0, 0, (Width / 2), Height);
 						break;
 					default:
 						break;
@@ -190,6 +192,7 @@ namespace Fusee.FuFiCycles.Core {
 		/// </summary>
 		private void enterMenu() {
 			SHOWMENU = true;
+			getMenuGui().setViewport();
 		}
 		public void tickMenu() {
 			getMenuGui().getGUIHandler().RenderGUI();
@@ -210,7 +213,10 @@ namespace Fusee.FuFiCycles.Core {
 			if (keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
 				keyboardKeys.keys[KeyCodes.Escape].setUnpressed();
 				enterMenu();
-				getMenuGui().setViewport();
+			}
+			if (MATCHS.Last().isEnded() && keyboardKeys.keys[KeyCodes.Enter].isPressed()) {
+				keyboardKeys.keys[KeyCodes.Escape].setUnpressed();
+				enterMenu();
 			}
 		}
 		public void setIngameGui(GUIIngame ingameGui) {

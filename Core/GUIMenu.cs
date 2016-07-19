@@ -1,17 +1,13 @@
 ﻿using System;
 using Fusee.Math.Core;
 using Fusee.Engine.Core.GUI;
-using Fusee.Engine.Core;
 using Fusee.Base.Core;
-using System.Diagnostics;
 using static Fusee.FuFiCycles.Core.GameSettings;
 using Fusee.Base.Common;
 using Fusee.Engine.Common;
 
 namespace Fusee.FuFiCycles.Core {
-	public class GUIMenu {
-		public GUIHandler guiHandler;
-
+	public class GUIMenu : GUI {
 		public GUIPanel panel;
 
 		public GUIButton continueButton;
@@ -31,6 +27,7 @@ namespace Fusee.FuFiCycles.Core {
 		private static float4 panelcolor = new float4(grey.x, grey.y, grey.z, 0.6f);
 		private static float4 buttonColor = new float4(0, 0.6f, 1, 0.9f);
 		private static float4 buttonColorHover = new float4(0, 0.6f, 1, 1);
+		private static float4 buttonColorDeactivated = new float4(grey.x, grey.y, grey.z, 0.8f);
 
 		//paneldimens
 		private static int paddingV = INSTANCE.Width / 10;
@@ -41,16 +38,13 @@ namespace Fusee.FuFiCycles.Core {
 
 
 		public GUIMenu() {
-			guiHandler = new GUIHandler();
-			guiHandler.AttachToContext(INSTANCE.getRC());
-
 			// image
-			guiHandler.Add(new GUIImage(AssetStorage.Get<ImageData>("MenuBackground.jpg"), 0, 0, -5, INSTANCE.Width, INSTANCE.Height));
+			getGUIHandler().Add(new GUIImage(AssetStorage.Get<ImageData>("MenuBackground.jpg"), 0, 0, -5, INSTANCE.Width, INSTANCE.Height));
 
 			// panel
-			panel = new GUIPanel("PAUSE", new FontMap(INSTANCE.roboto, INSTANCE.roboto.PixelHeight), paddingV, paddingH, panelWidth, panelHeight);
+			panel = new GUIPanel("PAUSE", getRoboto(), paddingV, paddingH, panelWidth, panelHeight);
 			panel.PanelColor = panelcolor;
-			guiHandler.Add(panel);
+			getGUIHandler().Add(panel);
 
 			addContinueButton();
 			addNewMatchButton();
@@ -61,25 +55,30 @@ namespace Fusee.FuFiCycles.Core {
 			INSTANCE.getRC().Viewport(0, 0, INSTANCE.Width, INSTANCE.Height);
 		}
 
-		private void addContinueButton() {
-			continueButton = new GUIButton("CONTINUE", new FontMap(INSTANCE.roboto, INSTANCE.roboto.PixelHeight), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
-			continueButton.ButtonColor = new float4(grey.x, grey.y, grey.z, 0.8f);
+		public void addContinueButton() {
+			continueButton = new GUIButton("CONTINUE", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+			continueButton.ButtonColor = buttonColorDeactivated;
 			continueButton.BorderColor = grey;
 			continueButton.BorderWidth = 2;
 			continueButton.OnGUIButtonEnter += continueButton_OnGUIButtonEnter;
 			continueButton.OnGUIButtonLeave += continueButton_OnGUIButtonLeave;
 			continueButton.OnGUIButtonDown += continueButton_OnGUIButtonDown;
 			panel.ChildElements.Add(continueButton);
-			guiHandler.Refresh();
+			getGUIHandler().Refresh();
 		}
 
-		private void activateContinueButton() {
+		public void activateContinueButton() {
 			continueButton.ButtonColor = buttonColor;
 			continueButtonActive = true;
 		}
 
+		public void deActivateContinueButton() {
+			continueButton.ButtonColor = buttonColorDeactivated;
+			continueButtonActive = false;
+		}
+
 		private void addNewMatchButton() {
-			newMatchButton = new GUIButton("NEW MATCH", new FontMap(INSTANCE.roboto, INSTANCE.roboto.PixelHeight), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+			newMatchButton = new GUIButton("NEW MATCH", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
 			newMatchButton.ButtonColor = buttonColor;
 			newMatchButton.BorderColor = grey;
 			newMatchButton.BorderWidth = 2;
@@ -87,11 +86,11 @@ namespace Fusee.FuFiCycles.Core {
 			newMatchButton.OnGUIButtonLeave += newMatchButton_OnGUIButtonLeave;
 			newMatchButton.OnGUIButtonDown += newMatchButton_OnGUIButtonDown;
 			panel.ChildElements.Add(newMatchButton);
-			guiHandler.Refresh();
+			getGUIHandler().Refresh();
 		}
 
 		private void addExitButton() {
-			exitButton = new GUIButton("EXIT", new FontMap(INSTANCE.roboto, INSTANCE.roboto.PixelHeight), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+			exitButton = new GUIButton("EXIT", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
 			exitButton.ButtonColor = buttonColor;
 			exitButton.BorderColor = grey;
 			exitButton.BorderWidth = 2;
@@ -99,7 +98,7 @@ namespace Fusee.FuFiCycles.Core {
 			exitButton.OnGUIButtonLeave += exitButton_OnGUIButtonLeave;
 			exitButton.OnGUIButtonDown += exitButton_OnGUIButtonDown;
 			panel.ChildElements.Add(exitButton);
-			guiHandler.Refresh();
+			getGUIHandler().Refresh();
 		}
 
 		public void continueButton_OnGUIButtonEnter(GUIButton sender, GUIButtonEventArgs mea) {
@@ -137,8 +136,10 @@ namespace Fusee.FuFiCycles.Core {
 			newMatchButton.ButtonColor = buttonColor;
 		}
 
-		void newMatchButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
+		public void newMatchButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
 			INSTANCE.SetCursor(CursorType.Standard);
+			INSTANCE.getIngameGui().removeWinner();
+			INSTANCE.getIngameGui().removeTimers();
 			INSTANCE.newMatch();
 			SHOWMENU = false;
 			activateContinueButton();
@@ -166,10 +167,6 @@ namespace Fusee.FuFiCycles.Core {
 
 		internal void Clear() {
 			throw new NotImplementedException();
-		}
-
-		public GUIHandler getGUIHandler() {
-			return this.guiHandler;
 		}
 	}
 }

@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using Fusee.Xene;
 using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	public class Match {
-		byte id;
+		private byte id;
 		private List<Player> players = new List<Player>();
 		private List<Round> rounds = new List<Round>();
+		private byte winner;
+		private bool ended = false;
 
 		public Match() {
 			id = (byte) (MATCHS.Count() + 1);
@@ -24,7 +24,7 @@ namespace Fusee.FuFiCycles.Core {
 		}
 
 		public void tick() {
-			getCurrentRound().tick();
+			getRounds().Last().tick();
 		}
 
 		public int getId() {
@@ -56,6 +56,13 @@ namespace Fusee.FuFiCycles.Core {
 		///  Inits all variables for a new round
 		/// </summary>
 		public void newRound() {
+			if(ended) {
+				return;
+			}
+			if(rounds.Count >= 3) {
+				end();
+				return;
+			}
 			Debug.WriteLine(INSTANCE.getSceneContainers()["cycle"].Children);
 			try {
 				rounds.Last().nullVars();
@@ -77,6 +84,39 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			players = null;
 			rounds = null;
+		}
+		private void end() {
+			ended = true;
+			getRounds().Last().pause();
+			// define winner
+			byte wins1 = 0;
+			byte wins2 = 0;
+			for(int i = 0; i < rounds.Count(); i++) {
+				if(rounds[i].getWinner() == 1) {
+					wins1++;
+				} else if(rounds[i].getWinner() == 2) {
+					wins2++;
+				}
+			}
+			if(wins1 > wins2) {
+				winner = 1;
+			} else {
+				winner = 2;
+			}
+			INSTANCE.getIngameGui().addWinner();
+			INSTANCE.getMenuGui().deActivateContinueButton();
+			for (int i = 0; i < getPlayers().Count(); i++) {
+				getPlayers()[i].getCycle().setSpeed(0);
+			}
+		}
+		public bool isEnded() {
+			return ended;
+		}
+		public int getWinner() {
+			return winner;
+		}
+		public List<Round> getRounds() {
+			return rounds;
 		}
 	}
 }
