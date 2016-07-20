@@ -176,7 +176,7 @@ namespace Fusee.FuFiCycles.Core {
 					FuFiCycles._angleVelVert = -RotationSpeed * 0.02f * 0.002f;
 				}
 			}*/
-			if(!MATCHS.Last().getRounds().Last().isPaused()) {
+			if(!INSTANCE.getLastMatch().getLastRound().isPaused()) {
 				getCycle().setPosition(getCycle().getSNC().GetTransform().Translation + new float3((float)Sin(getCycle().getDirection().getYaw()), 0, (float)Cos(getCycle().getDirection().getYaw())) * getCycle().getSpeed());
 
 				// Wheels
@@ -207,8 +207,8 @@ namespace Fusee.FuFiCycles.Core {
 								break;
 						}
 
-						if (MATCHS.Last().getRounds().Last().getMapMirror()[x2, z2] == 0) {
-							MATCHS.Last().getRounds().Last().getMapMirror()[x2, z2] = getPlayerId();
+						if (INSTANCE.getLastMatch().getLastRound().getMapMirror()[x2, z2] == 0) {
+							INSTANCE.getLastMatch().getLastRound().getMapMirror()[x2, z2] = getPlayerId();
 						} else {
 							// If value at _mapMirror[x2, z2] isn't 0, there is already a wall
 							getCycle().setCollided();
@@ -221,7 +221,7 @@ namespace Fusee.FuFiCycles.Core {
 				}
 
 				// get new wall if direction has changed
-				if (directionChanged || MATCHS.Last().getRounds().Last().getFirstFrame()) {
+				if (directionChanged || INSTANCE.getLastMatch().getLastRound().getFirstFrame()) {
 					_cycleWall = getWall(x, z);
 					fixWallEdges();
 					firstWallDrawn = true;

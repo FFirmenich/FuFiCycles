@@ -13,6 +13,9 @@ using System;
 namespace Fusee.FuFiCycles.Core {
 	[FuseeApplication(Name = "FuFiCycles", Description = "A FuFi Production", Width = 1920, Height = 1080)]
 	public class FuFiCycles : RenderCanvas {
+		// Matchs
+		private List<Match> matchs = new List<Match>();
+
 		// Keyboard Keys
 		public KeyboardKeys keyboardKeys;
 
@@ -91,9 +94,18 @@ namespace Fusee.FuFiCycles.Core {
 			if (SHOWMENU) {
 				getMenuGui().getGUIHandler().Refresh();
 			} else {
-				if(MATCHS.Last().getPlayers() != null) {
-					for (int i = 0; i < MATCHS.Last().getPlayers().Count(); i++) {
-						MATCHS.Last().getPlayers()[i].resize();
+				if (getMatchs() != null && getMatchs().Any()) {
+					if (getLastMatch() != null) {
+						if (getLastMatch().getPlayers() != null && getLastMatch().getPlayers().Any()) {
+							for (int i = 0; i < getLastMatch().getPlayers().Count(); i++) {
+								getLastMatch().getPlayers()[i].resize();
+							}
+						}
+					}
+				}
+				if (getLastMatch().getPlayers() != null) {
+					for (int i = 0; i < getLastMatch().getPlayers().Count(); i++) {
+						getLastMatch().getPlayers()[i].resize();
 					}
 				}
 				getIngameGui().getGUIHandler().Refresh();
@@ -103,12 +115,14 @@ namespace Fusee.FuFiCycles.Core {
 		///  Inits all variables for a new match
 		/// </summary>
 		public void newMatch() {
-			try {
-				MATCHS.Last().nullVars();
-			} catch (InvalidOperationException ioe) {
-				Debug.WriteLine(ioe.StackTrace);
+			if (getMatchs() != null) {
+				if (getMatchs().Count > 0) {
+					if (getLastMatch() != null) {
+						getLastMatch().nullVars();
+					}
+				}
 			}
-			MATCHS.Add(new Match());
+			getMatchs().Add(new Match());
 		}
 		/// <summary>
 		/// renders the mini map at the top center of the screen
@@ -120,8 +134,8 @@ namespace Fusee.FuFiCycles.Core {
 			RC.Projection = float4x4.CreateOrthographic(MAP_SIZE * 2, MAP_SIZE * 2, 0.01f, 20);
 			_renderer.View = float4x4.CreateRotationX(-M.PiOver2) * float4x4.CreateTranslation(0, -10, 0);
 			RC.Viewport((Width / 2) - (Width / 4), Height - (Width / 3), Width / 3, Width / 3);
-			for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
-				MATCHS.Last().getPlayers()[i].renderView(_renderer);
+			for (int i = 0; i < getLastMatch().getPlayers().Count; i++) {
+				getLastMatch().getPlayers()[i].renderView(_renderer);
 			}
 			_renderer.Traverse(sceneContainers["land"].Children);
 		}
@@ -131,13 +145,13 @@ namespace Fusee.FuFiCycles.Core {
 		private void renderPlayers() {
 			int zoom = 100;
 
-			for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
-				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(MATCHS.Last().getPlayers()[i]._angleHorz);
+			for (int i = 0; i < getLastMatch().getPlayers().Count; i++) {
+				var mtxRot = float4x4.CreateRotationZ(_angleRoll) * float4x4.CreateRotationX(_angleVert) * float4x4.CreateRotationY(getLastMatch().getPlayers()[i]._angleHorz);
 				var mtxCam = float4x4.LookAt(0, 20, -zoom, 0, 0, 0, 0, 1, 0);
 				var mtxOffset = float4x4.CreateTranslation(2 * _offset.x / Width, -2 * _offset.y / Height, 0);
-				RC.Projection = mtxOffset * MATCHS.Last().getPlayers()[i].getProjection();
-				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(MATCHS.Last().getPlayers()[i].getCycle().getPosition().x, MATCHS.Last().getPlayers()[i].getCycle().getPosition().y, MATCHS.Last().getPlayers()[i].getCycle().getPosition().z)));
-				switch (MATCHS.Last().getPlayers()[i].getPlayerId()) {
+				RC.Projection = mtxOffset * getLastMatch().getPlayers()[i].getProjection();
+				_renderer.View = mtxCam * mtxRot * SCENE_SCALE * float4x4.CreateTranslation(-(new float3(getLastMatch().getPlayers()[i].getCycle().getPosition().x, getLastMatch().getPlayers()[i].getCycle().getPosition().y, getLastMatch().getPlayers()[i].getCycle().getPosition().z)));
+				switch (getLastMatch().getPlayers()[i].getPlayerId()) {
 					case 1:
 						RC.Viewport((Width / 2), 0, (Width / 2), Height);
 						break;
@@ -147,7 +161,7 @@ namespace Fusee.FuFiCycles.Core {
 					default:
 						break;
 				}
-				MATCHS.Last().getPlayers()[i].renderAFrame(_renderer);
+				getLastMatch().getPlayers()[i].renderAFrame(_renderer);
 				_renderer.Traverse(sceneContainers["landLines"].Children);
 			}
 		}
@@ -208,14 +222,14 @@ namespace Fusee.FuFiCycles.Core {
 			renderMiniMap();
 			getIngameGui().refresh();
 			getIngameGui().getGUIHandler().RenderGUI();
-			MATCHS.Last().tick();
+			getLastMatch().tick();
 
 			if (keyboardKeys.keys[KeyCodes.Escape].isPressed()) {
 				keyboardKeys.keys[KeyCodes.Escape].setUnpressed();
 				enterMenu();
 			}
-			if (MATCHS.Last().isEnded() && keyboardKeys.keys[KeyCodes.Enter].isPressed()) {
-				keyboardKeys.keys[KeyCodes.Escape].setUnpressed();
+			if (getLastMatch().isEnded() && keyboardKeys.keys[KeyCodes.Enter].isPressed()) {
+				keyboardKeys.keys[KeyCodes.Enter].setUnpressed();
 				enterMenu();
 			}
 		}
@@ -230,6 +244,12 @@ namespace Fusee.FuFiCycles.Core {
 		}
 		public GUIMenu getMenuGui() {
 			return this.menuGui;
+		}
+		public List<Match> getMatchs() {
+			return matchs;
+		}
+		public Match getLastMatch() {
+			return getMatchs()[getMatchs().Count() - 1];
 		}
 	}
 }

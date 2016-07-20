@@ -65,69 +65,54 @@ namespace Fusee.FuFiCycles.Core {
 			// set the cycle to the right position according to its id
 			setStartPosition();
 		}
-
 		private void scale() {
 			this.sceneNodeContainer.GetTransform().Scale.x = 30;
 			this.sceneNodeContainer.GetTransform().Scale.y = 30;
 			this.sceneNodeContainer.GetTransform().Scale.z = 30;
 		}
-
 		public SceneNodeContainer getSNC() {
 			return sceneNodeContainer;
 		}
-
 		public TransformComponent getFrontWheel() {
 			return frontwheel_tc;
 		}
-
 		public TransformComponent getBackWheel() {
 			return backwheel_tc;
 		}
-
 		public int getId() {
 			return this.id;
 		}
-
 		public void setId(int id) {
 			this.id = id;
 		}
-
 		public int getSpeed() {
 			return this.speed;
 		}
-
 		public void setSpeed(int speed) {
 			this.speed = speed;
 		}
-
 		public float3 getPosition() {
 			return this.position;
 		}
-
 		public void setPosition(float3 position) {
 			getSNC().GetTransform().Translation = position;
 			this.position = position;
 		}
-
 		public bool isCollided() {
 			return this.collided;
 		}
-
 		public void setCollided() {
 			Debug.WriteLine("cycle" + getId() + " kollidiert");
 			this.collided = true;
 			setSpeed(0);
 		}
-
 		public Direction getDirection() {
 			return this.direction;
 		}
-
 		public void setDirection(Direction direction) {
 			this.direction = direction;
 			getSNC().GetTransform().Rotation = new float3(0, direction.getYaw(), 0);
 		}
-
 		public void setDirection(float yaw) {
 			setDirection(DirectionMethods.directionFromYaw(yaw));
 		}

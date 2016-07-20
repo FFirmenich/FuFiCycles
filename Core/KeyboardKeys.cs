@@ -34,16 +34,14 @@ namespace Fusee.FuFiCycles.Core {
 			keys.Add(KeyCodes.Escape, new KeyboardKey());
 			keys.Add(KeyCodes.Enter, new KeyboardKey());
 		}
-
 		public void renderAFrame() {
 			renderKeys();
 			if (SHOWMENU) {
 				renderMenuKeys();
-			} else if(!MATCHS.Last().getRounds().Last().isPaused()) {
+			} else if(!INSTANCE.getLastMatch().getLastRound().isPaused()) {
 				renderIngameKeys();
 			}
 		}
-
 		public void renderKeys() {
 			foreach (KeyValuePair<KeyCodes, KeyboardKey> entry in keys) {
 				if (Keyboard.GetKey(entry.Key)) {
@@ -55,7 +53,6 @@ namespace Fusee.FuFiCycles.Core {
 				}
 			}
 		}
-
 		public void renderIngameKeys() {
 			foreach (KeyValuePair<KeyCodes, KeyboardKey> entry in ingameKeys) {
 				if (Keyboard.GetKey(entry.Key)) {

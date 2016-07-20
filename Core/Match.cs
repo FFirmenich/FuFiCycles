@@ -13,7 +13,7 @@ namespace Fusee.FuFiCycles.Core {
 		private bool ended = false;
 
 		public Match() {
-			id = (byte) (MATCHS.Count() + 1);
+			id = (byte) (INSTANCE.getMatchs().Count() + 1);
 			if(getId() == 1) {
 				INSTANCE.addSceneContainers();
 				INSTANCE.setMapSize();
@@ -22,11 +22,9 @@ namespace Fusee.FuFiCycles.Core {
 			addPlayers();
 			newRound();
 		}
-
 		public void tick() {
-			getRounds().Last().tick();
+			getLastRound().tick();
 		}
-
 		public int getId() {
 			return this.id;
 		}
@@ -59,42 +57,40 @@ namespace Fusee.FuFiCycles.Core {
 			if(ended) {
 				return;
 			}
-			if(rounds.Count >= 3) {
+			if(getRounds().Count >= 3) {
 				end();
 				return;
 			}
-			Debug.WriteLine(INSTANCE.getSceneContainers()["cycle"].Children);
-			try {
-				rounds.Last().nullVars();
-			} catch(InvalidOperationException ioe) {
-				Debug.WriteLine(ioe.StackTrace);
+			if (getRounds() != null) {
+				if (getRounds().Any()) {
+					if (getLastRound() != null) {
+						getLastRound().nullVars();
+					}
+				}
 			}
 			removePlayers();
 			addPlayers();
 			GC.Collect();
-			rounds.Add(new Round());
+			getRounds().Add(new Round());
 			INSTANCE.Resize();
 		}
-		public Round getCurrentRound() {
-			return rounds.Last();
-		}
 		public void nullVars() {
-			for(int i = 0; i < rounds.Count(); i++) {
-				rounds.ElementAt(i).nullVars();
+			for(int i = 0; i < getRounds().Count(); i++) {
+				getRounds().ElementAt(i).nullVars();
 			}
 			players = null;
 			rounds = null;
 		}
 		private void end() {
 			ended = true;
-			getRounds().Last().pause();
+			getLastRound().pause();
 			// define winner
 			byte wins1 = 0;
 			byte wins2 = 0;
-			for(int i = 0; i < rounds.Count(); i++) {
-				if(rounds[i].getWinner() == 1) {
+			for(int i = 0; i < getRounds().Count(); i++) {
+				if(getRounds()[i].getWinner() == 1) {
 					wins1++;
-				} else if(rounds[i].getWinner() == 2) {
+				} else if(getRounds()[i].getWinner() == 2) {
 					wins2++;
 				}
 			}
@@ -117,6 +113,9 @@ namespace Fusee.FuFiCycles.Core {
 		}
 		public List<Round> getRounds() {
 			return rounds;
+		}
+		public Round getLastRound() {
+			return getRounds()[getRounds().Count() - 1];
 		}
 	}
 }

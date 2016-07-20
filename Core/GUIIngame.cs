@@ -19,20 +19,18 @@ namespace Fusee.FuFiCycles.Core {
 		//colors
 		private static float4 white = new float4(1, 1, 1, 1);
 
-
 		public GUIIngame() {
 			tps = new GUIText("TPS: 0", getRoboto(), 50, 50);
 			tps.TextColor = white;
 			getGUIHandler().Add(tps);
 		}
-
 		public void refresh() {
-			tps.Text = "TPS: " + MATCHS.Last().getRounds().Last().getTps();
+			tps.Text = "TPS: " + INSTANCE.getLastMatch().getLastRound().getTps();
 			INSTANCE.getRC().Viewport(0, 0, INSTANCE.Width, INSTANCE.Height);
-			if (MATCHS.Last().getRounds().Last().getAbseconds() <= MATCHS.Last().getRounds().Last().secondsToWait) {
-				byte cntr = (byte) ((MATCHS.Last().getRounds().Last().secondsToWait + 1) - MATCHS.Last().getRounds().Last().getAbseconds());
-				if (cntr > MATCHS.Last().getRounds().Last().secondsToWait) {
-					cntr = MATCHS.Last().getRounds().Last().secondsToWait;
+			if (INSTANCE.getLastMatch().getLastRound().getAbseconds() <= INSTANCE.getLastMatch().getLastRound().secondsToWait) {
+				byte cntr = (byte) ((INSTANCE.getLastMatch().getLastRound().secondsToWait + 1) - INSTANCE.getLastMatch().getLastRound().getAbseconds());
+				if (cntr > INSTANCE.getLastMatch().getLastRound().secondsToWait) {
+					cntr = INSTANCE.getLastMatch().getLastRound().secondsToWait;
 				}
 				timer1.Text = (cntr).ToString();
 				timer2.Text = (cntr).ToString();
@@ -41,7 +39,6 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			getGUIHandler().Refresh();
 		}
-
 		public void addTimers() {
 			timer1 = new GUIText("3", getRoboto(), (INSTANCE.Width / 4) - 5, (INSTANCE.Height / 2) - 150);
 			timer1.TextColor = white;
@@ -55,9 +52,8 @@ namespace Fusee.FuFiCycles.Core {
 			getGUIHandler().Remove(timer1);
 			getGUIHandler().Remove(timer2);
 		}
-
 		public void addWinner() {
-			winner = new GUIText("AND THE WINNER IS: PLAYER " + MATCHS.Last().getWinner(), getRoboto(), (INSTANCE.Width / 2) - 130, (INSTANCE.Height / 2) - 150);
+			winner = new GUIText("AND THE WINNER IS: PLAYER " + INSTANCE.getLastMatch().getWinner(), getRoboto(), (INSTANCE.Width / 2) - 130, (INSTANCE.Height / 2) - 150);
 			winner.TextColor = white;
 			getGUIHandler().Add(winner);
 			getGUIHandler().Refresh();
@@ -65,16 +61,13 @@ namespace Fusee.FuFiCycles.Core {
 		public void removeWinner() {
 			getGUIHandler().Remove(winner);
 		}
-
 		internal void RenderGUI() {
 			throw new NotImplementedException();
 		}
-
 		public void AddPointsToScore() {
 			scorePlayer1.Text = "SCORE: " + score;
 			getGUIHandler().Refresh();
 		}
-
 		internal void Clear() {
 			throw new NotImplementedException();
 		}
