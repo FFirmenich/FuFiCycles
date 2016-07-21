@@ -13,11 +13,9 @@ namespace Fusee.FuFiCycles.Core {
 			getGUIHandler().AttachToContext(INSTANCE.getRC());
 			INSTANCE.roboto.UseKerning = true;
 		}
-
 		public GUIHandler getGUIHandler() {
 			return guiHandler;
 		}
-
 		public FontMap getRoboto() {
 			return roboto;
 		}

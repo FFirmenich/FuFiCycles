@@ -17,27 +17,21 @@ namespace Fusee.FuFiCycles.Core {
 			setKeyUp(up);
 			setKeyDown(down);
 		}
-
 		public KeyCodes getKeyLeft() {
 			return this.left;
 		}
-
 		public KeyCodes getKeyRight() {
 			return this.right;
 		}
-
 		public KeyCodes getKeyUp() {
 			return this.up;
 		}
-
 		public KeyCodes getKeyDown() {
 			return this.down;
 		}
-
 		public void setKeyLeft(KeyCodes input_key) {
 			this.left = input_key;
 		}
-
 		public void setKeyRight(KeyCodes input_key) {
 			this.right = input_key;
 		}

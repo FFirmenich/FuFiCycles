@@ -39,7 +39,9 @@ namespace Fusee.FuFiCycles.Core {
 
 		public GUIMenu() {
 			// image
-			getGUIHandler().Add(new GUIImage(AssetStorage.Get<ImageData>("MenuBackground.jpg"), 0, 0, -5, INSTANCE.Width, INSTANCE.Height));
+			if(!WEB) {
+				getGUIHandler().Add(new GUIImage(AssetStorage.Get<ImageData>("MenuBackground.jpg"), 0, 0, -5, INSTANCE.Width, INSTANCE.Height));
+			}
 
 			// panel
 			panel = new GUIPanel("PAUSE", getRoboto(), paddingV, paddingH, panelWidth, panelHeight);
@@ -50,13 +52,15 @@ namespace Fusee.FuFiCycles.Core {
 			addNewMatchButton();
 			addExitButton();
 		}
-
 		public void setViewport() {
 			INSTANCE.getRC().Viewport(0, 0, INSTANCE.Width, INSTANCE.Height);
 		}
-
 		public void addContinueButton() {
-			continueButton = new GUIButton("CONTINUE", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+			if(WEB) {
+				continueButton = new GUIButton("CONTINUE (C)", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 50) + 50, panelWidth / 2, 50);
+			} else {
+				continueButton = new GUIButton("CONTINUE (C)", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+			}
 			continueButton.ButtonColor = buttonColorDeactivated;
 			continueButton.BorderColor = grey;
 			continueButton.BorderWidth = 2;
@@ -66,19 +70,20 @@ namespace Fusee.FuFiCycles.Core {
 			panel.ChildElements.Add(continueButton);
 			getGUIHandler().Refresh();
 		}
-
 		public void activateContinueButton() {
 			continueButton.ButtonColor = buttonColor;
 			continueButtonActive = true;
 		}
-
 		public void deActivateContinueButton() {
 			continueButton.ButtonColor = buttonColorDeactivated;
 			continueButtonActive = false;
 		}
-
 		private void addNewMatchButton() {
-			newMatchButton = new GUIButton("NEW MATCH", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+			if (WEB) {
+				newMatchButton = new GUIButton("NEW MATCH (N)", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 50) + 50, panelWidth / 2, 50);
+			} else {
+				newMatchButton = new GUIButton("NEW MATCH (N)", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+			}
 			newMatchButton.ButtonColor = buttonColor;
 			newMatchButton.BorderColor = grey;
 			newMatchButton.BorderWidth = 2;
@@ -88,19 +93,19 @@ namespace Fusee.FuFiCycles.Core {
 			panel.ChildElements.Add(newMatchButton);
 			getGUIHandler().Refresh();
 		}
-
 		private void addExitButton() {
-			exitButton = new GUIButton("EXIT", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
-			exitButton.ButtonColor = buttonColor;
-			exitButton.BorderColor = grey;
-			exitButton.BorderWidth = 2;
-			exitButton.OnGUIButtonEnter += exitButton_OnGUIButtonEnter;
-			exitButton.OnGUIButtonLeave += exitButton_OnGUIButtonLeave;
-			exitButton.OnGUIButtonDown += exitButton_OnGUIButtonDown;
-			panel.ChildElements.Add(exitButton);
-			getGUIHandler().Refresh();
+			if(!WEB) {
+				exitButton = new GUIButton("EXIT (Esc)", getRoboto(), panelCenterH - panelWidth / 4, (panel.ChildElements.Count * 200) + 250, panelWidth / 2, 100);
+				exitButton.ButtonColor = buttonColor;
+				exitButton.BorderColor = grey;
+				exitButton.BorderWidth = 2;
+				exitButton.OnGUIButtonEnter += exitButton_OnGUIButtonEnter;
+				exitButton.OnGUIButtonLeave += exitButton_OnGUIButtonLeave;
+				exitButton.OnGUIButtonDown += exitButton_OnGUIButtonDown;
+				panel.ChildElements.Add(exitButton);
+				getGUIHandler().Refresh();
+			}
 		}
-
 		public void continueButton_OnGUIButtonEnter(GUIButton sender, GUIButtonEventArgs mea) {
 			if(!continueButtonActive) {
 				return;
@@ -108,7 +113,6 @@ namespace Fusee.FuFiCycles.Core {
 			INSTANCE.SetCursor(CursorType.Hand);
 			continueButton.ButtonColor = buttonColorHover;
 		}
-
 		public void continueButton_OnGUIButtonLeave(GUIButton sender, GUIButtonEventArgs mea) {
 			if (!continueButtonActive) {
 				return;
@@ -116,8 +120,7 @@ namespace Fusee.FuFiCycles.Core {
 			INSTANCE.SetCursor(CursorType.Standard);
 			continueButton.ButtonColor = buttonColor;
 		}
-
-		void continueButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
+		public void continueButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
 			if (!continueButtonActive) {
 				return;
 			}
@@ -125,17 +128,14 @@ namespace Fusee.FuFiCycles.Core {
 			SHOWMENU = false;
 			INSTANCE.Resize();
 		}
-
 		public void newMatchButton_OnGUIButtonEnter(GUIButton sender, GUIButtonEventArgs mea) {
 			INSTANCE.SetCursor(CursorType.Hand);
 			newMatchButton.ButtonColor = buttonColorHover;
 		}
-
 		public void newMatchButton_OnGUIButtonLeave(GUIButton sender, GUIButtonEventArgs mea) {
 			INSTANCE.SetCursor(CursorType.Standard);
 			newMatchButton.ButtonColor = buttonColor;
 		}
-
 		public void newMatchButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
 			INSTANCE.SetCursor(CursorType.Standard);
 			INSTANCE.getIngameGui().removeWinner();
@@ -145,26 +145,27 @@ namespace Fusee.FuFiCycles.Core {
 			activateContinueButton();
 			INSTANCE.Resize();
 		}
-
 		public void exitButton_OnGUIButtonEnter(GUIButton sender, GUIButtonEventArgs mea) {
-			INSTANCE.SetCursor(CursorType.Hand);
-			exitButton.ButtonColor = buttonColorHover;
+			if(!WEB) {
+				INSTANCE.SetCursor(CursorType.Hand);
+				exitButton.ButtonColor = buttonColorHover;
+			}
 		}
-
 		public void exitButton_OnGUIButtonLeave(GUIButton sender, GUIButtonEventArgs mea) {
-			INSTANCE.SetCursor(CursorType.Standard);
-			exitButton.ButtonColor = buttonColor;
+			if (!WEB) {
+				INSTANCE.SetCursor(CursorType.Standard);
+				exitButton.ButtonColor = buttonColor;
+			}
 		}
-
-		void exitButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
-			INSTANCE.SetCursor(CursorType.Standard);
-			INSTANCE.CloseGameWindow();
+		public void exitButton_OnGUIButtonDown(GUIButton sender, GUIButtonEventArgs mea) {
+			if (!WEB) {
+				INSTANCE.SetCursor(CursorType.Standard);
+				INSTANCE.CloseGameWindow();
+			}
 		}
-
 		internal void RenderGUI() {
 			throw new NotImplementedException();
 		}
-
 		internal void Clear() {
 			throw new NotImplementedException();
 		}

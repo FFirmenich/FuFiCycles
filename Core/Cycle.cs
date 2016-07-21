@@ -9,6 +9,8 @@ using static Fusee.FuFiCycles.Core.GameSettings;
 
 namespace Fusee.FuFiCycles.Core {
 	public class Cycle {
+		private float3 color;
+
 		// ccene and model vars
 		private SceneNodeContainer sceneNodeContainer;
 		private TransformComponent frontwheel_tc;
@@ -58,76 +60,74 @@ namespace Fusee.FuFiCycles.Core {
 
 			INSTANCE.getSceneContainers()["cycle"].Children.Add(getSNC());
 
+			// set color
+			switch (getId()) {
+				case 1:
+					setColor(CYCLE1_COLOR);
+					break;
+				case 2:
+					setColor(CYCLE2_COLOR);
+					break;
+				default:
+					setColor(new float3(0.2f, 0.2f, 0.2f));
+					break;
+			}
+
 			// set speed
 			// TODO: let player set speed
-			setSpeed(50);
+			setSpeed(SPEED);
 
 			// set the cycle to the right position according to its id
 			setStartPosition();
 		}
-
 		private void scale() {
 			this.sceneNodeContainer.GetTransform().Scale.x = 30;
 			this.sceneNodeContainer.GetTransform().Scale.y = 30;
 			this.sceneNodeContainer.GetTransform().Scale.z = 30;
 		}
-
 		public SceneNodeContainer getSNC() {
 			return sceneNodeContainer;
 		}
-
 		public TransformComponent getFrontWheel() {
 			return frontwheel_tc;
 		}
-
 		public TransformComponent getBackWheel() {
 			return backwheel_tc;
 		}
-
 		public int getId() {
 			return this.id;
 		}
-
 		public void setId(int id) {
 			this.id = id;
 		}
-
 		public int getSpeed() {
 			return this.speed;
 		}
-
 		public void setSpeed(int speed) {
 			this.speed = speed;
 		}
-
 		public float3 getPosition() {
 			return this.position;
 		}
-
 		public void setPosition(float3 position) {
 			getSNC().GetTransform().Translation = position;
 			this.position = position;
 		}
-
 		public bool isCollided() {
 			return this.collided;
 		}
-
 		public void setCollided() {
 			Debug.WriteLine("cycle" + getId() + " kollidiert");
 			this.collided = true;
 			setSpeed(0);
 		}
-
 		public Direction getDirection() {
 			return this.direction;
 		}
-
 		public void setDirection(Direction direction) {
 			this.direction = direction;
 			getSNC().GetTransform().Rotation = new float3(0, direction.getYaw(), 0);
 		}
-
 		public void setDirection(float yaw) {
 			setDirection(DirectionMethods.directionFromYaw(yaw));
 		}
@@ -177,6 +177,28 @@ namespace Fusee.FuFiCycles.Core {
 			backwheel.Components.Add(backwheel_tc);
 			backwheel.Components.Add(orig_backwheel.GetMesh());
 			getSNC().Children.Add(backwheel);
+		}
+
+		public void setColor(float3 color) {
+			this.color = color;
+
+			// create new colors
+			float intensity = 0.8f;
+			MaterialComponent newcolor2 = new MaterialComponent();
+			newcolor2.Diffuse = new MatChannelContainer();
+			newcolor2.Diffuse.Color = new float3(color.x * intensity, color.y * intensity, color.z * intensity);
+
+			float intensity2 = 0.6f;
+			MaterialComponent newcolor3 = new MaterialComponent();
+			newcolor3.Diffuse = new MatChannelContainer();
+			newcolor3.Diffuse.Color = new float3(color.x * intensity2, color.y * intensity2, color.z * intensity2);
+
+			// change model colors
+			getSNC().Children[0].Components[1] = newcolor2;
+			getSNC().Children[1].Components[1] = newcolor3;
+		}
+		public float3 getColor() {
+			return this.color;
 		}
 	}
 }

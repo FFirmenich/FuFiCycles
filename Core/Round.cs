@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
+using static System.DateTime;
 using static Fusee.FuFiCycles.Core.GameSettings;
+using System.Diagnostics;
 
 namespace Fusee.FuFiCycles.Core {
 	/// <summary>
@@ -16,17 +18,27 @@ namespace Fusee.FuFiCycles.Core {
 		private int absseconds = 0;
 		private ushort tpsTemp = 0;
 		private ushort tps = 0;
-		private int second = DateTime.Now.TimeOfDay.Seconds;
+		private int second = 0;
 		public byte secondsToWait = 3;
+		// web
+		private Stopwatch stopWatch = new Stopwatch();
 
 		// winner
 		private byte winner;
 
 		public Round() {
-			try {
-				id = (byte) MATCHS.Last().getRounds().Count();
-			} catch(Exception) {
-				id = 0;
+			id = 0;
+			if (INSTANCE.getMatchs() != null) {
+				if (INSTANCE.getMatchs().Count > 0) {
+					if (INSTANCE.getLastMatch() != null) {
+						if(INSTANCE.getLastMatch().getRounds() != null) {
+							id = (byte)INSTANCE.getLastMatch().getRounds().Count();
+						}
+					}
+				}
+			}
+			if (WEB) {
+				stopWatch.Start();
 			}
 			mapMirror = new byte[MAP_SIZE, MAP_SIZE];
 			INSTANCE.getIngameGui().addTimers();
@@ -39,8 +51,8 @@ namespace Fusee.FuFiCycles.Core {
 			// set first frame false
 			if (getFirstFrame()) {
 				bool gotAllWalls = true;
-				for(int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
-					if (!MATCHS.Last().getPlayers()[i].gotFirstWall()) {
+				for(int i = 0; i < INSTANCE.getLastMatch().getPlayers().Count; i++) {
+					if (!INSTANCE.getLastMatch().getPlayers()[i].gotFirstWall()) {
 						gotAllWalls = false;
 					}
 					if(gotAllWalls) {
@@ -50,7 +62,7 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			// fast check if there is an uncollided cycle in this round
 			if (onlyOneCycleLeft()) {
-				MATCHS.Last().newRound();
+				INSTANCE.getLastMatch().newRound();
 			}
 		}
 		/// <summary>
@@ -83,16 +95,16 @@ namespace Fusee.FuFiCycles.Core {
 		/// </summary>
 		/// <returns></returns>
 		private bool onlyOneCycleLeft() {
-			byte cyclesLeft = (byte) MATCHS.Last().getPlayers().Count();
-			for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
-				if (MATCHS.Last().getPlayers()[i].getCycle().isCollided()) {
+			byte cyclesLeft = (byte) INSTANCE.getLastMatch().getPlayers().Count();
+			for (int i = 0; i < INSTANCE.getLastMatch().getPlayers().Count; i++) {
+				if (INSTANCE.getLastMatch().getPlayers()[i].getCycle().isCollided()) {
 					cyclesLeft--;
 				}
 			}
 			if(cyclesLeft <= 1) {
-				for (int i = 0; i < MATCHS.Last().getPlayers().Count; i++) {
-					if (MATCHS.Last().getPlayers()[i].getCycle().isCollided()) {
-						setWinner((MATCHS.Last().getPlayers()[i].getPlayerId()));
+				for (int i = 0; i < INSTANCE.getLastMatch().getPlayers().Count; i++) {
+					if (!INSTANCE.getLastMatch().getPlayers()[i].getCycle().isCollided()) {
+						setWinner((INSTANCE.getLastMatch().getPlayers()[i].getPlayerId()));
 					}
 				}
 				return true;
@@ -106,13 +118,25 @@ namespace Fusee.FuFiCycles.Core {
 			INSTANCE.getSceneContainers()["wall"].Children.RemoveRange(1, INSTANCE.getSceneContainers()["wall"].Children.Count - 1);
 			// set variables null
 			mapMirror = null;
+			if(WEB) {
+				stopWatch.Stop();
+				stopWatch = null;
+			}
 		}
 		/// <summary>
 		/// Calculates the Ticks per Second
 		/// </summary>
 		private void calcTps() {
-			if (DateTime.Now.TimeOfDay.Seconds != second) {
-				newSecond();
+			TimeSpan ts = stopWatch.Elapsed;
+
+			if (WEB) {
+				if (stopWatch.Elapsed.Seconds != second) {
+					newSecond();
+				}
+			} else {
+				if (UtcNow.TimeOfDay.Seconds != second) {
+					newSecond();
+				}
 			}
 			tpsTemp++;
 		}
@@ -120,7 +144,11 @@ namespace Fusee.FuFiCycles.Core {
 			return tps;
 		}
 		private void newSecond() {
-			second = DateTime.Now.TimeOfDay.Seconds;
+			if(WEB) {
+				second = stopWatch.Elapsed.Seconds;
+			} else {
+				second = UtcNow.TimeOfDay.Seconds;
+			}
 			tps = tpsTemp;
 			tpsTemp = 0;
 			absseconds++;

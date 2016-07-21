@@ -59,6 +59,51 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Web");
   var $T0F = function () {
     return ($T0F = JSIL.Memoize($asm05.Fusee.Engine.Imp.Graphics.Web.RenderCanvasInputDriverImp)) ();
   };
+  var $T10 = function () {
+    return ($T10 = JSIL.Memoize($asm0D.System.Int32)) ();
+  };
+  var $T11 = function () {
+    return ($T11 = JSIL.Memoize($asm0D.System.Byte)) ();
+  };
+  var $T12 = function () {
+    return ($T12 = JSIL.Memoize($asm0D.System.Boolean)) ();
+  };
+  var $T13 = function () {
+    return ($T13 = JSIL.Memoize($asm06.Fusee.FuFiCycles.Core.GameSettings)) ();
+  };
+  var $T14 = function () {
+    return ($T14 = JSIL.Memoize($asm08.Fusee.Math.Core.float3)) ();
+  };
+  var $T15 = function () {
+    return ($T15 = JSIL.Memoize($asm0F.System.Diagnostics.Debug)) ();
+  };
+  var $T16 = function () {
+    return ($T16 = JSIL.Memoize($asm0D.System.String)) ();
+  };
+  var $T17 = function () {
+    return ($T17 = JSIL.Memoize($asm14.System.String)) ();
+  };
+  var $T18 = function () {
+    return ($T18 = JSIL.Memoize($asm06.Fusee.FuFiCycles.Core.GUIIngame)) ();
+  };
+  var $T19 = function () {
+    return ($T19 = JSIL.Memoize($asm14.System.Int32)) ();
+  };
+  var $T1A = function () {
+    return ($T1A = JSIL.Memoize($asm06.Fusee.FuFiCycles.Core.Player)) ();
+  };
+  var $T1B = function () {
+    return ($T1B = JSIL.Memoize($asm11.System.Linq.Enumerable)) ();
+  };
+  var $T1C = function () {
+    return ($T1C = JSIL.Memoize($asm06.Fusee.FuFiCycles.Core.Match)) ();
+  };
+  var $T1D = function () {
+    return ($T1D = JSIL.Memoize($asm06.Fusee.FuFiCycles.Core.Cycle)) ();
+  };
+  var $T1E = function () {
+    return ($T1E = JSIL.Memoize($asm0D.System.Collections.Generic.List$b1.Of($asm06.Fusee.FuFiCycles.Core.Player))) ();
+  };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Object"), [$asm0D.TypeRef("System.String"), $asm0D.TypeRef("System.Object")]))) ();
   };
@@ -70,6 +115,21 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Web");
   };
   var $S03 = function () {
     return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.String")]))) ();
+  };
+  var $S04 = function () {
+    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float3"), [
+        $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
+        $asm14.TypeRef("System.Single")
+      ]))) ();
+  };
+  var $S05 = function () {
+    return ($S05 = JSIL.Memoize(JSIL.MethodSignature.Action($asm0D.TypeRef("System.String")))) ();
+  };
+  var $S06 = function () {
+    return ($S06 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"])], ["TSource"]))) ();
+  };
+  var $S07 = function () {
+    return ($S07 = JSIL.Memoize(JSIL.MethodSignature.Action($asm0D.TypeRef("System.Object")))) ();
   };
 
 
@@ -110,6 +170,53 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Web");
     fuFiCycles.Run();
   }; 
 
+  function FuFiCycles_setCycleColor (id, c1, c2, c3) {
+    var flag = (id | 0) === 1;
+    if (flag) {
+      $T13().CYCLE1_COLOR = $S04().Construct(+c1, +c2, +c3);
+      $S05().CallStatic($T15(), "WriteLine", null, JSIL.ConcatString("SET CYCLE1_COLOR TO: ", $T13().CYCLE1_COLOR));
+    } else {
+      var flag2 = (id | 0) === 2;
+      if (flag2) {
+        $T13().CYCLE2_COLOR = $S04().Construct(+c1, +c2, +c3);
+        $S05().CallStatic($T15(), "WriteLine", null, JSIL.ConcatString("SET CYCLE2_COLOR TO: ", $T13().CYCLE2_COLOR));
+      }
+    }
+  }; 
+
+  function FuFiCycles_setPlayerName (id, name) {
+    var flag = (id | 0) === 1;
+    if (flag) {
+      $T13().PLAYER1_NAME = name;
+      $S05().CallStatic($T15(), "WriteLine", null, JSIL.ConcatString("SET PLAYER1_NAME TO: ", $T13().PLAYER1_NAME));
+    } else {
+      var flag2 = (id | 0) === 2;
+      if (flag2) {
+        $T13().PLAYER2_NAME = name;
+        $S05().CallStatic($T15(), "WriteLine", null, JSIL.ConcatString("SET PLAYER2_NAME TO: ", $T13().PLAYER2_NAME));
+      }
+    }
+    $T13().INSTANCE.getIngameGui().refreshNames();
+  }; 
+
+  function FuFiCycles_setSpeed (speed) {
+    if (((speed | 0) >= 1) && ((speed | 0) <= 100)) {
+      $T13().SPEED = (speed | 0);
+      $S05().CallStatic($T15(), "WriteLine", null, JSIL.ConcatString("SET SPEED TO ", $T13().SPEED));
+
+      for (var i = 0; i < ($S06().CallStatic($T1B(), "Count$b1", [$asm06.Fusee.FuFiCycles.Core.Player], $T13().INSTANCE.getLastMatch().getPlayers()) | 0); i = ((i + 1) | 0)) {
+        if (!(($T13().INSTANCE.getLastMatch().getPlayers().get_Item(i)).getCycle()).isCollided()) {
+          (($T13().INSTANCE.getLastMatch().getPlayers().get_Item(i)).getCycle()).setSpeed($T13().SPEED);
+        }
+      }
+    }
+  }; 
+
+  function FuFiCycles_setWEB () {
+    $T13().WEB = true;
+    $S07().CallStatic($T15(), "WriteLine", null, $T13().WEB);
+  }; 
+
   JSIL.MakeType({
       BaseType: $asm0D.TypeRef("System.Object"), 
       Name: "Fusee.FuFiCycles.Web.FuFiCycles", 
@@ -127,6 +234,29 @@ JSIL.DeclareNamespace("Fusee.FuFiCycles.Web");
     $.Method({Static:true , Public:true }, "Main", 
       JSIL.MethodSignature.Void, 
       FuFiCycles_Main
+    );
+
+    $.Method({Static:true , Public:true }, "setCycleColor", 
+      new JSIL.MethodSignature(null, [
+          $.Int32, $.Byte, 
+          $.Byte, $.Byte
+        ]), 
+      FuFiCycles_setCycleColor
+    );
+
+    $.Method({Static:true , Public:true }, "setPlayerName", 
+      new JSIL.MethodSignature(null, [$.Int32, $.String]), 
+      FuFiCycles_setPlayerName
+    );
+
+    $.Method({Static:true , Public:true }, "setSpeed", 
+      JSIL.MethodSignature.Action($.Int32), 
+      FuFiCycles_setSpeed
+    );
+
+    $.Method({Static:true , Public:true }, "setWEB", 
+      JSIL.MethodSignature.Void, 
+      FuFiCycles_setWEB
     );
 
 
