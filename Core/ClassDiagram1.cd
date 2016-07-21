@@ -1,2 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Fusee.FuFiCycles.Core.Cycle" Collapsed="true">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAJIgABAAAIEAAECAAIAADAAARA4CBAAAAgAAIAgA=</HashCode>
+      <FileName>Cycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.DirectionMethods" Collapsed="true">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Direction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.FuFiCycles" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkAADAABGCAIACAAoACkAIAYGAAiEEAAAIACAAECMAo=</HashCode>
+      <FileName>FuFiCycles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.GameSettings" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAARAAAAgAAUAAAUCAAAAAAAAAgABQAA=</HashCode>
+      <FileName>GameSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.GUI" Collapsed="true">
+    <Position X="1.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAACAEAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>GUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.GUIIngame" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAyAAEAAACBIIIAABAQEAAAAAAAQAAAAAAAABABAQAA=</HashCode>
+      <FileName>GUIIngame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.GUIMenu" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIFIIAAQEAAAQIIEIAAKIAAQgAAVAAAISIAAhUVQiIA=</HashCode>
+      <FileName>GUIMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.InputKeys" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIIAgCAAAAAAAAAAAAAIAIgAAAAAIACgCAgAA=</HashCode>
+      <FileName>InputKeys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.KeyboardKey" Collapsed="true">
+    <Position X="10.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAACAAAAAAAAAIABAAAAAAAAAABECAABAAA=</HashCode>
+      <FileName>KeyboardKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.KeyboardKeys" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIACAAAAAAAAAAQACAAAAQAAAAABAABAA=</HashCode>
+      <FileName>KeyboardKeys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.Match" Collapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IghAAAACAUABAIQAQACAAAEAAAAAAAAAKgAAAAAAAgA=</HashCode>
+      <FileName>Match.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.Player" Collapsed="true">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GDAAgQAAQAEAEpAAgAAAKAEAAACAAAhIgcAAIMQEAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.Renderer" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIABAQAAIAQAEgACAAkCAAAFAAAAQAgAAAAAAAI=</HashCode>
+      <FileName>Renderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fusee.FuFiCycles.Core.Round" Collapsed="true">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkBAAAAAAEBAAICCAiiBACAQAACAIACAQAwAFAAAIgA=</HashCode>
+      <FileName>Round.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Fusee.FuFiCycles.Core.Direction" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAIAAAAAAAAA=</HashCode>
+      <FileName>Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
