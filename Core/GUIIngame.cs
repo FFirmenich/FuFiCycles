@@ -10,11 +10,11 @@ namespace Fusee.FuFiCycles.Core {
 		private GUIText scorePlayer1;
 		private GUIText scorePlayer2;
 		private GUIText tps;
+		private GUIText player1name;
+		private GUIText player2name;
 		private GUIText timer1;
 		private GUIText timer2;
 		private GUIText winner;
-
-		public float score = 0;
 
 		//colors
 		private static float4 white = new float4(1, 1, 1, 1);
@@ -23,6 +23,12 @@ namespace Fusee.FuFiCycles.Core {
 			tps = new GUIText("TPS: 0", getRoboto(), 50, 50);
 			tps.TextColor = white;
 			getGUIHandler().Add(tps);
+			player1name = new GUIText(PLAYER1_NAME, getRoboto(), INSTANCE.Width * 3 / 4 - 40, 50);
+			player1name.TextColor = white;
+			getGUIHandler().Add(player1name);
+			player2name = new GUIText(PLAYER2_NAME, getRoboto(), INSTANCE.Width / 4 - 40, 50);
+			player2name.TextColor = white;
+			getGUIHandler().Add(player2name);
 		}
 		public void refresh() {
 			tps.Text = "TPS: " + INSTANCE.getLastMatch().getLastRound().getTps();
@@ -53,7 +59,11 @@ namespace Fusee.FuFiCycles.Core {
 			getGUIHandler().Remove(timer2);
 		}
 		public void addWinner() {
-			winner = new GUIText("AND THE WINNER IS: PLAYER " + INSTANCE.getLastMatch().getWinner(), getRoboto(), (INSTANCE.Width / 2) - 130, (INSTANCE.Height / 2) - 150);
+			if(INSTANCE.getLastMatch().getWinner() == 1) {
+				winner = new GUIText("AND THE WINNER IS: " + PLAYER1_NAME, getRoboto(), (INSTANCE.Width / 2) - 130, (INSTANCE.Height / 2) - 150);
+			} else if(INSTANCE.getLastMatch().getWinner() == 2) {
+				winner = new GUIText("AND THE WINNER IS: " + PLAYER2_NAME, getRoboto(), (INSTANCE.Width / 2) - 130, (INSTANCE.Height / 2) - 150);
+			}
 			winner.TextColor = white;
 			getGUIHandler().Add(winner);
 			getGUIHandler().Refresh();
@@ -64,8 +74,9 @@ namespace Fusee.FuFiCycles.Core {
 		internal void RenderGUI() {
 			throw new NotImplementedException();
 		}
-		public void AddPointsToScore() {
-			scorePlayer1.Text = "SCORE: " + score;
+		public void refreshNames() {
+			player1name.Text = PLAYER1_NAME;
+			player2name.Text = PLAYER2_NAME;
 			getGUIHandler().Refresh();
 		}
 		internal void Clear() {

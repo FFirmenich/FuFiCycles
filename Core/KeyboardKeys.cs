@@ -33,6 +33,8 @@ namespace Fusee.FuFiCycles.Core {
 			/// Special Keys
 			keys.Add(KeyCodes.Escape, new KeyboardKey());
 			keys.Add(KeyCodes.Enter, new KeyboardKey());
+			keys.Add(KeyCodes.C, new KeyboardKey());
+			keys.Add(KeyCodes.N, new KeyboardKey());
 		}
 		public void renderAFrame() {
 			renderKeys();

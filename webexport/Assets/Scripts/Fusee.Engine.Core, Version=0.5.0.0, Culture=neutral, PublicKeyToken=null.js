@@ -6050,22 +6050,19 @@ JSIL.MakeDelegate("Fusee.Engine.Core.CreatorFunc", true, [],
     return ($S0B = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.Object"), $asm03.TypeRef("Fusee.Engine.Common.NewDeviceImpConnectedArgs")]))) ();
   };
   var $S0C = function () {
-    return ($S0C = JSIL.Memoize(new JSIL.MethodSignature("!!0", [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"])], ["TSource"]))) ();
+    return ($S0C = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
   var $S0D = function () {
-    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S0D = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
   };
   var $S0E = function () {
-    return ($S0E = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String"), $asm14.TypeRef("System.String")]))) ();
+    return ($S0E = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm04.TypeRef("Fusee.Engine.Core.SpecialDeviceCreator")]))) ();
   };
   var $S0F = function () {
-    return ($S0F = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm04.TypeRef("Fusee.Engine.Core.SpecialDeviceCreator")]))) ();
+    return ($S0F = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm14.TypeRef("System.String")]), null))) ();
   };
   var $S10 = function () {
-    return ($S10 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm14.TypeRef("System.String")]), null))) ();
-  };
-  var $S11 = function () {
-    return ($S11 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.String")]))) ();
+    return ($S10 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm14.TypeRef("System.String")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm03.Fusee.Engine.Common.IInputDeviceImp).GetEnumerator)) ();
@@ -6303,7 +6300,8 @@ JSIL.MakeDelegate("Fusee.Engine.Core.CreatorFunc", true, [],
   }; 
 
   function Input_GetInputDevice$b1 (TDevice) {
-    return $S0C().CallStatic($T21(), "FirstOrDefault$b1", [TDevice], $T21().OfType$b1(TDevice)((this._inputDevices).get_Values()));
+    var $s00 = new JSIL.MethodSignature("!!0", [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"])], ["TSource"]);
+    return $s00.CallStatic($T21(), "FirstOrDefault$b1", [TDevice], $T21().OfType$b1(TDevice)((this._inputDevices).get_Values()));
   }; 
 
   function Input_GetInputDevices$b1 (TDevice) {
@@ -6318,7 +6316,7 @@ JSIL.MakeDelegate("Fusee.Engine.Core.CreatorFunc", true, [],
     var inputDriverImp = $T0A().$As(sender);
     var flag2 = inputDriverImp === null;
     if (flag2) {
-      throw $S0D().Construct(JSIL.ConcatString("Device disconnecting from unknown driver ", sender.toString()));
+      throw $S0C().Construct(JSIL.ConcatString("Device disconnecting from unknown driver ", sender.toString()));
     }
     var key = (($IM04().Call(inputDriverImp, null) + "_" + args.Id));
     var flag3 = (this._inputDevices).TryGetValue(key, /* ref */ inputDevice);
@@ -6332,7 +6330,7 @@ JSIL.MakeDelegate("Fusee.Engine.Core.CreatorFunc", true, [],
       }
       return;
     }
-    throw $S0D().Construct(("Driver " + $IM04().Call(inputDriverImp, null) + " trying to disconnect unknown device " + args.Id));
+    throw $S0C().Construct(("Driver " + $IM04().Call(inputDriverImp, null) + " trying to disconnect unknown device " + args.Id));
   }; 
 
   function Input_OnNewDeviceImpConnected (sender, args) {
@@ -6342,12 +6340,12 @@ JSIL.MakeDelegate("Fusee.Engine.Core.CreatorFunc", true, [],
     }
     var inputDriverImp = $T0A().$As(sender);
     if (inputDriverImp === null) {
-      throw $S0D().Construct(JSIL.ConcatString("Device connecting from unknown driver ", sender.toString()));
+      throw $S0C().Construct(JSIL.ConcatString("Device connecting from unknown driver ", sender.toString()));
     }
     var flag3 = (args === null) || 
     (args.InputDeviceImp === null);
     if (flag3) {
-      throw $S0E().Construct("args", "Device or InputDeviceImp must not be null");
+      throw $S0D().Construct("args", "Device or InputDeviceImp must not be null");
     }
     var key = (($IM04().Call(inputDriverImp, null) + "_" + $IM05().Call(args.InputDeviceImp, null)));
     var flag4 = (this._inputDevices).TryGetValue(key, /* ref */ inputDevice);
@@ -6408,8 +6406,8 @@ JSIL.MakeDelegate("Fusee.Engine.Core.CreatorFunc", true, [],
     var expr_32 = new ($T16())();
     expr_32.Match = match;
     expr_32.Creator = creator;
-    $S0F().CallVirtual("Add", null, this._specialDeviceCreators, expr_32);
-    var list = $S10().Construct();
+    $S0E().CallVirtual("Add", null, this._specialDeviceCreators, expr_32);
+    var list = $S0F().Construct();
     var enumerator = ((this._inputDevices).get_Values()).GetEnumerator();
 
     while ($T18().prototype.MoveNext.call(enumerator)) {
@@ -6417,7 +6415,7 @@ JSIL.MakeDelegate("Fusee.Engine.Core.CreatorFunc", true, [],
       var flag3 = (current.get_DeviceImp() !== null) && 
       match(current.get_DeviceImp());
       if (flag3) {
-        $S11().CallVirtual("Add", null, list, current.get_Id());
+        $S10().CallVirtual("Add", null, list, current.get_Id());
       }
     }
 
@@ -11131,28 +11129,25 @@ JSIL.MakeDelegate("Fusee.Engine.Core.InputDevice+AxisValueCalculator", false, []
     return ($S14 = JSIL.Memoize(JSIL.MethodSignature.Action($asm14.TypeRef("System.Collections.Generic.IEnumerable`1", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer")])))) ();
   };
   var $S15 = function () {
-    return ($S15 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Int32"), [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"])], ["TSource"]))) ();
+    return ($S15 = JSIL.Memoize(new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.float4")]))) ();
   };
   var $S16 = function () {
-    return ($S16 = JSIL.Memoize(new JSIL.MethodSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [$asm08.TypeRef("Fusee.Math.Core.float4x4"), $asm08.TypeRef("Fusee.Math.Core.float4")]))) ();
-  };
-  var $S17 = function () {
-    return ($S17 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [
+    return ($S16 = JSIL.Memoize(new JSIL.ConstructorSignature($asm08.TypeRef("Fusee.Math.Core.float4"), [
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single"), 
         $asm14.TypeRef("System.Single"), $asm14.TypeRef("System.Single")
       ]))) ();
   };
+  var $S17 = function () {
+    return ($S17 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
+  };
   var $S18 = function () {
-    return ($S18 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.ArgumentNullException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S18 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm09.TypeRef("Fusee.Serialization.MeshComponent"), $asm04.TypeRef("Fusee.Engine.Core.Mesh")]), null))) ();
   };
   var $S19 = function () {
-    return ($S19 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm09.TypeRef("Fusee.Serialization.MeshComponent"), $asm04.TypeRef("Fusee.Engine.Core.Mesh")]), null))) ();
+    return ($S19 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm09.TypeRef("Fusee.Serialization.MaterialComponent"), $asm04.TypeRef("Fusee.Engine.Core.ShaderEffect")]), null))) ();
   };
   var $S1A = function () {
-    return ($S1A = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm09.TypeRef("Fusee.Serialization.MaterialComponent"), $asm04.TypeRef("Fusee.Engine.Core.ShaderEffect")]), null))) ();
-  };
-  var $S1B = function () {
-    return ($S1B = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]), null))) ();
+    return ($S1A = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm09.TypeRef("Fusee.Serialization.SceneNodeContainer"), $asm08.TypeRef("Fusee.Math.Core.float4x4")]), null))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm14.System.Collections.Generic.IEnumerable$b1.Of($asm09.Fusee.Serialization.AnimationComponent).GetEnumerator)) ();
@@ -11557,9 +11552,10 @@ JSIL.MakeDelegate("Fusee.Engine.Core.InputDevice+AxisValueCalculator", false, []
   }; 
 
   function SceneRenderer_RenderWeight (weight) {
-    var array = JSIL.Array.New($T34(), $S15().CallStatic($T4F(), "Count$b1", [$asm09.Fusee.Serialization.SceneNodeContainer], weight.Joints));
+    var $s00 = new JSIL.MethodSignature($asm0D.System.Int32, [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"])], ["TSource"]);
+    var array = JSIL.Array.New($T34(), $s00.CallStatic($T4F(), "Count$b1", [$asm09.Fusee.Serialization.SceneNodeContainer], weight.Joints));
 
-    for (var i = 0; i < ($S15().CallStatic($T4F(), "Count$b1", [$asm09.Fusee.Serialization.SceneNodeContainer], weight.Joints) | 0); i = ((i + 1) | 0)) {
+    for (var i = 0; i < ($s00.CallStatic($T4F(), "Count$b1", [$asm09.Fusee.Serialization.SceneNodeContainer], weight.Joints) | 0); i = ((i + 1) | 0)) {
       var right = (weight.BindingMatrices).get_Item(i).MemberwiseClone();
       array[i] = $S13().CallStatic($T34(), "op_Multiply", null, (this._boneMap).get_Item((weight.Joints).get_Item(i)).MemberwiseClone(), right.MemberwiseClone()).MemberwiseClone();
     }
@@ -11579,7 +11575,7 @@ JSIL.MakeDelegate("Fusee.Engine.Core.InputDevice+AxisValueCalculator", false, []
       }
     } else {
       effect.SetEffectParam($T09().get_LightColorName(), $S03().Construct(1, 1, 1));
-      var xyz = ($S16().CallStatic($T34(), "op_Multiply", null, (this._rc).get_InvModelView(), $S17().Construct(0, 0, -1, 0))).get_xyz().MemberwiseClone();
+      var xyz = ($S15().CallStatic($T34(), "op_Multiply", null, (this._rc).get_InvModelView(), $S16().Construct(0, 0, -1, 0))).get_xyz().MemberwiseClone();
       xyz.Normalize();
       effect.SetEffectParam($T09().get_LightDirectionName(), xyz.MemberwiseClone());
       effect.SetEffectParam($T09().get_LightIntensityName(), $T0D().$Box(1));
@@ -11589,14 +11585,14 @@ JSIL.MakeDelegate("Fusee.Engine.Core.InputDevice+AxisValueCalculator", false, []
 
   function SceneRenderer_SetContext (rc) {
     if (rc === null) {
-      throw $S18().Construct("rc");
+      throw $S17().Construct("rc");
     }
     var flag2 = rc !== this._rc;
     if (flag2) {
       this._rc = rc;
-      this._meshMap = $S19().Construct();
-      this._matMap = $S1A().Construct();
-      this._boneMap = $S1B().Construct();
+      this._meshMap = $S18().Construct();
+      this._matMap = $S19().Construct();
+      this._boneMap = $S1A().Construct();
       var expr_57 = new ($T08())();
       var expr_5D = new ($T54())();
       expr_5D.Color = $S03().Construct(0.5, 0.5, 0.5);

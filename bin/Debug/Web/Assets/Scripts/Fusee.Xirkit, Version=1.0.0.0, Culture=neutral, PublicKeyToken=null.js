@@ -468,9 +468,6 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   var $T06 = function () {
     return ($T06 = JSIL.Memoize($asm11.System.Linq.Enumerable)) ();
   };
-  var $S00 = function () {
-    return ($S00 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), $asm0D.TypeRef("System.Func`2", ["!!0", $asm0D.TypeRef("System.Boolean")])], ["TSource"]))) ();
-  };
 
 
   function Channel$b1__ctor$00 (timeChanged, lerpFunc) {
@@ -552,9 +549,10 @@ JSIL.MakeDelegate("Fusee.Xirkit.ChainedMemberAccessor`2+PrePost", false, ["TPin"
   }; 
 
   function Channel$b1_ContainsKey$06 (time) {
+    var $s00 = new JSIL.MethodSignature($asm0D.System.Boolean, [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), $asm0D.TypeRef("System.Func`2", ["!!0", $.Boolean])], ["TSource"]);
     var $closure0 = new ($asm0C.Fusee.Xirkit.Channel$b1_$l$gc__DisplayClass20_0.Of($thisType.TValue.get(this))) ();
     $closure0.time = +time;
-    return $S00().CallStatic($T06(), "Any$b1", [$asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))], this._timeline, JSIL.UnknownMember($closure0, $asm0C.Fusee.Xirkit.Channel$b1_$l$gc__DisplayClass20_0.Of($thisType.TValue.get(this)).prototype.$lContainsKey$gb__0).LValue);
+    return $s00.CallStatic($T06(), "Any$b1", [$asm0C.Fusee.Xirkit.Keyframe$b1.Of($thisType.TValue.get(this))], this._timeline, JSIL.UnknownMember($closure0, $asm0C.Fusee.Xirkit.Channel$b1_$l$gc__DisplayClass20_0.Of($thisType.TValue.get(this)).prototype.$lContainsKey$gb__0).LValue);
   }; 
 
   function Channel$b1_get_Duration () {

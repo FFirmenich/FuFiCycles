@@ -70,7 +70,9 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			removePlayers();
 			addPlayers();
-			GC.Collect();
+			if(!WEB) {
+				GC.Collect();
+			}
 			getRounds().Add(new Round());
 			INSTANCE.Resize();
 		}

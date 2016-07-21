@@ -2154,10 +2154,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
     return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.Dictionary`2", [$asm14.TypeRef("System.Int32"), $asm03.TypeRef("Fusee.Engine.Common.ButtonImpDescription")]), [$asm14.TypeRef("System.Int32")]))) ();
   };
   var $S03 = function () {
-    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature($asm0D.TypeRef("System.Boolean"), [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), "!!0"], ["TSource"]))) ();
-  };
-  var $S04 = function () {
-    return ($S04 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
+    return ($S03 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.InvalidOperationException"), [$asm14.TypeRef("System.String")]))) ();
   };
 
 
@@ -2328,9 +2325,10 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   }; 
 
   function TouchDeviceImp_get_NextFreeTouchIndex () {
+    var $s00 = new JSIL.MethodSignature($asm0D.System.Boolean, [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"]), "!!0"], ["TSource"]);
 
     for (var i = 0; i < (this._nTouchPointsSupported | 0); i = ((i + 1) | 0)) {
-      var flag = !$S03().CallStatic($T14(), "Contains$b1", [$asm14.System.Int32], (this._activeTouchpoints).get_Values(), i);
+      var flag = !$s00.CallStatic($T14(), "Contains$b1", [$asm14.System.Int32], (this._activeTouchpoints).get_Values(), i);
       if (flag) {
         var result = i;
         return result;
@@ -2363,14 +2361,14 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
         break;
 
       default: 
-        throw $S04().Construct($T09().Format("Unknown axis {0}.  Probably an event based axis or unsupported by this device.", JSIL.Array.New($T00(), [$T08().$Box(iAxisId)])));
+        throw $S03().Construct($T09().Format("Unknown axis {0}.  Probably an event based axis or unsupported by this device.", JSIL.Array.New($T00(), [$T08().$Box(iAxisId)])));
 
     }
     return result;
   }; 
 
   function TouchDeviceImp_GetButton (iButtonId) {
-    throw $S04().Construct($T09().Format("Unknown button id {0}. This device supports no pollable buttons at all.", JSIL.Array.New($T00(), [$T08().$Box(iButtonId)])));
+    throw $S03().Construct($T09().Format("Unknown button id {0}. This device supports no pollable buttons at all.", JSIL.Array.New($T00(), [$T08().$Box(iButtonId)])));
   }; 
 
 
@@ -2443,7 +2441,7 @@ JSIL.DeclareNamespace("Fusee.Engine.Imp.Graphics.Web");
   function TouchDeviceImp_OnCanvasTouchStart (id, x, y) {
     var flag = (this._activeTouchpoints).ContainsKey(id);
     if (flag) {
-      throw $S04().Construct($T09().Format("HTML Touch id {0} is already tracked. Cannot track another touchpoint using this id.", JSIL.Array.New($T00(), [$T08().$Box(id)])));
+      throw $S03().Construct($T09().Format("HTML Touch id {0} is already tracked. Cannot track another touchpoint using this id.", JSIL.Array.New($T00(), [$T08().$Box(id)])));
     }
     var inx = (this.get_NextFreeTouchIndex() | 0);
     if (inx >= 0) {
