@@ -16,7 +16,6 @@ namespace Fusee.FuFiCycles.Core {
 	public class Player {
 		private byte player_id;
 		private String player_name;
-		private float3 color;
 		private Cycle cycle;
 		public InputKeys input_keys;
 
@@ -41,19 +40,15 @@ namespace Fusee.FuFiCycles.Core {
 
 			_wallSNC = INSTANCE.getSceneContainers()["wall"].Children.FindNodes(c => c.Name == "wall").First();
 
-			// TODO: let player pick color
-			switch (id) {
+			switch (getPlayerId()) {
 				case 1:
 					input_keys = new InputKeys(KeyCodes.Left, KeyCodes.Right, KeyCodes.Up, KeyCodes.Down);
-					setColor(new float3(0, 0.9f, 1f));
 					break;
 				case 2:
 					input_keys = new InputKeys(KeyCodes.A, KeyCodes.D, KeyCodes.W, KeyCodes.S);
-					setColor(new float3(0, 1.0f, 0));
 					break;
 				default:
 					Debug.WriteLine("ACHTUNG: Spieler 3 aufwärts haben keine Keys zugeordnet.");
-					setColor(new float3(0.2f, 0.2f, 0.2f));
 					break;
 			}
 
@@ -89,10 +84,6 @@ namespace Fusee.FuFiCycles.Core {
 			return this.player_name;
 		}
 
-		public float3 getColor() {
-			return this.color;
-		}
-
 		public InputKeys getInputKeys() {
 			return this.input_keys;
 		}
@@ -105,30 +96,9 @@ namespace Fusee.FuFiCycles.Core {
 		public void setPlayerName(String name) {
 			this.player_name = name;
 		}
-
-		public void setColor(float3 color) {
-			this.color = color;
-			
-			// create new colors
-			float intensity = 0.8f;
-			MaterialComponent newcolor2 = new MaterialComponent();
-			newcolor2.Diffuse = new MatChannelContainer();
-			newcolor2.Diffuse.Color = new float3(color.x * intensity, color.y * intensity, color.z * intensity);
-
-			float intensity2 = 0.6f;
-			MaterialComponent newcolor3 = new MaterialComponent();
-			newcolor3.Diffuse = new MatChannelContainer();
-			newcolor3.Diffuse.Color = new float3(color.x * intensity2, color.y * intensity2, color.z * intensity2);
-
-			// change model colors
-			getCycle().getSNC().Children[0].Components[1] = newcolor2;
-			getCycle().getSNC().Children[1].Components[1] = newcolor3;
-		}
-
 		public Cycle getCycle() {
 			return this.cycle;
 		}
-
 		public void setCycle(Cycle cycle) {
 			this.cycle = cycle;
 		}
@@ -305,7 +275,7 @@ namespace Fusee.FuFiCycles.Core {
 			// set wall color
 			MaterialComponent newcolor = new MaterialComponent();
 			newcolor.Diffuse = new MatChannelContainer();
-			newcolor.Diffuse.Color = getColor();
+			newcolor.Diffuse.Color = getCycle().getColor();
 
 			w.Components[1] = newcolor;
 

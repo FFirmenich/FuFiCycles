@@ -57,7 +57,6 @@ namespace Fusee.FuFiCycles.Core {
 			// Set the clear color for the backbuffer
 			RC.ClearColor = new float4(1, 1, 1, 1);
 		}
-
 		public override void RenderAFrame() {
 			// Clear the backbuffer
 			RC.Clear(ClearFlags.Color | ClearFlags.Depth);
@@ -73,7 +72,6 @@ namespace Fusee.FuFiCycles.Core {
 
 			Present();
 		}
-
 		public static float NormRot(float rot) {
 			while (rot > M.Pi)
 				rot -= M.TwoPi;
@@ -215,6 +213,14 @@ namespace Fusee.FuFiCycles.Core {
 				keyboardKeys.keys[KeyCodes.Escape].setUnpressed();
 				//exitFullscreen();
 				CloseGameWindow();
+			}
+			if (keyboardKeys.keys[KeyCodes.C].isPressed()) {
+				keyboardKeys.keys[KeyCodes.C].setUnpressed();
+				getMenuGui().continueButton_OnGUIButtonDown(null, null);
+			}
+			if (keyboardKeys.keys[KeyCodes.N].isPressed()) {
+				keyboardKeys.keys[KeyCodes.N].setUnpressed();
+				getMenuGui().newMatchButton_OnGUIButtonDown(null, null);
 			}
 		}
 		public void tickIngame() {

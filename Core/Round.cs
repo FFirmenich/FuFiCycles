@@ -103,7 +103,7 @@ namespace Fusee.FuFiCycles.Core {
 			}
 			if(cyclesLeft <= 1) {
 				for (int i = 0; i < INSTANCE.getLastMatch().getPlayers().Count; i++) {
-					if (INSTANCE.getLastMatch().getPlayers()[i].getCycle().isCollided()) {
+					if (!INSTANCE.getLastMatch().getPlayers()[i].getCycle().isCollided()) {
 						setWinner((INSTANCE.getLastMatch().getPlayers()[i].getPlayerId()));
 					}
 				}
@@ -118,8 +118,10 @@ namespace Fusee.FuFiCycles.Core {
 			INSTANCE.getSceneContainers()["wall"].Children.RemoveRange(1, INSTANCE.getSceneContainers()["wall"].Children.Count - 1);
 			// set variables null
 			mapMirror = null;
-			stopWatch.Stop();
-			stopWatch = null;
+			if(WEB) {
+				stopWatch.Stop();
+				stopWatch = null;
+			}
 		}
 		/// <summary>
 		/// Calculates the Ticks per Second

@@ -2914,10 +2914,7 @@ JSIL.MakeInterface(
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm14.TypeRef("System.Collections.Generic.List`1", [$asm0B.TypeRef("Fusee.Xene.IStateStack")]), null))) ();
   };
   var $S01 = function () {
-    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature("!!0", [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"])], ["TSource"]))) ();
-  };
-  var $S02 = function () {
-    return ($S02 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.IStateStack")]))) ();
+    return ($S01 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm0B.TypeRef("Fusee.Xene.IStateStack")]))) ();
   };
   var $IM00 = function () {
     return ($IM00 = JSIL.Memoize($asm0B.Fusee.Xene.IStateStack.Clear)) ();
@@ -2949,7 +2946,8 @@ JSIL.MakeInterface(
   }; 
 
   function VisitorState_get_Depth () {
-    return $IM01().Call($S01().CallStatic($T03(), "First$b1", [$asm0B.Fusee.Xene.IStateStack], this._stacks), null);
+    var $s00 = new JSIL.MethodSignature("!!0", [$asm0D.TypeRef("System.Collections.Generic.IEnumerable`1", ["!!0"])], ["TSource"]);
+    return $IM01().Call($s00.CallStatic($T03(), "First$b1", [$asm0B.Fusee.Xene.IStateStack], this._stacks), null);
   }; 
 
   function VisitorState_Pop () {
@@ -2975,7 +2973,7 @@ JSIL.MakeInterface(
   }; 
 
   function VisitorState_RegisterState (stack) {
-    $S02().CallVirtual("Add", null, this._stacks, stack);
+    $S01().CallVirtual("Add", null, this._stacks, stack);
   }; 
 
   JSIL.MakeType({

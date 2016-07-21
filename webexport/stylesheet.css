@@ -16,6 +16,10 @@ html,body{
 	color: white;
 }
 
+body {
+	overflow-y: scroll;
+}
+
 h1{
 	font-size: 8em;
 	margin: 0;
@@ -63,6 +67,8 @@ header{
 
 #img_logo{
 	height: 100%;
+	max-height: 110px;
+	max-width: 261px;
 }
 
 #nav{
@@ -112,6 +118,9 @@ a > span {
 
 .container_game{
 	padding-top: 110px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 #game{
@@ -119,15 +128,27 @@ a > span {
 	height: 560px;
 }
 
+#canvas {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#loadingProgress {
+	left: 300px;
+	margin-left: 0;
+}
+
 #page_properties{
 	background: rgb(0,235,235);
 }
 
 #page_instructions{
-	background: url("./res/img/backscreen_tron.jpg");
+	background: url("./res/img/backscreen_tron_layer.jpg");
 	background-size: cover;
 	background-repeat: none;
-	opacity: 0.7;
+	opacity: 1;
+	display: flex;
 }
 
 #page_about{
@@ -142,8 +163,24 @@ a > span {
 .container_content{
 	display: block;
 	padding-top: 50px;
-	width: 40%;
-	float: left;
+}
+
+#instructions {
+	flex-basis: 70%;
+}
+
+#keys {
+	flex-basis: 30%;
+}
+
+#keys p {
+    display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+#keys img {
+	width: 50px;
 }
 
 .container_props{
@@ -213,4 +250,10 @@ input[type="text"]{
     border: none;
     margin: 0;
     padding: 0;
+}
+
+#copy {
+	padding: 10px;
+	text-align: center;
+	background: rgb(77,77,77);
 }
